@@ -1,0 +1,35 @@
+# Antora playbook for local development
+# In this version, source urls point to local copies of the content repositories
+---
+site:
+  title: Documentation
+  url: /home/rolf/dev/websites/rolfkleef.github.io/build/site/
+  start_page: overview::index.adoc
+
+content:
+  sources:
+  - url: .
+    branches: develop
+    start_path: docs/overview
+  - url: /home/rolf/dev/tools/antora/antora-ui
+    branches: HEAD
+    start_path: docs
+
+ui:
+  bundle:
+    url: /home/rolf/dev/tools/antora/antora-ui/build/ui-bundle.zip
+    snapshot: true
+  supplemental_files:
+  - path: ui.yml
+    contents: |
+      static_files: [ .nojekyll ]
+  - path: .nojekyll
+  
+asciidoc:
+  extensions:
+  - asciidoctor-kroki
+  attributes:
+    kroki-fetch-diagram: true
+    kroki-default-format@: svg
+    # run `docker run -p18181:8000 -d --name asciidoctor-kroki yuzutech/kroki` to start a local kroki server
+    kroki-server-url: http://localhost:18181

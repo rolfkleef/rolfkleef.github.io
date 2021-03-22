@@ -1,0 +1,224 @@
+= {page-component-title}
+
+image::slide-haidagwaii.png[]
+
+== README
+
+This website provides documentation on tools, technologies, and approaches I use, or have used.
+I am trying to organise it in sections for particular processes, products or use cases.
+
+- For now, there is one main section, on documentation.
+- Each section contains one or more components.
+
+== Main considerations for documentation
+
+For my own purpose, I have a couple of high-level requirements for the documentation technology stack.
+
+The source format should be suitable for standard version control.::
+This forces it to be a plain-text markup language, stored in files.
+It excludes Office tools, online editors, and database-based content management systems.
+
+There should be simple tools for simple _WYSIWYG_ editing, to focus on writing rather than markup.::
+Robust standards like DocBook and DITA are XML-based, and require particular editors.
+They also require a lot more learning to be able to use them well.
+
+It should be possible to generate a static website from the documentation.::
+I want to generate a single documentation site pulling sources from multiple repositories into a single site.
+I also want to offer documentation for different versions.
+
+== Stack overview
+
+=== Markup format
+
+[%header, cols=1;2;2]
+.Creating documentation pages
+|===
+h|Stack
+^h|Markdown 
+^h|Asciidoc
+
+3+h|Markup
+
+|Format
+2+|All three have a simple text-based format that is are very suitable for version control.
+
+|Specifics
+|There is no single Markdown standard.
+There are variations, each adding features in their own way.
+|It is supposed to be semantically equivalent to DITA, and offers many useful standard features.
+The syntax takes a bit more time to get used to.
+
+|Document meta data
+|Common practice is to include YAML-based "front matter" to specify meta data.
+|Documents have a title, followed by meta data attributes.
+
+|Document features
+|Markdown is deliberately limited to keep it simple.
+There are extensions to include the ability to work with tables or formulas.
+
+It as possible to add information to be passed to a site generator to apply formatting.
+|Asciidoc supports more complex markup, such as footnots, (nested) tables, and semantic markup for admonitions.
+
+3+h|Editor support
+
+|Text editing
+2+|Most editors offer Markdown and Asciidoc plugins with a "preview" screen or tab to see the visual result.
+Users edit the raw text markup, with the help of syntax highlighting.
+
+|In-place WYSIWYG editors
+a|* Typora
+* Zettlr
+|n/a
+
+|Diagram support
+2+|Markdown and Asciidoc have plugins to support text-based diagram tools such as PlantUML, Mermaid etc.
+|===
+
+=== Documentation site management
+
+[%header, cols=1;2;2]
+.Managing documentation sites
+|===
+h|Stack
+^h|Markdown/Jekyll 
+^h|Asciidoc/Antora
+
+3+h|Static site generation
+
+|Main tools
+|There are several static site generators that support Markdown.
+Github uses Jekyll by default.
+|Antora is the main site generator for Asciidoc.
+There don't seem to be many other options.
+
+|Multiple repositories and/or versions
+|Additional scripting and templating is needed to generating a single documentation site from multiple repositories or with multiple versions.
++
+With Github Pages, a repository can be published as "subdirectory" of an organisation-wide site, creating a virtual single documentation site.
+|Antora supports multiple repositories, and adds an abstraction layer of components and versions.
++
+Components can be re-used in different target sites.
+Antora changes the behaviour of some Asciidoc features to enable cross-references and improve portability.
+
+3+h|Site design and layout
+
+|Themes and templates
+|There is an abundance of Jekyll templates.
+|Antora basically comes with a single template.
+
+|Navigation
+|Navigation usually depends on a mixture of document location and metadata in the document that is specific for the template or plugin used.
+|Navigation is based on explicit lists of cross references, and does not depend on particular metadata.
+
+3+h|Document organisation
+
+|Structure
+|Jekyll has flexibility in how source documents are organised.
+The definition of a site is tied to the organisation of its sources.
+|Antora is very opiniated in how sources should be organised.
+The definition of a site is decoupled from these sources: it is possible to re-use content in multiple sites.
+
+|Cross references
+|It's possible to use relative links, but these need to be maintained when reorganising content.
+|Asciidoc and Antora offer cross references that are independent of the location of documents as files.
+
+3+h|Site deployment
+
+|Github Pages
+2+|Github Pages offers a streamlined Markdown and Jekyll by default.
+It is also possible to add a static site to a repository and publish it via Github Pages (without Jekyll).
++
+With Github Actions, it is possible to use virtually any site generator in combination with Github Pages as part of a GitOps pipeline.
+
+|Specifics
+|Using a default Markdown and Jekyll setup is the simplest way to generate a site. 
+|Antora can work with multiple playbooks to generate and deploy sites, but it takes more work to setup.
+
+|===
+
+=== Experiences
+
+[%header, cols=1;2;2]
+.Working with these stacks
+|===
+h|Stack
+^h|Markdown/Jekyll 
+^h|Asciidoc/Antora
+
+3+h|Easy of use
+
+|Writing documents
+|Markdown is indeed a simple format, and "real WYSIWYG" editors like Typora make writing easy.
+
+However, as this page demonstrates, I like to work with slightly more sophistcated tables, definition lists, and more. 
+|The Asciidoc documentation has a section title "Graduating to Asciidoc".
+
+It offfers the features I am looking for, but also requires me to more often check with the documentation (or a preview) how to write the markup.
+
+|Publishing a site
+|Jekyll and Github Pages are the easiest option.
+|It takes some time to understand the Antora model, and decide on how to set it up for yourself.
+
+|Specifics
+
+|Github uses its own flavour of Markdown, and also limits the number of plugins that are available.
+It therefore takes a bit of work to seet up a local environment to "comply" with these restrictions and preview the site.
+
+It is also possible to use a Github Action tailored to additional needs.
+
+|Antora overrides some Asciidoc behavious (such as including files outside the content source directory to document code or configuration choices, or relative paths).
+
+Antora can work with npm extensions for Asciidoc, but not with Ruby-based extensions.
+This limits the number of available extensions.
+
+As a result, regular editor plugins are not able to show complete previews.
+
+h|Adapting the look and feel
+
+|There are plenty of themes to choose from.
+There also is a lot of information available online. 
+
+|There basically is only one template, so anything other than that requires a lot of work.
+And apart from the Antora documentation, there is not much information availble online.
+
+3+h|Collaboration
+
+|Documents
+|Markdown is the easiest format at its core.
+However, for proper collaboration, it would require additional agreements on the exact flavour to use, and how to work with tables, definition lists, and so on.
+|Smaller edits in Asciidoc are easy, but a contributor will likely need the documentation at hand for anything more elaborate.
+Asciidoc is being developed as markup standard, and so features are defined in the language and do not need to be standardised separately.
+
+|Organisation
+|The organisation of a site and the required meta data for documents also needs to be agreed and documented separately. 
+|Antora is opiniated in its organisation of content, but it supports re-use and does not have to be standardised separately.
+
+|===
+
+== Choice
+
+Additional options considered:
+
+reStructuredText markup is widely used in Python environments, and also in the original IATI documentation.::
+Like Asciidoc, it provides more features to support technical documentation.
++
+Since it offers fewer of such features, and does not have a site generator for multiple repositories and versions, I have skipped this for now.
+
+Hugo is popular site generator, suitable for Markdown and Asciidoc sites, and very fast.::
+The Xspec project uses it.
++
+Since it uses the folder structure of content files to determine the navigation structure, creating a single site from multiple repositories would require the same work as for a Markdown/Jekyll-based site.
+
+Zim is a desktop notebook application that makes it very easy to keep notes and write documentation in a true WYSIWYG editor.::
+It supports links, tags, tasks, and a journal-style notebook.
+It has an export option to export a notebook as either a website or a erStructuredText version.
+I have also used it as my own notebook since around 2008, so it really works well for me to keep (technical) notes and pointers at hand.
++
+However, without the application (available on Linux, with a port made for Windows), it is not really possible to contribute in editing the source.
+There has been discussion about adding an abstraction layer to let the application work with Asciidoc or another suitable wiki format, but until then it is not an option.
+
+
+[bibliography]
+== Background reading
+
+* [[[G, Gutman 2018]]] https://zerokspot.com/weblog/2018/03/25/antora-sphinx-for-asciidoc/[Antora: Sphinx for Asciidoc^]
