@@ -1,0 +1,69 @@
+= Technology choices
+
+== Main considerations for documentation
+
+For my own purpose, I have a couple of high-level requirements for the documentation technology stack.
+
+The source format should be suitable for standard version control.::
+This forces it to be a plain-text markup language, stored in files.
+It excludes Office tools, online document editors, and database-based content management systems.
+
+There should be simple tools for simple _WYSIWYG_ editing, to focus on writing rather than markup.::
+Robust standards like DocBook and DITA are XML-based, and require particular editors.
+They also require a lot more learning to be able to use them well.
+
+It should be possible to generate a static website from the documentation.::
+I want to generate a single documentation site pulling sources from multiple repositories into a single site.
+I also want to be able to offer documentation for different versions.
+
+== Specific technologies and tools
+
+xref:technology_choices/asciidoc-antora.adoc[Asciidoc and Antora as basis]::
+The _content sources_ and _website generator_ are interlinked via their support of a common markup language, format and organisation of files.
+
+xref:technology_choices/plantuml-kroki.adoc[PlantUML and Kroki for _diagrams as text_]::
+Diagrams are as much as possible written via plain text, using diagram standards,
+so they can follow the same _docs as code_ workflows.
+
+== Elements of the documentation system
+
+To expand on the xref:../index#documentation-system-overview[documentation system overview]:
+
+.Documentation system subsystems.
+[plantuml]
+....
+@startuml
+!include <C4/C4_Container>
+
+Person(editor, "Editor", "Writes and reviews documentation content.")
+Person(publisher, "Publisher", "Updates the documentation website and style.")
+
+System_Boundary(doc_sys, "Documentation system") {
+  System_Boundary(sources, "Content sources") {
+    Container(source_repos, "Source repositories", "git, asciidoc", "Manage documentation content files.")
+    Container(content_helpers, "Content helpers", "bash, ...", "Generate content from additional sources.")
+    Rel_U(content_helpers, source_repos, "contribute content to")
+  }
+  
+  System_Boundary(sitegen, "Website generator") {
+    Container(antora, "Site generator", "antora, asciidoctor", "Gathers sources, produces a static website, and deploys it.")
+
+    Container(ui, "User interface definition", "antora, html/css, handlebars", "Provides templates and styling for the UI.")
+    Rel(ui, antora, "provides layout for")
+
+    Container(kroki, "Diagram rendering service", "kroki, plantuml", "Converts diagram texts to images.")
+    Rel(antora, kroki, "processes textual diagrams via")
+    Lay_U(kroki, ui)
+  }
+  Rel_R(source_repos, antora, "provide content for")
+}
+
+System_Ext(site, "Documentation website", "Informs users and developers.")
+
+Rel(editor, source_repos, "edits content in")
+Rel(publisher, sitegen, "configures and runs")
+Rel(antora, site, "publishes site content to")
+
+Lay_R(editor, publisher)
+@enduml
+....

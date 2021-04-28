@@ -1,4 +1,13 @@
-= Setup Antora
+= Antora
+
+== Links
+
+* Asciidoc
+** https://docs.asciidoctor.org/asciidoc/latest/[Documentation^]
+
+* Antora
+** https://docs.antora.org/antora/3.0/[Documentation (version 3.0)^]
+** https://docs.antora.org/antora/3.0/project/get-help/[Support links^]
 
 == Install Antora
 

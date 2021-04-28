@@ -11,7 +11,15 @@ content:
   - url: .
     branches: develop
     start_path: docs/overview
+
+  - url: .
+    branches: develop
+    start_path: docs/documentation_system    
   - url: /home/rolf/dev/tools/antora/antora-ui
+    branches: HEAD
+    start_path: docs_drostan
+    
+  - url: /home/rolf/dev/desktop
     branches: HEAD
     start_path: docs
 

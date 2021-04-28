@@ -4,4 +4,3 @@ version: master
 display_version: main
 nav:
 - modules/ROOT/nav.adoc
-- modules/antora/nav.adoc

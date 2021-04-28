@@ -1,0 +1,108 @@
+= PlantUML and Kroki
+
+== Main considerations for diagrams
+
+Diagrams as text::
+When diagram sources are plain text, it becomes a lot easier to integrate them in a development workflow,
+using the same tools and processes as for textual content and source code.  
+
+Semantic diagrams::
+Diagrams in documentation usually specify a structure or behaviour.
+The source of diagrams therefore describes concepts and relations, rather than forms and shapes.
+Diagrams as text stimulates using xref:_diagram_standards[].
+
+Diagrams and source code::
+Diagrams as text can be included as documentation in source code, or be generated from sources.
+In stricter situations, source code could also be generated from specifications in diagrams,
+but this is not considered important in this stack.
+
+Layout control trade-off::
+Most diagram rendering engines offer very limited control over layout.
+Styling can also be difficult, and keeping the style consistent with the rest of the documentation requires additional work.
+
+== Stack overview
+
+There are two popular approaches to _diagrams as text_ rendering engines.
+
+. *_Generate images in a __compile__ stage_ when producing a static website, and include (links to) these images in the pages.*
++
+This approach often uses GraphViz as part of the stack, to do layout.
+There are many diagram syntaxes, for various domains.
+A popular tool is PlantUML.
+
+. *Include a Javascript library to _render images in the browser_ after a page is loaded.*
++
+This approach usually replaces the diagram text and embeds SVG in a page.
+The SVG image can use stylesheet information.
+A popular tool is MermaidJS (which also can compile static images).
+
+The first approach is older, and there seem to be a wider choice of tools to write diagram text.
+
+Kroki is an image processing tool and service that makes many different rendering engines available via a uniform API.
+Kroki supports both PlantUML and MermaidJS.
+
+Kroki is available as an online service.
+It can also be run as local stand-alone service, although that takes some effort to set up.
+
+Antora can use the asciidoctor-kroki module to convert diagram text in a page into an image.
+This keeps the choice of diagram tool flexible.
+
+== Diagram standards
+
+=== UML
+
+UML is actually a modeling language.
+In its full form, it lets you write a model for a system, 
+and produce different graphical views of this model.
+
+UML provides a rich set of diagrams for both structural and behavioural documentation of a software system.
+These diagrams provide a highly standardised visual notation for the concepts in the model.
+
+[NOTE]
+====
+PlantUML supports drawing visual UML diagrams from textual descriptions, using its own syntax.
+It does not offer any support for conceptual modeling itself.
+This is sufficient for the documentation I do.
+
+It is easy to write up a sufficiently detailed diagram to explain an approach.
+It is also possible to include PlantUML documentation in a source file, and produce a diagram from that.
+This makes keeping sources and documentation synchronised easier.
+====
+
+The specific notation of UML makes it harder to use in more general overviews and high-level descriptions.
+
+=== C4
+
+The C4 Model was developed to bridge the gap between the detailed UML standard,
+and informal diagrams without any standardised semantics.
+It offers four levels of abstraction (context, container, component, code, hence _C4_).
+although it recommendeds only using the first three levels
+footnote:[The _code_ level best used only if there are a lot of classes or interfaces to document,
+and it preferably can be generated from source code].
+
+In its full form, using a tool like Structurizr, it can also capture a model,
+and generate different diagrams as views of that model.
+
+C4 limits itself to structural views, and actively promotes the use of additional diagram and model techniques to provide more context or detail.
+
+[NOTE]
+====
+PlantUML also supports drawing C4 diagrams, using its own syntax.
+
+Structurizr has an open source commandline tool that can generate PlantUML descriptions from C4 models.
+
+Rendering Structurizr diagrams directly can only be done via the online service. 
+====
+
+== Closing remarks
+
+Both UML and C4 provide description languages as well as diagram notations.
+PlantUML can draw diagrams that follow the diagram notation standards,
+but uses its own description languages for the specification.
+This is fine for the documentation I do, but does lock those diagrams to PlantUML specifically.
+
+There are additional diagram types that may be included as "standards" in the future.
+
+- Flowcharts
+- Gantt charts
+- Work breakdown structures
