@@ -23,6 +23,13 @@ content:
     branches: HEAD
     start_path: docs
 
+  - url: https://github.com/asciidoctor/asciidoc-docs.git
+    branches: main
+    start_path: docs
+  - url: https://gitlab.com/antora/antora.git
+    branches: master
+    start_path: docs
+
 ui:
   bundle:
     url: /home/rolf/dev/tools/antora/antora-ui/build/ui-bundle.zip
@@ -46,3 +53,5 @@ asciidoc:
     # run `docker run -p18181:8000 -d --name asciidoctor-kroki yuzutech/kroki` to start a local kroki server
     kroki-server-url: http://localhost:18181
     experimental: true
+    # for asciidoctor docs:
+    url-org: https://github.com/asciidoctor
