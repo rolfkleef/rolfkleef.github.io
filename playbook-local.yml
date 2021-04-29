@@ -23,19 +23,6 @@ content:
     branches: HEAD
     start_path: docs
 
-  - url: https://github.com/asciidoctor/asciidoc-docs.git
-    branches: main
-    start_path: docs
-  - url: https://gitlab.com/antora/antora.git
-    branches: master
-    start_path: docs
-
-  - url: https://github.com/apache/incubator-hop-docs.git
-    branches: asf-site
-    start_paths: 
-    - hop-user-manual
-    - hop-tech-manual
-
 ui:
   bundle:
     url: /home/rolf/dev/tools/antora/antora-ui/build/ui-bundle.zip
