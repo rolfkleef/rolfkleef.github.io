@@ -1,0 +1,118 @@
+= Code and configuration documentation
+
+== Asciidoc in the code and configuration files
+
+We use Asciidoc's ability to include content from (parts of) source code and configuration files.
+This makes it possible to explain an approach or decision with more context, while keeping the details in the implementation files.
+This will make it easier to maintain consistency and reduce duplication.
+
+To do this, we use Asciidoc tags in the code to specify sections to include in the documentation.
+In addition, callout texts can be added as comment block in the code.
+
+[NOTE]
+====
+Antora first copies files in the specified `docs` folder into a virtual file system.
+It then processes those copied files.
+Therefore, it is not possible to use relative paths to files outside the `docs` folder:
+those locations are not accessible from the virtual file system.
+
+However, it is possible to create symlinks in the examples folder to source files in the repository.
+These symlinked files will be read and copied during the content collection phase.
+
+Files with names that start with `.`, or that have no filename extension, are not collected or processed by Antora.
+Therefore, the names of symlinks need to be adapted for those files.
+====
+
+As an example, here is a how to add a portion of a script to a documentation page. 
+
+=== Step {counter:step}: Prepare a script portion for inclusion
+
+Add comments in the script to tag the section that is going to be included in the documentation.
+footnote:[It is also possible to include sections based on line numbers, but it is harder to keep those synchronised between source and documentation.]
+
+We use a second section with a separate tag to capture callout notes that should also go into the documentation.
+
+.In the script to be documented
+[source, zsh]
+----
+# script example
+
+#... (first part of the script, not included in the documentation) ...
+
+# tag::aliases[] <.>
+alias mv='mv -i' # <1> # <.>
+alias cp='cp -i' # <2> # <.>
+
+: 'end::aliases[] <.>
+  tag::aliases-notes[] <.>
+<1> This the callout for the first `alias` command.
+<2> And this for the second.
+' # end::aliases-notes[] <.>
+
+# ... (rest of the script, not included in the documentation) ...
+----
+<.> Open a tag `aliases` for the script portion to be included in the documentation.
+<.> Add `# <1>` at the end of one line to create the first callout.
+<.> Add `# <2>` at the end of another line to create the second callout.
+<.> Start a multi-line comment using `: '`, and close the tag for the script portion.
+<.> Open another tag `aliases-notes` for the callouts, and add the text for them.
+<.> Close the tag for the callouts text.
+
+
+[NOTE]
+====
+Instead of numbered callouts `<1>`, `<2>`, it is also possible to use `<.>`.
+This will automatically number the callouts.
+
+However, using explicit numbering will make the comments easier to read and verify references in the script itself.
+====
+
+=== Step {counter:step}: Include the tagged areas in the documentation
+
+Use the include macro of Asciidoc to first import the tagged source section as code block.
+Then include the notes section directly following the source block, to add the callout notes. 
+
+.In the documentation source
+[source, asciidoc, subs="-macros"]
+....
+Start of the documentation page ...
+
+[source, zsh]
+.My documented script
+----
+include::../examples/my-documented-script.zsh[tags=aliases] <.>
+----
+include::../examples/my-documented-script.zsh[tags=aliases-notes] <.>
+
+Rest of the documentation page ...
+....
+<.> Include the script portion in a code block.
+<.> Include the callouts text as regular Asciidoc after the code block.
+
+=== Step {counter:step}: Check the documentation site
+
+Run Asciidoctor or Antora to update the documentation site.
+The output should look like this:
+
+====
+Start of the documentation page ...
+
+[source, zsh]
+.My documented script
+----
+alias mv='mv -i' # <.>
+alias cp='cp -i' # <.>
+----
+<.> This the callout for the first `alias` command.
+<.> And this for the second.
+
+Rest of the documentation page ...
+====
+
+== How to add comments with tags and callouts to various formats
+
+Including comments with Asciidoc tags to mark a section to be included as source code can be done in any language.
+But to include multiline comments with callouts is a bit more tricky.
+
+* xref:bash.adoc[]
+* xref:yaml.adoc[] 

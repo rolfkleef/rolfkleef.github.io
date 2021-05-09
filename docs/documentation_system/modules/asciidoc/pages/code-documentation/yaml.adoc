@@ -1,0 +1,107 @@
+= Yaml files
+
+== Multiline documentation
+
+Yaml only allows single-line comments.
+However, it is possible to add multiline content to a Yaml data element.
+
+If the application that will use the yaml file ignores unknown data elements, we can add our own "yamldoc".
+The name of the element is arbitrary.
+We use `_yamldoc` to make its purpose clear.
+
+CAUTION: Adding our own data element will not work if an applications uses a strictly defined yaml schema.
+
+[source, yaml]
+----
+element1:
+  attribute1: ...
+  _yamldoc: >
+    comments # <1>
+    comments
+  attribute2: ... <2>
+----
+<1> Start the multiline value with the element name and `>`. The next lines have to be indented.
+<2> End of multiline value when the indentation ends.
+
+Since the multiline comments are indented, we need to add the parameter `indent=0` when including the tagged area in the documentation.
+
+== Example
+
+The example below is based on a section of our Antora playbook for the documentation site.
+
+.In the yaml file to be documented
+[source, yaml]
+----
+# tag::asciidoc[] # <.>
+asciidoc:
+  extensions:
+  - asciidoctor-kroki # <1> # <.>
+  attributes:
+    page-pagination: true
+    hide-uri-scheme: true # <2> # <.>
+    kroki-fetch-diagram: true # <3> # <.>
+    allow-uri-read: true
+    experimental: true
+    kroki-default-format@: svg
+    kroki-server-url: http://localhost:18181 # <4> # <.>
+# end::asciidoc[] # <.>
+    _yamldoc: >
+      tag::asciidoc-notes[] # <.>
+      <1> Use kroki to generate diagram images
+      <2> Don't show https:// etc on bare links
+      <3> For kroki: store the image. This requires `allow-uri-read`, as well as `experimental` (to override kroki security)
+      <4> To run  a local kroki server: `docker run -p18181:8000 -d --name asciidoctor-kroki yuzutech/kroki`
+      end::asciidoc-notes[] # <.>
+----
+<.> Start of the source to be included in the documentation.
+<.> Specify a callout
+<.> idem
+<.> idem
+<.> idem
+<.> End of the source to be included.
+<.> Start the notes section as `_yamldoc` element, with the text for the callouts.
+<.> End of the notes section, and of the multiline element.
+
+.In the documentation source
+[source, asciidoc, subs="-macros"]
+....
+Start of the documentation page ...
+
+[source, yaml]
+.My documented configuration
+----
+include::../examples/my-documented-configuration.yml[tags=asciidoc] <.>
+----
+include::../examples/my-documented-configuration.yml[tags=asciidoc-notes, indent=0] <.>
+
+Rest of the documentation page ...
+....
+<.> Include the script portion in a code block.
+<.> Include the callouts text as regular Asciidoc after the code block. Use `indent=0` to remove leading whitespace.
+
+.How the commented source will be shown 
+====
+Start of the documentation page ...
+
+[source, yaml]
+.My documented configuration
+----
+asciidoc:
+  extensions:
+  - asciidoctor-kroki # <1>
+  attributes:
+    page-pagination: true
+    hide-uri-scheme: true # <2>
+    kroki-fetch-diagram: true # <3>
+    allow-uri-read: true
+    experimental: true
+    kroki-default-format@: svg
+    kroki-server-url: http://localhost:18181 # <4>
+----
+<1> Use kroki to generate diagram images
+<2> Don't show https:// etc on bare links
+<3> For kroki: store the image. This requires `allow-uri-read`, as well as `experimental` (to override kroki security)
+<4> To run  a local kroki server: `docker run -p18181:8000 -d --name asciidoctor-kroki yuzutech/kroki`
+
+Rest of the documentation page ...
+====

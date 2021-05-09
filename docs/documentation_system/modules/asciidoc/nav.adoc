@@ -1,0 +1,4 @@
+* xref:index.adoc[]
+** xref:code-documentation/index.adoc[]
+*** xref:code-documentation/bash.adoc[]
+*** xref:code-documentation/yaml.adoc[]

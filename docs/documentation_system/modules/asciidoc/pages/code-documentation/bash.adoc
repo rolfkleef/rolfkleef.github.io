@@ -1,0 +1,19 @@
+= Bash shell scripts
+
+== Multiline comments
+
+Bash-like shells (including zsh) allow multiline comments in the form:
+
+[source, bash]
+----
+: ' # <1>
+comments
+comments
+' # <2>
+----
+<1> Start of multiline comment. This can include content on the same line.
+<2> End of multiline comment. The quote needs to be at the start of the line.
+
+== Example
+
+xref:index.adoc[See the overview page for an example.]
