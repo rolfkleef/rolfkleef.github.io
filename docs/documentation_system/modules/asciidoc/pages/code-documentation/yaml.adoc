@@ -11,6 +11,9 @@ We use `_yamldoc` to make its purpose clear.
 
 CAUTION: Adding our own data element will not work if an applications uses a strictly defined yaml schema.
 
+TIP: The name `_yamldoc` is arbitrary.
+To add multiple sections under one Yaml key, each name must be unique, so simply use `_yamldoc1`, `_yamldoc2`, ... for the next instances. 
+
 [source, yaml]
 ----
 element1:
