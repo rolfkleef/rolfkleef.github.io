@@ -1,24 +1,120 @@
 = Antora
 
-== Links
+== Source setup conventions
 
-* Asciidoc
-** https://docs.asciidoctor.org/asciidoc/latest/[Documentation^]
+An Antora _playbook_ specifies which components should be combined in a single documentation site.
 
-* Antora
-** https://docs.antora.org/antora/3.0/[Documentation (version 3.0)^]
-** https://docs.antora.org/antora/3.0/project/get-help/[Support links^]
+Components can be used for individual technical parts, or for specific manuals.
+In the example below, we use technical parts for the _Asciidoc & Antora_ section,
+and we use separate manuals for the _Apache Hop_ section.
 
-== Install Antora
+Each component can have one or more modules.
+The modules are not shown in the example below.
 
-=== Global installation
+In our setup, we have added an extra layer of _sections_.
+Each section is its own Antora site.
+Navigation between these sites is added via the Antora interface.
 
-[source, bash]
+====
+.Documentation sections and components for local use
+[plantuml]
 ....
-npm i -g @antora/site-generator-default@3.0.0-alpha.1 \ //<.>
-         @antora/cli@3.0.0-alpha.1 \ //<.>
-         asciidoctor-kroki  //<.>
+@startwbs
+*_ Local documentation site
+ * Workstation docs
+  *_ Private
+  *_ Overview
+  *_ Desktop
+  *_ Documentation system
+
+ * Antora & Asciidoc
+  *_ Asciidoc
+  *_ Antora
+  *_ Antora Default UI
+  *_ Asciidoc reveal.js
+
+ * Apache Hop
+  *_ User Manual
+  *_ Technical Documentation
+  
+@endwbs
 ....
-<.> Antora default site generator
-<.> Antora command line tool
-<.> Asciidoctor Kroki module to transform diagram texts into images
+====
+
+We use a separate search index per section.
+It is possible to search across all components within that section.
+
+== Mapping to content repositories
+
+Each content source repository will typically define a single component.
+It is possible to use multiple repositories for a single component.
+
+=== Setting up component repositories
+
+If a repository contains documentation for only one component, it is sufficient to use for instance the `/docs/` directory as the root of a component.
+
+In many cases, however, we have multiple components under the `/docs/` directory.
+Each of these will have its own `antora.yml` to define the component to which it contributes.
+
+=== Merging multiple repositories for a component
+
+For instance, it is possible to add private documentation to a section or module in two ways.
+Each has its own workflow.
+I'm not sure yet which version works best, or whether it depends on the context of use.
+
+[WARNING]
+--
+Main problem with "injection" is that there can only be one list of navigation docs.
+
+It would require separate "public" and "private" versions of the component definition, with their own nav lists.
+-- 
+
+* Work with a private branch, and use this to add private documentation to the existing documentation.
+ - This makes the documentation structure easier to manage, and it is possible to add private notes to public pages.
+ - It would benefit from clearly marking the private portions, especially in the sources.
+ - It requires additional work to port updates of public documentation into the public branch.
+ - It may be best suited for deployment-specific branches, to create deployment-specific documentation that includes configuration code.
+* Work with a separate folder for additional private documentation.
+ - This works for modules and pages.
+ - It is not possible to add private notes to existing pages.
+ - It keeps the private sections clearly separated from public sources, reducing the chances of accidental publishing.
+ - It would also benefit from clearly marking the private portions, but more for the front-end.
+
+.Repositories and folder structure
+[plantuml]
+....
+@startwbs
+* My local machine
+ * localhost
+  *_ antora-playbooks/
+   *_ private.yml
+   *_ lib-antora.yml
+   *_ lib-hop.yml
+  *_ docs/
+   *_ private/
+    *_ modules/
+    *_ antora.yml
+ * public site
+  *_ playbook-local.yml
+  *_ playbook-public.yml
+  *_ docs/
+   *_ overview/
+    *_ modules/
+    *_ antora.yml
+   *_ documentation_system
+    *_ modules/
+    *_ antora.yml
+ * my antora ui
+  *_ docs/
+   *_ modules/
+   *_ antora.yml
+  *_ my_docs/
+   *_ modules/
+   *_ antora.yml
+ * desktop config
+  *_ docs/
+   *_ public/
+    *_ modules/
+    *_ antora.yml
+@endwbs
+....
