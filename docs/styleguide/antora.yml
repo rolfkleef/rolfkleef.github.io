@@ -1,0 +1,7 @@
+name: styleguide
+title: Style guide
+version: master
+display_version: main
+nav:
+- modules/ROOT/nav.adoc
+- modules/visual_style/nav.adoc
