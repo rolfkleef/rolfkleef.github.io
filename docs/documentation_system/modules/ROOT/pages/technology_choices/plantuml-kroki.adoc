@@ -106,3 +106,9 @@ There are additional diagram types that may be included as "standards" in the fu
 - Flowcharts
 - Gantt charts
 - Work breakdown structures
+
+== Links
+
+* https://plantuml.com/[PlantUML] supports UML, WBS, C4, and more.
+* The https://c4model.com/[C4 model] is https://github.com/plantuml-stdlib/C4-PlantUML/tree/releases/v2[part of PlantUML's standard library].
+* https://kroki.io/[Kroki] provides a unified API for PlantUML and other visualisation tools.

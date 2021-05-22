@@ -112,7 +112,8 @@ Rest of the documentation page ...
 == How to add comments with tags and callouts to various formats
 
 Including comments with Asciidoc tags to mark a section to be included as source code can be done in any language.
-But to include multiline comments with callouts is a bit more tricky.
+It is a bit more tricky to include multiline comments with callouts.
+Some language-specific hints:
 
-* xref:bash.adoc[]
-* xref:yaml.adoc[] 
+* xref:code-documentation/bash.adoc[]
+* xref:code-documentation/yaml.adoc[]
