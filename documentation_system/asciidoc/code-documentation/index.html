@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Code and configuration documentation :: My documentation</title>
+    <link rel="canonical" href="https://rolfkleef.github.io/documentation_system/asciidoc/code-documentation/index.html">
+    <link rel="prev" href="../index.html">
+    <link rel="next" href="bash.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css" rel="stylesheet">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://rolfkleef.github.io/index.html">rolf@drostan.org</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+          <a class="navbar-item" href="#">My documentation</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+    <a class="navbar-link">Documentation system</a>
+  <div class="navbar-dropdown">
+        <a class="navbar-item" href="../../../desktop/index.html">Desktop</a>
+        <a class="navbar-item" href="../../../overview/index.html">Overview</a>
+        <a class="navbar-item" href="../../../styleguide/index.html">Style guide</a>
+  </div>
+</div>
+          <div class="navbar-item">
+            <input id="search-input" type="text" placeholder="Search this section">
+          </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="documentation_system" data-version="master">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../index.html">Documentation system</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../technology_choices/index.html">Technology choices</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../technology_choices/asciidoc-antora.html">Asciidoc and Antora</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../technology_choices/plantuml-kroki.html">PlantUML and Kroki</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../style_choices/index.html">Style choices</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../index.html">Asciidoc</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">Code and configuration documentation</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="bash.html">Bash shell scripts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="yaml.html">Yaml files</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../antora/index.html">Antora</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Documentation system</span>
+    <span class="version">main</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../../desktop/index.html">Desktop</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../desktop/index.html">main</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../../index.html">Documentation system</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">main</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../overview/index.html">Overview</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../overview/index.html">main</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../styleguide/index.html">Style guide</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../styleguide/index.html">main</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../overview/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Documentation system</a></li>
+    <li><a href="../index.html">Asciidoc</a></li>
+    <li><a href="index.html">Code and configuration documentation</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="file:///home/rolf/dev/websites/rolfkleef.github.io/docs/documentation_system/modules/asciidoc/pages/code-documentation/index.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Code and configuration documentation</h1>
+<div class="sect1">
+<h2 id="_asciidoc_in_the_code_and_configuration_files"><a class="anchor" href="#_asciidoc_in_the_code_and_configuration_files"></a>Asciidoc in the code and configuration files</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>We use Asciidoc&#8217;s ability to include content from (parts of) source code and configuration files.
+This makes it possible to explain an approach or decision with more context, while keeping the details in the implementation files.
+This will make it easier to maintain consistency and reduce duplication.</p>
+</div>
+<div class="paragraph">
+<p>To do this, we use Asciidoc tags in the code to specify sections to include in the documentation.
+In addition, callout texts can be added as comment block in the code.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Antora first copies files in the specified <code>docs</code> folder into a virtual file system.
+It then processes those copied files.
+Therefore, it is not possible to use relative paths to files outside the <code>docs</code> folder:
+those locations are not accessible from the virtual file system.</p>
+</div>
+<div class="paragraph">
+<p>However, it is possible to create symlinks in the examples folder to source files in the repository.
+These symlinked files will be read and copied during the content collection phase.</p>
+</div>
+<div class="paragraph">
+<p>Files with names that start with <code>.</code>, or that have no filename extension, are not collected or processed by Antora.
+Therefore, the names of symlinks need to be adapted for those files.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>As an example, here is a how to add a portion of a script to a documentation page.</p>
+</div>
+<div class="sect2">
+<h3 id="_step_1_prepare_a_script_portion_for_inclusion"><a class="anchor" href="#_step_1_prepare_a_script_portion_for_inclusion"></a>Step 1: Prepare a script portion for inclusion</h3>
+<div class="paragraph">
+<p>Add comments in the script to tag the section that is going to be included in the documentation.
+<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p>
+</div>
+<div class="paragraph">
+<p>We use a second section with a separate tag to capture callout notes that should also go into the documentation.</p>
+</div>
+<div class="listingblock">
+<div class="title">In the script to be documented</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-zsh hljs" data-lang="zsh"># script example
+
+#... (first part of the script, not included in the documentation) ...
+
+# tag::aliases[] <i class="conum" data-value="1"></i><b>(1)</b>
+alias mv='mv -i' # &lt;1&gt; <i class="conum" data-value="2"></i><b>(2)</b>
+alias cp='cp -i' # &lt;2&gt; <i class="conum" data-value="3"></i><b>(3)</b>
+
+: 'end::aliases[] <i class="conum" data-value="4"></i><b>(4)</b>
+  tag::aliases-notes[] <i class="conum" data-value="5"></i><b>(5)</b>
+&lt;1&gt; This the callout for the first `alias` command.
+&lt;2&gt; And this for the second.
+' # end::aliases-notes[] <i class="conum" data-value="6"></i><b>(6)</b>
+
+# ... (rest of the script, not included in the documentation) ...</code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Open a tag <code>aliases</code> for the script portion to be included in the documentation.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Add <code># &lt;1&gt;</code> at the end of one line to create the first callout.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Add <code># &lt;2&gt;</code> at the end of another line to create the second callout.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>Start a multi-line comment using <code>: '</code>, and close the tag for the script portion.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>Open another tag <code>aliases-notes</code> for the callouts, and add the text for them.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="6"></i><b>6</b></td>
+<td>Close the tag for the callouts text.</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Instead of numbered callouts <code>&lt;1&gt;</code>, <code>&lt;2&gt;</code>, it is also possible to use <code>&lt;.&gt;</code>.
+This will automatically number the callouts.</p>
+</div>
+<div class="paragraph">
+<p>However, using explicit numbering will make the comments easier to read and verify references in the script itself.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_step_2_include_the_tagged_areas_in_the_documentation"><a class="anchor" href="#_step_2_include_the_tagged_areas_in_the_documentation"></a>Step 2: Include the tagged areas in the documentation</h3>
+<div class="paragraph">
+<p>Use the include macro of Asciidoc to first import the tagged source section as code block.
+Then include the notes section directly following the source block, to add the callout notes.</p>
+</div>
+<div class="listingblock">
+<div class="title">In the documentation source</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">Start of the documentation page ...
+
+[source, zsh]
+.My documented script
+----
+include::../examples/my-documented-script.zsh[tags=aliases] <i class="conum" data-value="1"></i><b>(1)</b>
+----
+include::../examples/my-documented-script.zsh[tags=aliases-notes] <i class="conum" data-value="2"></i><b>(2)</b>
+
+Rest of the documentation page ...</code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Include the script portion in a code block.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Include the callouts text as regular Asciidoc after the code block.</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_step_3_check_the_documentation_site"><a class="anchor" href="#_step_3_check_the_documentation_site"></a>Step 3: Check the documentation site</h3>
+<div class="paragraph">
+<p>Run Asciidoctor or Antora to update the documentation site.
+The output should look like this:</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>Start of the documentation page &#8230;&#8203;</p>
+</div>
+<div class="listingblock">
+<div class="title">My documented script</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-zsh hljs" data-lang="zsh">alias mv='mv -i' <i class="conum" data-value="1"></i><b>(1)</b>
+alias cp='cp -i' <i class="conum" data-value="2"></i><b>(2)</b></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>This the callout for the first <code>alias</code> command.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>And this for the second.</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Rest of the documentation page &#8230;&#8203;</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_how_to_add_comments_with_tags_and_callouts_to_various_formats"><a class="anchor" href="#_how_to_add_comments_with_tags_and_callouts_to_various_formats"></a>How to add comments with tags and callouts to various formats</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Including comments with Asciidoc tags to mark a section to be included as source code can be done in any language.
+It is a bit more tricky to include multiline comments with callouts.
+Some language-specific hints:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="bash.html" class="page">Bash shell scripts</a></p>
+</li>
+<li>
+<p><a href="yaml.html" class="page">Yaml files</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<hr>
+<div class="footnote" id="_footnotedef_1">
+<a href="#_footnoteref_1">1</a>. It is also possible to include sections based on line numbers, but it is harder to keep those synchronised between source and documentation.
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="../index.html">Asciidoc</a></span>
+  <span class="next"><a href="bash.html">Bash shell scripts</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <div class="columns">
+    <aside>
+      <h1>Contact me</h1>
+      <p><a href="mailto://rolf@data4development.org" rel="me">rolf@data4development.org</a></p>
+      <p><a href="mailto://rolf@drostan.org" rel="me">rolf@drostan.org</a></p>
+      <p><a href="https://www.drostan.org/contact/" rel="me" title="Pick a suitable time for both of us to talk.">propose a call or meeting</a></p>
+    </aside>
+
+    <aside>
+      <h1>Hire me via</h1>
+      <p><a href="https://www.data4development.nl">Data4Development B.V.</a><br>The Netherlands<br>+31 30 740 0054</p>
+    </aside>
+
+    <aside>
+      <h1>Share my office</h1>
+      <p><a href="https://www.timorplein.com" target="_blank" rel="noopener">U-30</a> based at <a href="https://www.google.nl/maps/dir//Timorplein+30,+1094+CC+Amsterdam" target="_blank" rel="noopener">Timorplein 30<br>1094 CC Amsterdam<br>The Netherlands</a></p>
+    </aside>
+
+    <aside>
+      <h1>Official links</h1>
+      <p><a href="https://www.kvk.nl/orderstraat/product-kiezen/?kvknummer=615707450000" title="Chamber of Commerce/Kamer van Koophandel registration, click to verify" target="_blank">Registration: KvK 61570745</a></p>
+      <p><a href="https://ec.europa.eu/taxation_customs/vies/vatResponse.html?memberStateCode=NL&amp;number=001411397B38" title="VAT or BTW registration: click to verify" target="_blank">VAT/BTW: NL001411397B38</a></p>
+      <p><a href="https://www.iban.com/iban-checker?iban=NL24TRIO0788958127&amp;submit=Check%20IBAN" title="Bank account and transfer details (copy the account number to retrieve details)" target="_blank">Bank: IBAN NL24 TRIO 0788 9581 27</a></p>
+    </aside>
+  </div>
+
+  <div class="credits">
+    <p>This site is built with <a href="#">Antora</a> and Asciidoc. The UI is based on the default Antora UI, and available under the MPL-2.0 license.</p>
+  </div>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script src="../../../_/js/vendor/lunr.js"></script>
+<script src="../../../_/js/vendor/search.js" id="search-script" data-base-path="../../.." data-page-path="/documentation_system/asciidoc/code-documentation/index.html"></script>
+<script async src="../../../_/../search-index.js"></script>
+<script type="application/json" class="js-hypothesis-config">
+{
+  "showHighlights": "whenSidebarOpen"
+}
+</script>
+<script async src="https://hypothes.is/embed.js"></script>  </body>
+</html>
