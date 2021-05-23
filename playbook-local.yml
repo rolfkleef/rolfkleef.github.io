@@ -2,29 +2,31 @@
 # In this version, source urls point to local copies of the content repositories
 
 site:
-  title: Documentation
+  title: My documentation
   url: https://rolfkleef.github.io
   start_page: overview::index.adoc
 
+# Run `git worktree add build/site site` to check out the Github Pages branch here:
 output:
-  dir: /home/rolf/dev/websites/localhost/htdocs/rolfkleef.github.io
+  dir: ./build/site
 
 content:
   sources:
   - url: .
-    branches: develop
-    start_path: docs/overview
+    branches: main
+    start_paths:
+    - docs/overview
+    - docs/documentation_system
+    - docs/styleguide
 
-  - url: .
-    branches: develop
-    start_path: docs/documentation_system    
   - url: /home/rolf/dev/tools/antora/antora-ui
-    branches: HEAD
+    branches: drostan
     start_path: docs_drostan
     
   - url: /home/rolf/dev/desktop
-    branches: HEAD
-    start_path: docs
+    branches: main
+    start_paths: 
+    - docs/public
 
 ui:
   bundle:
@@ -56,3 +58,17 @@ asciidoc:
       <3> For kroki: store the image. This requires `allow-uri-read`, as well as `experimental` (to override kroki security)
       <4> To run  a local kroki server: `docker run -p18181:8000 -d --name asciidoctor-kroki yuzutech/kroki`
       end::asciidoc-notes[]
+
+
+    # to be copied to each localhost playbook...
+    # tag::header[]
+    page-brand: rolf@drostan.org # <1>
+    page-sections: # <2>
+    - title: My documentation
+      url: /index.html
+    # end::header[]
+    _yamldoc1: >
+      tag::header-notes[]
+      <1> Name to put in the brand section of the header
+      <2> Each main section to include, with absolute URL
+      end::header-notes[]
