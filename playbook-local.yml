@@ -30,7 +30,7 @@ content:
 
 ui:
   bundle:
-    url: /home/rolf/dev/tools/antora/antora-ui/build/ui-bundle.zip
+    url: https://gitlab.com/rolfkleef/antora-ui-default/-/jobs/artifacts/drostan/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true
   supplemental_files:
   - path: ui.yml
