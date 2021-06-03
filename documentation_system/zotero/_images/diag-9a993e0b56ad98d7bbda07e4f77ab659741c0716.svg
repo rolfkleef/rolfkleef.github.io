@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="775px" preserveAspectRatio="none" style="width:987px;height:775px;" version="1.1" viewBox="0 0 987 775" width="987px" zoomAndPan="magnify"><defs/><g><!--MD5=[65497070a14b2a36d1f18d22c56923ec]
+cluster doc_sys--><rect fill="#FFFFFF" height="534" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="648" x="333" y="235"/><text fill="#000000" font-family="sans-serif" font-size="0" font-style="italic" lengthAdjust="spacing" textLength="0" x="657" y="237">«boundary»</text><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="176" x="569" y="263">Documentation system</text><text fill="#444444" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="45" x="634.5" y="278.2001">[System]</text><!--MD5=[82f0574ca935a4409687812a512a178b]
+cluster sources--><rect fill="#FFFFFF" height="196" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="600" x="357" y="305"/><text fill="#000000" font-family="sans-serif" font-size="0" font-style="italic" lengthAdjust="spacing" textLength="0" x="657" y="307">«boundary»</text><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="127" x="593.5" y="333">Content sources</text><text fill="#444444" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="45" x="634.5" y="348.2001">[System]</text><!--MD5=[f8d3169e412ecc25442a958b35dad92e]
+cluster sitegen--><rect fill="#FFFFFF" height="196" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="240" x="717" y="549"/><text fill="#000000" font-family="sans-serif" font-size="0" font-style="italic" lengthAdjust="spacing" textLength="0" x="837" y="551">«boundary»</text><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="139" x="767.5" y="577">Website generator</text><text fill="#444444" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="45" x="814.5" y="592.2001">[System]</text><!--MD5=[4294c33b45b3d754cfa8a9adadd02e60]
+entity source_repo--><rect fill="#438DD5" height="118.4" style="stroke:#3C7FC0;stroke-width:1.5;" width="180" x="761" y="367"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="59" x="821.5" y="389.0001">«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="137" x="782.5" y="407.4001">Source repository</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="70" x="816" y="422.6002">[git, asciidoc]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="853" y="439.0002"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="152" x="775" y="455.8001">Manages documentation</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="77" x="812.5" y="472.6">content files.</text><!--MD5=[aa489ee282596183dc4f22c2aa6da5bb]
+entity content_helper--><rect fill="#438DD5" height="118.4" style="stroke:#3C7FC0;stroke-width:1.5;" width="201" x="373.5" y="367"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="59" x="444.5" y="389.0001">«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="164" x="392" y="407.4001">Zotero content helper</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="67" x="440.5" y="422.6002">[get-zoteros]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="476" y="439.0002"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="173" x="387.5" y="455.8001">Generates reference lists for</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="169" x="389.5" y="472.6">specified Zotero references.</text><!--MD5=[d75cd46be40f2cc1cb838b1aed38955d]
+entity antora--><rect fill="#438DD5" height="118.4" style="stroke:#3C7FC0;stroke-width:1.5;" width="207" x="733.5" y="611"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="59" x="807.5" y="633.0001">«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="107" x="783.5" y="651.4001">Site generator</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="105" x="784.5" y="666.6002">[antora, asciidoctor]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="839" y="683.0002"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="179" x="747.5" y="699.8001">Gathers sources, produces a</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="181" x="746.5" y="716.6">static website, and deploys it.</text><!--MD5=[026b3f9ae447cd6258ef99d33f5de6cf]
+entity editor--><rect fill="#08427B" height="151.9999" style="stroke:#073B6F;stroke-width:1.5;" width="163" x="449.5" y="7"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="47" x="507.5" y="29.0001">«person»</text><image height="48" width="48" x="507" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACD0lEQVR4Xu2YoU4EMRCGT+4j8Ai8AhaH4QHgAUjQuFMECUgMIUgwJAgMhgQsAYUiJCiQIBBY+EITsjfTdme6V24v4c8vyGbb+ZjOtN0bNcvjQXmkH83WvYBWto6PLm6v7p7uH1/w2fXD+PBycX1Pv2l3IdDm/vn7x+dXQiAubRzoURa7gRZWd0iGRIiJbOnhnfYBQZNJjNbuyY2eJG8fkDE3bbG4ep6MHUAsgYxmE3nVs6VsBWJSGccsOlFPmLIViMzLOB7pCVO2AtHJMohH7Fh6zqitQK7m0rJvAVYgGcEpe//PLdDz65sM4pF9N7ICcXDKIB5Nv6j7tD0NoSdM2QrU9Gg0ewE1LqBhHR3BBdvj2vapnidjHxD/q6vd7Pvhr31AwcY8eXMTXAKECZZJFXuEq27aLgQK5uLMohCenGGuGewOxSjBvYBqeG6B+Nqiblggdjnc+ZXDy+FNFpFzw76O3UBAROuXh6FoiAcf5g9eTvUgzy0nWg6I8cXHRUpg5bOVBCo+KDpFajOf23GgPme7RSQ+lacIENUgJ6gg1k6HjgOlqnLqip4tEuhv0hNEMXUD0clyXE3p6pZA0S2nnvTlXwLJEZWlb7cTQH1+USgTN4VhAenm/wea1OCAOmqo6fE1WCb9WSKBah+rbUWPWAmE2Rvk0ApiB45eOyNAzU8xcTvj8KvkKEoOaIYeHNA3ZuygAvFMUO0AAAAASUVORK5CYII=" y="31.4001"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="46" x="508" y="95.4001">Editor</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="533" y="112.6001"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117" x="472.5" y="129.4">Writes and reviews</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="459.5" y="146.1999">documentation content.</text><!--MD5=[929e4460c11c122ba16ca0badda400f4]
+entity zotero--><rect fill="#999999" height="103.9999" style="stroke:#8A8A8A;stroke-width:1.5;" width="182" x="7" y="374"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="98" x="49" y="396.0001">«external_system»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="50" x="73" y="414.4001">Zotero</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="100" y="431.6001"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="154" x="21" y="448.4">Manages references and</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="155" x="20.5" y="465.1999">bibliographic information.</text><!--MD5=[4785d0a76392446bb729cd2ab859f072]
+link content_helper to source_repo--><path d="M574.53,426 C629.62,426 697.62,426 752.4,426 " fill="none" id="content_helper-to-source_repo" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="760.73,426,752.73,423,752.73,429,760.73,426" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="147" x="592.75" y="391.0001">gets Zotero lookup details</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="120" x="606.25" y="405.4002">and stores partials in</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="90" x="622.75" y="419.8003">Antora modules</text><!--MD5=[6b910dde41e61b01ff49a8fe8b730942]
+link source_repo to antora--><path d="M847.63,485.27 C845.58,520.64 842.97,565.89 840.84,602.63 " fill="none" id="source_repo-to-antora" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="840.37,610.81,843.8223,602.9945,837.8321,602.6516,840.37,610.81" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="114" x="846" y="530.0001">provides content for</text><!--MD5=[14ac1ba10c383cba73657fef82e7ddd1]
+link editor to source_repo--><path d="M601.62,159.26 C658.27,219.62 736.93,303.44 790.67,360.71 " fill="none" id="editor-to-source_repo" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="796.44,366.86,793.1616,358.97,788.782,363.0712,796.44,366.86" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="123" x="653" y="202.0001">2) adds Zotero lookup</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="52" x="690" y="216.4002">details to</text><!--MD5=[14ac1ba10c383cba73657fef82e7ddd1]
+link editor to source_repo--><path d="M612.5,97.58 C669.43,111.23 743.01,137.9 788,189 C829.23,235.83 843.88,306.78 848.88,358.66 " fill="none" id="editor-to-source_repo-1" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="849.6,366.82,851.8727,358.5838,845.8968,359.1203,849.6,366.82" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="121" x="808" y="202.0001">4) includes partials in</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="48" x="846" y="216.4002">pages in</text><!--MD5=[ce999598762e90ea6ec54476821a4e9c]
+link editor to zotero--><path d="M449.19,125.9 C416.92,143.77 380.19,165.83 349,189 C275.41,243.67 199.97,317.47 151.27,367.9 " fill="none" id="editor-to-zotero" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="145.46,373.93,153.1652,370.2381,148.8377,366.082,145.46,373.93" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="150" x="350" y="209.0001">1) organises references in</text><!--MD5=[ba623790f6c6a005d8ecb0c9e1ae8ef6]
+reverse link zotero to content_helper--><path d="M197.28,426 C251.58,426 318.7,426 373.24,426 " fill="none" id="zotero-backto-content_helper" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="189.02,426,197.02,429,197.02,423,189.02,426" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="148" x="207.25" y="406.0001">retrieves HTML-formatted</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="93" x="234.75" y="420.4002">references from</text><!--MD5=[3f5dd2f09746309f43c42f179ec0045d]
+link editor to content_helper--><path d="M518.42,159.26 C508.43,219.01 494.6,301.75 485.04,358.96 " fill="none" id="editor-to-content_helper" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="483.72,366.86,487.9944,359.462,482.076,358.4757,483.72,366.86" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="40" x="513" y="209.0001">3) runs</text><!--MD5=[82ac0091d15ddbb7d8234e3a1b3a1657]
+@startuml
+!include <C4/C4_Container>
+
+Person(editor, "Editor", "Writes and reviews documentation content.")
+
+System_Boundary(doc_sys, "Documentation system") {
+  System_Boundary(sources, "Content sources") {
+    Container(source_repo, "Source repository", "git, asciidoc", "Manages documentation content files.")
+    Container(content_helper, "Zotero content helper", "get-zoteros", "Generates reference lists for specified Zotero references.")
+    Rel_R(content_helper, source_repo, "gets Zotero lookup details and stores partials in Antora modules")
+  }
+
+  System_Boundary(sitegen, "Website generator") {
+    Container(antora, "Site generator", "antora, asciidoctor", "Gathers sources, produces a static website, and deploys it.")
+  }
+  Rel_D(source_repo, antora, "provides content for")
+}
+
+System_Ext(zotero, "Zotero", "Manages references and bibliographic information.")
+
+Rel(editor, source_repo, "2) adds Zotero lookup details to")
+Rel(editor, source_repo, "4) includes partials in pages in")
+Rel(editor, zotero, "1) organises references in")
+Rel_L(content_helper, zotero, "retrieves HTML-formatted references from")
+
+Rel(editor, content_helper, "3) runs")
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam LegendBorderColor transparent
+skinparam LegendBackgroundColor transparent
+skinparam LegendFontColor #FFFFFF
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam queue {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam Arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam package {
+    StereotypeFontSize 0
+    FontStyle plain
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 0
+    FontColor #444444
+    BorderColor #444444
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam database<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam queue<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam database<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam database<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam queue<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam database<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+
+
+
+sprite $person [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000025788300000000005886410000000000000
+000000000007DFFFFFFD9643347BFFFFFFFB400000000000
+0000000004EFFFFFFFFFFFFFFFFFFFFFFFFFFB1000000000
+000000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFD200000000
+00000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE10000000
+0000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB0000000
+000000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5000000
+000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD000000
+000009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF200000
+00000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF600000
+00000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF800000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00000EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF700000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+0000008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD3000000
+000000014555555555555555555555555555555300000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+sprite $person2 [48x48/16] {
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000002578888300000000005888864100000000000
+0000000007DFFFFFFFFD9643347BFFFFFFFFFB4000000000
+00000004EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB10000000
+0000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD2000000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+00003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+0000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF50000
+0003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD0000
+0009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+0009FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFF2000
+0003FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFD0000
+0000BFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFF50000
+00003FFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFB00000
+000006FFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFE100000
+0000007FFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFD2000000
+00000004EFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFB10000000
+0000000007DF8FFFFFFFFFFFFFFFFFFFFFF8FB4000000000
+000000000002578888888888888888888864100000000000
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam database<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam queue<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+skinparam rectangle<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam database<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam queue<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+rectangle "<$person>\n==Editor\n\n Writes and reviews documentation content." <<person>> as editor
+
+rectangle "==Documentation system\n<size:12>[System]</size>" <<boundary>> as doc_sys {
+rectangle "==Content sources\n<size:12>[System]</size>" <<boundary>> as sources {
+    rectangle "==Source repository\n//<size:12>[git, asciidoc]</size>//\n\n Manages documentation content files." <<container>> as source_repo
+    rectangle "==Zotero content helper\n//<size:12>[get-zoteros]</size>//\n\n Generates reference lists for specified Zotero references." <<container>> as content_helper
+content_helper -RIGHT->> source_repo : **gets Zotero lookup details and stores partials in Antora modules**
+  }
+
+rectangle "==Website generator\n<size:12>[System]</size>" <<boundary>> as sitegen {
+    rectangle "==Site generator\n//<size:12>[antora, asciidoctor]</size>//\n\n Gathers sources, produces a static website, and deploys it." <<container>> as antora
+  }
+source_repo -DOWN->> antora : **provides content for**
+}
+
+rectangle "==Zotero\n\n Manages references and bibliographic information." <<external_system>> as zotero
+
+editor - ->> source_repo : **2) adds Zotero lookup details to**
+editor - ->> source_repo : **4) includes partials in pages in**
+editor - ->> zotero : **1) organises references in**
+content_helper -LEFT->> zotero : **retrieves HTML-formatted references from**
+
+editor - ->> content_helper : **3) runs**
+@enduml
+
+PlantUML version 1.2021.4(Sun Apr 04 08:49:39 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
