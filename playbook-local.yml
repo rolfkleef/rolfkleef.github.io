@@ -32,11 +32,7 @@ ui:
   bundle:
     url: https://gitlab.com/rolfkleef/antora-ui-default/-/jobs/artifacts/drostan/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true
-  supplemental_files:
-  - path: ui.yml
-    contents: |
-      static_files: [ .nojekyll ]
-  - path: .nojekyll
+  supplemental_files: antora-supplemental-ui
   
 # tag::asciidoc[]
 asciidoc:
@@ -58,17 +54,3 @@ asciidoc:
       <3> For kroki: store the image. This requires `allow-uri-read`, as well as `experimental` (to override kroki security)
       <4> To run  a local kroki server: `docker run -p18181:8000 -d --name asciidoctor-kroki yuzutech/kroki`
       end::asciidoc-notes[]
-
-
-    # to be copied to each localhost playbook...
-    # tag::header[]
-    page-brand: rolf@drostan.org # <1>
-    page-sections: # <2>
-    - title: My documentation
-      url: /index.html
-    # end::header[]
-    _yamldoc1: >
-      tag::header-notes[]
-      <1> Name to put in the brand section of the header
-      <2> Each main section to include, with absolute URL
-      end::header-notes[]
