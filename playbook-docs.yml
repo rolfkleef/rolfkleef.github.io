@@ -28,6 +28,9 @@ content:
     start_paths: 
     - docs/public
 
+runtime:
+  fetch: true
+
 ui:
   bundle:
     url: https://gitlab.com/rolfkleef/antora-ui-default/-/jobs/artifacts/drostan/raw/build/ui-bundle.zip?job=bundle-stable

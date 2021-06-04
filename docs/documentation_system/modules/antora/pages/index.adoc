@@ -95,8 +95,7 @@ It would require separate "public" and "private" versions of the component defin
     *_ modules/
     *_ antora.yml
  * public site
-  *_ playbook-local.yml
-  *_ playbook-public.yml
+  *_ playbook-docs.yml
   *_ docs/
    *_ overview/
     *_ modules/
