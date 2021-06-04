@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="786px" preserveAspectRatio="none" style="width:545px;height:786px;" version="1.1" viewBox="0 0 545 786" width="545px" zoomAndPan="magnify"><defs/><g><!--MD5=[65497070a14b2a36d1f18d22c56923ec]
-cluster doc_sys--><rect fill="#FFFFFF" height="168" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="532" x="7" y="463"/><text fill="#000000" font-family="sans-serif" font-size="0" font-style="italic" lengthAdjust="spacing" textLength="0" x="273" y="465">«boundary»</text><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="176" x="185" y="491">Documentation system</text><!--MD5=[503130fef546779811418e5f39df21ee]
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="786px" preserveAspectRatio="none" style="width:545px;height:786px;background:#FFFFFF;" version="1.1" viewBox="0 0 545 786" width="545px" zoomAndPan="magnify"><defs/><g><!--MD5=[65497070a14b2a36d1f18d22c56923ec]
+cluster doc_sys--><rect fill="#FFFFFF" height="168" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="532" x="7" y="463"/><text fill="#FFFFFF" font-family="sans-serif" font-size="6" font-style="italic" lengthAdjust="spacing" textLength="29" x="258.5" y="471">«boundary»</text><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="176" x="185" y="491">Documentation system</text><!--MD5=[503130fef546779811418e5f39df21ee]
 entity sources--><rect fill="#1168BD" height="103.9999" style="stroke:#3C7FC0;stroke-width:1.5;" width="184" x="23" y="511"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="48" x="91" y="533.0001">«system»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="127" x="51.5" y="551.4001">Content sources</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="117" y="568.6001"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="156" x="37" y="585.4">Stores content material in</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="161" x="34.5" y="602.1999">components and modules.</text><!--MD5=[60b523eaf8e0f41470223386dd6c5b39]
 entity sitegen--><rect fill="#1168BD" height="103.9999" style="stroke:#3C7FC0;stroke-width:1.5;" width="210" x="313" y="511"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="48" x="394" y="533.0001">«system»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="139" x="348.5" y="551.4001">Website generator</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="420" y="568.6001"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182" x="327" y="585.4">Combines sources to produce</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="167" x="334.5" y="602.1999">the documentation website.</text><!--MD5=[026b3f9ae447cd6258ef99d33f5de6cf]
 entity editor--><rect fill="#08427B" height="151.9999" style="stroke:#073B6F;stroke-width:1.5;" width="163" x="81.5" y="7"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="47" x="139.5" y="29.0001">«person»</text><image height="48" width="48" x="139" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACD0lEQVR4Xu2YoU4EMRCGT+4j8Ai8AhaH4QHgAUjQuFMECUgMIUgwJAgMhgQsAYUiJCiQIBBY+EITsjfTdme6V24v4c8vyGbb+ZjOtN0bNcvjQXmkH83WvYBWto6PLm6v7p7uH1/w2fXD+PBycX1Pv2l3IdDm/vn7x+dXQiAubRzoURa7gRZWd0iGRIiJbOnhnfYBQZNJjNbuyY2eJG8fkDE3bbG4ep6MHUAsgYxmE3nVs6VsBWJSGccsOlFPmLIViMzLOB7pCVO2AtHJMohH7Fh6zqitQK7m0rJvAVYgGcEpe//PLdDz65sM4pF9N7ICcXDKIB5Nv6j7tD0NoSdM2QrU9Gg0ewE1LqBhHR3BBdvj2vapnidjHxD/q6vd7Pvhr31AwcY8eXMTXAKECZZJFXuEq27aLgQK5uLMohCenGGuGewOxSjBvYBqeG6B+Nqiblggdjnc+ZXDy+FNFpFzw76O3UBAROuXh6FoiAcf5g9eTvUgzy0nWg6I8cXHRUpg5bOVBCo+KDpFajOf23GgPme7RSQ+lacIENUgJ6gg1k6HjgOlqnLqip4tEuhv0hNEMXUD0clyXE3p6pZA0S2nnvTlXwLJEZWlb7cTQH1+USgTN4VhAenm/wea1OCAOmqo6fE1WCb9WSKBah+rbUWPWAmE2Rvk0ApiB45eOyNAzU8xcTvj8KvkKEoOaIYeHNA3ZuygAvFMUO0AAAAASUVORK5CYII=" y="31.4001"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="46" x="140" y="95.4001">Editor</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="165" y="112.6001"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117" x="104.5" y="129.4">Writes and reviews</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="91.5" y="146.1999">documentation content.</text><!--MD5=[1fe25e6ad2a661c9f8478b5f50e2a15d]
@@ -11,7 +11,7 @@ link editor to tools--><path d="M163,159.25 C163,189.06 163,222.82 163,250.82 " 
 link tools to sources--><path d="M153.17,363.19 C145.39,403.72 134.51,460.38 126.36,502.85 " fill="none" id="tools-to-sources" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="124.82,510.87,129.2797,503.5823,123.3882,502.4468,124.82,510.87" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="104" x="142" y="430.0001">contribute content</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="61" x="165" y="444.4002">material to</text><!--MD5=[53246feb467937b0480788f5d7053c23]
 link publisher to sitegen--><path d="M411.7,387.01 C413.03,424.02 414.62,468.04 415.86,502.67 " fill="none" id="publisher-to-sitegen" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="416.16,510.81,418.8581,502.7032,412.8623,502.928,416.16,510.81" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="114" x="414" y="437.0001">configures and runs</text><!--MD5=[e0063adb4c60e65caeb673131dd943a5]
 link sitegen to site--><path d="M418,615.46 C418,637.33 418,662.76 418,684.58 " fill="none" id="sitegen-to-site" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="418,692.75,421,684.75,415,684.75,418,692.75" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="55" x="419" y="660.0001">publishes</text><!--MD5=[97b15c88750bb8c321ec0fb9196fa5c4]
-link tools to publisher--><!--MD5=[a45c3caee443387b2294f0b630248f03]
+link tools to publisher--><!--MD5=[09b44c170a0388f08ad0245a0d338b52]
 @startuml
 !include <C4/C4_Container>
 
@@ -36,6 +36,7 @@ Lay_L(publisher, tools)
 @enduml
 
 @startuml
+
 
 
 
@@ -75,17 +76,37 @@ skinparam Arrow {
 }
 
 skinparam package {
-    StereotypeFontSize 0
+    StereotypeFontSize 6
+    StereotypeFontColor #FFFFFF
     FontStyle plain
+    BackgroundColor #FFFFFF
 }
 
 skinparam rectangle<<boundary>> {
     Shadowing false
-    StereotypeFontSize 0
+    StereotypeFontSize 6
+    StereotypeFontColor #FFFFFF
     FontColor #444444
     BorderColor #444444
+    BackgroundColor #FFFFFF
     BorderStyle dashed
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -340,6 +361,7 @@ sprite $person2 [48x48/16] {
 
 
 
+
 skinparam rectangle<<container>> {
     StereotypeFontColor #FFFFFF
     FontColor #FFFFFF
@@ -392,17 +414,17 @@ skinparam queue<<external_container>> {
 
 
 
-rectangle "<$person>\n==Editor\n\n Writes and reviews documentation content." <<person>> as editor
-rectangle "<$person>\n==Publisher\n\n Updates the documentation website and style." <<person>> as publisher
+rectangle "<$person>\n==Editor\n\n Writes and reviews documentation content." <<person>> as editor 
+rectangle "<$person>\n==Publisher\n\n Updates the documentation website and style." <<person>> as publisher 
 
-rectangle "==Documentation system" <<boundary>> as doc_sys {
-  rectangle "==Content sources\n\n Stores content material in components and modules." <<system>> as sources
-  rectangle "==Website generator\n\n Combines sources to produce the documentation website." <<system>> as sitegen
-sources -RIGHT->> sitegen : **are input for**
+rectangle "==Documentation system" <<boundary>> as doc_sys  {
+  rectangle "==Content sources\n\n Stores content material in components and modules." <<system>> as sources 
+  rectangle "==Website generator\n\n Combines sources to produce the documentation website." <<system>> as sitegen 
+  sources -RIGHT->> sitegen : **are input for**
 }
 
-rectangle "==Editing tools\n\n Support planning and writing content." <<external_system>> as tools
-rectangle "==Documentation website\n\n Informs users and developers." <<external_system>> as site
+rectangle "==Editing tools\n\n Support planning and writing content." <<external_system>> as tools 
+rectangle "==Documentation website\n\n Informs users and developers." <<external_system>> as site 
 
 editor - ->> tools : **works with**
 tools - ->> sources : **contribute content material to**
@@ -412,7 +434,7 @@ sitegen - ->> site : **publishes**
 publisher -[hidden]L- tools
 @enduml
 
-PlantUML version 1.2021.4(Sun Apr 04 08:49:39 GMT 2021)
+PlantUML version 1.2021.6(Fri May 14 07:09:51 GMT 2021)
 (GPL source distribution)
 Java Runtime: OpenJDK Runtime Environment
 JVM: OpenJDK 64-Bit Server VM
