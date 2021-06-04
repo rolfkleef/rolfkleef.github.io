@@ -19,14 +19,9 @@ content:
     - docs/documentation_system
     - docs/styleguide
 
-  - url: /home/rolf/dev/tools/antora/antora-ui
+  - url: https://gitlab.com/rolfkleef/antora-ui-default.git
     branches: drostan
     start_path: docs_drostan
-    
-  - url: /home/rolf/dev/desktop
-    branches: main
-    start_paths: 
-    - docs/public
 
 runtime:
   fetch: true
