@@ -1,0 +1,11 @@
+{
+  "name": "rolf-docs",
+  "version": "1.0.0-alpha",
+  "devDependencies": {
+    "@antora/cli": "^2.3.4",
+    "@asciidoctor/core": "^2.2.4",
+    "antora-lunr": "^0.8.0",
+    "antora-site-generator-lunr": "^0.6.1",
+    "asciidoctor-kroki": "^0.12.0"
+  }
+}

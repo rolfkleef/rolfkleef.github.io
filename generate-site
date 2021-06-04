@@ -1,0 +1,5 @@
+#!/bin/bash
+
+NODE_PATH="$(npm bin)"
+
+DOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lunr $NODE_PATH/antora --stacktrace --generator antora-site-generator-lunr playbook-docs.yml
