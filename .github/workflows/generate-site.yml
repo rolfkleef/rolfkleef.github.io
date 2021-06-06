@@ -17,14 +17,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-        with:
-          submodules: true
-          
+
       - name: Setup Antora
         run: npm i
-        
+
       - run: ./generate-site
-      
+
       - name: Deploy site
         uses: peaceiris/actions-gh-pages@v3
         with:
