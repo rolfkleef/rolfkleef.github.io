@@ -12,6 +12,8 @@ jobs:
     services:
       kroki:
         image: yuzutech/kroki
+        env:
+          KROKI_MERMAID_HOST: mermaid
       mermaid:
         image: yuzutech/kroki-mermaid
 
