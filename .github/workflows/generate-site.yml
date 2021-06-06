@@ -7,26 +7,19 @@ on:
 jobs:
   antora:
     runs-on: ubuntu-latest
+    container: node:14
     
     services:
       kroki:
         image: yuzutech/kroki
-        ports:
-          - "18181:8000"
       mermaid:
         image: yuzutech/kroki-mermaid
-        ports:
-          - "8002:8002"
 
     steps:
       - uses: actions/checkout@v2
         with:
           submodules: true
           
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-      
       - name: Setup Antora
         run: npm i
         
