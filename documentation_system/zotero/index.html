@@ -6,7 +6,7 @@
     <title>Zotero :: My documentation</title>
     <link rel="canonical" href="https://rolfkleef.github.io/documentation_system/zotero/index.html">
     <link rel="prev" href="../antora/index.html">
-    <meta name="generator" content="Antora 2.3.4">
+    <meta name="generator" content="Antora 3.0.0-alpha.5">
     <link rel="stylesheet" href="../../_/css/site.css" rel="stylesheet">
     <script>var uiRootPath = '../../_'</script>
   </head>
@@ -340,7 +340,7 @@ if [[ -e antora.yml &amp;&amp; -e zotero ]]; then
       p_tag=
     fi
     echo "Getting $zget/items$with_tag and putting into $module/partials/$partial.html"
-    mkdir -p "modules/$module/partials"
+    mkdir -p "modules/$module/partials" 
     curl -sS "$ZAPI/$ZSRC/${zget}items?format=bib&amp;linkwrap=1$p_tag&amp;itemType=-attachment&amp;style=$CSL" -o "modules/$module/partials/$partial.html"
     echo "Appending COinS info"
     curl -sS "$ZAPI/$ZSRC/${zget}items?format=coins$p_tag&amp;itemType=-attachment" &gt;&gt; "modules/$module/partials/$partial.html"

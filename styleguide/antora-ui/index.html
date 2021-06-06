@@ -6,7 +6,7 @@
     <title>Antora UI :: My documentation</title>
     <link rel="canonical" href="https://rolfkleef.github.io/styleguide/antora-ui/index.html">
     <link rel="prev" href="../visual_style/mermaid.html">
-    <meta name="generator" content="Antora 2.3.4">
+    <meta name="generator" content="Antora 3.0.0-alpha.5">
     <link rel="stylesheet" href="../../_/css/site.css" rel="stylesheet">
     <script>var uiRootPath = '../../_'</script>
   </head>
@@ -58,7 +58,7 @@
     <a class="nav-link" href="../visual_style/index.html">Visual style</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../visual_style/antora-ui.html">antora-ui.adoc</a>
+    <a class="nav-link" href="../visual_style/antora-ui.html">Antora UI styling</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../visual_style/plantuml.html">PlantUML diagrams</a>
@@ -194,19 +194,28 @@ It is possible to override an HBS template by including a new one via the <code>
 <div class="listingblock">
 <div class="title">Add a specific brand link via <code>nav-brand.hbs</code></div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">Unresolved include directive in modules/antora-ui/pages/index.adoc - include::example$nav-brand.hbs[]</code></pre>
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;a class="navbar-item" href="{{{or site.url (or siteRootUrl siteRootPath)}}}/index.html"&gt;nav-brand&lt;/a&gt;</code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">Add the links to sections of documentation via <code>nav-sections.hbs</code></div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">Unresolved include directive in modules/antora-ui/pages/index.adoc - include::example$nav-sections.hbs[]</code></pre>
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">{{!-- only override this file in supplemental files to add a list of sections --}}
+&lt;a class="navbar-item" href="{{{url}}}"&gt;{{{title}}}&lt;/a&gt;</code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">To remove the sections dropdown menu, override <code>nav-section-dropdown.hbs</code></div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">Unresolved include directive in modules/antora-ui/pages/index.adoc - include::example$nav-section-dropdown.hbs[]</code></pre>
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">{{!-- option 1: create an empty supplemental file if you do not want a section menu --}}
+{{!-- option 2: create a single item &lt;a class-"navbar-item" href="..."&gt;{{site.title}}&lt;/a&gt; --}}
+{{!-- option 3: create a dropdown and override the link list nav-sections.hbs --}}
+&lt;div class="navbar-item has-dropdown is-hoverable"&gt;
+  &lt;a class="navbar-link"&gt;{{site.title}}&lt;/a&gt;
+  &lt;div class="navbar-dropdown"&gt;
+    {{&gt; nav-sections }}
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 </div>
 </div>
 </div>
