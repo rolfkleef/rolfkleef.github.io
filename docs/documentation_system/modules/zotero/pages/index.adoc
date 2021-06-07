@@ -117,6 +117,7 @@ footnote:[https://citationstyles.org/[See the Citation Style Language website fo
 footnote:[https://en.wikipedia.org/wiki/COinS[ContextObjects in Spans (COinS) embeds bibliographic metadata as HTML code.^]]
 
 The resulting HTML file is stored in the `partials` folder of a module.
+This partial file is also included in version control, so the helper only needs to be run when references have changed.
 
 [#step4]
 === Include the reference list in a page
