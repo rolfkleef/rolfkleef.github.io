@@ -1,0 +1,30 @@
+= Github
+
+== Issue labels
+
+We use a Github Action to add a default set of issue labels to a repository.
+These default labels are partly based on the Flow Framework, and partly on standard Github labels.
+
+We use the https://github.com/marketplace/actions/issue-label-manager-action[Issue Label Manager Action] for this.
+The example action triggers on each _issues_ event, which seems a bit too frequent.
+Instead, we trigger on a _label_ event:
+whenever a change is made to the labels, the defaults are added.
+
+A typical approach would be:
+
+. Create the repository on Github
+. Add the Github Action configuration (see the files below) and push
+. Go to the issue labels, and remove an unneccessary label.
+. The action should trigger, and the default labels should appear.
+
+.File `.github/workflows/add-default-labels.yml`
+[source, yaml]
+....
+include::./../examples/add-default-labels.yml[]
+....
+
+.File `.github/labels.json`
+[source, json]
+....
+include::./../examples/labels.json[]
+....

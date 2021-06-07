@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Debt",
+    "color": "ff9a00",
+    "description": "Removal of impedements to future development (architecture changes, refactoring, infrastructure)"
+  },
+  {
+    "name": "Defect",
+    "color": "ff453c",
+    "description": "Fixes for quality that affect the customer experience (bugs, incidents, changes)"
+  },
+  {
+    "name": "Feature",
+    "color": "25c33c",
+    "description": "New business value visible to the customer (requirement, user story)"
+  },
+  {
+    "name": "Risk",
+    "color": "f2d600",
+    "description": "Security, governance, compliance (vulnerability, regulatory requirement)"
+  },
+  {
+    "name": "Epic",
+    "color": "3E4B9E",
+    "description": ""
+  },
+  {
+    "name": "duplicate",
+    "color": "cccccc",
+    "description": "This issue or pull request already exists"
+  },
+  {
+    "name": "idea",
+    "color": "d4c5f9",
+    "description": "Discovery of potential features or improvements"
+  },
+  {
+    "name": "wontfix",
+    "color": "ffffff",
+    "description": "This will not be worked on"
+  },
+  {
+    "name": "documentation",
+    "color": "0075ca",
+    "description": "Improvements or additions to documentation"
+  }
+]

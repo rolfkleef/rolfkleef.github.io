@@ -3,3 +3,4 @@ title: Software development
 version: master
 nav:
 - modules/ROOT/nav.adoc
+- modules/github/nav.adoc
