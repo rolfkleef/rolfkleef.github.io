@@ -3,7 +3,7 @@
 
 site:
   title: My documentation
-  url: https://rolfkleef.github.io
+  url: https://docs.drostan.org
   start_page: overview::index.adoc
 
 # Run `git worktree add build/site site` to check out the Github Pages branch here:
