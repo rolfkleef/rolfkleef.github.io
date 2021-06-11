@@ -1,0 +1,54 @@
+# Antora playbook for local development
+# In this version, source urls point to local copies of the content repositories
+
+site:
+  title: My documentation
+  start_page: overview::index.adoc
+
+# Run `git worktree add build/site site` to check out the Github Pages branch here:
+output:
+  dir: ./build/site
+  clean: true
+
+content:
+  sources:
+  - url: .
+    branches: main
+    start_paths:
+    - docs/overview
+    - docs/documentation_system
+    - docs/styleguide
+
+  - url: https://gitlab.com/rolfkleef/antora-ui-default.git
+    branches: drostan
+    start_path: docs_drostan
+
+runtime:
+  fetch: true
+
+ui:
+  bundle:
+    url: https://gitlab.com/rolfkleef/antora-ui-default/-/jobs/artifacts/drostan/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+  supplemental_files: antora-supplemental-ui
+
+# tag::asciidoc[]
+asciidoc:
+  extensions:
+  - asciidoctor-kroki # <1>
+  attributes:
+    page-pagination: true
+    hide-uri-scheme: true # <2>
+    kroki-fetch-diagram: true # <3>
+    allow-uri-read: true
+    experimental: true
+    kroki-default-format@: svg
+    kroki-server-url: http://localhost:18181 # <4>
+# end::asciidoc[]
+    _yamldoc: >
+      tag::asciidoc-notes[]
+      <1> Use kroki to generate diagram images
+      <2> Don't show https:// etc on bare links
+      <3> For kroki: store the image. This requires `allow-uri-read`, as well as `experimental` (to override kroki security)
+      <4> Uses a local kroki server via docker bridge network and service declaration in Github Actions
+      end::asciidoc-notes[]

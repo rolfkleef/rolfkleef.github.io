@@ -1,0 +1,17 @@
+= Antora setup
+
+== Github Action
+
+Use a Github Action to automatically generate and deploy to Github Pages.
+
+== Local playbook
+
+To generate the site on a local machine, use the `docker-compose.yml` file to run a local copy of Kroki.
+
+    $ docker-comppose up -d
+    
+Then generate the site using the local playbook.
+
+    $ ./generate-site playbook-local.yml
+    
+The site will be generated in the `build/site` folder.
