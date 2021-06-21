@@ -1,6 +1,5 @@
 name: overview
 title: Overview
-version: master
-display_version: main
+version: ~
 nav:
 - modules/ROOT/nav.adoc

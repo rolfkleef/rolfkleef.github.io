@@ -1,7 +1,6 @@
 name: documentation_system
 title: Documentation system
-version: master
-display_version: main
+version: ~
 nav:
 - modules/ROOT/nav.adoc
 - modules/asciidoc/nav.adoc

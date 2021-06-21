@@ -1,6 +1,6 @@
 name: software_development
 title: Software development
-version: master
+version: ~
 nav:
 - modules/ROOT/nav.adoc
 - modules/github/nav.adoc
