@@ -1,4 +1,3 @@
 * xref:technology_choices/index.adoc[]
  ** xref:technology_choices/asciidoc-antora.adoc[]
  ** xref:technology_choices/plantuml-kroki.adoc[]
-* xref:style_choices/index.adoc[]

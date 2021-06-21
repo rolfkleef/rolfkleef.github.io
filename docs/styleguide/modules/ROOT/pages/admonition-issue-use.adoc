@@ -1,4 +1,4 @@
-= Style choices
+= Admonition and issue use 
 
 The Asciidoc documentation gives guidance on _how_ to write different types of semantic content.
 This section attempts to offer guidance on _when_ to use specific elements.
