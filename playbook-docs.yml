@@ -9,6 +9,7 @@ site:
 # Run `git worktree add build/site site` to check out the Github Pages branch here:
 output:
   dir: ./build/site
+  clean: true
 
 content:
   sources:
@@ -44,6 +45,7 @@ asciidoc:
     experimental: true
     kroki-default-format@: svg
     kroki-server-url: http://kroki:8000 # <4>
+    kroki-plantuml-include: plantuml-drostan.cfg # <5>
 # end::asciidoc[]
     _yamldoc: >
       tag::asciidoc-notes[]
@@ -51,4 +53,5 @@ asciidoc:
       <2> Don't show https:// etc on bare links
       <3> For kroki: store the image. This requires `allow-uri-read`, as well as `experimental` (to override kroki security)
       <4> Uses a local kroki server via docker bridge network and service declaration in Github Actions
+      <5> Include a local PlantUML styling configuration at the start of each diagram
       end::asciidoc-notes[]
