@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>C4 models :: My documentation</title>
+    <title>C4 diagrams :: My documentation</title>
     <link rel="canonical" href="https://docs.drostan.org/styleguide/visual_style/plantuml/c4.html">
-    <meta name="generator" content="Antora 3.0.0-alpha.5">
+    <link rel="prev" href="sequence.html">
+    <link rel="next" href="../mermaid.html">
+    <meta name="generator" content="Antora 3.0.0-alpha.6">
     <link rel="stylesheet" href="../../../_/css/site.css" rel="stylesheet">
     <script>var uiRootPath = '../../../_'</script>
   </head>
@@ -49,13 +51,68 @@
   </nav>
 </header>
 <div class="body">
-<div class="nav-container" data-component="styleguide" data-version="master">
+<div class="nav-container" data-component="styleguide" data-version="">
   <aside class="nav">
     <div class="panels">
-<div class="nav-panel-explore is-active" data-panel="explore">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../index.html">Style guide</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../admonition-issue-use.html">Admonition and issue use</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../index.html">Visual style</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../antora-ui.html">Antora UI styling</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">PlantUML diagrams styling</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="usecase.html">Use case diagram</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="activity.html">Activity diagram</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sequence.html">Sequence diagram</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="c4.html">C4 diagrams</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../mermaid.html">Mermaid diagrams</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../antora-ui/index.html">Antora UI</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
   <div class="context">
     <span class="title">Style guide</span>
-    <span class="version">main</span>
+    <span class="version">default</span>
   </div>
   <ul class="components">
     <li class="component">
@@ -77,11 +134,8 @@
     <li class="component is-current">
       <a class="title" href="../../index.html">Style guide</a>
       <ul class="versions">
-        <li class="version is-latest">
+        <li class="version is-current is-latest">
           <a href="../../index.html">default</a>
-        </li>
-        <li class="version is-current">
-          <a href="../../index.html">main</a>
         </li>
       </ul>
     </li>
@@ -95,14 +149,13 @@
 <button class="nav-toggle"></button>
   <a href="../../../overview/index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">Style guide</a></li>
+    <li><a href="../index.html">Visual style</a></li>
+    <li><a href="index.html">PlantUML diagrams styling</a></li>
+    <li><a href="c4.html">C4 diagrams</a></li>
+  </ul>
 </nav>
-<div class="page-versions">
-  <button class="version-menu-toggle" title="Show other versions of page">main</button>
-  <div class="version-menu">
-    <a class="version is-missing" href="../../index.html">default</a>
-    <a class="version is-current" href="c4.html">main</a>
-  </div>
-</div>
   <div class="edit-this-page"><a href="https://gitlab.com/rolfkleef/antora-ui-default/edit/drostan/docs_drostan/modules/visual_style/pages/plantuml/c4.adoc">Edit this Page</a></div>
   </div>
   <div class="content">
@@ -110,48 +163,156 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">C4 models</h1>
+<h1 class="page">C4 diagrams</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <a href="https://c4model.com/" target="_blank" rel="noopener">C4 Models</a> offers multiple diagram types.</p>
+</div>
+<div class="imageblock kroki">
+<div class="content">
+<img src="../_images/diag-c96a2e37a003282ac098fe47c2da60372e9066b1.svg" alt="C4 Diagrams">
+</div>
+<div class="title">Figure 1. C4 Diagrams</div>
+</div>
+<div class="paragraph">
+<p>Examples of the first three levels are shown below.</p>
+</div>
+</div>
+</div>
 <div class="sect1">
 <h2 id="_elements_c4"><a class="anchor" href="#_elements_c4"></a>Elements C4</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_container"><a class="anchor" href="#_container"></a>Container</h3>
+<h3 id="_level_1_system_context"><a class="anchor" href="#_level_1_system_context"></a>Level 1: System context</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="../_images/diag-1ee33e83dfb91b046a8e8fdbc2429d44e9214b2e.svg" alt="Core elements of a C4 container model diagram">
+<img src="../_images/diag-3066e19b18735e37f143cdc1348abe1fdc1eaa38.svg" alt="Core elements of a C4 system context diagram">
 </div>
-<div class="title">Figure 1. Core elements of a C4 container model diagram</div>
+<div class="title">Figure 2. Core elements of a C4 system context diagram</div>
 </div>
 <div class="listingblock">
 <div class="title">PlantUML source</div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-plantuml hljs" data-lang="plantuml">  @startuml
-!include &lt;C4/C4_Container&gt;
+<pre class="highlightjs highlight"><code class="language-plantuml hljs" data-lang="plantuml">@startuml
+!include &lt;C4/C4_Context&gt;
+!include &lt;tupadr3/font-awesome/users&gt;
 
-Person(editor, "Editor", "Writes and reviews documentation content.")
-Person(publisher, "Publisher", "Updates the documentation website and style.")
+LAYOUT_WITH_LEGEND()
 
-Boundary(doc_sys, "Documentation system") {
-  System(sources, "Content sources", "Stores content material in components and modules.")
-  System(sitegen, "Website generator", "Combines sources to produce the documentation website.")
-  Rel_R(sources, sitegen, "are input for")
+Person(person1, "Person", "Optional Description")
+Person(group1, "Group", "Optional Description", $sprite="users")
+
+Boundary(boundary1, "Boundary", "Boundary type") {
+  System(system1, "System", "Optional Description")
+  SystemQueue(squeue, "SystemQueue", "Tech")
+  SystemDb(sdb, "SystemDb", "Technology", "Optional Description")
+
+  Rel_R(system1, sdb, "Rel_R", "Optional Technology")
+  BiRel_L(system1, squeue, "BiRel_L", "Optional")
 }
 
-System_Ext(tools, "Editing tools", "Support planning and writing content.")
-System_Ext(site, "Documentation website", "Informs users and developers.")
+Rel(person1, system1, "Rel", "Optional Technology")
 
-Rel(editor, tools, "works with")
-Rel(tools, sources, "contribute content material to")
-Rel(publisher, sitegen, "configures and runs")
-Rel(sitegen, site, "publishes")
+Boundary(boundary2, "Boundary", "Boundary type") {
+  System_Ext(system2, "System_Ext", "Optional Description")
+  SystemQueue_Ext(squeue2, "SystemQueue_Ext", "Tech")
+  SystemDb_Ext(sdb2, "SystemDb_Ext", "Technology", "Optional Description")
 
-Lay_L(publisher, tools)
+  Rel_R(system2, sdb2, "Rel_R", "Optional Technology")
+  BiRel_L(system2, squeue2, "BiRel_L", "Optional")
+}
+
+Rel(system1, system2, "Rel")
+
+@enduml</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_level_2_container"><a class="anchor" href="#_level_2_container"></a>Level 2: Container</h3>
+<div class="imageblock kroki">
+<div class="content">
+<img src="../_images/diag-dec695842873dc56a828087f924e3b4ba25291c3.svg" alt="Additional elements of a C4 container model diagram">
+</div>
+<div class="title">Figure 3. Additional elements of a C4 container model diagram</div>
+</div>
+<div class="listingblock">
+<div class="title">PlantUML source</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-plantuml hljs" data-lang="plantuml">@startuml
+!include &lt;C4/C4_Container&gt;
+
+LAYOUT_WITH_LEGEND()
+
+System_Boundary(boundary1, "System_Boundary", "Boundary type") {
+  Container(container1, "Container", "Technology", "Optional Description")
+  ContainerQueue(cqueue, "ContainerQueue", "Tech")
+  ContainerDb(cdb, "ContainerDb", "Technology", "Optional Description")
+
+  Rel_R(container1, cdb, "Rel_R", "Optional Technology")
+  BiRel_L(container1, cqueue, "BiRel", "Optional")
+}
+
+System_Boundary(boundary2, "Boundary", "Boundary type") {
+  Container_Ext(container2, "Container_Ext", "Technology", "Optional Description")
+  ContainerQueue_Ext(cqueue2, "ContainerQueue_Ext", "Tech")
+  ContainerDb_Ext(cdb2, "ContainerDb_Ext", "Technology", "Optional Description")
+
+  Rel_R(container2, cdb2, "Rel_R", "Optional Technology")
+  BiRel_L(container2, cqueue2, "BiRel", "Optional")
+}
+
+Rel(container1, container2, "Rel")
+@enduml</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_level_3_component"><a class="anchor" href="#_level_3_component"></a>Level 3: Component</h3>
+<div class="imageblock kroki">
+<div class="content">
+<img src="../_images/diag-af1ce13971d735a176374ccf1b7be4f743cb6a63.svg" alt="Additional elements of a C4 component model diagram">
+</div>
+<div class="title">Figure 4. Additional elements of a C4 component model diagram</div>
+</div>
+<div class="listingblock">
+<div class="title">PlantUML source</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-plantuml hljs" data-lang="plantuml">@startuml
+!include &lt;C4/C4_Component&gt;
+
+LAYOUT_WITH_LEGEND()
+
+Container_Boundary(boundary1, "Container_Boundary", "Boundary type") {
+  Component(component1, "Component", "Technology", "Optional Description")
+  ComponentQueue(cqueue, "ComponentQueue", "Tech")
+  ComponentDb(cdb, "ComponentDb", "Technology", "Optional Description")
+
+  Rel_R(component1, cdb, "Rel_R", "Optional Technology")
+  BiRel_L(component1, cqueue, "BiRel", "Optional")
+}
+
+Container_Boundary(boundary2, "Boundary", "Boundary type") {
+  Component_Ext(component2, "Component_Ext", "Technology", "Optional Description")
+  ComponentQueue_Ext(cqueue2, "ComponentQueue_Ext", "Tech")
+  ComponentDb_Ext(cdb2, "ComponentDb_Ext", "Technology", "Optional Description")
+
+  Rel_R(component2, cdb2, "Rel_R", "Optional Technology")
+  BiRel_L(component2, cqueue2, "BiRel", "Optional")
+}
+
+Rel(component1, component2, "Rel")
 @enduml</code></pre>
 </div>
 </div>
 </div>
 </div>
 </div>
+<nav class="pagination">
+  <span class="prev"><a href="sequence.html">Sequence diagram</a></span>
+  <span class="next"><a href="../mermaid.html">Mermaid diagrams</a></span>
+</nav>
 </article>
   </div>
 </main>

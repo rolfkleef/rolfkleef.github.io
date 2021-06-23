@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="852px" preserveAspectRatio="none" style="width:307px;height:852px;background:#FFFFFF;" version="1.1" viewBox="0 0 307 852" width="307px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="850.8999" style="stroke:#FFFFFF;stroke-width:1.0;" width="305" x="0" y="0"/><ellipse cx="142" cy="20" fill="#08427B" rx="10" ry="10" style="stroke:none;stroke-width:1.0;"/><rect fill="#FFFCFF" height="214.8" style="stroke:#A0439C;stroke-width:2.0;" width="250.5" x="11" y="40"/><path d="M94,40 L94,52.6 L84,62.6 L11,62.6 " fill="none" style="stroke:#A0439C;stroke-width:2.0;"/><text fill="#A0439C" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="69" x="16" y="56">First section</text><polygon fill="#E18114" points="101,79.6,183,79.6,195,91.6,183,103.6,101,103.6,89,91.6,101,79.6" style="stroke:#E18114;stroke-width:1.5;"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="78" x="103" y="96.8">decision node</text><text fill="#E91E63" font-family="Roboto" font-size="11" lengthAdjust="spacing" textLength="16" x="71" y="87.4">yes</text><text fill="#E91E63" font-family="Roboto" font-size="11" lengthAdjust="spacing" textLength="12" x="197" y="87.4">no</text><polygon fill="#1168BD" points="31,113.6,137,113.6,127,133.4,137,153.2,31,153.2" style="stroke:#FFFFFF;stroke-width:1.5;"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="72" x="43" y="138.6">receive input</text><rect fill="#1168BD" height="39.6" rx="12.5" ry="12.5" style="stroke:#FFFFFF;stroke-width:1.5;" width="73" x="42.5" y="173.2"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="49" x="54.5" y="198.2">Action A</text><rect fill="#1168BD" height="39.6" rx="12.5" ry="12.5" style="stroke:#FFFFFF;stroke-width:1.5;" width="73" x="168.5" y="113.6"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="49" x="180.5" y="138.6">Action B</text><rect fill="#1168BD" height="39.6" style="stroke:#FFFFFF;stroke-width:1.5;" width="72" x="169" y="173.2"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="48" x="181" y="198.2">Object 1</text><polygon fill="#E18114" points="142,218.8,154,230.8,142,242.8,130,230.8,142,218.8" style="stroke:#E18114;stroke-width:1.5;"/><rect fill="#E18114" height="6" rx="2.5" ry="2.5" style="stroke:#E18114;stroke-width:1.0;" width="214" x="35" y="274.8"/><rect fill="#1168BD" height="39.6" rx="12.5" ry="12.5" style="stroke:#FFFFFF;stroke-width:1.5;" width="79" x="49" y="300.8"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="55" x="61" y="325.8001">Parallel X</text><rect fill="#1168BD" height="39.6" rx="12.5" ry="12.5" style="stroke:#FFFFFF;stroke-width:1.5;" width="79" x="156" y="300.8"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="55" x="168" y="325.8001">Parallel Y</text><polygon fill="#E18114" points="142,350.4001,154,362.4001,142,374.4001,130,362.4001,142,350.4001" style="stroke:#E18114;stroke-width:1.5;"/><polygon fill="#E18114" points="112,438.4001,172,438.4001,184,450.4001,172,462.4001,112,462.4001,100,450.4001,112,438.4001" style="stroke:#E18114;stroke-width:1.5;"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="56" x="114" y="455.6001">done here</text><text fill="#E91E63" font-family="Roboto" font-size="11" lengthAdjust="spacing" textLength="20" x="78" y="446.2001">stop</text><rect fill="#1168BD" height="55.2" rx="12.5" ry="12.5" style="stroke:#FFFFFF;stroke-width:1.5;" width="118" x="21" y="472.4001"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="94" x="33" y="497.4001">last action in this</text><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="83" x="38.5" y="513.0001">part of the flow</text><ellipse cx="80" cy="572.6001" fill="#FFFFFF" rx="10" ry="10" style="stroke:#08427B;stroke-width:1.5;"/><line style="stroke:#08427B;stroke-width:2.5;" x1="73.8128" x2="86.1872" y1="566.4129" y2="578.7873"/><line style="stroke:#08427B;stroke-width:2.5;" x1="86.1872" x2="73.8128" y1="566.4129" y2="578.7873"/><rect fill="#1168BD" height="39.6" rx="12.5" ry="12.5" style="stroke:#FFFFFF;stroke-width:1.5;" width="73" x="167.5" y="472.4001"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="49" x="179.5" y="497.4001">continue</text><polygon fill="#1168BD" points="159,547.0001,249,547.0001,259,566.8001,249,586.6001,159,586.6001" style="stroke:#FFFFFF;stroke-width:1.5;"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="66" x="171" y="572.0001">send output</text><polygon fill="#E18114" points="123.5,606.6001,160.5,606.6001,172.5,618.6001,160.5,630.6001,123.5,630.6001,111.5,618.6001,123.5,606.6001" style="stroke:#E18114;stroke-width:1.5;"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="33" x="125.5" y="623.8001">cases</text><rect fill="#1168BD" height="39.6" rx="12.5" ry="12.5" style="stroke:#FFFFFF;stroke-width:1.5;" width="67" x="17" y="657.8"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="43" x="29" y="682.8">Action i</text><rect fill="#1168BD" height="39.6" rx="12.5" ry="12.5" style="stroke:#FFFFFF;stroke-width:1.5;" width="70" x="104" y="657.8"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="46" x="116" y="682.8">Action ii</text><rect fill="#1168BD" height="39.6" rx="12.5" ry="12.5" style="stroke:#FFFFFF;stroke-width:1.5;" width="73" x="194" y="657.8"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="49" x="206" y="682.8">Action iii</text><polygon fill="#E18114" points="142,717.4,142,717.4,154,729.4,142,741.4,142,741.4,130,729.4,142,717.4" style="stroke:#E18114;stroke-width:1.5;"/><polygon fill="#E18114" points="142,394.4001,154,406.4001,142,418.4001,130,406.4001,142,394.4001" style="stroke:#E18114;stroke-width:1.5;"/><polygon fill="#E18114" points="106.5,761.4,177.5,761.4,189.5,773.4,177.5,785.4,106.5,785.4,94.5,773.4,106.5,761.4" style="stroke:#E18114;stroke-width:1.5;"/><text fill="#E91E63" font-family="Roboto" font-size="11" lengthAdjust="spacing" textLength="12" x="148" y="798.3999">no</text><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="67" x="108.5" y="778.6">Do it again?</text><text fill="#E91E63" font-family="Roboto" font-size="11" lengthAdjust="spacing" textLength="16" x="191.5" y="769.2">yes</text><ellipse cx="142" cy="830.8999" fill="#FFFFFF" rx="11" ry="11" style="stroke:#08427B;stroke-width:1.0;"/><ellipse cx="142" cy="830.8999" fill="#08427B" rx="6" ry="6" style="stroke:#83A0BD;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="79" x2="79" y1="153.2" y2="173.2"/><polygon fill="#E91E63" points="75,163.2,79,173.2,83,163.2,79,167.2" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="205" x2="205" y1="153.2" y2="173.2"/><polygon fill="#E91E63" points="201,163.2,205,173.2,209,163.2,205,167.2" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="89" x2="79" y1="91.6" y2="91.6"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="79" x2="79" y1="91.6" y2="113.6"/><polygon fill="#E91E63" points="75,103.6,79,113.6,83,103.6,79,107.6" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="195" x2="205" y1="91.6" y2="91.6"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="205" x2="205" y1="91.6" y2="113.6"/><polygon fill="#E91E63" points="201,103.6,205,113.6,209,103.6,205,107.6" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="79" x2="79" y1="212.8" y2="230.8"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="79" x2="130" y1="230.8" y2="230.8"/><polygon fill="#E91E63" points="120,226.8,130,230.8,120,234.8,124,230.8" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="205" x2="205" y1="212.8" y2="230.8"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="205" x2="154" y1="230.8" y2="230.8"/><polygon fill="#E91E63" points="164,226.8,154,230.8,164,234.8,160,230.8" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="142" x2="142" y1="30" y2="79.6"/><polygon fill="#E91E63" points="138,69.6,142,79.6,146,69.6,142,73.6" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="88.5" x2="88.5" y1="280.8" y2="300.8"/><polygon fill="#E91E63" points="84.5,290.8,88.5,300.8,92.5,290.8,88.5,294.8" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="195.5" x2="195.5" y1="280.8" y2="300.8"/><polygon fill="#E91E63" points="191.5,290.8,195.5,300.8,199.5,290.8,195.5,294.8" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="88.5" x2="88.5" y1="340.4001" y2="362.4001"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="88.5" x2="130" y1="362.4001" y2="362.4001"/><polygon fill="#E91E63" points="120,358.4001,130,362.4001,120,366.4001,124,362.4001" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="195.5" x2="195.5" y1="340.4001" y2="362.4001"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="195.5" x2="154" y1="362.4001" y2="362.4001"/><polygon fill="#E91E63" points="164,358.4001,154,362.4001,164,366.4001,160,362.4001" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="142" x2="142" y1="242.8" y2="274.8"/><polygon fill="#E91E63" points="138,264.8,142,274.8,146,264.8,142,268.8" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="80" x2="80" y1="527.6001" y2="562.6001"/><polygon fill="#E91E63" points="76,552.6001,80,562.6001,84,552.6001,80,556.6001" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="204" x2="204" y1="512.0001" y2="547.0001"/><polygon fill="#E91E63" points="200,537.0001,204,547.0001,208,537.0001,204,541.0001" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.5;stroke-dasharray:1.0,3.0;" x1="100" x2="80" y1="450.4001" y2="450.4001"/><line style="stroke:#E91E63;stroke-width:1.5;stroke-dasharray:1.0,3.0;" x1="80" x2="80" y1="450.4001" y2="472.4001"/><polygon fill="#E91E63" points="76,462.4001,80,472.4001,84,462.4001,80,466.4001" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="184" x2="204" y1="450.4001" y2="450.4001"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="204" x2="204" y1="450.4001" y2="472.4001"/><polygon fill="#E91E63" points="200,462.4001,204,472.4001,208,462.4001,204,466.4001" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="204" x2="204" y1="586.6001" y2="591.6001"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="204" x2="142" y1="591.6001" y2="591.6001"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="142" x2="142" y1="591.6001" y2="606.6001"/><polygon fill="#E91E63" points="138,596.6001,142,606.6001,146,596.6001,142,600.6001" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="111.5" x2="50.5" y1="618.6001" y2="618.6001"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="50.5" x2="50.5" y1="618.6001" y2="657.8"/><polygon fill="#E91E63" points="46.5,647.8,50.5,657.8,54.5,647.8,50.5,651.8" style="stroke:#E91E63;stroke-width:1.0;"/><text fill="#E91E63" font-family="Roboto" font-size="11" lengthAdjust="spacing" textLength="31" x="52.5" y="642.6">case i.</text><line style="stroke:#E91E63;stroke-width:1.5;" x1="172.5" x2="230.5" y1="618.6001" y2="618.6001"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="230.5" x2="230.5" y1="618.6001" y2="657.8"/><polygon fill="#E91E63" points="226.5,647.8,230.5,657.8,234.5,647.8,230.5,651.8" style="stroke:#E91E63;stroke-width:1.0;"/><text fill="#E91E63" font-family="Roboto" font-size="11" lengthAdjust="spacing" textLength="35" x="232.5" y="642.6">case iii.</text><line style="stroke:#E91E63;stroke-width:1.5;" x1="50.5" x2="50.5" y1="697.4" y2="729.4"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="50.5" x2="130" y1="729.4" y2="729.4"/><polygon fill="#E91E63" points="120,725.4,130,729.4,120,733.4,124,729.4" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="230.5" x2="230.5" y1="697.4" y2="729.4"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="230.5" x2="154" y1="729.4" y2="729.4"/><polygon fill="#E91E63" points="164,725.4,154,729.4,164,733.4,160,729.4" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="142" x2="142" y1="630.6001" y2="639.6667"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="142" x2="139" y1="639.6667" y2="639.6667"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="139" x2="139" y1="639.6667" y2="657.8"/><polygon fill="#E91E63" points="135,647.8,139,657.8,143,647.8,139,651.8" style="stroke:#E91E63;stroke-width:1.0;"/><text fill="#E91E63" font-family="Roboto" font-size="11" lengthAdjust="spacing" textLength="33" x="141" y="639.5334">case ii.</text><line style="stroke:#E91E63;stroke-width:1.5;" x1="139" x2="139" y1="697.4" y2="702.4"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="139" x2="142" y1="702.4" y2="702.4"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="142" x2="142" y1="702.4" y2="717.4"/><polygon fill="#E91E63" points="138,707.4,142,717.4,146,707.4,142,711.4" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="142" x2="142" y1="418.4001" y2="438.4001"/><polygon fill="#E91E63" points="138,428.4001,142,438.4001,146,428.4001,142,432.4001" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="189.5" x2="281" y1="773.4" y2="773.4"/><polygon fill="#E91E63" points="277,634.4,281,624.4,285,634.4,281,630.4" style="stroke:#E91E63;stroke-width:1.5;"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="281" x2="281" y1="406.4001" y2="773.4"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="281" x2="154" y1="406.4001" y2="406.4001"/><polygon fill="#E91E63" points="164,402.4001,154,406.4001,164,410.4001,160,406.4001" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="142" x2="142" y1="741.4" y2="761.4"/><polygon fill="#E91E63" points="138,751.4,142,761.4,146,751.4,142,755.4" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="142" x2="142" y1="374.4001" y2="394.4001"/><polygon fill="#E91E63" points="138,384.4001,142,394.4001,146,384.4001,142,388.4001" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.5;" x1="142" x2="142" y1="785.4" y2="819.8999"/><polygon fill="#E91E63" points="138,809.8999,142,819.8999,146,809.8999,142,813.8999" style="stroke:#E91E63;stroke-width:1.0;"/><!--MD5=[9100bdd68817e6bffb9404a1851c68ec]
+@startuml
+' Styling settings for PlantUML diagrams
+' See http://plantuml.sourceforge.net for documentation
+' To get a list of possible skinparam settings, run: plantuml -language
+
+' COLORS
+' ========================================
+
+' general colors from own stylesheet
+!$diagram_background_color = "#fff"
+!$diagram_border_color = "#fff"
+!$diagram_color = "#808080"
+!$arrow_color = "#e91e63"
+!$link_color = "#3498DB"
+
+' make admonition colors available for elements
+!$caution_color = "#a0439c"
+!$caution_on_color = "#fff"
+!$important_color = "#d32f2f"
+!$important_on_color = "#fff"
+!$note_color = "#217ee7"
+!$note_on_color = "#fff"
+!$tip_color = "#41af46"
+!$tip_on_color = "#fff"
+!$warning_color = "#e18114"
+!$warning_on_color = "#fff"
+
+' use admonition colors for elements
+!$logic_main_color = $warning_color
+
+!procedure $logic_style($var=1)
+  $styling($var, $logic_main_color, $logic_main_color, $warning_on_color) 
+!endprocedure
+
+!procedure $group_style($var=4)
+  $styling($var, $caution_color, $caution_color, $caution_on_color, "#FFFCFF") 
+!endprocedure
+
+!procedure $divider_style($var=1)
+  $styling($var, $tip_color, $tip_color, $tip_on_color) 
+!endprocedure
+
+' node_1, node_2 and note taken from C4 styling
+!$node_1_main_color = "#08427b"
+!$node_2_main_color = "#1168bd"
+!$node_2_aux2_color = "#3498DB"
+
+!procedure $node_1_style($var=1)
+  $styling($var, "#08427b", "#fff", "fff") 
+!endprocedure
+
+!procedure $node_2_style($var=1)
+  $styling($var, "#1168bd", "#fff", "fff", "#3498DB") 
+!endprocedure
+
+!procedure $note_1_style($var=1)
+  $styling($var, "#999", "#fff", "fff") 
+!endprocedure
+
+' STYLE HELPERS
+' ========================================
+
+' get variation with color palette:
+' $main: primary fill color, typically background
+' $aux1, $aux2: add'l fill colors, typically border, alternative background
+' $on1, $on2: text colors, typically main text, supplementary
+' variations:
+' 1) regular (default)
+' 2) name reversed (label outside)
+' 3) reverse background
+' 4) light background
+' 5) border box (loop, alt)
+' 6) ...
+
+!procedure $styling($var=1, $main, $aux1, $on1, $aux2="#ccc", $on2="#666")
+  !if ($var=="2")
+    BackgroundColor $main
+    BorderColor $aux1
+    FontColor $main
+    StereotypeFontColor $main
+  !elseif ($var=="3")
+    BackgroundColor $aux1
+    BorderColor $main
+    FontColor $main
+    StereotypeFontColor $main
+  !elseif ($var==4)
+    BackgroundColor $aux2
+    BorderColor $aux1
+    FontColor $main
+  !elseif ($var=="5")
+    BackgroundColor $main
+    BorderColor $aux1
+    FontColor $main
+    HeaderFontColor $on1
+  !elseif ($var=="6")
+    BackgroundColor $on1
+    BorderColor $aux1
+    FontColor $main
+    HeaderFontColor $on1
+    HeaderBackgroundColor $aux1
+  !elseif ($var==7)
+    BackgroundColor $aux2
+    BorderColor $main
+    FontColor $main
+  !else
+    BackgroundColor $main
+    BorderColor $aux1
+    FontColor $on1
+    StereotypeFontColor $on1
+    HeaderBackgroundColor $on1
+  !endif
+  FontSize 13
+!endprocedure
+
+' GENERAL SETTINGS
+' ========================================
+
+!$body_font_family = "Roboto"
+' each element can get its own FontName, FontSize, FontStyle; not added now
+
+skinparam BackgroundColor $diagram_background_color
+skinparam DiagramBorderColor $diagram_border_color
+skinparam HyperlinkColor $link_color
+
+'skinparam monochrome true
+skinparam shadowing false
+skinparam Handwritten false
+skinparam Padding 2
+'skinparam Roundcorner 5
+
+' Setting a minimum width can make sequence diagram participants look more balanced
+skinparam minClassWidth 100
+
+skinparam Default {
+  FontColor $doc_font_color
+  FontName $body_font_family
+  FontStyle normal
+  TextAlignment center
+}
+
+skinparam Arrow {
+  Color $arrow_color
+  FontColor $arrow_color
+}
+
+skinparam Note {
+  $note_1_style()
+}
+
+' USE CASE
+' ========================================
+
+skinparam Actor {
+  $node_1_style(2)
+  ' Make actors look like in C4
+  Style awesome
+}
+
+skinparam Usecase {
+  $node_2_style()
+}
+
+skinparam Package {
+  $group_style()
+}
+
+' ACTIVITY
+' ========================================
+
+skinparam Activity {
+  $node_2_style()
+
+  StartColor $node_1_main_color
+  EndColor $node_1_main_color
+  BarColor $logic_main_color
+}
+
+skinparam ActivityDiamond {
+  $logic_style()
+}
+
+skinparam Partition {
+  $group_style()
+}
+
+skinparam Swimlane {
+  $divider_style()
+}
+
+skinparam SwimlaneTitle {
+  $divider_style(6)
+}
+
+' SEQUENCE
+' ========================================
+
+'Actor: see Use Case diagram above
+
+skinparam Participant {
+  $node_1_style()
+'  Padding 40
+}
+
+skinparam Boundary {
+  $node_1_style(3)
+}
+
+skinparam Control {
+  $node_1_style(3)
+}
+
+skinparam Entity {
+  $node_1_style(3)
+}
+
+skinparam Database {
+  $node_1_style(2)
+}
+
+skinparam Collections {
+  $node_1_style()
+}
+
+skinparam Queue {
+  $node_1_style()
+}
+
+skinparam SequenceLifeline {
+  $node_2_style(7)
+}
+
+skinparam SequenceDelay {
+  $divider_style(2)
+}
+
+skinparam SequenceDivider {
+  $divider_style()
+}
+
+skinparam SequenceGroup {
+  $logic_style(5)
+}
+
+skinparam SequenceReference {
+  $group_style(6)
+  BorderThickness 1
+}
+
+skinparam SequenceBox {
+  $group_style(4)
+'  Padding 13
+}
+
+' ========================================
+' ========================================
+
+
+' DEPLOYMENT
+' ========================================
+
+' Actor: see Use case diagram
+' Use case: see Use case diagram
+' Package: see Use case diagram (fix?)
+' Boundary: see Sequence diagram
+' Control: see Sequence diagram
+' Entity: see Sequence diagram
+' Queue: see Sequence diagram
+
+' Database: see Sequence diagram (fix?)
+' Collections: see Sequence diagram (fix?)
+
+skinparam Agent {
+  $node_2_style()
+}
+
+skinparam Person {
+  $node_1_style()
+}
+
+skinparam Artifact {
+  $node_2_style()
+}
+
+skinparam Component {
+  $node_2_style()
+}
+
+skinparam File {
+  $node_2_style()
+}
+
+skinparam Card {
+  $node_2_style()
+}
+
+skinparam Storage {
+  $node_2_style()
+}
+
+skinparam Cloud {
+  $group_style(4)
+}
+
+skinparam Frame {
+  $group_style()
+}
+
+skinparam Node {
+  $group_style()
+}
+
+' check lighter background
+skinparam Stack {
+  $node_2_style()
+}
+
+' artefact or group?
+skinparam Folder {
+  $group_style()
+}
+
+skinparam Hexagon {
+  $logic_style()
+}
+
+skinparam Interface {
+  $logic_style(3)
+}
+
+skinparam Object {
+  $node_2_style()
+'  AttributeFontColor $arrow_color
+'  EndColor $arrow_color
+'  StartColor $arrow_color
+}
+
+skinparam Rectangle {
+  $logic_style()
+}
+
+' Used in C4 models:
+skinparam Rectangle<<boundary>> {
+  $logic_style(6)
+}
+
+skinparam State {
+  $node_2_style()
+'  AttributeFontColor $arrow_color
+'  EndColor $arrow_color
+'  StartColor $arrow_color
+}
+start
+
+partition "First section" {
+  if (decision node) then (yes)
+    :receive input<
+    :Action A;
+  else (no)
+    :Action B;
+    :Object 1]
+  endif
+}
+
+fork
+  :Parallel X;
+fork again
+  :Parallel Y;
+end merge
+
+repeat
+
+  if (done here) then (stop)
+    -[dotted]->
+    :last action in this
+    part of the flow;
+    end;
+  else
+    :continue;
+    :send output>
+  endif
+  
+  switch (cases)
+  case (case i.)
+    :Action i;
+  case (case ii.)
+    :Action ii;
+  case (case iii.)
+    :Action iii;
+  endswitch
+
+repeat while (Do it again?) is (yes) not (no)
+
+stop
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam BackgroundColor #fff
+skinparam DiagramBorderColor #fff
+skinparam HyperlinkColor #3498DB
+
+skinparam shadowing false
+skinparam Handwritten false
+skinparam Padding 2
+
+skinparam minClassWidth 100
+
+skinparam Default {
+  FontColor $doc_font_color
+  FontName Roboto
+  FontStyle normal
+  TextAlignment center
+}
+
+skinparam Arrow {
+  Color #e91e63
+  FontColor #e91e63
+}
+
+skinparam Note {
+      BackgroundColor #999
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+
+skinparam Actor {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor #08427b
+    StereotypeFontColor #08427b
+  FontSize 13 
+  Style awesome
+}
+
+skinparam Usecase {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Package {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+
+skinparam Activity {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+
+  StartColor #08427b
+  EndColor #08427b
+  BarColor #e18114
+}
+
+skinparam ActivityDiamond {
+      BackgroundColor #e18114
+    BorderColor #e18114
+    FontColor #fff
+    StereotypeFontColor #fff
+    HeaderBackgroundColor #fff
+  FontSize 13 
+}
+
+skinparam Partition {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+skinparam Swimlane {
+      BackgroundColor #41af46
+    BorderColor #41af46
+    FontColor #fff
+    StereotypeFontColor #fff
+    HeaderBackgroundColor #fff
+  FontSize 13 
+}
+
+skinparam SwimlaneTitle {
+      BackgroundColor #fff
+    BorderColor #41af46
+    FontColor #41af46
+    HeaderFontColor #fff
+    HeaderBackgroundColor #41af46
+  FontSize 13 
+}
+
+
+
+skinparam Participant {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Boundary {
+      BackgroundColor #fff
+    BorderColor #08427b
+    FontColor #08427b
+    StereotypeFontColor #08427b
+  FontSize 13 
+}
+
+skinparam Control {
+      BackgroundColor #fff
+    BorderColor #08427b
+    FontColor #08427b
+    StereotypeFontColor #08427b
+  FontSize 13 
+}
+
+skinparam Entity {
+      BackgroundColor #fff
+    BorderColor #08427b
+    FontColor #08427b
+    StereotypeFontColor #08427b
+  FontSize 13 
+}
+
+skinparam Database {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor #08427b
+    StereotypeFontColor #08427b
+  FontSize 13 
+}
+
+skinparam Collections {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Queue {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam SequenceLifeline {
+      BackgroundColor #3498DB
+    BorderColor #1168bd
+    FontColor #1168bd
+  FontSize 13 
+}
+
+skinparam SequenceDelay {
+      BackgroundColor #41af46
+    BorderColor #41af46
+    FontColor #41af46
+    StereotypeFontColor #41af46
+  FontSize 13 
+}
+
+skinparam SequenceDivider {
+      BackgroundColor #41af46
+    BorderColor #41af46
+    FontColor #fff
+    StereotypeFontColor #fff
+    HeaderBackgroundColor #fff
+  FontSize 13 
+}
+
+skinparam SequenceGroup {
+      BackgroundColor #e18114
+    BorderColor #e18114
+    FontColor #e18114
+    HeaderFontColor #fff
+  FontSize 13 
+}
+
+skinparam SequenceReference {
+      BackgroundColor #fff
+    BorderColor #a0439c
+    FontColor #a0439c
+    HeaderFontColor #fff
+    HeaderBackgroundColor #a0439c
+  FontSize 13 
+  BorderThickness 1
+}
+
+skinparam SequenceBox {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+
+
+
+
+
+skinparam Agent {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Person {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Artifact {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Component {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam File {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Card {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Storage {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Cloud {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+skinparam Frame {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+skinparam Node {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+skinparam Stack {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Folder {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+skinparam Hexagon {
+      BackgroundColor #e18114
+    BorderColor #e18114
+    FontColor #fff
+    StereotypeFontColor #fff
+    HeaderBackgroundColor #fff
+  FontSize 13 
+}
+
+skinparam Interface {
+      BackgroundColor #e18114
+    BorderColor #e18114
+    FontColor #e18114
+    StereotypeFontColor #e18114
+  FontSize 13 
+}
+
+skinparam Object {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Rectangle {
+      BackgroundColor #e18114
+    BorderColor #e18114
+    FontColor #fff
+    StereotypeFontColor #fff
+    HeaderBackgroundColor #fff
+  FontSize 13 
+}
+
+skinparam Rectangle<<boundary>> {
+      BackgroundColor #fff
+    BorderColor #e18114
+    FontColor #e18114
+    HeaderFontColor #fff
+    HeaderBackgroundColor #e18114
+  FontSize 13 
+}
+
+skinparam State {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+start
+
+partition "First section" {
+  if (decision node) then (yes)
+    :receive input<
+    :Action A;
+  else (no)
+    :Action B;
+    :Object 1]
+  endif
+}
+
+fork
+  :Parallel X;
+fork again
+  :Parallel Y;
+end merge
+
+repeat
+
+  if (done here) then (stop)
+    -[dotted]->
+    :last action in this
+    part of the flow;
+    end;
+  else
+    :continue;
+    :send output>
+  endif
+  
+  switch (cases)
+  case (case i.)
+    :Action i;
+  case (case ii.)
+    :Action ii;
+  case (case iii.)
+    :Action iii;
+  endswitch
+
+repeat while (Do it again?) is (yes) not (no)
+
+stop
+@enduml
+
+PlantUML version 1.2021.6(Fri May 14 07:09:51 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
