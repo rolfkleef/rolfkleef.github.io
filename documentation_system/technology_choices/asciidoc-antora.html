@@ -51,7 +51,7 @@
   </nav>
 </header>
 <div class="body">
-<div class="nav-container" data-component="documentation_system" data-version="master">
+<div class="nav-container" data-component="documentation_system" data-version="">
   <aside class="nav">
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
@@ -71,9 +71,6 @@
     <a class="nav-link" href="plantuml-kroki.html">PlantUML and Kroki</a>
   </li>
 </ul>
-  </li>
-  <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../style_choices/index.html">Style choices</a>
   </li>
 </ul>
   </li>
@@ -102,7 +99,13 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../antora/index.html">Antora</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../antora/setup.html">Antora setup</a>
+  </li>
+</ul>
   </li>
 </ul>
   </li>
@@ -119,14 +122,14 @@
 <div class="nav-panel-explore" data-panel="explore">
   <div class="context">
     <span class="title">Documentation system</span>
-    <span class="version">main</span>
+    <span class="version">default</span>
   </div>
   <ul class="components">
     <li class="component is-current">
       <a class="title" href="../index.html">Documentation system</a>
       <ul class="versions">
         <li class="version is-current is-latest">
-          <a href="../index.html">main</a>
+          <a href="../index.html">default</a>
         </li>
       </ul>
     </li>
@@ -134,7 +137,7 @@
       <a class="title" href="../../overview/index.html">Overview</a>
       <ul class="versions">
         <li class="version is-latest">
-          <a href="../../overview/index.html">main</a>
+          <a href="../../overview/index.html">default</a>
         </li>
       </ul>
     </li>
@@ -142,6 +145,9 @@
       <a class="title" href="../../styleguide/index.html">Style guide</a>
       <ul class="versions">
         <li class="version is-latest">
+          <a href="../../styleguide/index.html">default</a>
+        </li>
+        <li class="version">
           <a href="../../styleguide/index.html">main</a>
         </li>
       </ul>
@@ -476,7 +482,7 @@ There has been discussion about adding an abstraction layer to let the applicati
 </div>
 </div>
 <div class="sect1">
-<h2 id="_background_reading_references"><a class="anchor" href="#_background_reading_references"></a>Background reading references</h2>
+<h2 id="_background_references"><a class="anchor" href="#_background_references"></a>Background references</h2>
 <div class="sectionbody">
 <?xml version="1.0"?>
 <div class="csl-bib-body" style="line-height: 1.35; ">
@@ -490,15 +496,15 @@ There has been discussion about adding an abstraction layer to let the applicati
     <div class="csl-left-margin" style="float: left; padding-right: 0.5em; text-align: right; width: 1em;">3.</div><div class="csl-right-inline" style="margin: 0 .4em 0 1.5em;">Eric Holscher. <i>Why You Shouldn&#x2019;t Use &#x201C;Markdown&#x201D; for Documentation</i>. 15-Mar-2016. <a href="https://www.ericholscher.com/blog/2016/mar/15/dont-use-markdown-for-technical-docs/">https://www.ericholscher.com/blog/2016/mar/15/dont-use-markdown-for-technical-docs/</a></div>
   </div>
   <div class="csl-entry" style="clear: left; ">
-    <div class="csl-left-margin" style="float: left; padding-right: 0.5em; text-align: right; width: 1em;">4.</div><div class="csl-right-inline" style="margin: 0 .4em 0 1.5em;">Alexander Schwartz. <i>Creating a documentation site for users with AsciiDoc and Antora</i>. 07-Feb-2021. FOSDEM 2021, Tool the docs room. <a href="https://speakerdeck.com/ahus1/creating-a-documentation-site-for-users-with-asciidoc-and-antora-15d22d44-7228-48dc-945d-88a7c0731587?slide=10">https://speakerdeck.com/ahus1/creating-a-documentation-site-for-users-with-asciidoc-and-antora-15d22d44-7228-48dc-945d-88a7c0731587?slide=10</a></div>
+    <div class="csl-left-margin" style="float: left; padding-right: 0.5em; text-align: right; width: 1em;">4.</div><div class="csl-right-inline" style="margin: 0 .4em 0 1.5em;">Alexander Schwartz. <i>Creating a documentation site for users with AsciiDoc and Antora</i>. 07-Feb-2021. FOSDEM 2021, Tool the docs room. <a href="https://speakerdeck.com/ahus1/creating-a-documentation-site-for-users-with-asciidoc-and-antora-15d22d44-7228-48dc-945d-88a7c0731587">https://speakerdeck.com/ahus1/creating-a-documentation-site-for-users-with-asciidoc-and-antora-15d22d44-7228-48dc-945d-88a7c0731587</a></div>
   </div>
   <div class="csl-entry" style="clear: left; ">
     <div class="csl-left-margin" style="float: left; padding-right: 0.5em; text-align: right; width: 1em;">5.</div><div class="csl-right-inline" style="margin: 0 .4em 0 1.5em;">Matthew Setter. <i>Convert Markdown to AsciiDoc The Right Way! Use Kramdoc</i>. 16-May-2019. <a href="https://matthewsetter.com/technical-documentation/asciidoc/convert-markdown-to-asciidoc-with-kramdoc/">https://matthewsetter.com/technical-documentation/asciidoc/convert-markdown-to-asciidoc-with-kramdoc/</a></div>
   </div>
 </div>
+<span class='Z3988' title='url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=presentation&amp;rft.title=Creating%20a%20documentation%20site%20for%20users%20with%20AsciiDoc%20and%20Antora&amp;rft.description=The%20tool%20Antora%20creates%20documentation%20websites%20from%20AsciiDoc%20sources%20stored%20in%20Git%20repositories.%20Users%20can%20browse%20the%20generated%20website%20and%20select%20the%20version%20matching%20the%20software%20they%20use.%20Navigation%20outlines%2C%20search%20and%20cross-references%20between%20pages%20allow%20users%20to%20find%20answers%20to%20their%20questions.%20Several%20open-source%20software%20projects%20like%20Camel%2C%20Debezium%20and%20Couchbase%20use%20this%20solution.%0A%0AFor%20developers%20it%20is%20normal%20to%20develop%20software%20in%20collaboration%20using%20their%20IDE%20and%20a%20version%20control%20system%20like%20Git.%20The%20same%20type%20of%20collaboration%20is%20possible%20when%20all%20documentation%20is%20versioned%20in%20a%20markup-format%20like%20AsciiDoc.%0A%0AThis%20talk%20presents%20the%20basics%20of%20an%20Antora%20setup%20and%20walks%20through%20all%20the%20steps%20from%20editing%20content%20in%20the%20IDE%20to%20updating%20the%20documentation%20site%20using%20continuous%20integration%20and%20delivery.%0A%0ASample%20Documentation%20created%20with%20Antora%3A%0A%0A%3Cul%3E%0A%3Cli%3E%3Ca%20href%3D%22https%3A%2F%2Fdocs.antora.org%2F%22%3Ehttps%3A%2F%2Fdocs.antora.org%2F%3C%2Fa%3E%0A%3Cli%3E%3Ca%20href%3D%22https%3A%2F%2Fdebezium.io%2Fdocumentation%2Freference%2Findex.html%22%3Ehttps%3A%2F%2Fdebezium.io%2Fdocumentation%2Freference%2Findex.html%3C%2Fa%3E%0A%3Cli%3E%3Ca%20href%3D%22https%3A%2F%2Fintellij-asciidoc-plugin.ahus1.de%2Fdocs%2Fusers-guide%2Findex.html%22%3Ehttps%3A%2F%2Fintellij-asciidoc-plugin.ahus1.de%2Fdocs%2Fusers-guide%2Findex.html%3C%2Fa%3E%0A%3C%2Ful%3E&amp;rft.identifier=https%3A%2F%2Fspeakerdeck.com%2Fahus1%2Fcreating-a-documentation-site-for-users-with-asciidoc-and-antora-15d22d44-7228-48dc-945d-88a7c0731587&amp;rft.aufirst=Alexander&amp;rft.aulast=Schwartz&amp;rft.au=Alexander%20Schwartz&amp;rft.date=2021-02-07&amp;rft.language=en'></span>
 <span class='Z3988' title='url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=blogPost&amp;rft.title=The%20Lisk%20Documentation%20migrated%20to%20AsciiDoc%20and%20Antora&amp;rft.description=Along%20with%20the%20new%20website%20design%20for%20lisk.io%2C%20the%20entire%20documentation%20workflow%20has%20been%20updated.%20Together%20with%20a%20variety%20of%20many%20improvements%2C%20all%20existing%20documentation%20has%20now%20been%20converted%20from%20Markdown%20to%20Asciidoc%2C%20powered%20by%20Antora.%20This%20blogpost%20covers%20why%20the%20change%20was%20implemented%2C%20and%20highlights%20the%20most%20important%20new%20features%20that%20exist%20after%20the%20migration.&amp;rft.identifier=https%3A%2F%2Flisk.io%2Fblog%2Fannouncement%2Flisk-documentation-migrated-asciidoc-and-antora&amp;rft.aufirst=Mona&amp;rft.aulast=B%C3%A4renf%C3%A4nger&amp;rft.au=Mona%20B%C3%A4renf%C3%A4nger&amp;rft.date=2020-02-24&amp;rft.language=en'></span>
 <span class='Z3988' title='url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=blogPost&amp;rft.title=Convert%20Markdown%20to%20AsciiDoc%20The%20Right%20Way!%20Use%20Kramdoc&amp;rft.description=If%20you%20need%20to%20convert%20Markdown%20content%20to%20AsciiDoc%2C%20there%E2%80%99s%20a%20tool%20specifically%20designed%20for%20the%20job%20%E2%80%94%20it%E2%80%99s%20called%20Kramdoc.%20In%20this%20post%2C%20I%E2%80%99m%20going%20to%20show%20you%20how%20to%20use%20it%20and%20relate%20my%20experience%20with%20it.&amp;rft.identifier=https%3A%2F%2Fmatthewsetter.com%2Ftechnical-documentation%2Fasciidoc%2Fconvert-markdown-to-asciidoc-with-kramdoc%2F&amp;rft.aufirst=Matthew&amp;rft.aulast=Setter&amp;rft.au=Matthew%20Setter&amp;rft.date=2019-05-16&amp;rft.language=en'></span>
-<span class='Z3988' title='url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=presentation&amp;rft.title=Creating%20a%20documentation%20site%20for%20users%20with%20AsciiDoc%20and%20Antora&amp;rft.description=The%20tool%20Antora%20creates%20documentation%20websites%20from%20AsciiDoc%20sources%20stored%20in%20Git%20repositories.%20Users%20can%20browse%20the%20generated%20website%20and%20select%20the%20version%20matching%20the%20software%20they%20use.%20Navigation%20outlines%2C%20search%20and%20cross-references%20between%20pages%20allow%20users%20to%20find%20answers%20to%20their%20questions.%20Several%20open-source%20software%20projects%20like%20Camel%2C%20Debezium%20and%20Couchbase%20use%20this%20solution.%0A%0AFor%20developers%20it%20is%20normal%20to%20develop%20software%20in%20collaboration%20using%20their%20IDE%20and%20a%20version%20control%20system%20like%20Git.%20The%20same%20type%20of%20collaboration%20is%20possible%20when%20all%20documentation%20is%20versioned%20in%20a%20markup-format%20like%20AsciiDoc.%0A%0AThis%20talk%20presents%20the%20basics%20of%20an%20Antora%20setup%20and%20walks%20through%20all%20the%20steps%20from%20editing%20content%20in%20the%20IDE%20to%20updating%20the%20documentation%20site%20using%20continuous%20integration%20and%20delivery.%0A%0ASample%20Documentation%20created%20with%20Antora%3A%0A%0A%3Cul%3E%0A%3Cli%3E%3Ca%20href%3D%22https%3A%2F%2Fdocs.antora.org%2F%22%3Ehttps%3A%2F%2Fdocs.antora.org%2F%3C%2Fa%3E%0A%3Cli%3E%3Ca%20href%3D%22https%3A%2F%2Fdebezium.io%2Fdocumentation%2Freference%2Findex.html%22%3Ehttps%3A%2F%2Fdebezium.io%2Fdocumentation%2Freference%2Findex.html%3C%2Fa%3E%0A%3Cli%3E%3Ca%20href%3D%22https%3A%2F%2Fintellij-asciidoc-plugin.ahus1.de%2Fdocs%2Fusers-guide%2Findex.html%22%3Ehttps%3A%2F%2Fintellij-asciidoc-plugin.ahus1.de%2Fdocs%2Fusers-guide%2Findex.html%3C%2Fa%3E%0A%3C%2Ful%3E&amp;rft.identifier=https%3A%2F%2Fspeakerdeck.com%2Fahus1%2Fcreating-a-documentation-site-for-users-with-asciidoc-and-antora-15d22d44-7228-48dc-945d-88a7c0731587%3Fslide%3D10&amp;rft.aufirst=Alexander&amp;rft.aulast=Schwartz&amp;rft.au=Alexander%20Schwartz&amp;rft.date=2021-02-07&amp;rft.language=en'></span>
 <span class='Z3988' title='url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=blogPost&amp;rft.title=Why%20You%20Shouldn%E2%80%99t%20Use%20%E2%80%9CMarkdown%E2%80%9D%20for%20Documentation&amp;rft.identifier=https%3A%2F%2Fwww.ericholscher.com%2Fblog%2F2016%2Fmar%2F15%2Fdont-use-markdown-for-technical-docs%2F&amp;rft.aufirst=Eric&amp;rft.aulast=Holscher&amp;rft.au=Eric%20Holscher&amp;rft.date=2016-03-15'></span>
 <span class='Z3988' title='url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=blogPost&amp;rft.title=Antora%3A%20Sphinx%20for%20Asciidoc&amp;rft.identifier=https%3A%2F%2Fzerokspot.com%2Fweblog%2F2018%2F03%2F25%2Fantora-sphinx-for-asciidoc%2F&amp;rft.aufirst=Horst&amp;rft.aulast=Gutmann&amp;rft.au=Horst%20Gutmann&amp;rft.date=2018-03-25&amp;rft.language=en'></span>
 </div>
