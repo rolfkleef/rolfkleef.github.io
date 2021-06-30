@@ -80,40 +80,40 @@ It would require separate "public" and "private" versions of the component defin
  - It keeps the private sections clearly separated from public sources, reducing the chances of accidental publishing.
  - It would also benefit from clearly marking the private portions, but more for the front-end.
 
+====
 .Repositories and folder structure
-[plantuml]
+[source, treeview]
 ....
-@startwbs
-* My local machine
- * localhost
-  *_ antora-playbooks/
-   *_ private.yml
-   *_ lib-antora.yml
-   *_ lib-hop.yml
-  *_ docs/
-   *_ private/
-    *_ modules/
-    *_ antora.yml
- * public site
-  *_ playbook-docs.yml
-  *_ docs/
-   *_ overview/
-    *_ modules/
-    *_ antora.yml
-   *_ documentation_system
-    *_ modules/
-    *_ antora.yml
- * my antora ui
-  *_ docs/
-   *_ modules/
-   *_ antora.yml
-  *_ my_docs/
-   *_ modules/
-   *_ antora.yml
- * desktop config
-  *_ docs/
-   *_ public/
-    *_ modules/
-    *_ antora.yml
-@endwbs
+Local repositories
+├── localhost
+|   ├── antora-playbooks
+|   |   ├── private.yml # <.>
+|   |   ├── lib-antora.yml
+|   |   └── lib-hop.yml
+|   └── docs
+|       └── private
+|           ├── modules/
+|           └── antora.yml
+├── public site
+|   ├── playbook-docs.yml
+|   └── docs
+|       ├── overview
+|       |   ├── modules/
+|       |   └── antora.yml
+|       └── documentation_system
+|           ├── modules/
+|           └── antora.yml
+├── my antora ui
+|   ├── docs
+|   |   ├── modules/
+|   |   └── antora.yml
+|   └── my_docs
+|       ├── modules/
+|       └── antora.yml
+└── desktop config
+    └── docs
+        └── modules/
+            ├── modules/
+            └── antora.yml
 ....
+====
