@@ -291,11 +291,45 @@ I&#8217;m not sure yet which version works best, or whether it depends on the co
 </li>
 </ul>
 </div>
-<div class="imageblock kroki">
+<div class="exampleblock">
 <div class="content">
-<img src="_images/diag-8968e622a4a67354e3f02e002e5b8f9f854f80a3.svg" alt="Repositories and folder structure">
+<div class="listingblock">
+<div class="title">Repositories and folder structure</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-treeview hljs" data-lang="treeview">Local repositories
+├── localhost
+|   ├── antora-playbooks
+|   |   ├── private.yml <i class="conum" data-value="1"></i><b>(1)</b>
+|   |   ├── lib-antora.yml
+|   |   └── lib-hop.yml
+|   └── docs
+|       └── private
+|           ├── modules/
+|           └── antora.yml
+├── public site
+|   ├── playbook-docs.yml
+|   └── docs
+|       ├── overview
+|       |   ├── modules/
+|       |   └── antora.yml
+|       └── documentation_system
+|           ├── modules/
+|           └── antora.yml
+├── my antora ui
+|   ├── docs
+|   |   ├── modules/
+|   |   └── antora.yml
+|   └── my_docs
+|       ├── modules/
+|       └── antora.yml
+└── desktop config
+    └── docs
+        └── modules/
+            ├── modules/
+            └── antora.yml</code></pre>
 </div>
-<div class="title">Figure 2. Repositories and folder structure</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -318,7 +352,7 @@ I&#8217;m not sure yet which version works best, or whether it depends on the co
 
     <aside>
       <h1>Hire me via</h1>
-      <p><a href="https://www.data4development.nl">Data4Development B.V.</a><br>The Netherlands</p>
+      <p><a href="https://www.data4development.nl">Data4Development B.V.</a></p>
       <p><a href="mailto://rolf@data4development.org" rel="me">rolf@data4development.org</a></p>
     </aside>
 

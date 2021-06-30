@@ -250,66 +250,6 @@ stop
 </div>
 </div>
 </div>
-<div class="sect1">
-<h2 id="_example"><a class="anchor" href="#_example"></a>Example</h2>
-<div class="sectionbody">
-<div class="imageblock kroki">
-<div class="content">
-<img src="../_images/diag-7d6c0a15b9c4e624835a4c574b1842953c5ec140.svg" alt="Activity diagram sample">
-</div>
-<div class="title">Figure 2. Activity diagram sample</div>
-</div>
-<div class="listingblock">
-<div class="title">PlantUML source</div>
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-plantuml hljs" data-lang="plantuml">@startuml
-start
-
-partition "First section" {
-  if (decision node) then (yes)
-    :receive input&lt;
-    :Action A;
-  else (no)
-    :Action B;
-    :Object 1]
-  endif
-}
-
-fork
-  :Parallel X;
-fork again
-  :Parallel Y;
-end merge
-
-repeat
-
-  if (done here) then (stop)
-    -[dotted]-&gt;
-    :last action in this
-    part of the flow;
-    end;
-  else
-    :continue;
-    :send output&gt;
-  endif
-  
-  switch (cases)
-  case (case i.)
-    :Action i;
-  case (case ii.)
-    :Action ii;
-  case (case iii.)
-    :Action iii;
-  endswitch
-
-repeat while (Do it again?) is (yes) not (no)
-
-stop
-@enduml</code></pre>
-</div>
-</div>
-</div>
-</div>
 <nav class="pagination">
   <span class="prev"><a href="usecase.html">Use case diagram</a></span>
   <span class="next"><a href="sequence.html">Sequence diagram</a></span>
@@ -328,7 +268,7 @@ stop
 
     <aside>
       <h1>Hire me via</h1>
-      <p><a href="https://www.data4development.nl">Data4Development B.V.</a><br>The Netherlands</p>
+      <p><a href="https://www.data4development.nl">Data4Development B.V.</a></p>
       <p><a href="mailto://rolf@data4development.org" rel="me">rolf@data4development.org</a></p>
     </aside>
 
