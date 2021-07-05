@@ -45,7 +45,7 @@ alias cp='cp -i' # <2> # <.>
 
 : 'end::aliases[] <.>
   tag::aliases-notes[] <.>
-<1> This the callout for the first `alias` command.
+<1> This is the callout for the first `alias` command.
 <2> And this for the second.
 ' # end::aliases-notes[] <.>
 
@@ -56,7 +56,7 @@ alias cp='cp -i' # <2> # <.>
 <.> Add `# <2>` at the end of another line to create the second callout.
 <.> Start a multi-line comment using `: '`, and close the tag for the script portion.
 <.> Open another tag `aliases-notes` for the callouts, and add the text for them.
-<.> Close the tag for the callouts text.
+<.> End the multi-line comment (with `:`) and close the tag for the callouts text.
 
 
 [NOTE]

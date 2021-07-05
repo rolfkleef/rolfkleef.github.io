@@ -12,7 +12,9 @@ comments
 ' # <2>
 ----
 <1> Start of multiline comment. This can include content on the same line.
-<2> End of multiline comment. The quote needs to be at the start of the line.
+<2> End of multiline comment.
+The quote needs to be at the start of the line.
+Additional comments can be added on the same line.
 
 == Example
 

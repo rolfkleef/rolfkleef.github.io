@@ -87,7 +87,7 @@ It would require separate "public" and "private" versions of the component defin
 Local repositories
 ├── localhost
 |   ├── antora-playbooks
-|   |   ├── private.yml # <.>
+|   |   ├── private.yml
 |   |   ├── lib-antora.yml
 |   |   └── lib-hop.yml
 |   └── docs
