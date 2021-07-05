@@ -13,7 +13,7 @@ link editor to source_repo--><path d="M590.12,162.38 C650.04,227.61 735.1,320.2 
 link editor to source_repo--><path d="M631.18,105.74 C684.84,120.93 745.92,147.15 785.5,192 C831.2,243.8 846.33,323.06 851.04,379.65 " fill="none" id="editor-to-source_repo-1" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="851.66,387.83,854.0511,379.6274,848.068,380.0777,851.66,387.83" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="121" x="808.5" y="207.0001">4) includes partials in</text><text fill="#666666" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="48" x="846.5" y="221.4002">pages in</text><!--MD5=[ce999598762e90ea6ec54476821a4e9c]
 link editor to zotero--><path d="M407.71,141.94 C382.05,156.84 355.55,173.86 332.5,192 C257.32,251.15 183.88,333.81 138.21,389.04 " fill="none" id="editor-to-zotero" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="133.06,395.3,140.4628,391.0341,135.8325,387.2183,133.06,395.3" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="150" x="335.5" y="214.0001">1) organises references in</text><!--MD5=[ba623790f6c6a005d8ecb0c9e1ae8ef6]
 reverse link zotero to content_helper--><path d="M184.41,449 C239.53,449 309.23,449 364.68,449 " fill="none" id="zotero-backto-content_helper" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="176.39,449,184.39,452,184.39,446,176.39,449" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="148" x="196.5" y="427.0001">retrieves HTML-formatted</text><text fill="#666666" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="93" x="224" y="441.4002">references from</text><!--MD5=[3f5dd2f09746309f43c42f179ec0045d]
-link editor to content_helper--><path d="M506.78,162.38 C496.11,226.82 481.02,317.97 470.78,379.84 " fill="none" id="editor-to-content_helper" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="469.43,387.99,473.6913,380.5845,467.7712,379.6086,469.43,387.99" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="40" x="504.5" y="214.0001">3) runs</text><!--MD5=[30dce3a41475cdc266ee5fc796d5445c]
+link editor to content_helper--><path d="M506.78,162.38 C496.11,226.82 481.02,317.97 470.78,379.84 " fill="none" id="editor-to-content_helper" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="469.43,387.99,473.6913,380.5845,467.7712,379.6086,469.43,387.99" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="40" x="504.5" y="214.0001">3) runs</text><!--MD5=[1044af2ccca9f33d40305993c7fba1c5]
 @startuml
 ' Styling settings for PlantUML diagrams
 ' See http://plantuml.sourceforge.net for documentation
@@ -1185,7 +1185,7 @@ content_helper -LEFT->> zotero : **retrieves HTML-formatted references from**
 editor - ->> content_helper : **3) runs**
 @enduml
 
-PlantUML version 1.2021.6(Fri May 14 07:09:51 GMT 2021)
+PlantUML version 1.2021.8(Sat Jun 26 08:20:59 GMT 2021)
 (GPL source distribution)
 Java Runtime: OpenJDK Runtime Environment
 JVM: OpenJDK 64-Bit Server VM

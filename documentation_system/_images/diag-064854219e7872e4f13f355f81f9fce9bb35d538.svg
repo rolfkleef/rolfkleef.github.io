@@ -18,7 +18,7 @@ link source_repos to antora--><path d="M268.9,708 C305.04,708 345.74,708 382.92,
 link editor to source_repos--><path d="M124.04,162.02 C132.9,284.32 150.1,521.94 158.56,638.78 " fill="none" id="editor-to-source_repos" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="159.15,646.98,161.5568,638.782,155.5728,639.2209,159.15,646.98" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="87" x="152.5" y="456.0001">edits content in</text><!--MD5=[53246feb467937b0480788f5d7053c23]
 link publisher to sitegen--><path d="M345.25,162.16 C342.62,181.02 340.15,201.21 338.5,220 C336.3,245.075 334.6981,271.7375 333.5333,297.6877 C333.3877,300.9314 333.2489,304.1641 333.1166,307.3811 C333.0505,308.9896 332.986,310.5942 332.9231,312.1943 " fill="none" id="publisher-to-sitegen" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="332.9231,312.1943,336.2351,304.3184,330.2397,304.0826,332.9231,312.1943" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="114" x="343.5" y="207.0001">configures and runs</text><!--MD5=[b433a8755c0884629f7eef1daaa633b7]
 link antora to site--><path d="M581.24,769.18 C624.08,801.92 676.45,841.94 717.03,872.96 " fill="none" id="antora-to-site" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="723.43,877.86,718.8945,870.6192,715.2518,875.3869,723.43,877.86" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="139" x="661.5" y="821.0001">publishes site content to</text><!--MD5=[060cf89e72fc540dee4eb7f96e3d16db]
-link editor to publisher--><!--MD5=[3afc0ee7b34d1c97f96189d82dfa1af5]
+link editor to publisher--><!--MD5=[8e55dc6e2bc582b46d0e12c077b8b23f]
 @startuml
 ' Styling settings for PlantUML diagrams
 ' See http://plantuml.sourceforge.net for documentation
@@ -1204,7 +1204,7 @@ antora - ->> site : **publishes site content to**
 editor -[hidden]R- publisher
 @enduml
 
-PlantUML version 1.2021.6(Fri May 14 07:09:51 GMT 2021)
+PlantUML version 1.2021.8(Sat Jun 26 08:20:59 GMT 2021)
 (GPL source distribution)
 Java Runtime: OpenJDK Runtime Environment
 JVM: OpenJDK 64-Bit Server VM

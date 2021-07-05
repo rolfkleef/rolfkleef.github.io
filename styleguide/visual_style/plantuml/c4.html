@@ -95,6 +95,9 @@
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../mermaid.html">Mermaid diagrams</a>
   </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../treeview.html">Treeview folder structure</a>
+  </li>
 </ul>
   </li>
 </ul>
@@ -167,11 +170,11 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>The <a href="https://c4model.com/" target="_blank" rel="noopener">C4 Models</a> offers multiple diagram types.</p>
+<p>The <a href="https://c4model.com/" target="_blank" rel="noopener">C4 Models</a> offer multiple diagram types.</p>
 </div>
 <div class="imageblock kroki">
 <div class="content">
-<img src="../_images/diag-c96a2e37a003282ac098fe47c2da60372e9066b1.svg" alt="C4 Diagrams">
+<img src="../_images/diag-8a1303fc7271e1d31473180fc01e24cdf1a7ebac.svg" alt="C4 Diagrams">
 </div>
 <div class="title">Figure 1. C4 Diagrams</div>
 </div>
@@ -187,7 +190,7 @@
 <h3 id="_level_1_system_context"><a class="anchor" href="#_level_1_system_context"></a>Level 1: System context</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="../_images/diag-3066e19b18735e37f143cdc1348abe1fdc1eaa38.svg" alt="Core elements of a C4 system context diagram">
+<img src="../_images/diag-23e91e1f6ee3a9f1e5be53394d6bfa720940ba7f.svg" alt="Core elements of a C4 system context diagram">
 </div>
 <div class="title">Figure 2. Core elements of a C4 system context diagram</div>
 </div>
@@ -205,8 +208,8 @@ Person(group1, "Group", "Optional Description", $sprite="users")
 
 Boundary(boundary1, "Boundary", "Boundary type") {
   System(system1, "System", "Optional Description")
-  SystemQueue(squeue, "SystemQueue", "Tech")
-  SystemDb(sdb, "SystemDb", "Technology", "Optional Description")
+  SystemQueue(squeue, "SystemQueue", "Optional Description")
+  SystemDb(sdb, "SystemDb", "Optional Description")
 
   Rel_R(system1, sdb, "Rel_R", "Optional Technology")
   BiRel_L(system1, squeue, "BiRel_L", "Optional")
@@ -216,8 +219,8 @@ Rel(person1, system1, "Rel", "Optional Technology")
 
 Boundary(boundary2, "Boundary", "Boundary type") {
   System_Ext(system2, "System_Ext", "Optional Description")
-  SystemQueue_Ext(squeue2, "SystemQueue_Ext", "Tech")
-  SystemDb_Ext(sdb2, "SystemDb_Ext", "Technology", "Optional Description")
+  SystemQueue_Ext(squeue2, "SystemQueue_Ext", "Optional Description")
+  SystemDb_Ext(sdb2, "SystemDb_Ext", "Optional Description")
 
   Rel_R(system2, sdb2, "Rel_R", "Optional Technology")
   BiRel_L(system2, squeue2, "BiRel_L", "Optional")
@@ -233,7 +236,7 @@ Rel(system1, system2, "Rel")
 <h3 id="_level_2_container"><a class="anchor" href="#_level_2_container"></a>Level 2: Container</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="../_images/diag-dec695842873dc56a828087f924e3b4ba25291c3.svg" alt="Additional elements of a C4 container model diagram">
+<img src="../_images/diag-4ea715075902fc20a6597ada4f09f4232456793a.svg" alt="Additional elements of a C4 container model diagram">
 </div>
 <div class="title">Figure 3. Additional elements of a C4 container model diagram</div>
 </div>
@@ -247,16 +250,16 @@ LAYOUT_WITH_LEGEND()
 
 System_Boundary(boundary1, "System_Boundary", "Boundary type") {
   Container(container1, "Container", "Technology", "Optional Description")
-  ContainerQueue(cqueue, "ContainerQueue", "Tech")
+  ContainerQueue(cqueue, "ContainerQueue", "Technology")
   ContainerDb(cdb, "ContainerDb", "Technology", "Optional Description")
 
   Rel_R(container1, cdb, "Rel_R", "Optional Technology")
   BiRel_L(container1, cqueue, "BiRel", "Optional")
 }
 
-System_Boundary(boundary2, "Boundary", "Boundary type") {
+System_Boundary(boundary2, "System_Boundary", "Boundary type") {
   Container_Ext(container2, "Container_Ext", "Technology", "Optional Description")
-  ContainerQueue_Ext(cqueue2, "ContainerQueue_Ext", "Tech")
+  ContainerQueue_Ext(cqueue2, "ContainerQueue_Ext", "Technology")
   ContainerDb_Ext(cdb2, "ContainerDb_Ext", "Technology", "Optional Description")
 
   Rel_R(container2, cdb2, "Rel_R", "Optional Technology")
@@ -272,7 +275,7 @@ Rel(container1, container2, "Rel")
 <h3 id="_level_3_component"><a class="anchor" href="#_level_3_component"></a>Level 3: Component</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="../_images/diag-af1ce13971d735a176374ccf1b7be4f743cb6a63.svg" alt="Additional elements of a C4 component model diagram">
+<img src="../_images/diag-20f0d95d19714975cf9c50ba127b2488bd2d0afe.svg" alt="Additional elements of a C4 component model diagram">
 </div>
 <div class="title">Figure 4. Additional elements of a C4 component model diagram</div>
 </div>
@@ -286,7 +289,7 @@ LAYOUT_WITH_LEGEND()
 
 Container_Boundary(boundary1, "Container_Boundary", "Boundary type") {
   Component(component1, "Component", "Technology", "Optional Description")
-  ComponentQueue(cqueue, "ComponentQueue", "Tech")
+  ComponentQueue(cqueue, "ComponentQueue", "Technology")
   ComponentDb(cdb, "ComponentDb", "Technology", "Optional Description")
 
   Rel_R(component1, cdb, "Rel_R", "Optional Technology")
@@ -295,7 +298,7 @@ Container_Boundary(boundary1, "Container_Boundary", "Boundary type") {
 
 Container_Boundary(boundary2, "Boundary", "Boundary type") {
   Component_Ext(component2, "Component_Ext", "Technology", "Optional Description")
-  ComponentQueue_Ext(cqueue2, "ComponentQueue_Ext", "Tech")
+  ComponentQueue_Ext(cqueue2, "ComponentQueue_Ext", "Technology")
   ComponentDb_Ext(cdb2, "ComponentDb_Ext", "Technology", "Optional Description")
 
   Rel_R(component2, cdb2, "Rel_R", "Optional Technology")

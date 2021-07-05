@@ -11,7 +11,7 @@ link editor to tools--><path d="M173,162.12 C173,193.15 173,228.49 173,257.7 " f
 link tools to sources--><path d="M160.6,373.29 C150.4,416.73 135.94,478.32 125.26,523.79 " fill="none" id="tools-to-sources" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="123.38,531.8,128.1297,524.6978,122.2886,523.326,123.38,531.8" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="104" x="150" y="442.0001">contribute content</text><text fill="#666666" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="61" x="173" y="456.4002">material to</text><!--MD5=[53246feb467937b0480788f5d7053c23]
 link publisher to sitegen--><path d="M409.2,397.21 C410.87,437.41 412.89,485.95 414.46,523.55 " fill="none" id="publisher-to-sitegen" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="414.81,531.88,417.4786,523.7634,411.4837,524.0101,414.81,531.88" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="114" x="414" y="449.0001">configures and runs</text><!--MD5=[e0063adb4c60e65caeb673131dd943a5]
 link sitegen to site--><path d="M417,639.39 C417,662.51 417,689.59 417,712.76 " fill="none" id="sitegen-to-site" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="417,720.78,420,712.78,414,712.78,417,720.78" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="55" x="420" y="686.0001">publishes</text><!--MD5=[97b15c88750bb8c321ec0fb9196fa5c4]
-link tools to publisher--><!--MD5=[fc2eaea205622c6968daaaa561c214b6]
+link tools to publisher--><!--MD5=[4496ed4f25efe492bc882f3812b646d9]
 @startuml
 ' Styling settings for PlantUML diagrams
 ' See http://plantuml.sourceforge.net for documentation
@@ -1173,7 +1173,7 @@ sitegen - ->> site : **publishes**
 publisher -[hidden]L- tools
 @enduml
 
-PlantUML version 1.2021.6(Fri May 14 07:09:51 GMT 2021)
+PlantUML version 1.2021.8(Sat Jun 26 08:20:59 GMT 2021)
 (GPL source distribution)
 Java Runtime: OpenJDK Runtime Environment
 JVM: OpenJDK 64-Bit Server VM
