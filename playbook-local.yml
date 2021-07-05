@@ -38,7 +38,7 @@ asciidoc:
   - asciidoctor-kroki # <1>
   attributes:
     page-pagination: true
-    hide-uri-scheme: true # <2>
+    hide-uri-scheme@: true # <2>
     kroki-fetch-diagram: true # <3>
     allow-uri-read: true
     experimental: true
