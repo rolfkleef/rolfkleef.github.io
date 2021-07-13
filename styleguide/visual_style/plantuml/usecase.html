@@ -32,6 +32,7 @@
   <a class="navbar-link">My documentation</a>
   <div class="navbar-dropdown">
     <a class="navbar-item" href="/">My documentation</a>
+<a class="navbar-item" href="/dataworkbench">Docs dataworkbench.io</a>
   </div>
 </div>
         <div class="navbar-item has-dropdown is-hoverable">
@@ -170,11 +171,23 @@
 <div class="sect1">
 <h2 id="_elements"><a class="anchor" href="#_elements"></a>Elements</h2>
 <div class="sectionbody">
-<div class="imageblock kroki">
+<div class="literalblock kroki-error">
+<div class="title">Core elements of a use case diagram</div>
 <div class="content">
-<img src="../_images/diag-f2e45ff0302df8a1f5f66e1d27fc346de530f1dc.svg" alt="Core elements of a use case diagram">
+<pre>@startuml
+  actor "Actor" &lt;&lt;Stereotype&gt;&gt;
+  note right of :Actor:: Note
+
+  package "Package" &lt;&lt;Stereotype&gt;&gt; {
+    usecase UseCase as "Use case" &lt;&lt;Stereotype&gt;&gt;
+  }
+
+  useCase UseCase2 as "Additional use case"
+
+  :Actor: --&gt; UseCase
+  UseCase &lt;|-- UseCase2
+@enduml</pre>
 </div>
-<div class="title">Figure 1. Core elements of a use case diagram</div>
 </div>
 <div class="listingblock">
 <div class="title">PlantUML source</div>
@@ -199,11 +212,41 @@
 <div class="sect1">
 <h2 id="_example"><a class="anchor" href="#_example"></a>Example</h2>
 <div class="sectionbody">
-<div class="imageblock kroki">
+<div class="literalblock kroki-error">
+<div class="title">Use case diagram sample</div>
 <div class="content">
-<img src="../_images/diag-d8e3ad888a3ba25858812ba82bab273d6b5a65a7.svg" alt="Use case diagram sample">
+<pre>@startuml
+
+actor user as "User"
+actor developer as "Developer"
+actor appman as "Application Manager"
+actor dwb as "DataWorkbench"
+
+user &lt;|-- appman
+appman &lt;|-right- developer
+developer &lt;|-right- dwb
+
+usecase hfeedback as "Get human-readable feedback"
+usecase mfeedback as "Get machine-readable feedback"
+usecase api as "Access an API"
+usecase run as "Run the validator software"
+usecase ws as "Access a web service"
+
+(api) &lt;|-- (mfeedback)
+(api) &lt;|-- (hfeedback)
+(run) &lt;|-- (api)
+(ws) &lt;|-- (run)
+
+user --&gt; (ws)
+
+appman -&gt; (api): "access"
+
+developer -down-&gt; (run)
+
+dwb -&gt; (ws): "operate"
+
+@enduml</pre>
 </div>
-<div class="title">Figure 2. Use case diagram sample</div>
 </div>
 <div class="listingblock">
 <div class="title">PlantUML source</div>

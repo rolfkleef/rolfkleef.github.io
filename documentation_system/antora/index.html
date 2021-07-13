@@ -32,6 +32,7 @@
   <a class="navbar-link">My documentation</a>
   <div class="navbar-dropdown">
     <a class="navbar-item" href="/">My documentation</a>
+<a class="navbar-item" href="/dataworkbench">Docs dataworkbench.io</a>
   </div>
 </div>
         <div class="navbar-item has-dropdown is-hoverable">
@@ -194,11 +195,29 @@ Navigation between these sites is added via the Antora interface.</p>
 </div>
 <div class="exampleblock">
 <div class="content">
-<div class="imageblock kroki">
+<div class="literalblock kroki-error">
+<div class="title">Documentation sections and components for local use</div>
 <div class="content">
-<img src="_images/diag-cfd58fa5c8d3255b136611db75d24f3f05e6d2b0.svg" alt="Documentation sections and components for local use">
+<pre>@startwbs
+*_ Local documentation site
+ * Workstation docs
+  *_ Private
+  *_ Overview
+  *_ Desktop
+  *_ Documentation system
+
+ * Antora &amp; Asciidoc
+  *_ Asciidoc
+  *_ Antora
+  *_ Antora Default UI
+  *_ Asciidoc reveal.js
+
+ * Apache Hop
+  *_ User Manual
+  *_ Technical Documentation
+
+@endwbs</pre>
 </div>
-<div class="title">Figure 1. Documentation sections and components for local use</div>
 </div>
 </div>
 </div>

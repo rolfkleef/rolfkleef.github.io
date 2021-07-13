@@ -32,6 +32,7 @@
   <a class="navbar-link">My documentation</a>
   <div class="navbar-dropdown">
     <a class="navbar-item" href="/">My documentation</a>
+<a class="navbar-item" href="/dataworkbench">Docs dataworkbench.io</a>
   </div>
 </div>
         <div class="navbar-item has-dropdown is-hoverable">
@@ -170,11 +171,67 @@
 <div class="sect1">
 <h2 id="_elements"><a class="anchor" href="#_elements"></a>Elements</h2>
 <div class="sectionbody">
-<div class="imageblock kroki">
+<div class="literalblock kroki-error">
+<div class="title">Core elements of a sequence diagram</div>
 <div class="content">
-<img src="../_images/diag-0b0dde8808e3ec56c00ce2c0534772767e55bc02.svg" alt="Core elements of a sequence diagram">
+<pre>@startuml
+' don't show participants at end of lifeline
+hide footbox
+
+participant Participant &lt;&lt;Stereotype&gt;&gt;
+actor       Actor &lt;&lt;Stereotype&gt;&gt;
+box Box
+boundary    Boundary &lt;&lt;Stereotype&gt;&gt;
+control     Control &lt;&lt;Stereotype&gt;&gt;
+entity      Entity &lt;&lt;Stereotype&gt;&gt;
+end box
+database    Database &lt;&lt;Stereotype&gt;&gt;
+collections Collections &lt;&lt;Stereotype&gt;&gt;
+queue       Queue &lt;&lt;Stereotype&gt;&gt;
+
+autonumber
+Participant -&gt; Actor: Message
+autonumber stop
+
+alt Main case
+  Actor -&gt; Boundary : Main message
+else Alternative case #1
+  Actor -&gt; Control : Alternative message
+  note right: Note
+
+  group group [Extra label]
+    Control -&gt; Entity
+
+    loop 1000 times
+        Entity -&gt; Database ++
+        Entity -&gt; Collections
+        return
+        Collections -&gt; Entity
+    end
+
+    Database -&gt; Collections
+  end
+else Alternative case #2
+  Collections -&gt; Actor
+end
+
+== Divider ==
+
+...delay...
+
+!pragma teoz true
+{a} Actor -&gt; Boundary ++
+  Boundary -&gt; Boundary ++
+    Boundary -&gt; Control ++
+      Control -&gt; Entity !!
+    return
+  return
+{b} Boundary --&gt; Actor --
+{a} &lt;-&gt; {b}: label
+
+ref over Entity, Database: reference
+@enduml</pre>
 </div>
-<div class="title">Figure 1. Core elements of a sequence diagram</div>
 </div>
 <div class="listingblock">
 <div class="title">PlantUML source</div>

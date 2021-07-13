@@ -32,6 +32,7 @@
   <a class="navbar-link">My documentation</a>
   <div class="navbar-dropdown">
     <a class="navbar-item" href="/">My documentation</a>
+<a class="navbar-item" href="/dataworkbench">Docs dataworkbench.io</a>
   </div>
 </div>
         <div class="navbar-item has-dropdown is-hoverable">
@@ -177,9 +178,37 @@
 <div class="sect1">
 <h2 id="_sequence_diagram"><a class="anchor" href="#_sequence_diagram"></a>Sequence diagram</h2>
 <div class="sectionbody">
-<div class="imageblock kroki">
+<div class="literalblock kroki-error">
 <div class="content">
-<img src="_images/diag-d2dfcc7218520fa8547a4eb43613f3fe596285f2.svg" alt="Diagram">
+<pre>sequenceDiagram
+    Alice -&gt;&gt; Bob: Hello Bob, how are you?
+    activate Bob
+    Bob--&gt;Alice: Checking with John...
+    activate Bob
+    Note right of Bob: Bob thinks a long long time.
+    Bob--&gt;&gt;John: How about you John?
+    activate John
+    John -&gt;&gt; John: Reflection
+    John -x Bob: I am good thanks!
+    deactivate John
+    Bob--x Alice: I am good thanks!
+    deactivate Bob
+    Note right of John: John thinks a long&lt;br/&gt;long time, so long&lt;br/&gt;that he addes his own&lt;br/&gt;line breaks.
+
+    Alice-&gt;John: Yes... John, how are you?
+
+    loop Daily query
+        Alice-&gt;&gt;Bob: Hello Bob, how are you?
+        alt is sick
+            Bob-&gt;&gt;Alice: Not so good :(
+        else is well
+            Bob-&gt;&gt;Alice: Feeling fresh like a daisy
+        end
+
+        opt Extra response
+            Bob-&gt;&gt;Alice: Thanks for asking
+        end
+    end</pre>
 </div>
 </div>
 </div>
@@ -187,9 +216,13 @@
 <div class="sect1">
 <h2 id="_flowchart"><a class="anchor" href="#_flowchart"></a>Flowchart</h2>
 <div class="sectionbody">
-<div class="imageblock kroki">
+<div class="literalblock kroki-error">
 <div class="content">
-<img src="_images/diag-98fa454132fec6bc9b19cc8187f44c39dc5444a9.svg" alt="Diagram">
+<pre>graph LR
+    A[Square Rect] -- Link text --&gt; B((Circle))
+    A --&gt; C(Round Rect)
+    B --&gt; D{Rhombus}
+    C --&gt; D</pre>
 </div>
 </div>
 </div>
