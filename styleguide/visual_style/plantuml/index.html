@@ -170,61 +170,11 @@
 <div class="sect1">
 <h2 id="_overview"><a class="anchor" href="#_overview"></a>Overview</h2>
 <div class="sectionbody">
-<div class="literalblock kroki-error">
-<div class="title">PlantUML Diagrams</div>
+<div class="imageblock kroki">
 <div class="content">
-<pre>@startmindmap
-&lt;style&gt;
-mindmapDiagram {
-  node {
-    BackgroundColor #1168bd
-    LineColor #1168bd
-    FontColor #fff
-    MaximumWidth 150
-  }
-  boxless {
-    FontColor #1168bd
-  }
-  arrow {
-    LineColor #e91e63
-  }
-}
-wbsDiagram {
-  node {
-    BackgroundColor #1168bd
-    LineColor #1168bd
-    FontColor #fff
-    MaximumWidth 100
-  }
-  boxless {
-    FontColor #1168bd
-  }
-  arrow {
-    LineColor #e91e63
-  }
-}
-&lt;/style&gt;
-* PlantUML
- * UML diagrams
-  * Behaviour diagrams
-   * Use cases
-   * Activities
-   * States
-   * Interactions
-    * Sequences
-    * Communication
-  * Structure diagrams
-   * Classes
-   * Objects
-   * Packages
-   * Components
-   * Deployment
- * Other diagrams
-  * Mindmaps
-  * Work Breakdown Structures (WBS)
-  * C4 diagrams
-@endmindmap</pre>
+<img src="../_images/diag-32f7ebcfff1010703f26db5eb4aa540469981a76.svg" alt="PlantUML Diagrams">
 </div>
+<div class="title">Figure 1. PlantUML Diagrams</div>
 </div>
 <div class="paragraph">
 <p>The next pages show examples of diagrams with their available elements, to verify the styling.
@@ -249,67 +199,20 @@ Two pointers for more information on the syntax and the meaning of diagrams:</p>
 <p>We include a PlantUML configuration file when generating diagram images.
 This configuration file uses color variables across UML elements, divided in types of diagram elements.</p>
 </div>
-<div class="literalblock kroki-error">
-<div class="title">Color conventions for types of diagram elements</div>
+<div class="imageblock kroki">
 <div class="content">
-<pre>@startuml
-skinparam participant&lt;&lt;node_1&gt;&gt; {
-  $node_1_style(1)
-}
-skinparam participant&lt;&lt;node_2&gt;&gt; {
-  $node_2_style(1)
-}
-skinparam participant&lt;&lt;logic&gt;&gt; {
-  $logic_style(1)
-}
-skinparam participant&lt;&lt;group&gt;&gt; {
-  $group_style(1)
-}
-skinparam participant&lt;&lt;divider&gt;&gt; {
-  $divider_style(1)
-}
-skinparam participant&lt;&lt;note&gt;&gt; {
-  $note_1_style(1)
-}
-
-hide footbox
-
-participant "Primary node" &lt;&lt;node 1&gt;&gt;
-participant "Secondary node" &lt;&lt;node 2&gt;&gt;
-participant "Logic element" &lt;&lt;logic&gt;&gt;
-participant "Grouping element" &lt;&lt;group&gt;&gt;
-participant "Divider element" &lt;&lt;divider&gt;&gt;
-participant "Note" &lt;&lt;note&gt;&gt;
-
-"Primary node" -&gt; "Note" : messages and flows
-@enduml</pre>
+<img src="../_images/diag-fbd8e8a3f8146dbc5743d5b94027389159ddc4c7.svg" alt="Color conventions for types of diagram elements">
 </div>
+<div class="title">Figure 2. Color conventions for types of diagram elements</div>
 </div>
 <div class="paragraph">
 <p>The admonition colors are also included, to make it easy to use them in diagrams as well.</p>
 </div>
-<div class="literalblock kroki-error">
-<div class="title">Using admonition colors for elements</div>
+<div class="imageblock kroki">
 <div class="content">
-<pre>@startuml
-hide footbox
-
-participant tip &lt;&lt;(T,$tip_color)&gt;&gt;
-note over tip $tip_color: Tip
-
-participant note &lt;&lt;(N,$note_color)&gt;&gt;
-/ note over note $note_color: Note
-
-participant warning &lt;&lt;(W,$warning_color)&gt;&gt;
-/ note over warning $warning_color: Warning
-
-participant caution &lt;&lt;(C,$caution_color)&gt;&gt;
-/ note over caution $caution_color: Caution
-
-participant important &lt;&lt;(I,$important_color)&gt;&gt;
-/ note over important $important_color: Important
-@enduml</pre>
+<img src="../_images/diag-b6ebed77b55f9e809a1c352e3dbcb5a2b7d13aed.svg" alt="Using admonition colors for elements">
 </div>
+<div class="title">Figure 3. Using admonition colors for elements</div>
 </div>
 <div class="listingblock">
 <div class="title">Source for the example above</div>

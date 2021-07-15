@@ -178,37 +178,9 @@
 <div class="sect1">
 <h2 id="_sequence_diagram"><a class="anchor" href="#_sequence_diagram"></a>Sequence diagram</h2>
 <div class="sectionbody">
-<div class="literalblock kroki-error">
+<div class="imageblock kroki">
 <div class="content">
-<pre>sequenceDiagram
-    Alice -&gt;&gt; Bob: Hello Bob, how are you?
-    activate Bob
-    Bob--&gt;Alice: Checking with John...
-    activate Bob
-    Note right of Bob: Bob thinks a long long time.
-    Bob--&gt;&gt;John: How about you John?
-    activate John
-    John -&gt;&gt; John: Reflection
-    John -x Bob: I am good thanks!
-    deactivate John
-    Bob--x Alice: I am good thanks!
-    deactivate Bob
-    Note right of John: John thinks a long&lt;br/&gt;long time, so long&lt;br/&gt;that he addes his own&lt;br/&gt;line breaks.
-
-    Alice-&gt;John: Yes... John, how are you?
-
-    loop Daily query
-        Alice-&gt;&gt;Bob: Hello Bob, how are you?
-        alt is sick
-            Bob-&gt;&gt;Alice: Not so good :(
-        else is well
-            Bob-&gt;&gt;Alice: Feeling fresh like a daisy
-        end
-
-        opt Extra response
-            Bob-&gt;&gt;Alice: Thanks for asking
-        end
-    end</pre>
+<img src="_images/diag-cf98229c3a2d2d7ab2b322674e578ade00f2b1d2.svg" alt="Diagram">
 </div>
 </div>
 </div>
@@ -216,13 +188,9 @@
 <div class="sect1">
 <h2 id="_flowchart"><a class="anchor" href="#_flowchart"></a>Flowchart</h2>
 <div class="sectionbody">
-<div class="literalblock kroki-error">
+<div class="imageblock kroki">
 <div class="content">
-<pre>graph LR
-    A[Square Rect] -- Link text --&gt; B((Circle))
-    A --&gt; C(Round Rect)
-    B --&gt; D{Rhombus}
-    C --&gt; D</pre>
+<img src="_images/diag-2a56b03b513f61943cd67c8f9580e1a167f82a1d.svg" alt="Diagram">
 </div>
 </div>
 </div>

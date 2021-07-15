@@ -173,52 +173,11 @@
 <div class="paragraph">
 <p>The <a href="https://c4model.com/" target="_blank" rel="noopener">C4 Models</a> offer multiple diagram types.</p>
 </div>
-<div class="literalblock kroki-error">
-<div class="title">C4 Diagrams</div>
+<div class="imageblock kroki">
 <div class="content">
-<pre>@startmindmap
-&lt;style&gt;
-mindmapDiagram {
-  node {
-    BackgroundColor #1168bd
-    LineColor #1168bd
-    FontColor #fff
-    MaximumWidth 150
-  }
-  boxless {
-    FontColor #1168bd
-  }
-  arrow {
-    LineColor #e91e63
-  }
-}
-wbsDiagram {
-  node {
-    BackgroundColor #1168bd
-    LineColor #1168bd
-    FontColor #fff
-    MaximumWidth 100
-  }
-  boxless {
-    FontColor #1168bd
-  }
-  arrow {
-    LineColor #e91e63
-  }
-}
-&lt;/style&gt;
-* C4 models
- * Root models
-  * Level 1, System context
-  * Level 2, Containers
-  * Level 3, Components
-  * Level 4, Code
- * Supplementary diagrams
-  * System landscape
-  * Dynamics
-  * Deployment
-@endmindmap</pre>
+<img src="../_images/diag-7d6cef842ab2b2f7926148cc2fdbb42cdc98434a.svg" alt="C4 Diagrams">
 </div>
+<div class="title">Figure 1. C4 Diagrams</div>
 </div>
 <div class="paragraph">
 <p>Examples of the first three levels are shown below.</p>
@@ -230,42 +189,11 @@ wbsDiagram {
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_level_1_system_context"><a class="anchor" href="#_level_1_system_context"></a>Level 1: System context</h3>
-<div class="literalblock kroki-error">
-<div class="title">Core elements of a C4 system context diagram</div>
+<div class="imageblock kroki">
 <div class="content">
-<pre>@startuml
-!include &lt;C4/C4_Context&gt;
-!include &lt;tupadr3/font-awesome/users&gt;
-
-LAYOUT_WITH_LEGEND()
-
-Person(person1, "Person", "Optional Description")
-Person(group1, "Group", "Optional Description", $sprite="users")
-
-Boundary(boundary1, "Boundary", "Boundary type") {
-  System(system1, "System", "Optional Description")
-  SystemQueue(squeue, "SystemQueue", "Optional Description")
-  SystemDb(sdb, "SystemDb", "Optional Description")
-
-  Rel_R(system1, sdb, "Rel_R", "Optional Technology")
-  BiRel_L(system1, squeue, "BiRel_L", "Optional")
-}
-
-Rel(person1, system1, "Rel", "Optional Technology")
-
-Boundary(boundary2, "Boundary", "Boundary type") {
-  System_Ext(system2, "System_Ext", "Optional Description")
-  SystemQueue_Ext(squeue2, "SystemQueue_Ext", "Optional Description")
-  SystemDb_Ext(sdb2, "SystemDb_Ext", "Optional Description")
-
-  Rel_R(system2, sdb2, "Rel_R", "Optional Technology")
-  BiRel_L(system2, squeue2, "BiRel_L", "Optional")
-}
-
-Rel(system1, system2, "Rel")
-
-@enduml</pre>
+<img src="../_images/diag-7f021198620863674b7aa47405f0b1cda5bdca6e.svg" alt="Core elements of a C4 system context diagram">
 </div>
+<div class="title">Figure 2. Core elements of a C4 system context diagram</div>
 </div>
 <div class="listingblock">
 <div class="title">PlantUML source</div>
@@ -307,35 +235,11 @@ Rel(system1, system2, "Rel")
 </div>
 <div class="sect2">
 <h3 id="_level_2_container"><a class="anchor" href="#_level_2_container"></a>Level 2: Container</h3>
-<div class="literalblock kroki-error">
-<div class="title">Additional elements of a C4 container model diagram</div>
+<div class="imageblock kroki">
 <div class="content">
-<pre>@startuml
-!include &lt;C4/C4_Container&gt;
-
-LAYOUT_WITH_LEGEND()
-
-System_Boundary(boundary1, "System_Boundary", "Boundary type") {
-  Container(container1, "Container", "Technology", "Optional Description")
-  ContainerQueue(cqueue, "ContainerQueue", "Technology")
-  ContainerDb(cdb, "ContainerDb", "Technology", "Optional Description")
-
-  Rel_R(container1, cdb, "Rel_R", "Optional Technology")
-  BiRel_L(container1, cqueue, "BiRel", "Optional")
-}
-
-System_Boundary(boundary2, "System_Boundary", "Boundary type") {
-  Container_Ext(container2, "Container_Ext", "Technology", "Optional Description")
-  ContainerQueue_Ext(cqueue2, "ContainerQueue_Ext", "Technology")
-  ContainerDb_Ext(cdb2, "ContainerDb_Ext", "Technology", "Optional Description")
-
-  Rel_R(container2, cdb2, "Rel_R", "Optional Technology")
-  BiRel_L(container2, cqueue2, "BiRel", "Optional")
-}
-
-Rel(container1, container2, "Rel")
-@enduml</pre>
+<img src="../_images/diag-51795ea8e510f16c4e6648d0471e6d999ae0a43b.svg" alt="Additional elements of a C4 container model diagram">
 </div>
+<div class="title">Figure 3. Additional elements of a C4 container model diagram</div>
 </div>
 <div class="listingblock">
 <div class="title">PlantUML source</div>
@@ -370,35 +274,11 @@ Rel(container1, container2, "Rel")
 </div>
 <div class="sect2">
 <h3 id="_level_3_component"><a class="anchor" href="#_level_3_component"></a>Level 3: Component</h3>
-<div class="literalblock kroki-error">
-<div class="title">Additional elements of a C4 component model diagram</div>
+<div class="imageblock kroki">
 <div class="content">
-<pre>@startuml
-!include &lt;C4/C4_Component&gt;
-
-LAYOUT_WITH_LEGEND()
-
-Container_Boundary(boundary1, "Container_Boundary", "Boundary type") {
-  Component(component1, "Component", "Technology", "Optional Description")
-  ComponentQueue(cqueue, "ComponentQueue", "Technology")
-  ComponentDb(cdb, "ComponentDb", "Technology", "Optional Description")
-
-  Rel_R(component1, cdb, "Rel_R", "Optional Technology")
-  BiRel_L(component1, cqueue, "BiRel", "Optional")
-}
-
-Container_Boundary(boundary2, "Boundary", "Boundary type") {
-  Component_Ext(component2, "Component_Ext", "Technology", "Optional Description")
-  ComponentQueue_Ext(cqueue2, "ComponentQueue_Ext", "Technology")
-  ComponentDb_Ext(cdb2, "ComponentDb_Ext", "Technology", "Optional Description")
-
-  Rel_R(component2, cdb2, "Rel_R", "Optional Technology")
-  BiRel_L(component2, cqueue2, "BiRel", "Optional")
-}
-
-Rel(component1, component2, "Rel")
-@enduml</pre>
+<img src="../_images/diag-067f866e32d4441a070ee9972a79ecc541ff9b30.svg" alt="Additional elements of a C4 component model diagram">
 </div>
+<div class="title">Figure 4. Additional elements of a C4 component model diagram</div>
 </div>
 <div class="listingblock">
 <div class="title">PlantUML source</div>

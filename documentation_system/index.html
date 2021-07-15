@@ -182,32 +182,11 @@ The starting point is to follow the <em>Docs as code</em> approach to keep sourc
 <div class="paragraph">
 <p>The documentation covers the following users and systems.</p>
 </div>
-<div class="literalblock kroki-error">
-<div class="title">Documentation system overview</div>
+<div class="imageblock kroki">
 <div class="content">
-<pre>@startuml
-!include &lt;C4/C4_Container&gt;
-
-Person(editor, "Editor", "Writes and reviews documentation content.")
-Person(publisher, "Publisher", "Updates the documentation website and style.")
-
-Boundary(doc_sys, "Documentation system") {
-  System(sources, "Content sources", "Stores content material in components and modules.")
-  System(sitegen, "Website generator", "Combines sources to produce the documentation website.")
-  Rel_R(sources, sitegen, "are input for")
-}
-
-System_Ext(tools, "Editing tools", "Support planning and writing content.")
-System_Ext(site, "Documentation website", "Informs users and developers.")
-
-Rel(editor, tools, "works with")
-Rel(tools, sources, "contribute content material to")
-Rel(publisher, sitegen, "configures and runs")
-Rel(sitegen, site, "publishes")
-
-Lay_L(publisher, tools)
-@enduml</pre>
+<img src="_images/diag-499e1f1b537a565e85c2d1a46644eddc27c97d0d.svg" alt="Documentation system overview">
 </div>
+<div class="title">Figure 1. Documentation system overview</div>
 </div>
 </div>
 </div>

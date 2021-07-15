@@ -224,44 +224,11 @@ so they can follow the same <em>docs as code</em> workflows.</p>
 <div class="paragraph">
 <p>To expand on the <a href="../index.html#documentation-system-overview" class="page">documentation system overview</a>:</p>
 </div>
-<div class="literalblock kroki-error">
-<div class="title">Documentation system subsystems.</div>
+<div class="imageblock kroki">
 <div class="content">
-<pre>@startuml
-!include &lt;C4/C4_Container&gt;
-
-Person(editor, "Editor", "Writes and reviews documentation content.")
-Person(publisher, "Publisher", "Updates the documentation website and style.")
-
-System_Boundary(doc_sys, "Documentation system") {
-  System_Boundary(sources, "Content sources") {
-    Container(source_repos, "Source repositories", "git, asciidoc", "Manage documentation content files.")
-    Container(content_helpers, "Content helpers", "bash, ...", "Generate content from additional sources.")
-    Rel_U(content_helpers, source_repos, "contribute content to")
-  }
-
-  System_Boundary(sitegen, "Website generator") {
-    Container(antora, "Site generator", "antora, asciidoctor", "Gathers sources, produces a static website, and deploys it.")
-
-    Container(ui, "User interface definition", "antora, html/css, handlebars", "Provides templates and styling for the UI.")
-    Rel(ui, antora, "provides layout for")
-
-    Container(kroki, "Diagram rendering service", "kroki, plantuml", "Converts diagram texts to images.")
-    Rel(antora, kroki, "processes textual diagrams via")
-    Lay_U(kroki, ui)
-  }
-  Rel_R(source_repos, antora, "provide content for")
-}
-
-System_Ext(site, "Documentation website", "Informs users and developers.")
-
-Rel(editor, source_repos, "edits content in")
-Rel(publisher, sitegen, "configures and runs")
-Rel(antora, site, "publishes site content to")
-
-Lay_R(editor, publisher)
-@enduml</pre>
+<img src="../_images/diag-bd8480dd40826868b897f7c52467bc61e81bf95a.svg" alt="Documentation system subsystems.">
 </div>
+<div class="title">Figure 1. Documentation system subsystems.</div>
 </div>
 </div>
 </div>

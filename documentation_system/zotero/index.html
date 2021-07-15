@@ -202,38 +202,11 @@ There is no way to cross reference or link between the text and a specific refer
 </tr>
 </table>
 </div>
-<div class="literalblock kroki-error">
-<div class="title">Zotero subsystem overview</div>
+<div class="imageblock kroki">
 <div class="content">
-<pre>@startuml
-!include &lt;C4/C4_Container&gt;
-
-Person(editor, "Editor", "Writes and reviews documentation content.")
-
-System_Boundary(doc_sys, "Documentation system") {
-  System_Boundary(sources, "Content sources") {
-    Container(source_repo, "Source repository", "git, asciidoc", "Manages documentation content files.")
-    Container(content_helper, "Zotero content helper", "get-zoteros", "Generates reference lists for specified Zotero references.")
-    Rel_R(content_helper, source_repo, "gets Zotero lookup details and stores partials in Antora modules")
-  }
-
-  System_Boundary(sitegen, "Website generator") {
-    Container(antora, "Site generator", "antora, asciidoctor", "Gathers sources, produces a static website, and deploys it.")
-  }
-  Rel_D(source_repo, antora, "provides content for")
-}
-
-System_Ext(zotero, "Zotero", "Manages references and bibliographic information.")
-
-Rel(editor, source_repo, "2) adds Zotero lookup details to")
-Rel(editor, source_repo, "4) includes partials in pages in")
-Rel(editor, zotero, "1) organises references in")
-Rel_L(content_helper, zotero, "retrieves HTML-formatted references from")
-
-Rel(editor, content_helper, "3) runs")
-
-@enduml</pre>
+<img src="_images/diag-5d0c2f5d38dc830c0475119173560d5de2a6988e.svg" alt="Zotero subsystem overview">
 </div>
+<div class="title">Figure 1. Zotero subsystem overview</div>
 </div>
 </div>
 </div>
@@ -271,25 +244,11 @@ We use a <em>collection</em> for each page.
 <p>It is possible to move collections around in Zotero without changing their identifier.
 This decouples the exact hierarchy and organisation of collections in Zotero from the documentation pages.</p>
 </div>
-<div class="literalblock kroki-error">
-<div class="title">Current organisation of collections in Zotero</div>
+<div class="imageblock kroki">
 <div class="content">
-<pre>@startmindmap
-* Library
- * (other collections)
-  *_ ...
- * References used
-  * Documentation site
-   * Page 1
-    *_ Reference 1
-    *_ Reference 2
-    *_ ...
-   * Page 2
-    *_ ...
-  * (other publications)
-   *_ ...
-@endmindmap</pre>
+<img src="_images/diag-f1fc5acc1c53ff1e0c34cb5ac59fedeccd44d332.svg" alt="Current organisation of collections in Zotero">
 </div>
+<div class="title">Figure 2. Current organisation of collections in Zotero</div>
 </div>
 </div>
 <div class="sect2">
