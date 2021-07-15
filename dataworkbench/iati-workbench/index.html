@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>IATI workbench :: Dataworkbench</title>
+    <title>IATI Workbench :: Dataworkbench</title>
     <link rel="next" href="spreadsheets2iati/index.html">
     <meta name="generator" content="Antora 3.0.0-alpha.6">
     <link rel="stylesheet" href="../_/css/site.css" rel="stylesheet">
@@ -127,7 +127,6 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="index.html">IATI Workbench</a></li>
-    <li><a href="index.html">IATI workbench</a></li>
   </ul>
 </nav>
   <div class="edit-this-page"><a href="https://github.com/data4development/iati-workbench/edit/develop/docs/modules/ROOT/pages/index.adoc">Edit this Page</a></div>
@@ -137,9 +136,98 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">IATI workbench</h1>
+<h1 class="page">IATI Workbench</h1>
+<div id="preamble">
+<div class="sectionbody">
 <div class="paragraph">
-<p>Tools to deal with IATI files.</p>
+<p><em>Scripts and tools to investigate IATI data, provide feedback on data quality, etc.</em></p>
+</div>
+<div class="paragraph">
+<p>The <a href="https://iatistandard.org" target="_blank" rel="noopener">IATI Standard</a> offers an XML-based standard format to exchange information on activities in international development cooperation and humanitarian aid.</p>
+</div>
+<div class="paragraph">
+<p>IATI data is published by a variety of actors in this field.
+The official list of publishers and available IATI data sets is held in the <a href="https://iatiregistry.org" target="_blank" rel="noopener">IATI Registry</a>.</p>
+</div>
+<div class="paragraph">
+<p>Working with IATI files poses a couple of challenges:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Multiple versions of the IATI Standard.</p>
+</li>
+<li>
+<p>Various levels of coverage of the many possible elements.</p>
+</li>
+<li>
+<p>Plenty of errors and inconsistencies in the data.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>There are several tools and platforms that ingest IATI data and make it available in formats other than XML.
+There are few tools that will help in processing IATI data in its original XML format.</p>
+</div>
+<div class="paragraph">
+<p>This repository intends to collect scripts and applications to work with IATI files.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_iati_workbench"><a class="anchor" href="#_iati_workbench"></a>IATI workbench</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>All tools for the IATI Workbench are packaged in a container that you can run as a command.</p>
+</div>
+<div class="sect2">
+<h3 id="_using_a_local_workspace_directory"><a class="anchor" href="#_using_a_local_workspace_directory"></a>Using a local workspace directory</h3>
+<div class="paragraph">
+<p>The iati-workbench uses the directory <code>/workspace</code> as working area for files.</p>
+</div>
+<div class="paragraph">
+<p>It is possible to "bind mount" a local directory to this location, and have access to the files.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>In the current version, a lot of output files are still only available in the workspace folder,
+so mounting a local directory to the /workspace folder is basically required.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>For the "bind mount" to work well in practice, the user and group id in the host system and the container should be the same.</p>
+</div>
+<div class="paragraph">
+<p>By default, the container runs as user and group with id 1000.
+If this matches the user and group id of the host system, it is possible to simply mount a local folder.</p>
+</div>
+<div class="paragraph">
+<p>For user ids other than 1000, it is advised to build a local Docker container image tailored to the current user.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ docker build --build-arg UID=$(id -u) --build-arg GID=$(id -g) -t iati-workbench:local .</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>By also using the Docker image tag <code>local</code>, it is possible to run the specific version on the local machine.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ iati-workbench -t local ...</pre>
+</div>
+</div>
+</div>
+</div>
 </div>
 <nav class="pagination">
   <span class="next"><a href="spreadsheets2iati/index.html">Spreadsheets2IATI</a></span>
