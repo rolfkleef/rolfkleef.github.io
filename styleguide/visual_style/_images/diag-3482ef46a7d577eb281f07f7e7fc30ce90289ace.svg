@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="548px" preserveAspectRatio="none" style="width:819px;height:548px;" version="1.1" viewBox="0 0 819 548" width="819px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="546.6851" style="stroke:#FFFFFF;stroke-width:1.0;" width="817.4429" x="0" y="0"/><!--MD5=[8fc3522a43f8c7199df5e09e5bb0188e]
+entity user--><ellipse cx="474" cy="22" fill="#08427B" rx="16" ry="16" style="stroke:#FFFFFF;stroke-width:1.5;"/><path d="M474,42 C478,42 481,42 485,38 C493,38 501,46 501,54 L501,58 C501,62 497,66 493,66 L455,66 C451,66 447,62 447,58 L447,54 C447,46 455,38 463,38 C467,42 470,42 474,42 " fill="#08427B" style="stroke:#FFFFFF;stroke-width:1.5;"/><text fill="#08427B" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="26" x="461" y="82.5">User</text><!--MD5=[23e4898078453906b079a6bea7d1245c]
+entity developer--><ellipse cx="370" cy="166" fill="#08427B" rx="16" ry="16" style="stroke:#FFFFFF;stroke-width:1.5;"/><path d="M370,186 C374,186 377,186 381,182 C389,182 397,190 397,198 L397,202 C397,206 393,210 389,210 L351,210 C347,210 343,206 343,202 L343,198 C343,190 351,182 359,182 C363,186 366,186 370,186 " fill="#08427B" style="stroke:#FFFFFF;stroke-width:1.5;"/><text fill="#08427B" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="57" x="341.5" y="226.5">Developer</text><!--MD5=[57d60d068ec368f775d9ec3781c86353]
+entity appman--><ellipse cx="224" cy="166" fill="#08427B" rx="16" ry="16" style="stroke:#FFFFFF;stroke-width:1.5;"/><path d="M224,186 C228,186 231,186 235,182 C243,182 251,190 251,198 L251,202 C251,206 247,210 243,210 L205,210 C201,210 197,206 197,202 L197,198 C197,190 205,182 213,182 C217,186 220,186 224,186 " fill="#08427B" style="stroke:#FFFFFF;stroke-width:1.5;"/><text fill="#08427B" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="117" x="165.5" y="226.5">Application Manager</text><!--MD5=[708561a92445cac008d53ad3432ea70a]
+entity dwb--><ellipse cx="505" cy="166" fill="#08427B" rx="16" ry="16" style="stroke:#FFFFFF;stroke-width:1.5;"/><path d="M505,186 C509,186 512,186 516,182 C524,182 532,190 532,198 L532,202 C532,206 528,210 524,210 L486,210 C482,210 478,206 478,202 L478,198 C478,190 486,182 494,182 C498,186 501,186 505,186 " fill="#08427B" style="stroke:#FFFFFF;stroke-width:1.5;"/><text fill="#08427B" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="92" x="459" y="226.5">DataWorkbench</text><ellipse cx="115.0047" cy="517.7009" fill="#1168BD" rx="109.0047" ry="24.2009" style="stroke:#FFFFFF;stroke-width:1.5;"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="172" x="29.0047" y="520.901">Get human-readable feedback</text><ellipse cx="372.9627" cy="517.5925" fill="#1168BD" rx="113.4627" ry="25.0925" style="stroke:#FFFFFF;stroke-width:1.5;"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="182" x="281.9627" y="520.7925">Get machine-readable feedback</text><ellipse cx="244.0072" cy="414.5014" fill="#1168BD" rx="73.0072" ry="17.0014" style="stroke:#FFFFFF;stroke-width:1.5;"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="84" x="202.0072" y="417.7014">Access an API</text><ellipse cx="403.1679" cy="314.4336" fill="#1168BD" rx="97.6679" ry="21.9336" style="stroke:#FFFFFF;stroke-width:1.5;"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="146" x="330.1679" y="317.6336">Run the validator software</text><ellipse cx="726.2215" cy="189.8443" fill="#1168BD" rx="87.2215" ry="19.8443" style="stroke:#FFFFFF;stroke-width:1.5;"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="121" x="665.7215" y="193.0443">Access a web service</text><!--MD5=[9625d823528e4fe28c4fc5bbaf4f6d7d]
+reverse link user to appman--><path d="M406.19,85.52 C368.31,107.03 321.49,133.62 284.81,154.46 " fill="none" id="user-backto-appman" style="stroke:#E91E63;stroke-width:1.0;"/><polygon fill="none" points="402.86,79.36,423.71,75.57,409.78,91.53,402.86,79.36" style="stroke:#E91E63;stroke-width:1.0;"/><!--MD5=[c4a7da53dfe501c30bc5e84d041801ec]
+reverse link appman to developer--><path d="M304.96,190 C309.87,190 314.79,190 319.71,190 " fill="none" id="appman-backto-developer" style="stroke:#E91E63;stroke-width:1.0;"/><polygon fill="none" points="304.74,197,284.74,190,304.74,183,304.74,197" style="stroke:#E91E63;stroke-width:1.0;"/><!--MD5=[6dd3f60d2b422b813452422c7c42b27c]
+reverse link developer to dwb--><path d="M440.23,190 C445.13,190 450.02,190 454.92,190 " fill="none" id="developer-backto-dwb" style="stroke:#E91E63;stroke-width:1.0;"/><polygon fill="none" points="440.1,197,420.1,190,440.1,183,440.1,197" style="stroke:#E91E63;stroke-width:1.0;"/><!--MD5=[99efe4743270fafc39491ef3b210befe]
+reverse link api to mfeedback--><path d="M279.67,443.43 C299.67,459.09 324.32,478.39 343.27,493.22 " fill="none" id="api-backto-mfeedback" style="stroke:#E91E63;stroke-width:1.0;"/><polygon fill="none" points="275.31,448.9,263.87,431.06,283.94,437.88,275.31,448.9" style="stroke:#E91E63;stroke-width:1.0;"/><!--MD5=[646212344b07f906d725e33bc745a4e9]
+reverse link api to hfeedback--><path d="M208.1,443.61 C187.8,459.5 162.76,479.11 143.76,493.98 " fill="none" id="api-backto-hfeedback" style="stroke:#E91E63;stroke-width:1.0;"/><polygon fill="none" points="204.06,437.88,224.13,431.06,212.69,448.9,204.06,437.88" style="stroke:#E91E63;stroke-width:1.0;"/><!--MD5=[d58f75f142ebd6ac53a551aad8ba2a42]
+reverse link run to api--><path d="M353.78,345.83 C325.62,363.2 291.48,384.23 268.83,398.19 " fill="none" id="run-backto-api" style="stroke:#E91E63;stroke-width:1.0;"/><polygon fill="none" points="350.13,339.87,370.82,335.33,357.47,351.78,350.13,339.87" style="stroke:#E91E63;stroke-width:1.0;"/><!--MD5=[20088fe0fa442857d03a494f7704391e]
+reverse link ws to run--><path d="M663.82,214.58 C601.7,238.14 507.53,273.86 450.96,295.31 " fill="none" id="ws-backto-run" style="stroke:#E91E63;stroke-width:1.0;"/><polygon fill="none" points="661.59,207.94,682.77,207.39,666.56,221.03,661.59,207.94" style="stroke:#E91E63;stroke-width:1.0;"/><!--MD5=[8f376f3f3ebfa6979503ebcd5f19bf6b]
+link user to ws--><path d="M524.09,75.22 C573.07,102.83 646.47,144.18 689.96,168.69 " fill="none" id="user-to-ws" style="stroke:#E91E63;stroke-width:1.0;"/><polygon fill="#E91E63" points="694.34,171.16,688.4655,163.2549,689.9848,168.7039,684.5358,170.2233,694.34,171.16" style="stroke:#E91E63;stroke-width:1.0;"/><!--MD5=[77026867c21809e07268ca963f9303c1]
+link appman to api--><path d="M227.65,231.55 C231.9,278.86 238.77,355.3 242.09,392.21 " fill="none" id="appman-to-api" style="stroke:#E91E63;stroke-width:1.0;"/><polygon fill="#E91E63" points="242.55,397.36,245.7357,388.0406,242.1064,392.3797,237.7672,388.7504,242.55,397.36" style="stroke:#E91E63;stroke-width:1.0;"/><text fill="#E91E63" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="40" x="240" y="320">access</text><!--MD5=[6ac1ac8daa35d2561828483c99888509]
+link developer to run--><path d="M380.99,231.79 C385.95,250.21 391.66,271.42 396.02,287.61 " fill="none" id="developer-to-run" style="stroke:#E91E63;stroke-width:1.0;"/><polygon fill="#E91E63" points="397.33,292.46,398.8527,282.7296,396.0301,287.6319,391.1278,284.8094,397.33,292.46" style="stroke:#E91E63;stroke-width:1.0;"/><!--MD5=[4f2c84fc7b7b6621b910b18925f741d8]
+link dwb to ws--><path d="M555.15,190 C578.41,190 606.81,190 633.73,190 " fill="none" id="dwb-to-ws" style="stroke:#E91E63;stroke-width:1.0;"/><polygon fill="#E91E63" points="638.74,190,629.74,186,633.74,190,629.74,194,638.74,190" style="stroke:#E91E63;stroke-width:1.0;"/><text fill="#E91E63" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="43" x="575.5" y="182">operate</text><!--MD5=[1898f080424642e67fb303396345327d]
+@startuml
+' Styling settings for PlantUML diagrams
+' See http://plantuml.sourceforge.net for documentation
+' To get a list of possible skinparam settings, run: plantuml -language
+
+' COLORS
+' ========================================
+
+' general colors from own stylesheet
+!$diagram_background_color = "#fff"
+!$diagram_border_color = "#fff"
+!$diagram_color = "#808080"
+!$arrow_color = "#e91e63"
+!$link_color = "#3498DB"
+
+' make admonition colors available for elements
+!$caution_color = "#a0439c"
+!$caution_on_color = "#fff"
+!$important_color = "#d32f2f"
+!$important_on_color = "#fff"
+!$note_color = "#217ee7"
+!$note_on_color = "#fff"
+!$tip_color = "#41af46"
+!$tip_on_color = "#fff"
+!$warning_color = "#e18114"
+!$warning_on_color = "#fff"
+
+' use admonition colors for elements
+!$logic_main_color = $warning_color
+
+!procedure $logic_style($var=1)
+  $styling($var, $logic_main_color, $logic_main_color, $warning_on_color) 
+!endprocedure
+
+!procedure $group_style($var=4)
+  $styling($var, $caution_color, $caution_color, $caution_on_color, "#FFFCFF") 
+!endprocedure
+
+!procedure $divider_style($var=1)
+  $styling($var, $tip_color, $tip_color, $tip_on_color) 
+!endprocedure
+
+' node_1, node_2 and note taken from C4 styling
+!$node_1_main_color = "#08427b"
+!$node_2_main_color = "#1168bd"
+!$node_2_aux2_color = "#3498DB"
+
+!procedure $node_1_style($var=1)
+  $styling($var, "#08427b", "#fff", "fff") 
+!endprocedure
+
+!procedure $node_2_style($var=1)
+  $styling($var, "#1168bd", "#fff", "fff", "#3498DB") 
+!endprocedure
+
+!procedure $note_1_style($var=1)
+  $styling($var, "#999", "#fff", "fff") 
+!endprocedure
+
+' STYLE HELPERS
+' ========================================
+
+' get variation with color palette:
+' $main: primary fill color, typically background
+' $aux1, $aux2: add'l fill colors, typically border, alternative background
+' $on1, $on2: text colors, typically main text, supplementary
+' variations:
+' 1) regular (default)
+' 2) name reversed (label outside)
+' 3) reverse background
+' 4) light background
+' 5) border box (loop, alt)
+' 6) ...
+
+!procedure $styling($var=1, $main, $aux1, $on1, $aux2="#ccc", $on2="#666")
+  !if ($var=="2")
+    BackgroundColor $main
+    BorderColor $aux1
+    FontColor $main
+    StereotypeFontColor $main
+  !elseif ($var=="3")
+    BackgroundColor $aux1
+    BorderColor $main
+    FontColor $main
+    StereotypeFontColor $main
+  !elseif ($var==4)
+    BackgroundColor $aux2
+    BorderColor $aux1
+    FontColor $main
+  !elseif ($var=="5")
+    BackgroundColor $main
+    BorderColor $aux1
+    FontColor $main
+    HeaderFontColor $on1
+  !elseif ($var=="6")
+    BackgroundColor $on1
+    BorderColor $aux1
+    FontColor $main
+    HeaderFontColor $on1
+    HeaderBackgroundColor $aux1
+  !elseif ($var==7)
+    BackgroundColor $aux2
+    BorderColor $main
+    FontColor $main
+  !else
+    BackgroundColor $main
+    BorderColor $aux1
+    FontColor $on1
+    StereotypeFontColor $on1
+    HeaderBackgroundColor $on1
+  !endif
+  FontSize 13
+!endprocedure
+
+' GENERAL SETTINGS
+' ========================================
+
+!$body_font_family = "Roboto"
+' each element can get its own FontName, FontSize, FontStyle; not added now
+
+skinparam BackgroundColor $diagram_background_color
+skinparam DiagramBorderColor $diagram_border_color
+skinparam HyperlinkColor $link_color
+
+'skinparam monochrome true
+skinparam shadowing false
+skinparam Handwritten false
+skinparam Padding 2
+'skinparam Roundcorner 5
+
+' Setting a minimum width can make sequence diagram participants look more balanced
+skinparam minClassWidth 100
+
+skinparam Default {
+  FontColor $doc_font_color
+  FontName $body_font_family
+  FontStyle normal
+  TextAlignment center
+}
+
+skinparam Arrow {
+  Color $arrow_color
+  FontColor $arrow_color
+}
+
+skinparam Note {
+  $note_1_style()
+}
+
+' USE CASE
+' ========================================
+
+skinparam Actor {
+  $node_1_style(2)
+  ' Make actors look like in C4
+  Style awesome
+}
+
+skinparam Usecase {
+  $node_2_style()
+}
+
+skinparam Package {
+  $group_style()
+}
+
+' ACTIVITY
+' ========================================
+
+skinparam Activity {
+  $node_2_style()
+
+  StartColor $node_1_main_color
+  EndColor $node_1_main_color
+  BarColor $logic_main_color
+}
+
+skinparam ActivityDiamond {
+  $logic_style()
+}
+
+skinparam Partition {
+  $group_style()
+}
+
+skinparam Swimlane {
+  $divider_style()
+}
+
+skinparam SwimlaneTitle {
+  $divider_style(6)
+}
+
+' SEQUENCE
+' ========================================
+
+'Actor: see Use Case diagram above
+
+skinparam Participant {
+  $node_1_style()
+'  Padding 40
+}
+
+skinparam Boundary {
+  $node_1_style(3)
+}
+
+skinparam Control {
+  $node_1_style(3)
+}
+
+skinparam Entity {
+  $node_1_style(3)
+}
+
+skinparam Database {
+  $node_1_style(2)
+}
+
+skinparam Collections {
+  $node_1_style()
+}
+
+skinparam Queue {
+  $node_1_style()
+}
+
+skinparam SequenceLifeline {
+  $node_2_style(7)
+}
+
+skinparam SequenceDelay {
+  $divider_style(2)
+}
+
+skinparam SequenceDivider {
+  $divider_style()
+}
+
+skinparam SequenceGroup {
+  $logic_style(5)
+}
+
+skinparam SequenceReference {
+  $group_style(6)
+  BorderThickness 1
+}
+
+skinparam SequenceBox {
+  $group_style(4)
+'  Padding 13
+}
+
+' ========================================
+' ========================================
+
+
+' DEPLOYMENT
+' ========================================
+
+' Actor: see Use case diagram
+' Use case: see Use case diagram
+' Package: see Use case diagram (fix?)
+' Boundary: see Sequence diagram
+' Control: see Sequence diagram
+' Entity: see Sequence diagram
+' Queue: see Sequence diagram
+
+' Database: see Sequence diagram (fix?)
+' Collections: see Sequence diagram (fix?)
+
+skinparam Agent {
+  $node_2_style()
+}
+
+skinparam Person {
+  $node_1_style()
+}
+
+skinparam Artifact {
+  $node_2_style()
+}
+
+skinparam Component {
+  $node_2_style()
+}
+
+skinparam File {
+  $node_2_style()
+}
+
+skinparam Card {
+  $node_2_style()
+}
+
+skinparam Storage {
+  $node_2_style()
+}
+
+skinparam Cloud {
+  $group_style(4)
+}
+
+skinparam Frame {
+  $group_style()
+}
+
+skinparam Node {
+  $group_style()
+}
+
+' check lighter background
+skinparam Stack {
+  $node_2_style()
+}
+
+' artefact or group?
+skinparam Folder {
+  $group_style()
+}
+
+skinparam Hexagon {
+  $logic_style()
+}
+
+skinparam Interface {
+  $logic_style(3)
+}
+
+skinparam Object {
+  $node_2_style()
+'  AttributeFontColor $arrow_color
+'  EndColor $arrow_color
+'  StartColor $arrow_color
+}
+
+skinparam Rectangle {
+  $logic_style()
+}
+
+' Used in C4 models:
+skinparam Rectangle<<boundary>> {
+  $logic_style(6)
+}
+
+skinparam State {
+  $node_2_style()
+'  AttributeFontColor $arrow_color
+'  EndColor $arrow_color
+'  StartColor $arrow_color
+}
+
+actor user as "User"
+actor developer as "Developer"
+actor appman as "Application Manager"
+actor dwb as "DataWorkbench"
+
+user <|- - appman
+appman <|-right- developer
+developer <|-right- dwb
+
+usecase hfeedback as "Get human-readable feedback"
+usecase mfeedback as "Get machine-readable feedback"
+usecase api as "Access an API"
+usecase run as "Run the validator software"
+usecase ws as "Access a web service"
+
+(api) <|- - (mfeedback)
+(api) <|- - (hfeedback)
+(run) <|- - (api)
+(ws) <|- - (run)
+
+user - -> (ws)
+
+appman -> (api): "access"
+
+developer -down-> (run)
+
+dwb -> (ws): "operate"
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam BackgroundColor #fff
+skinparam DiagramBorderColor #fff
+skinparam HyperlinkColor #3498DB
+
+skinparam shadowing false
+skinparam Handwritten false
+skinparam Padding 2
+
+skinparam minClassWidth 100
+
+skinparam Default {
+  FontColor $doc_font_color
+  FontName Roboto
+  FontStyle normal
+  TextAlignment center
+}
+
+skinparam Arrow {
+  Color #e91e63
+  FontColor #e91e63
+}
+
+skinparam Note {
+      BackgroundColor #999
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+
+skinparam Actor {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor #08427b
+    StereotypeFontColor #08427b
+  FontSize 13 
+  Style awesome
+}
+
+skinparam Usecase {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Package {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+
+skinparam Activity {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+
+  StartColor #08427b
+  EndColor #08427b
+  BarColor #e18114
+}
+
+skinparam ActivityDiamond {
+      BackgroundColor #e18114
+    BorderColor #e18114
+    FontColor #fff
+    StereotypeFontColor #fff
+    HeaderBackgroundColor #fff
+  FontSize 13 
+}
+
+skinparam Partition {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+skinparam Swimlane {
+      BackgroundColor #41af46
+    BorderColor #41af46
+    FontColor #fff
+    StereotypeFontColor #fff
+    HeaderBackgroundColor #fff
+  FontSize 13 
+}
+
+skinparam SwimlaneTitle {
+      BackgroundColor #fff
+    BorderColor #41af46
+    FontColor #41af46
+    HeaderFontColor #fff
+    HeaderBackgroundColor #41af46
+  FontSize 13 
+}
+
+
+
+skinparam Participant {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Boundary {
+      BackgroundColor #fff
+    BorderColor #08427b
+    FontColor #08427b
+    StereotypeFontColor #08427b
+  FontSize 13 
+}
+
+skinparam Control {
+      BackgroundColor #fff
+    BorderColor #08427b
+    FontColor #08427b
+    StereotypeFontColor #08427b
+  FontSize 13 
+}
+
+skinparam Entity {
+      BackgroundColor #fff
+    BorderColor #08427b
+    FontColor #08427b
+    StereotypeFontColor #08427b
+  FontSize 13 
+}
+
+skinparam Database {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor #08427b
+    StereotypeFontColor #08427b
+  FontSize 13 
+}
+
+skinparam Collections {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Queue {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam SequenceLifeline {
+      BackgroundColor #3498DB
+    BorderColor #1168bd
+    FontColor #1168bd
+  FontSize 13 
+}
+
+skinparam SequenceDelay {
+      BackgroundColor #41af46
+    BorderColor #41af46
+    FontColor #41af46
+    StereotypeFontColor #41af46
+  FontSize 13 
+}
+
+skinparam SequenceDivider {
+      BackgroundColor #41af46
+    BorderColor #41af46
+    FontColor #fff
+    StereotypeFontColor #fff
+    HeaderBackgroundColor #fff
+  FontSize 13 
+}
+
+skinparam SequenceGroup {
+      BackgroundColor #e18114
+    BorderColor #e18114
+    FontColor #e18114
+    HeaderFontColor #fff
+  FontSize 13 
+}
+
+skinparam SequenceReference {
+      BackgroundColor #fff
+    BorderColor #a0439c
+    FontColor #a0439c
+    HeaderFontColor #fff
+    HeaderBackgroundColor #a0439c
+  FontSize 13 
+  BorderThickness 1
+}
+
+skinparam SequenceBox {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+
+
+
+
+
+skinparam Agent {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Person {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Artifact {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Component {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam File {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Card {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Storage {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Cloud {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+skinparam Frame {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+skinparam Node {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+skinparam Stack {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Folder {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+skinparam Hexagon {
+      BackgroundColor #e18114
+    BorderColor #e18114
+    FontColor #fff
+    StereotypeFontColor #fff
+    HeaderBackgroundColor #fff
+  FontSize 13 
+}
+
+skinparam Interface {
+      BackgroundColor #e18114
+    BorderColor #e18114
+    FontColor #e18114
+    StereotypeFontColor #e18114
+  FontSize 13 
+}
+
+skinparam Object {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Rectangle {
+      BackgroundColor #e18114
+    BorderColor #e18114
+    FontColor #fff
+    StereotypeFontColor #fff
+    HeaderBackgroundColor #fff
+  FontSize 13 
+}
+
+skinparam Rectangle<<boundary>> {
+      BackgroundColor #fff
+    BorderColor #e18114
+    FontColor #e18114
+    HeaderFontColor #fff
+    HeaderBackgroundColor #e18114
+  FontSize 13 
+}
+
+skinparam State {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+actor user as "User"
+actor developer as "Developer"
+actor appman as "Application Manager"
+actor dwb as "DataWorkbench"
+
+user <|- - appman
+appman <|-right- developer
+developer <|-right- dwb
+
+usecase hfeedback as "Get human-readable feedback"
+usecase mfeedback as "Get machine-readable feedback"
+usecase api as "Access an API"
+usecase run as "Run the validator software"
+usecase ws as "Access a web service"
+
+(api) <|- - (mfeedback)
+(api) <|- - (hfeedback)
+(run) <|- - (api)
+(ws) <|- - (run)
+
+user - -> (ws)
+
+appman -> (api): "access"
+
+developer -down-> (run)
+
+dwb -> (ws): "operate"
+@enduml
+
+PlantUML version 1.2021.4(Sun Apr 04 08:49:39 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
