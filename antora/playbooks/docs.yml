@@ -8,19 +8,18 @@ site:
 
 # Run `git worktree add build/site site` to check out the Github Pages branch here:
 output:
-  dir: ./build/site
+  dir: build/site
 
 content:
   sources:
-  - url: .
+  - url: ./../..
     branches: main
     start_paths:
     - docs/overview
     - docs/documentation_system
-    - docs/styleguide
 
   - url: https://gitlab.com/rolfkleef/drostan-styleguide.git
-    branches: drostan
+    branches: main
     start_path: docs
 
 runtime:

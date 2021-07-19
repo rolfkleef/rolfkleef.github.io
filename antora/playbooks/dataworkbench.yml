@@ -5,7 +5,7 @@ site:
   start_page: iati-workbench::index.adoc
 
 output:
-  dir: ./build/site/dataworkbench
+  dir: build/site/dataworkbench
 
 content:
   sources:
@@ -34,7 +34,7 @@ content:
 
 ui:
   bundle:
-    url: https://gitlab.com/rolfkleef/drostan-styleguide/-/jobs/artifacts/drostan/raw/build/ui-bundle.zip?job=bundle-stable
+    url: https://gitlab.com/rolfkleef/drostan-antora-ui/-/jobs/artifacts/drostan/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true
   supplemental_files: antora/supplemental-ui
   
@@ -52,7 +52,7 @@ asciidoc:
     allow-uri-read: true
     experimental: true
     kroki-default-format@: svg
-    kroki-server-url: http://localhost:8000 # <4>
+    kroki-server-url: http://kroki:8000 # <4>
     kroki-plantuml-include: styleguide/plantuml/styling.cfg # <5>
 # end::asciidoc[]
     _yamldoc: >
