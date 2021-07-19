@@ -46,14 +46,14 @@ asciidoc:
     allow-uri-read: true
     experimental: true
     kroki-default-format@: svg
-    kroki-server-url: http://localhost:18181 # <4> # <.>
+    kroki-server-url: http://localhost:8000 # <4> # <.>
 # end::asciidoc[] # <.>
     _yamldoc: >
       tag::asciidoc-notes[] # <.>
       <1> Use kroki to generate diagram images
       <2> Don't show https:// etc on bare links
       <3> For kroki: store the image. This requires `allow-uri-read`, as well as `experimental` (to override kroki security)
-      <4> To run  a local kroki server: `docker run -p18181:8000 -d --name asciidoctor-kroki yuzutech/kroki`
+      <4> To run  a local kroki server: `docker run -p8000:8000 -d --name asciidoctor-kroki yuzutech/kroki`
       end::asciidoc-notes[] # <.>
 ----
 <.> Start of the source to be included in the documentation.
@@ -99,12 +99,12 @@ asciidoc:
     allow-uri-read: true
     experimental: true
     kroki-default-format@: svg
-    kroki-server-url: http://localhost:18181 # <4>
+    kroki-server-url: http://localhost:8000 # <4>
 ----
 <1> Use kroki to generate diagram images
 <2> Don't show https:// etc on bare links
 <3> For kroki: store the image. This requires `allow-uri-read`, as well as `experimental` (to override kroki security)
-<4> To run  a local kroki server: `docker run -p18181:8000 -d --name asciidoctor-kroki yuzutech/kroki`
+<4> To run  a local kroki server: `docker run -p8000:8000 -d --name asciidoctor-kroki yuzutech/kroki`
 
 Rest of the documentation page ...
 ====

@@ -43,7 +43,7 @@ asciidoc:
     allow-uri-read: true
     experimental: true
     kroki-default-format@: svg
-    kroki-server-url: http://localhost:18181 # <4>
+    kroki-server-url: http://localhost:8000 # <4>
     kroki-plantuml-include: plantuml-drostan.cfg # <5>
 # end::asciidoc[]
     _yamldoc: >
