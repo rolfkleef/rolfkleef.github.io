@@ -36,7 +36,7 @@ ui:
   bundle:
     url: https://gitlab.com/rolfkleef/drostan-styleguide/-/jobs/artifacts/drostan/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true
-  supplemental_files: antora-supplemental-ui
+  supplemental_files: antora/supplemental-ui
   
 runtime:
   fetch: true
