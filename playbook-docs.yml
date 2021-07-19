@@ -9,7 +9,6 @@ site:
 # Run `git worktree add build/site site` to check out the Github Pages branch here:
 output:
   dir: ./build/site
-  clean: true
 
 content:
   sources:
