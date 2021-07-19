@@ -1,0 +1,65 @@
+# Antora playbook for local copies of Dataworkbench documentation
+
+site:
+  title: Dataworkbench
+  start_page: iati-workbench::index.adoc
+
+output:
+  dir: ./build/site/dataworkbench
+
+content:
+  sources:
+  - url: https://github.com/data4development/dataworkbench-api.git
+    branches: develop
+    start_path: docs
+  - url: https://github.com/data4development/dataworkbench-cluster.git
+    branches: develop
+    start_path: docs
+  - url: https://github.com/data4development/dataworkbench-frontend.git
+    branches: develop
+    start_path: docs
+  - url: https://github.com/data4development/iati-kitchen.git
+    branches: develop
+    start_path: docs
+#  - url: https://github.com/data4development/IATI-Rulesets.git
+#    branches: develop
+#    start_path: docs
+  - url: https://github.com/data4development/iati-workbench.git
+    branches: 
+    - develop
+    start_path: docs
+  - url: https://github.com/data4development/IATI-data-validator.git
+    branches: develop
+    start_path: docs
+
+ui:
+  bundle:
+    url: https://gitlab.com/rolfkleef/drostan-styleguide/-/jobs/artifacts/drostan/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+  supplemental_files: antora-supplemental-ui
+  
+runtime:
+  fetch: true
+
+# tag::asciidoc[]
+asciidoc:
+  extensions:
+  - asciidoctor-kroki # <1>
+  attributes:
+    page-pagination: true
+    hide-uri-scheme@: true # <2>
+    kroki-fetch-diagram: true # <3>
+    allow-uri-read: true
+    experimental: true
+    kroki-default-format@: svg
+    kroki-server-url: http://localhost:8000 # <4>
+    kroki-plantuml-include: styleguide/plantuml/styling.cfg # <5>
+# end::asciidoc[]
+    _yamldoc: >
+      tag::asciidoc-notes[]
+      <1> Use kroki to generate diagram images
+      <2> Don't show https:// etc on bare links
+      <3> For kroki: store the image. This requires `allow-uri-read`, as well as `experimental` (to override kroki security)
+      <4> Uses a local kroki server via docker bridge network and service declaration in Github Actions
+      <5> Include a local PlantUML styling configuration at the start of each diagram
+      end::asciidoc-notes[]
