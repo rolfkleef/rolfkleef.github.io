@@ -1,7 +1,0 @@
-name: styleguide
-title: Style guide
-version: ~
-nav:
-- modules/ROOT/nav.adoc
-- modules/visual_style/nav.adoc
-- modules/antora-ui/nav.adoc

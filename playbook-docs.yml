@@ -20,9 +20,9 @@ content:
     - docs/documentation_system
     - docs/styleguide
 
-  - url: https://gitlab.com/rolfkleef/antora-ui-default.git
+  - url: https://gitlab.com/rolfkleef/drostan-styleguide.git
     branches: drostan
-    start_path: docs_drostan
+    start_path: docs
 
 runtime:
   fetch: true
@@ -45,7 +45,7 @@ asciidoc:
     experimental: true
     kroki-default-format@: svg
     kroki-server-url: http://kroki:8000 # <4>
-    kroki-plantuml-include: plantuml-drostan.cfg # <5>
+    kroki-plantuml-include: styleguide/plantuml/styling.cfg # <5>
 # end::asciidoc[]
     _yamldoc: >
       tag::asciidoc-notes[]
