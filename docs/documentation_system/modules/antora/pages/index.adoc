@@ -1,49 +1,5 @@
 = Antora
 
-== Source setup conventions
-
-An Antora _playbook_ specifies which components should be combined in a single documentation site.
-
-Components can be used for individual technical parts, or for specific manuals.
-In the example below, we use technical parts for the _Asciidoc & Antora_ section,
-and we use separate manuals for the _Apache Hop_ section.
-
-Each component can have one or more modules.
-The modules are not shown in the example below.
-
-In our setup, we have added an extra layer of _sections_.
-Each section is its own Antora site.
-Navigation between these sites is added via the Antora interface.
-
-====
-.Documentation sections and components for local use
-[plantuml]
-....
-@startwbs
-*_ Local documentation site
- * Workstation docs
-  *_ Private
-  *_ Overview
-  *_ Desktop
-  *_ Documentation system
-
- * Antora & Asciidoc
-  *_ Asciidoc
-  *_ Antora
-  *_ Antora Default UI
-  *_ Asciidoc reveal.js
-
- * Apache Hop
-  *_ User Manual
-  *_ Technical Documentation
-  
-@endwbs
-....
-====
-
-We use a separate search index per section.
-It is possible to search across all components within that section.
-
 == Mapping to content repositories
 
 Each content source repository will typically define a single component.

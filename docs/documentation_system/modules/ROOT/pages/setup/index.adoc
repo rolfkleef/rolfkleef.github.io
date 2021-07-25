@@ -1,0 +1,107 @@
+= Setup of Antora
+
+== Documentation website configuration
+
+The configuration of a documentation website consists of two types of components:
+
+* <<specify>>
+* <<generate>>
+
+The configuration files are kept in a git repository.
+This repository can also contain content sources that are not tied to specific software repositories.
+
+====
+The sources for this section about the selection and setup of software components for a documentation system is kept within the repository for the site.
+====
+
+[#specify]
+=== Components to specify the site
+
+[plantuml]
+....
+@startuml
+!include <C4/C4_Component>
+
+System_Boundary(doc_sys, "Documentation system") {
+  System_Boundary(sources, "Content sources") {
+    Container(source_repos, "Source repositories", "git, asciidoc", "Manage documentation content files.")
+  }
+  
+  System_Boundary(sitegen, "Website generator") {
+    Container_Boundary(antora, "Antora configuration", "antora, asciidoctor") {
+      Component(supplementalui, "supplemental ui", "html/css, handlebars, files", "Provides customisations to the user interface.")
+      Component(playbook, "playbook", "yaml", "Configures the documentation website.")
+      Component(styleguide, "styleguide", "git submodule", "Adds additional files such as PlantUML styling.")
+
+      Rel(supplementalui, playbook, "is added via")
+      Rel(styleguide, playbook, "is used via")
+      Lay_R(supplementalui, styleguide)
+    }
+
+    Container(ui, "User interface definition", "antora, html/css, handlebars", "Provides templates and styling for the UI.")
+    Rel(ui, playbook, "is specified in")
+
+    Container(kroki, "Diagram rendering service", "kroki, plantuml", "Converts diagram texts to images.")
+    Rel(playbook, kroki, "specifies server for")
+  }
+  Rel(source_repos, playbook, "are specified in")
+}
+@enduml
+....
+
+* The _supplemental ui_ provides files to be added to the _user interface definition_ files.
+** They can override existing files, for instance to adapt templates used to generate pages.
+** They can also add files, for instance a CNAME instruction for Github Pages. 
+
+* The _styleguide_ provides additional files for other parts of the generation process.
+** The PlantUML config file is added in calls to the _diagram rendering service_ to specify PlantUML styling.
+** A CSL file can be used to let Zotero generate bibliographies in the desired layout.  
+
+[#generate]
+=== Components to generate and deploy the site
+
+[plantuml]
+....
+@startuml
+!include <C4/C4_Component>
+
+System_Boundary(doc_sys, "Documentation system") {
+  System_Boundary(sources, "Content sources") {
+    Container(source_repos, "Source repositories", "git, asciidoc", "Manage documentation content files.")
+  }
+  
+  System_Boundary(sitegen, "Website generator") {
+    Container_Boundary(antora, "Antora generation", "antora, asciidoctor") {
+      Component(packagejson, "package.json", "npm", "Specifies the Antora and other software components to be installed by npm.")
+      Component(dockercompose, "docker-compose.yml", "docker", "Specifies the diagram services used in local development.")
+      Component(github, "Github Action", "github", "Specifies how to generate and deploy the site via Github.")
+
+      Component(generator, "generator", "bash", "Sets the environment and generates the site.")
+      Rel_D(packagejson, generator, "provides executables for")
+      Lay_D(generator, github)
+    }
+
+    Container(ui, "User interface definition", "antora, html/css, handlebars", "Provides templates and styling for the UI.")
+    Rel_U(generator, ui, "gets the ui bundle from")
+
+    Container(kroki, "Diagram rendering service", "kroki, plantuml", "Converts diagram texts to images.")
+    Rel(dockercompose, kroki, "starts local services for")
+    Rel(generator, kroki, "processes textual diagrams via")
+    Lay_R(kroki, antora)
+  }
+  Rel_U(generator, source_repos, "gets content from")
+}
+
+System_Ext(site, "Github Pages website", "Provides generation and hosting for a documentation website.")
+Rel(github, site, "publishes site content to")
+
+@enduml
+....
+
+* The _package.json_ file (and associated lock file) are used to specify the versions of software components used.
+* The _docker-compose.yml_ file lets you start local docker containers for the _diagram rendering service_.
+* The _generator_ script specifies additional environment variables and selects the playbook to be used.
+* The _Github Action_ provides a recipe to set up the _diagram rendering service_, 
+install the required software components,
+run the generator script,
+and deploy the resulting site to Github Pages.

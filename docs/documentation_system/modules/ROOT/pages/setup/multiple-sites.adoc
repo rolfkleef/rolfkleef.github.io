@@ -1,0 +1,52 @@
+= Combining multiple documentation sites
+
+An Antora documentation site can subdivide its content in _components_ that each have their own navigation.
+
+Components can be used for individual technical parts, or for specific manuals.
+In the example below, we use technical parts for the _Asciidoc & Antora_ section,
+and we use separate manuals for the _Apache Hop_ section.
+
+Each component can have one or more modules.
+The modules are not shown in the example below.
+
+In our setup, we have added an extra layer of _sections_.
+Each section is its own Antora site.
+Navigation between these sites is configured in the Antora interface, using _supplemental ui_ files.
+
+.The documentation sections and components for local use on my machine
+====
+[plantuml]
+....
+@startwbs
+include::partial$plantuml-wbsmm-style.iuml[]
+
+* My local docs site
+ * My documentation
+  *_ Private
+  *_ Overview
+  *_ Desktop
+  *_ Documentation system
+
+ * Antora & Asciidoc
+  *_ Asciidoc
+  *_ Antora
+  *_ Antora Default UI
+  *_ Asciidoc reveal.js
+
+ * Apache Hop
+  *_ User Manual
+  *_ Technical Documentation
+  
+@endwbs
+....
+====
+
+We use a separate search index per section.
+It is possible to search across all components within that section.
+
+With the right additional setup, it is possible to combine multiple of these Antora-based sites into a bigger documentation site.
+
+* Each Antora site has its own playbook, and generates the output in a specific subdirectory of the normal output location.
+* The supplemental ui files contain template changes to provide the extra layer of selecting which Antora site to view.
+* All playbooks and the supplemental ui files are kept in a single repository.
+* The generator should do a run for each playbook.
