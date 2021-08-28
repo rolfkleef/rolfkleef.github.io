@@ -27,6 +27,7 @@ h|Stack
 |Specifics
 |There is no single Markdown standard.
 Each variation adds features in their own way.
+footnote:[https://gist.github.com/vimtaai/99f8c89e7d3d02a362117284684baa0f[See a comparison of almost 20 variations of Markdown.^]]
 
 |It is turning into an open standard, and supposedly semantically equivalent to DITA, and offers many useful standard features.
 The syntax takes a bit more time to get used to.
