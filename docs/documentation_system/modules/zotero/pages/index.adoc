@@ -71,7 +71,7 @@ This decouples the exact hierarchy and organisation of collections in Zotero fro
 [plantuml]
 ....
 @startmindmap
-include::styleguide:visual_style:partial$plantuml-wbsmm-style.iuml[]
+include::lib-style::partial$plantuml-wbsmm-style.iuml[]
 * Library
  * (other collections)
   *_ ...
