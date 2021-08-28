@@ -1,0 +1,1208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="716px" preserveAspectRatio="none" style="width:734px;height:716px;background:#FFFFFF;" version="1.1" viewBox="0 0 734 716" width="734px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="714.9996" style="stroke:#FFFFFF;stroke-width:1.0;" width="732" x="0" y="0"/><!--MD5=[ad49b05dd9a1308e8d5d117b25777df4]
+cluster boundary1--><rect fill="#FFFFFF" height="153" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="707" x="21" y="208"/><text fill="#444444" font-family="Roboto" font-size="15" font-weight="bold" lengthAdjust="spacing" textLength="69" x="340" y="227.0001">Boundary</text><text fill="#444444" font-family="Roboto" font-size="12" lengthAdjust="spacing" textLength="81" x="334" y="242.0002">[Boundary type]</text><!--MD5=[f814038bf8b73a2249085b129819fce8]
+cluster boundary2--><rect fill="#FFFFFF" height="153" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="721" x="7" y="413"/><text fill="#444444" font-family="Roboto" font-size="15" font-weight="bold" lengthAdjust="spacing" textLength="69" x="333" y="432.0001">Boundary</text><text fill="#444444" font-family="Roboto" font-size="12" lengthAdjust="spacing" textLength="81" x="327" y="447.0002">[Boundary type]</text><!--MD5=[2c1c476e63207aefa04e3d0eed510f52]
+entity system1--><rect fill="#1168BD" height="73.2002" style="stroke:#3C7FC0;stroke-width:1.5;" width="142" x="271" y="267.5"/><text fill="#FFFFFF" font-family="Roboto" font-size="15" font-weight="bold" lengthAdjust="spacing" textLength="53" x="315.5" y="294.5001">System</text><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="0" x="343.5" y="310.5001"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="115" x="286" y="326.1002">Optional Description</text><!--MD5=[54dfde413bb65c72680aaa2e019f7412]
+entity squeue--><path d="M42,272.5 L174,272.5 C179,272.5 179,304.1001 179,304.1001 C179,304.1001 179,335.7002 174,335.7002 L42,335.7002 C37,335.7002 37,304.1001 37,304.1001 C37,304.1001 37,272.5 42,272.5 " fill="#1168BD" style="stroke:#3C7FC0;stroke-width:1.5;"/><path d="M174,272.5 C169,272.5 169,304.1001 169,304.1001 C169,335.7002 174,335.7002 174,335.7002 " fill="none" style="stroke:#3C7FC0;stroke-width:1.5;"/><text fill="#FFFFFF" font-family="Roboto" font-size="15" font-weight="bold" lengthAdjust="spacing" textLength="101" x="52.5" y="294.5001">SystemQueue</text><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="0" x="104.5" y="310.5001"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="115" x="47" y="326.1002">Optional Description</text><!--MD5=[b854d99f915783cfb285ed2177545325]
+entity sdb--><path d="M570,273 C570,263 641,263 641,263 C641,263 712,263 712,273 L712,335.2002 C712,345.2002 641,345.2002 641,345.2002 C641,345.2002 570,345.2002 570,335.2002 L570,273 " fill="#1168BD" style="stroke:#3C7FC0;stroke-width:1.5;"/><path d="M570,273 C570,283 641,283 641,283 C641,283 712,283 712,273 " fill="none" style="stroke:#3C7FC0;stroke-width:1.5;"/><text fill="#FFFFFF" font-family="Roboto" font-size="15" font-weight="bold" lengthAdjust="spacing" textLength="73" x="604.5" y="304.0001">SystemDb</text><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="0" x="642.5" y="320.0001"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="115" x="585" y="335.6002">Optional Description</text><!--MD5=[d3f4d828e627b4f807905a411e4f73ef]
+entity system2--><rect fill="#999999" height="73.2002" style="stroke:#8A8A8A;stroke-width:1.5;" width="142" x="271" y="472.5"/><text fill="#FFFFFF" font-family="Roboto" font-size="15" font-weight="bold" lengthAdjust="spacing" textLength="84" x="300" y="499.5001">System_Ext</text><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="0" x="343.5" y="515.5001"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="115" x="286" y="531.1002">Optional Description</text><!--MD5=[111c73eac292b0e7e9cef901b9553a44]
+entity squeue2--><path d="M28,477.5 L174,477.5 C179,477.5 179,509.1001 179,509.1001 C179,509.1001 179,540.7002 174,540.7002 L28,540.7002 C23,540.7002 23,509.1001 23,509.1001 C23,509.1001 23,477.5 28,477.5 " fill="#999999" style="stroke:#8A8A8A;stroke-width:1.5;"/><path d="M174,477.5 C169,477.5 169,509.1001 169,509.1001 C169,540.7002 174,540.7002 174,540.7002 " fill="none" style="stroke:#8A8A8A;stroke-width:1.5;"/><text fill="#FFFFFF" font-family="Roboto" font-size="15" font-weight="bold" lengthAdjust="spacing" textLength="132" x="30" y="499.5001">SystemQueue_Ext</text><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="0" x="97.5" y="515.5001"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="115" x="40" y="531.1002">Optional Description</text><!--MD5=[1f9b15aa0be37954125bf4f490ea95f7]
+entity sdb2--><path d="M570,478 C570,468 641,468 641,468 C641,468 712,468 712,478 L712,540.2002 C712,550.2002 641,550.2002 641,550.2002 C641,550.2002 570,550.2002 570,540.2002 L570,478 " fill="#999999" style="stroke:#8A8A8A;stroke-width:1.5;"/><path d="M570,478 C570,488 641,488 641,488 C641,488 712,488 712,478 " fill="none" style="stroke:#8A8A8A;stroke-width:1.5;"/><text fill="#FFFFFF" font-family="Roboto" font-size="15" font-weight="bold" lengthAdjust="spacing" textLength="104" x="589" y="509.0001">SystemDb_Ext</text><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="0" x="642.5" y="525.0001"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="115" x="585" y="540.6002">Optional Description</text><!--MD5=[964a44cfa0f2a87f0e5a07f144eb8a6e]
+entity person1--><rect fill="#08427B" height="121.2002" style="stroke:#073B6F;stroke-width:1.5;" width="142" x="271" y="7"/><image height="48" width="48" x="318" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACD0lEQVR4Xu2YoU4EMRCGT+4j8Ai8AhaH4QHgAUjQuFMECUgMIUgwJAgMhgQsAYUiJCiQIBBY+EITsjfTdme6V24v4c8vyGbb+ZjOtN0bNcvjQXmkH83WvYBWto6PLm6v7p7uH1/w2fXD+PBycX1Pv2l3IdDm/vn7x+dXQiAubRzoURa7gRZWd0iGRIiJbOnhnfYBQZNJjNbuyY2eJG8fkDE3bbG4ep6MHUAsgYxmE3nVs6VsBWJSGccsOlFPmLIViMzLOB7pCVO2AtHJMohH7Fh6zqitQK7m0rJvAVYgGcEpe//PLdDz65sM4pF9N7ICcXDKIB5Nv6j7tD0NoSdM2QrU9Gg0ewE1LqBhHR3BBdvj2vapnidjHxD/q6vd7Pvhr31AwcY8eXMTXAKECZZJFXuEq27aLgQK5uLMohCenGGuGewOxSjBvYBqeG6B+Nqiblggdjnc+ZXDy+FNFpFzw76O3UBAROuXh6FoiAcf5g9eTvUgzy0nWg6I8cXHRUpg5bOVBCo+KDpFajOf23GgPme7RSQ+lacIENUgJ6gg1k6HjgOlqnLqip4tEuhv0hNEMXUD0clyXE3p6pZA0S2nnvTlXwLJEZWlb7cTQH1+USgTN4VhAenm/wea1OCAOmqo6fE1WCb9WSKBah+rbUWPWAmE2Rvk0ApiB45eOyNAzU8xcTvj8KvkKEoOaIYeHNA3ZuygAvFMUO0AAAAASUVORK5CYII=" y="19"/><text fill="#FFFFFF" font-family="Roboto" font-size="15" font-weight="bold" lengthAdjust="spacing" textLength="51" x="316.5" y="82.0001">Person</text><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="0" x="343.5" y="98.0001"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="115" x="286" y="113.6002">Optional Description</text><!--MD5=[1bede6f3589440bfd79a1ee7e5e9313b]
+entity group1--><rect fill="#08427B" height="121.2002" style="stroke:#073B6F;stroke-width:1.5;" width="142" x="448" y="7"/><image height="48" width="48" x="495" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAC5klEQVR4Xu2Yv24UQQzGU+4j8Ai8Ai0dTR4AHgCJmi4VogyUNAhRQoNEQUODRFoEFRVCooISCgra46fzyee1x565TY5LJD5ZJ2V3bX8z/jOeHE03Ty6VHMVHh5UrRejG3Se3H7xErh0/jG93FbF26/7z2lqbEJq/fv9ZGbz7+LU2VMi9x6+dtVfvP2fWGoTQt8oKjGZWCjl9ceYNrfHtx8+mNU+IjfWqBp++fI8mCiFA3oQBux5VPCE20+vNAeNoJRNcev05rt955FQ8IRfsiJOnb6PjTLxyAOnhVDwhrxFATtjvCQpPnr35wC/W3Yq9ckBcnidErnmlOXRN2PLv1iDPNKzd/aacO4SyolCwB1QHXv2LOYQ3O+dfzBELzRPii2JZOOCbLhsBq4e9f2rgot8mNOWVL1XaXbQFhLLKp5yj6zYhBEO2/kksyb56xRHiNVqLxaWyJYQasWADbKUQQRvmLJELWGfOGjHFowvclpCtL6Jjz1TZ+Wmg0UXIaWrPVFKChdlMtbW2IZTljUISqNsUInA2aHxGqBuLvRJamchuCHWPMDlWl4UsKzQLTdwNoRFPIxsZMQ0025U5szeERnpdt9FFSNmPGJei2Y2QRG3XxjiSQCtTaDsQolBlYwdTW7pfNzsFnlARZniQOrahjR+uKkSkZqb2t42xmdc62+MAi/ypnrI16PiBIvFFhV95kpVbozGKyLSFYxFp6jx05z8utUqxJSp4ZSO1WOJNQdbGB2ofFT5zE0j7cFXJ1rRajyJxvsY6PrIkG7kjVITq2UiBG4lmxsOiOQNZqQgtaIMjiI6sVIRGtmcB4mBvJSU02NAWoM6klNCe4iWI7lRSQs22dFGI5dknNFIyixGvY31C3saFosjrwxAqutFhCMmFsylXh9CeuqJgSQ7V48s5Ef9P1Se06/g8Dhm0M0kJTeXssRj2TtiUitC0nkAoUU4fUuo8QptlY4p+qNIh9O/lP6GeXDpCfwGxTRm8Rpgx3AAAAABJRU5ErkJggg==" y="19"/><text fill="#FFFFFF" font-family="Roboto" font-size="15" font-weight="bold" lengthAdjust="spacing" textLength="45" x="496.5" y="82.0001">Group</text><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="0" x="520.5" y="98.0001"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="115" x="463" y="113.6002">Optional Description</text><!--MD5=[b9e61e79aacaa41d79d977826cedfce4]
+link system1 to sdb--><path d="M413.24,304 C457.89,304 515.5,304 561.61,304 " fill="none" id="system1-to-sdb" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="569.79,304,561.79,301,561.79,307,569.79,304" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="35" x="474" y="282.0001">Rel_R</text><text fill="#666666" font-family="Roboto" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="116" x="433.5" y="296.4002">[Optional Technology]</text><!--MD5=[d7860994a09fab94e2783cbec9c3b3c0]
+link squeue to system1--><path d="M187.44,304 C211.71,304 238.39,304 262.65,304 " fill="none" id="squeue-system1" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="270.77,304,262.77,301,262.77,307,270.77,304" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="179.16,304,187.16,307,187.16,301,179.16,304" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="44" x="203" y="282.0001">BiRel_L</text><text fill="#666666" font-family="Roboto" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="51" x="199.5" y="296.4002">[Optional]</text><!--MD5=[1fb38d1d0fe70afc07d7383dfc32eb3f]
+link person1 to system1--><path d="M342,128.28 C342,169.16 342,222.41 342,259.33 " fill="none" id="person1-to-system1" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="342,267.41,345,259.41,339,259.41,342,267.41" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="19" x="393.5" y="173.0001">Rel</text><text fill="#666666" font-family="Roboto" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="116" x="345" y="187.4002">[Optional Technology]</text><!--MD5=[bc174e7ebd369ecd274f39b404114139]
+link system2 to sdb2--><path d="M413.24,509 C457.89,509 515.5,509 561.61,509 " fill="none" id="system2-to-sdb2" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="569.79,509,561.79,506,561.79,512,569.79,509" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="35" x="474" y="487.0001">Rel_R</text><text fill="#666666" font-family="Roboto" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="116" x="433.5" y="501.4002">[Optional Technology]</text><!--MD5=[e59ac62e4abf60383b1149ce030a2a58]
+link squeue2 to system2--><path d="M187.26,509 C211.82,509 238.45,509 262.59,509 " fill="none" id="squeue2-system2" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="270.67,509,262.67,506,262.67,512,270.67,509" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="179.25,509,187.25,512,187.25,506,179.25,509" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="44" x="203" y="487.0001">BiRel_L</text><text fill="#666666" font-family="Roboto" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="51" x="199.5" y="501.4002">[Optional]</text><!--MD5=[9a5d58019fba383099b36c972056ed2c]
+link system1 to system2--><path d="M342,340.83 C342,375.22 342,427.24 342,464.1 " fill="none" id="system1-to-system2" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="342,472.19,345,464.19,339,464.19,342,472.19" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="19" x="345" y="392.0001">Rel</text><rect fill="#FFFFFF" height="121.9996" rx="5" ry="5" style="stroke:#FFFFFF;stroke-width:1.0;" width="124" x="588" y="579"/><text fill="#000000" font-family="Roboto" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="52" x="598" y="603.9999">Legend</text><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacing" textLength="0" x="654" y="603.9999"/><rect fill="#08427B" height="20.7999" style="stroke:none;stroke-width:1.0;" width="108" x="596" y="608.7999"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacing" textLength="42" x="602" y="624.7999">person</text><rect fill="#1168BD" height="20.7999" style="stroke:none;stroke-width:1.0;" width="108" x="596" y="629.5999"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacing" textLength="43" x="602" y="645.5998">system</text><rect fill="#686868" height="20.7999" style="stroke:none;stroke-width:1.0;" width="108" x="596" y="650.3998"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacing" textLength="95" x="602" y="666.3997">external person</text><rect fill="#999999" height="20.7999" style="stroke:none;stroke-width:1.0;" width="108" x="596" y="671.1997"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacing" textLength="96" x="602" y="687.1996">external system</text><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="596" x2="704" y1="588" y2="588"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="596" x2="704" y1="608.7999" y2="608.7999"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="596" x2="704" y1="629.5999" y2="629.5999"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="596" x2="704" y1="650.3998" y2="650.3998"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="596" x2="704" y1="671.1997" y2="671.1997"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="596" x2="704" y1="691.9996" y2="691.9996"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="596" x2="596" y1="588" y2="691.9996"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="704" x2="704" y1="588" y2="691.9996"/><!--MD5=[27001df929a1dc671cdb3dc4b4e9590e]
+@startuml
+' Styling settings for PlantUML diagrams
+' See http://plantuml.sourceforge.net for documentation
+' To get a list of possible skinparam settings, run: plantuml -language
+
+' COLORS
+' ========================================
+
+' general colors from own stylesheet
+!$diagram_background_color = "#fff"
+!$diagram_border_color = "#fff"
+!$diagram_color = "#808080"
+!$arrow_color = "#e91e63"
+!$link_color = "#3498DB"
+
+' make admonition colors available for elements
+!$caution_color = "#a0439c"
+!$caution_on_color = "#fff"
+!$important_color = "#d32f2f"
+!$important_on_color = "#fff"
+!$note_color = "#217ee7"
+!$note_on_color = "#fff"
+!$tip_color = "#41af46"
+!$tip_on_color = "#fff"
+!$warning_color = "#e18114"
+!$warning_on_color = "#fff"
+
+' use admonition colors for elements
+!$logic_main_color = $warning_color
+
+!procedure $logic_style($var=1)
+  $styling($var, $logic_main_color, $logic_main_color, $warning_on_color) 
+!endprocedure
+
+!procedure $group_style($var=4)
+  $styling($var, $caution_color, $caution_color, $caution_on_color, "#FFFCFF") 
+!endprocedure
+
+!procedure $divider_style($var=1)
+  $styling($var, $tip_color, $tip_color, $tip_on_color) 
+!endprocedure
+
+' node_1, node_2 and note taken from C4 styling
+!$node_1_main_color = "#08427b"
+!$node_2_main_color = "#1168bd"
+!$node_2_aux2_color = "#3498DB"
+
+!procedure $node_1_style($var=1)
+  $styling($var, "#08427b", "#fff", "fff") 
+!endprocedure
+
+!procedure $node_2_style($var=1)
+  $styling($var, "#1168bd", "#fff", "fff", "#3498DB") 
+!endprocedure
+
+!procedure $note_1_style($var=1)
+  $styling($var, "#999", "#fff", "fff") 
+!endprocedure
+
+' STYLE HELPERS
+' ========================================
+
+' get variation with color palette:
+' $main: primary fill color, typically background
+' $aux1, $aux2: add'l fill colors, typically border, alternative background
+' $on1, $on2: text colors, typically main text, supplementary
+' variations:
+' 1) regular (default)
+' 2) name reversed (label outside)
+' 3) reverse background
+' 4) light background
+' 5) border box (loop, alt)
+' 6) ...
+
+!procedure $styling($var=1, $main, $aux1, $on1, $aux2="#ccc", $on2="#666")
+  !if ($var=="2")
+    BackgroundColor $main
+    BorderColor $aux1
+    FontColor $main
+    StereotypeFontColor $main
+  !elseif ($var=="3")
+    BackgroundColor $aux1
+    BorderColor $main
+    FontColor $main
+    StereotypeFontColor $main
+  !elseif ($var==4)
+    BackgroundColor $aux2
+    BorderColor $aux1
+    FontColor $main
+  !elseif ($var=="5")
+    BackgroundColor $main
+    BorderColor $aux1
+    FontColor $main
+    HeaderFontColor $on1
+  !elseif ($var=="6")
+    BackgroundColor $on1
+    BorderColor $aux1
+    FontColor $main
+    HeaderFontColor $on1
+    HeaderBackgroundColor $aux1
+  !elseif ($var==7)
+    BackgroundColor $aux2
+    BorderColor $main
+    FontColor $main
+  !else
+    BackgroundColor $main
+    BorderColor $aux1
+    FontColor $on1
+    StereotypeFontColor $on1
+    HeaderBackgroundColor $on1
+  !endif
+  FontSize 13
+!endprocedure
+
+' GENERAL SETTINGS
+' ========================================
+
+!$body_font_family = "Roboto"
+' each element can get its own FontName, FontSize, FontStyle; not added now
+
+skinparam BackgroundColor $diagram_background_color
+skinparam DiagramBorderColor $diagram_border_color
+skinparam HyperlinkColor $link_color
+
+'skinparam monochrome true
+skinparam shadowing false
+skinparam Handwritten false
+skinparam Padding 2
+'skinparam Roundcorner 5
+
+' Setting a minimum width can make sequence diagram participants look more balanced
+skinparam minClassWidth 100
+
+skinparam Default {
+  FontColor $doc_font_color
+  FontName $body_font_family
+  FontStyle normal
+  TextAlignment center
+}
+
+skinparam Arrow {
+  Color $arrow_color
+  FontColor $arrow_color
+}
+
+skinparam Note {
+  $note_1_style()
+}
+
+' USE CASE
+' ========================================
+
+skinparam Actor {
+  $node_1_style(2)
+  ' Make actors look like in C4
+  Style awesome
+}
+
+skinparam Usecase {
+  $node_2_style()
+}
+
+skinparam Package {
+  $group_style()
+}
+
+' ACTIVITY
+' ========================================
+
+skinparam Activity {
+  $node_2_style()
+
+  StartColor $node_1_main_color
+  EndColor $node_1_main_color
+  BarColor $logic_main_color
+}
+
+skinparam ActivityDiamond {
+  $logic_style()
+}
+
+skinparam Partition {
+  $group_style()
+}
+
+skinparam Swimlane {
+  $divider_style()
+}
+
+skinparam SwimlaneTitle {
+  $divider_style(6)
+}
+
+' SEQUENCE
+' ========================================
+
+'Actor: see Use Case diagram above
+
+skinparam Participant {
+  $node_1_style()
+'  Padding 40
+}
+
+skinparam Boundary {
+  $node_1_style(3)
+}
+
+skinparam Control {
+  $node_1_style(3)
+}
+
+skinparam Entity {
+  $node_1_style(3)
+}
+
+skinparam Database {
+  $node_1_style(2)
+}
+
+skinparam Collections {
+  $node_1_style()
+}
+
+skinparam Queue {
+  $node_1_style()
+}
+
+skinparam SequenceLifeline {
+  $node_2_style(7)
+}
+
+skinparam SequenceDelay {
+  $divider_style(2)
+}
+
+skinparam SequenceDivider {
+  $divider_style()
+}
+
+skinparam SequenceGroup {
+  $logic_style(5)
+}
+
+skinparam SequenceReference {
+  $group_style(6)
+  BorderThickness 1
+}
+
+skinparam SequenceBox {
+  $group_style(4)
+'  Padding 13
+}
+
+' ========================================
+' ========================================
+
+
+' DEPLOYMENT
+' ========================================
+
+' Actor: see Use case diagram
+' Use case: see Use case diagram
+' Package: see Use case diagram (fix?)
+' Boundary: see Sequence diagram
+' Control: see Sequence diagram
+' Entity: see Sequence diagram
+' Queue: see Sequence diagram
+
+' Database: see Sequence diagram (fix?)
+' Collections: see Sequence diagram (fix?)
+
+skinparam Agent {
+  $node_2_style()
+}
+
+skinparam Person {
+  $node_1_style()
+}
+
+skinparam Artifact {
+  $node_2_style()
+}
+
+skinparam Component {
+  $node_2_style()
+}
+
+skinparam File {
+  $node_2_style()
+}
+
+skinparam Card {
+  $node_2_style()
+}
+
+skinparam Storage {
+  $node_2_style()
+}
+
+skinparam Cloud {
+  $group_style(4)
+}
+
+skinparam Frame {
+  $group_style()
+}
+
+skinparam Node {
+  $group_style()
+}
+
+' check lighter background
+skinparam Stack {
+  $node_2_style()
+}
+
+' artefact or group?
+skinparam Folder {
+  $group_style()
+}
+
+skinparam Hexagon {
+  $logic_style()
+}
+
+skinparam Interface {
+  $logic_style(3)
+}
+
+skinparam Object {
+  $node_2_style()
+'  AttributeFontColor $arrow_color
+'  EndColor $arrow_color
+'  StartColor $arrow_color
+}
+
+skinparam Rectangle {
+  $logic_style()
+}
+
+' Used in C4 models:
+skinparam Rectangle<<boundary>> {
+  $logic_style(6)
+}
+
+skinparam State {
+  $node_2_style()
+'  AttributeFontColor $arrow_color
+'  EndColor $arrow_color
+'  StartColor $arrow_color
+}
+!include <C4/C4_Context>
+!include <tupadr3/font-awesome/users>
+
+LAYOUT_WITH_LEGEND()
+
+Person(person1, "Person", "Optional Description")
+Person(group1, "Group", "Optional Description", $sprite="users")
+
+Boundary(boundary1, "Boundary", "Boundary type") {
+  System(system1, "System", "Optional Description")
+  SystemQueue(squeue, "SystemQueue", "Optional Description")
+  SystemDb(sdb, "SystemDb", "Optional Description")
+
+  Rel_R(system1, sdb, "Rel_R", "Optional Technology")
+  BiRel_L(system1, squeue, "BiRel_L", "Optional")
+}
+
+Rel(person1, system1, "Rel", "Optional Technology")
+
+Boundary(boundary2, "Boundary", "Boundary type") {
+  System_Ext(system2, "System_Ext", "Optional Description")
+  SystemQueue_Ext(squeue2, "SystemQueue_Ext", "Optional Description")
+  SystemDb_Ext(sdb2, "SystemDb_Ext", "Optional Description")
+
+  Rel_R(system2, sdb2, "Rel_R", "Optional Technology")
+  BiRel_L(system2, squeue2, "BiRel_L", "Optional")
+}
+
+Rel(system1, system2, "Rel")
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam BackgroundColor #fff
+skinparam DiagramBorderColor #fff
+skinparam HyperlinkColor #3498DB
+
+skinparam shadowing false
+skinparam Handwritten false
+skinparam Padding 2
+
+skinparam minClassWidth 100
+
+skinparam Default {
+  FontColor $doc_font_color
+  FontName Roboto
+  FontStyle normal
+  TextAlignment center
+}
+
+skinparam Arrow {
+  Color #e91e63
+  FontColor #e91e63
+}
+
+skinparam Note {
+      BackgroundColor #999
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+
+skinparam Actor {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor #08427b
+    StereotypeFontColor #08427b
+  FontSize 13 
+  Style awesome
+}
+
+skinparam Usecase {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Package {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+
+skinparam Activity {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+
+  StartColor #08427b
+  EndColor #08427b
+  BarColor #e18114
+}
+
+skinparam ActivityDiamond {
+      BackgroundColor #e18114
+    BorderColor #e18114
+    FontColor #fff
+    StereotypeFontColor #fff
+    HeaderBackgroundColor #fff
+  FontSize 13 
+}
+
+skinparam Partition {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+skinparam Swimlane {
+      BackgroundColor #41af46
+    BorderColor #41af46
+    FontColor #fff
+    StereotypeFontColor #fff
+    HeaderBackgroundColor #fff
+  FontSize 13 
+}
+
+skinparam SwimlaneTitle {
+      BackgroundColor #fff
+    BorderColor #41af46
+    FontColor #41af46
+    HeaderFontColor #fff
+    HeaderBackgroundColor #41af46
+  FontSize 13 
+}
+
+
+
+skinparam Participant {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Boundary {
+      BackgroundColor #fff
+    BorderColor #08427b
+    FontColor #08427b
+    StereotypeFontColor #08427b
+  FontSize 13 
+}
+
+skinparam Control {
+      BackgroundColor #fff
+    BorderColor #08427b
+    FontColor #08427b
+    StereotypeFontColor #08427b
+  FontSize 13 
+}
+
+skinparam Entity {
+      BackgroundColor #fff
+    BorderColor #08427b
+    FontColor #08427b
+    StereotypeFontColor #08427b
+  FontSize 13 
+}
+
+skinparam Database {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor #08427b
+    StereotypeFontColor #08427b
+  FontSize 13 
+}
+
+skinparam Collections {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Queue {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam SequenceLifeline {
+      BackgroundColor #3498DB
+    BorderColor #1168bd
+    FontColor #1168bd
+  FontSize 13 
+}
+
+skinparam SequenceDelay {
+      BackgroundColor #41af46
+    BorderColor #41af46
+    FontColor #41af46
+    StereotypeFontColor #41af46
+  FontSize 13 
+}
+
+skinparam SequenceDivider {
+      BackgroundColor #41af46
+    BorderColor #41af46
+    FontColor #fff
+    StereotypeFontColor #fff
+    HeaderBackgroundColor #fff
+  FontSize 13 
+}
+
+skinparam SequenceGroup {
+      BackgroundColor #e18114
+    BorderColor #e18114
+    FontColor #e18114
+    HeaderFontColor #fff
+  FontSize 13 
+}
+
+skinparam SequenceReference {
+      BackgroundColor #fff
+    BorderColor #a0439c
+    FontColor #a0439c
+    HeaderFontColor #fff
+    HeaderBackgroundColor #a0439c
+  FontSize 13 
+  BorderThickness 1
+}
+
+skinparam SequenceBox {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+
+
+
+
+
+skinparam Agent {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Person {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Artifact {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Component {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam File {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Card {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Storage {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Cloud {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+skinparam Frame {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+skinparam Node {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+skinparam Stack {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Folder {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+skinparam Hexagon {
+      BackgroundColor #e18114
+    BorderColor #e18114
+    FontColor #fff
+    StereotypeFontColor #fff
+    HeaderBackgroundColor #fff
+  FontSize 13 
+}
+
+skinparam Interface {
+      BackgroundColor #e18114
+    BorderColor #e18114
+    FontColor #e18114
+    StereotypeFontColor #e18114
+  FontSize 13 
+}
+
+skinparam Object {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Rectangle {
+      BackgroundColor #e18114
+    BorderColor #e18114
+    FontColor #fff
+    StereotypeFontColor #fff
+    HeaderBackgroundColor #fff
+  FontSize 13 
+}
+
+skinparam Rectangle<<boundary>> {
+      BackgroundColor #fff
+    BorderColor #e18114
+    FontColor #e18114
+    HeaderFontColor #fff
+    HeaderBackgroundColor #e18114
+  FontSize 13 
+}
+
+skinparam State {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+
+
+
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam LegendBorderColor transparent
+skinparam LegendBackgroundColor transparent
+skinparam LegendFontColor #FFFFFF
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam queue {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam Arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam package {
+    StereotypeFontSize 6
+    StereotypeFontColor #FFFFFF
+    FontStyle plain
+    BackgroundColor #FFFFFF
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 6
+    StereotypeFontColor #FFFFFF
+    FontColor #444444
+    BorderColor #444444
+    BackgroundColor #FFFFFF
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam database<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam queue<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam database<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam database<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam queue<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam database<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+
+
+
+sprite $person [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000025788300000000005886410000000000000
+000000000007DFFFFFFD9643347BFFFFFFFB400000000000
+0000000004EFFFFFFFFFFFFFFFFFFFFFFFFFFB1000000000
+000000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFD200000000
+00000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE10000000
+0000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB0000000
+000000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5000000
+000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD000000
+000009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF200000
+00000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF600000
+00000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF800000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00000EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF700000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+0000008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD3000000
+000000014555555555555555555555555555555300000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+sprite $person2 [48x48/16] {
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000002578888300000000005888864100000000000
+0000000007DFFFFFFFFD9643347BFFFFFFFFFB4000000000
+00000004EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB10000000
+0000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD2000000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+00003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+0000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF50000
+0003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD0000
+0009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+0009FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFF2000
+0003FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFD0000
+0000BFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFF50000
+00003FFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFB00000
+000006FFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFE100000
+0000007FFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFD2000000
+00000004EFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFB10000000
+0000000007DF8FFFFFFFFFFFFFFFFFFFFFF8FB4000000000
+000000000002578888888888888888888864100000000000
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sprite $users [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000355100000000000000000000003541000000000
+00000005EFFFFB10000000000000000006EFFFFA10000000
+0000006FFFFFFFE100000000000000008FFFFFFFD1000000
+000003FFFFFFFFFC0000000000000004FFFFFFFFFB000000
+00000AFFFFFFFFFF300000000000000BFFFFFFFFFF200000
+00000EFFFFFFFFFF700000000000000FFFFFFFFFFF600000
+00000FFFFFFFFFFF800004898620000FFFFFFFFFFF700000
+00000DFFFFFFFFFF6007FFFFFFFC300EFFFFFFFFFF500000
+000008FFFFFFFFFF21CFFFFFFFFFF609FFFFFFFFFF100000
+000001EFFFFFFFF90CFFFFFFFFFFFF52FFFFFFFFF8000000
+0000003FFFFFFFB09FFFFFFFFFFFFFF24FFFFFFFA0000000
+00000002AFFFD702FFFFFFFFFFFFFFFA02AFFFD600000000
+0002C92000110007FFFFFFFFFFFFFFFF0000110005C80000
+000DFFFB5100240BFFFFFFFFFFFFFFFF41410037EFFF5000
+003FFFFFFFFFFB0DFFFFFFFFFFFFFFFF53FFFFFFFFFFB000
+007FFFFFFFFFFB0DFFFFFFFFFFFFFFFF53FFFFFFFFFFF000
+00AFFFFFFFFFFC0BFFFFFFFFFFFFFFFF44FFFFFFFFFFF200
+00BFFFFFFFFFFF07FFFFFFFFFFFFFFFF08FFFFFFFFFFF300
+00CFFFFFFFFFFF52FFFFFFFFFFFFFFFA0CFFFFFFFFFFF400
+00CFFFFFFFFFFFC09FFFFFFFFFFFFFF23FFFFFFFFFFFF500
+00CFFFFFFFFFFFE30DFFFFFFFFFFFF60AFFFFFFFFFFFF500
+008FFFFFFFFE710001CFFFFFFFFFF600004AFFFFFFFFF100
+000BFFFFFFB106AB6008FFFFFFFC3019B9304FFFFFFF5000
+000048AAA804EFFFFC20058A973006FFFFFB13AAA9610000
+00000000004FFFFFFFF930000016DFFFFFFFC00000000000
+0000000001EFFFFFFFFFFFCABDFFFFFFFFFFF80000000000
+0000000007FFFFFFFFFFFFFFFFFFFFFFFFFFFF0000000000
+000000000EFFFFFFFFFFFFFFFFFFFFFFFFFFFF7000000000
+000000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFC000000000
+000000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000
+00000000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF300000000
+00000000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF500000000
+00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF700000000
+00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF800000000
+00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF900000000
+00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF900000000
+00000000EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF700000000
+00000000AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF200000000
+000000002FFFFFFFFFFFFFFFFFFFFFFFFFFFFFA000000000
+0000000004FFFFFFFFFFFFFFFFFFFFFFFFFFFB0000000000
+000000000018CEEEEEEEEEEEEEEEEEEEEEDA500000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+
+skinparam folderBackgroundColor<<FA USERS>> White
+
+hide stereotype
+legend right
+|<color:#000000>**Legend**</color> |
+|<#08427B> person |
+|<#1168BD> system|
+|<#686868> external person |
+|<#999999> external system |
+endlegend
+
+rectangle "<$person>\n==Person\n\n Optional Description" <<person>> as person1 
+rectangle "<$users>\n==Group\n\n Optional Description" <<person>> as group1 
+
+rectangle "==Boundary\n<size:12>[Boundary type]</size>" <<boundary>> as boundary1  {
+  rectangle "==System\n\n Optional Description" <<system>> as system1 
+  queue "==SystemQueue\n\n Optional Description" <<system>> as squeue 
+  database "==SystemDb\n\n Optional Description" <<system>> as sdb 
+
+  system1 -RIGHT->> sdb : **Rel_R**\n//<size:12>[Optional Technology]</size>//
+  system1 <<-LEFT->> squeue : **BiRel_L**\n//<size:12>[Optional]</size>//
+}
+
+person1 - ->> system1 : **Rel**\n//<size:12>[Optional Technology]</size>//
+
+rectangle "==Boundary\n<size:12>[Boundary type]</size>" <<boundary>> as boundary2  {
+  rectangle "==System_Ext\n\n Optional Description" <<external_system>> as system2 
+  queue "==SystemQueue_Ext\n\n Optional Description" <<external_system>> as squeue2 
+  database "==SystemDb_Ext\n\n Optional Description" <<external_system>> as sdb2 
+
+  system2 -RIGHT->> sdb2 : **Rel_R**\n//<size:12>[Optional Technology]</size>//
+  system2 <<-LEFT->> squeue2 : **BiRel_L**\n//<size:12>[Optional]</size>//
+}
+
+system1 - ->> system2 : **Rel**
+@enduml
+
+PlantUML version 1.2021.8(Sat Jun 26 08:20:59 GMT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

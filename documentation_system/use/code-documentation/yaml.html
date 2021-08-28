@@ -3,17 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Spreadsheets2IATI :: Dataworkbench</title>
-    <link rel="prev" href="../index.html">
+    <title>Yaml files :: My documentation</title>
+    <link rel="canonical" href="https://docs.drostan.org/documentation_system/use/code-documentation/yaml.html">
     <meta name="generator" content="Antora 3.0.0-alpha.6">
-    <link rel="stylesheet" href="../../_/css/site.css" rel="stylesheet">
-    <script>var uiRootPath = '../../_'</script>
+    <link rel="stylesheet" href="../../../_/css/site.css" rel="stylesheet">
+    <script>var uiRootPath = '../../../_'</script>
   </head>
   <body class="article">
 <header class="header">
   <nav class="navbar">
     <div class="navbar-brand">
-      <img class="navbar-item" src="../../_/img/rolfkleef_80x80.png">
+      <img class="navbar-item" src="../../../_/img/rolfkleef_80x80.png">
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
@@ -27,18 +27,16 @@
 <a class="navbar-link" href="https://www.drostan.org/contact/">Contact</a>
 
 <div class="navbar-item has-dropdown is-hoverable">
-  <a class="navbar-link">Dataworkbench</a>
+  <a class="navbar-link">My documentation</a>
   <div class="navbar-dropdown">
     <a class="navbar-item" href="/">My documentation</a>
 <a class="navbar-item" href="/dataworkbench">Docs dataworkbench.io</a>  </div>
 </div>
         <div class="navbar-item has-dropdown is-hoverable">
-    <a class="navbar-link">IATI Workbench</a>
+    <a class="navbar-link">Documentation system</a>
   <div class="navbar-dropdown">
-        <a class="navbar-item" href="../../api/index.html">API</a>
-        <a class="navbar-item" href="../../dwb-cluster/index.html">Cluster</a>
-        <a class="navbar-item" href="../../frontend/index.html">Frontend</a>
-        <a class="navbar-item" href="../../validator/index.html">Validator</a>
+        <a class="navbar-item" href="../../../overview/index.html">Overview</a>
+        <a class="navbar-item" href="../../../styleguide/index.html">Style guide</a>
   </div>
 </div>
       </div>
@@ -51,17 +49,55 @@
   </nav>
 </header>
 <div class="body">
-<div class="nav-container" data-component="iati-workbench" data-version="">
+<div class="nav-container" data-component="documentation_system" data-version="">
   <aside class="nav">
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
   <nav class="nav-menu">
-    <h3 class="title"><a href="../index.html">IATI Workbench</a></h3>
+    <h3 class="title"><a href="../../index.html">Documentation system</a></h3>
 <ul class="nav-list">
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
-  <li class="nav-item is-current-page" data-depth="1">
-    <a class="nav-link" href="index.html">Spreadsheets2IATI</a>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../technology_choices/index.html">Technology choices</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../technology_choices/asciidoc-antora.html">Asciidoc and Antora</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../technology_choices/plantuml-kroki.html">PlantUML and Kroki</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../setup/index.html">Setup of Antora</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../setup/multiple-sites.html">Combining multiple documentation sites</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../antora/index.html">Antora</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../antora/setup.html">Antora setup</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../zotero/index.html">Zotero</a>
   </li>
 </ul>
   </li>
@@ -70,47 +106,39 @@
 </div>
 <div class="nav-panel-explore" data-panel="explore">
   <div class="context">
-    <span class="title">IATI Workbench</span>
+    <span class="title">Documentation system</span>
     <span class="version">default</span>
   </div>
   <ul class="components">
-    <li class="component">
-      <a class="title" href="../../api/index.html">API</a>
-      <ul class="versions">
-        <li class="version is-latest">
-          <a href="../../api/index.html">default</a>
-        </li>
-      </ul>
-    </li>
-    <li class="component">
-      <a class="title" href="../../dwb-cluster/index.html">Cluster</a>
-      <ul class="versions">
-        <li class="version is-latest">
-          <a href="../../dwb-cluster/index.html">default</a>
-        </li>
-      </ul>
-    </li>
-    <li class="component">
-      <a class="title" href="../../frontend/index.html">Frontend</a>
-      <ul class="versions">
-        <li class="version is-latest">
-          <a href="../../frontend/index.html">default</a>
-        </li>
-      </ul>
-    </li>
     <li class="component is-current">
-      <a class="title" href="../index.html">IATI Workbench</a>
+      <a class="title" href="../../index.html">Documentation system</a>
       <ul class="versions">
         <li class="version is-current is-latest">
-          <a href="../index.html">default</a>
+          <a href="../../index.html">default</a>
         </li>
       </ul>
     </li>
     <li class="component">
-      <a class="title" href="../../validator/index.html">Validator</a>
+      <a class="title" href="../../../overview/index.html">Overview</a>
       <ul class="versions">
         <li class="version is-latest">
-          <a href="../../validator/index.html">default</a>
+          <a href="../../../overview/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../styleguide/index.html">Style guide</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../styleguide/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../lib-style/index.html">Style library</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../lib-style/index.html">default</a>
         </li>
       </ul>
     </li>
@@ -122,88 +150,228 @@
 <main class="article">
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
-  <a href="../index.html" class="home-link"></a>
+  <a href="../../../overview/index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
-    <li><a href="../index.html">IATI Workbench</a></li>
-    <li><a href="index.html">Spreadsheets2IATI</a></li>
+    <li><a href="../../index.html">Documentation system</a></li>
+    <li><a href="yaml.html">Yaml files</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/data4development/iati-workbench/edit/develop/docs/modules/spreadsheets2iati/pages/index.adoc" target="_blank">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/rolfkleef/rolfkleef.github.io/edit/main/docs/documentation_system/modules/use/pages/code-documentation/yaml.adoc" target="_blank">Edit this Page</a></div>
   </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Spreadsheets2IATI</h1>
-<div id="preamble">
-<div class="sectionbody">
-<div class="paragraph">
-<p>Convertor.</p>
-</div>
-<div class="paragraph">
-<p>==</p>
-</div>
-</div>
-</div>
+<h1 class="page">Yaml files</h1>
 <div class="sect1">
-<h2 id="_setup_notes"><a class="anchor" href="#_setup_notes"></a>Setup notes</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_organisation"><a class="anchor" href="#_organisation"></a>Organisation</h3>
-<div class="paragraph">
-<p>Create a directory for the organisation if it does not exist.</p>
-</div>
-<div class="paragraph">
-<p>Create or copy a file <code>organisation.xml</code> with the information about the organisation and the workspace (next step).</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_workspace"><a class="anchor" href="#_workspace"></a>Workspace</h3>
-<div class="paragraph">
-<p>Create a directory for the workspace if it does not exist.</p>
-</div>
-<div class="paragraph">
-<p>Initialise the workspace, for instance with <code>iati-workbench init</code></p>
-</div>
-<div class="paragraph">
-<p>Create or copy a <code>build.xml</code> to have local build capabilities: for instance to get files from a folder synchronised with Google Drive.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_spreadsheets2iati"><a class="anchor" href="#_spreadsheets2iati"></a>Spreadsheets2IATI</h2>
+<h2 id="_multiline_documentation"><a class="anchor" href="#_multiline_documentation"></a>Multiline documentation</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The conversion process initiated by local <code>ant</code> in workspace.</p>
+<p>Yaml only allows single-line comments.
+However, it is possible to add multiline content to a Yaml data element.</p>
 </div>
 <div class="paragraph">
-<p>The local <code>build.xml</code> includes a workspace library build via a hardcoded link.</p>
+<p>If the application that will use the yaml file ignores unknown data elements, we can add our own "yamldoc".
+The name of the element is arbitrary.
+We use <code>_yamldoc</code> to make its purpose clear.</p>
 </div>
-<div class="imageblock kroki">
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+Adding our own data element will not work if an applications uses a strictly defined yaml schema.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+The name <code>_yamldoc</code> is arbitrary.
+To add multiple sections under one Yaml key, each name must be unique, so simply use <code>_yamldoc1</code>, <code>_yamldoc2</code>, &#8230;&#8203; for the next instances.
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
 <div class="content">
-<img src="_images/diag-33929b96bc869c7ae44e51f4c4d38f2304b43368.svg" alt="Sequence for `s2i-run` target">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">element1:
+  attribute1: ...
+  _yamldoc: &gt;
+    comments <i class="conum" data-value="1"></i><b>(1)</b>
+    comments
+  attribute2: ... <i class="conum" data-value="2"></i><b>(2)</b></code></pre>
 </div>
-<div class="title">Figure 1. Sequence for <code>s2i-run</code> target</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Start the multiline value with the element name and <code>&gt;</code>. The next lines have to be indented.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>End of multiline value when the indentation ends.</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Since the multiline comments are indented, we need to add the parameter <code>indent=0</code> when including the tagged area in the documentation.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_iati_summary"><a class="anchor" href="#_iati_summary"></a>IATI Summary</h2>
+<h2 id="_example"><a class="anchor" href="#_example"></a>Example</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Creates spreadsheets with summary information based on XML fils in the <code>output</code> folder.</p>
+<p>The example below is based on a section of our Antora playbook for the documentation site.</p>
+</div>
+<div class="listingblock">
+<div class="title">In the yaml file to be documented</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml"># tag::asciidoc[] <i class="conum" data-value="1"></i><b>(1)</b>
+asciidoc:
+  extensions:
+  - asciidoctor-kroki # &lt;1&gt; <i class="conum" data-value="2"></i><b>(2)</b>
+  attributes:
+    page-pagination: true
+    hide-uri-scheme: true # &lt;2&gt; <i class="conum" data-value="3"></i><b>(3)</b>
+    kroki-fetch-diagram: true # &lt;3&gt; <i class="conum" data-value="4"></i><b>(4)</b>
+    allow-uri-read: true
+    experimental: true
+    kroki-default-format@: svg
+    kroki-server-url: http://localhost:8000 # &lt;4&gt; <i class="conum" data-value="5"></i><b>(5)</b>
+# end::asciidoc[] <i class="conum" data-value="6"></i><b>(6)</b>
+    _yamldoc: &gt;
+      tag::asciidoc-notes[] <i class="conum" data-value="7"></i><b>(7)</b>
+      &lt;1&gt; Use kroki to generate diagram images
+      &lt;2&gt; Don't show https:// etc on bare links
+      &lt;3&gt; For kroki: store the image. This requires `allow-uri-read`, as well as `experimental` (to override kroki security)
+      &lt;4&gt; To run  a local kroki server: `docker run -p8000:8000 -d --name asciidoctor-kroki yuzutech/kroki`
+      end::asciidoc-notes[] <i class="conum" data-value="8"></i><b>(8)</b></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Start of the source to be included in the documentation.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Specify a callout</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>idem</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>idem</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>idem</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="6"></i><b>6</b></td>
+<td>End of the source to be included.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="7"></i><b>7</b></td>
+<td>Start the notes section as <code>_yamldoc</code> element, with the text for the callouts.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="8"></i><b>8</b></td>
+<td>End of the notes section, and of the multiline element.</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="title">In the documentation source</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">Start of the documentation page ...
+
+[source, yaml]
+.My documented configuration
+----
+include::../examples/my-documented-configuration.yml[tags=asciidoc] <i class="conum" data-value="1"></i><b>(1)</b>
+----
+include::../examples/my-documented-configuration.yml[tags=asciidoc-notes, indent=0] <i class="conum" data-value="2"></i><b>(2)</b>
+
+Rest of the documentation page ...</code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Include the script portion in a code block.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Include the callouts text as regular Asciidoc after the code block. Use <code>indent=0</code> to remove leading whitespace.</td>
+</tr>
+</table>
+</div>
+<div class="exampleblock">
+<div class="title">Example 1. How the commented source will be shown</div>
+<div class="content">
+<div class="paragraph">
+<p>Start of the documentation page &#8230;&#8203;</p>
+</div>
+<div class="listingblock">
+<div class="title">My documented configuration</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">asciidoc:
+  extensions:
+  - asciidoctor-kroki <i class="conum" data-value="1"></i><b>(1)</b>
+  attributes:
+    page-pagination: true
+    hide-uri-scheme: true <i class="conum" data-value="2"></i><b>(2)</b>
+    kroki-fetch-diagram: true <i class="conum" data-value="3"></i><b>(3)</b>
+    allow-uri-read: true
+    experimental: true
+    kroki-default-format@: svg
+    kroki-server-url: http://localhost:8000 <i class="conum" data-value="4"></i><b>(4)</b></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Use kroki to generate diagram images</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Don&#8217;t show https:// etc on bare links</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>For kroki: store the image. This requires <code>allow-uri-read</code>, as well as <code>experimental</code> (to override kroki security)</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>To run  a local kroki server: <code>docker run -p8000:8000 -d --name asciidoctor-kroki yuzutech/kroki</code></td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
-<p>To create those XML files in the output folder, we need to run a validation and then filter activities.</p>
+<p>Rest of the documentation page &#8230;&#8203;</p>
 </div>
 </div>
 </div>
-<nav class="pagination">
-  <span class="prev"><a href="../index.html">IATI Workbench</a></span>
-</nav>
+</div>
+</div>
 </article>
   </div>
 </main>
@@ -317,11 +485,11 @@
     </symbol>
   </defs>
 </svg>
-<script src="../../_/js/site.js"></script>
-<script async src="../../_/js/vendor/highlight.js"></script>
-<script src="../../_/js/vendor/lunr.js"></script>
-<script src="../../_/js/vendor/search.js" id="search-script" data-base-path="../.." data-page-path="/iati-workbench/spreadsheets2iati/index.html"></script>
-<script async src="../../_/../search-index.js"></script>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script src="../../../_/js/vendor/lunr.js"></script>
+<script src="../../../_/js/vendor/search.js" id="search-script" data-base-path="../../.." data-page-path="/documentation_system/use/code-documentation/yaml.html"></script>
+<script async src="../../../_/../search-index.js"></script>
 <script type="application/json" class="js-hypothesis-config">
 {
   "showHighlights": "whenSidebarOpen"

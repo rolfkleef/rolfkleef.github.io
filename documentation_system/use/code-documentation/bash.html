@@ -3,17 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Spreadsheets2IATI :: Dataworkbench</title>
-    <link rel="prev" href="../index.html">
+    <title>Bash shell scripts :: My documentation</title>
+    <link rel="canonical" href="https://docs.drostan.org/documentation_system/use/code-documentation/bash.html">
     <meta name="generator" content="Antora 3.0.0-alpha.6">
-    <link rel="stylesheet" href="../../_/css/site.css" rel="stylesheet">
-    <script>var uiRootPath = '../../_'</script>
+    <link rel="stylesheet" href="../../../_/css/site.css" rel="stylesheet">
+    <script>var uiRootPath = '../../../_'</script>
   </head>
   <body class="article">
 <header class="header">
   <nav class="navbar">
     <div class="navbar-brand">
-      <img class="navbar-item" src="../../_/img/rolfkleef_80x80.png">
+      <img class="navbar-item" src="../../../_/img/rolfkleef_80x80.png">
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
@@ -27,18 +27,16 @@
 <a class="navbar-link" href="https://www.drostan.org/contact/">Contact</a>
 
 <div class="navbar-item has-dropdown is-hoverable">
-  <a class="navbar-link">Dataworkbench</a>
+  <a class="navbar-link">My documentation</a>
   <div class="navbar-dropdown">
     <a class="navbar-item" href="/">My documentation</a>
 <a class="navbar-item" href="/dataworkbench">Docs dataworkbench.io</a>  </div>
 </div>
         <div class="navbar-item has-dropdown is-hoverable">
-    <a class="navbar-link">IATI Workbench</a>
+    <a class="navbar-link">Documentation system</a>
   <div class="navbar-dropdown">
-        <a class="navbar-item" href="../../api/index.html">API</a>
-        <a class="navbar-item" href="../../dwb-cluster/index.html">Cluster</a>
-        <a class="navbar-item" href="../../frontend/index.html">Frontend</a>
-        <a class="navbar-item" href="../../validator/index.html">Validator</a>
+        <a class="navbar-item" href="../../../overview/index.html">Overview</a>
+        <a class="navbar-item" href="../../../styleguide/index.html">Style guide</a>
   </div>
 </div>
       </div>
@@ -51,17 +49,55 @@
   </nav>
 </header>
 <div class="body">
-<div class="nav-container" data-component="iati-workbench" data-version="">
+<div class="nav-container" data-component="documentation_system" data-version="">
   <aside class="nav">
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
   <nav class="nav-menu">
-    <h3 class="title"><a href="../index.html">IATI Workbench</a></h3>
+    <h3 class="title"><a href="../../index.html">Documentation system</a></h3>
 <ul class="nav-list">
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
-  <li class="nav-item is-current-page" data-depth="1">
-    <a class="nav-link" href="index.html">Spreadsheets2IATI</a>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../technology_choices/index.html">Technology choices</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../technology_choices/asciidoc-antora.html">Asciidoc and Antora</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../technology_choices/plantuml-kroki.html">PlantUML and Kroki</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../setup/index.html">Setup of Antora</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../setup/multiple-sites.html">Combining multiple documentation sites</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../antora/index.html">Antora</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../antora/setup.html">Antora setup</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../zotero/index.html">Zotero</a>
   </li>
 </ul>
   </li>
@@ -70,47 +106,39 @@
 </div>
 <div class="nav-panel-explore" data-panel="explore">
   <div class="context">
-    <span class="title">IATI Workbench</span>
+    <span class="title">Documentation system</span>
     <span class="version">default</span>
   </div>
   <ul class="components">
-    <li class="component">
-      <a class="title" href="../../api/index.html">API</a>
-      <ul class="versions">
-        <li class="version is-latest">
-          <a href="../../api/index.html">default</a>
-        </li>
-      </ul>
-    </li>
-    <li class="component">
-      <a class="title" href="../../dwb-cluster/index.html">Cluster</a>
-      <ul class="versions">
-        <li class="version is-latest">
-          <a href="../../dwb-cluster/index.html">default</a>
-        </li>
-      </ul>
-    </li>
-    <li class="component">
-      <a class="title" href="../../frontend/index.html">Frontend</a>
-      <ul class="versions">
-        <li class="version is-latest">
-          <a href="../../frontend/index.html">default</a>
-        </li>
-      </ul>
-    </li>
     <li class="component is-current">
-      <a class="title" href="../index.html">IATI Workbench</a>
+      <a class="title" href="../../index.html">Documentation system</a>
       <ul class="versions">
         <li class="version is-current is-latest">
-          <a href="../index.html">default</a>
+          <a href="../../index.html">default</a>
         </li>
       </ul>
     </li>
     <li class="component">
-      <a class="title" href="../../validator/index.html">Validator</a>
+      <a class="title" href="../../../overview/index.html">Overview</a>
       <ul class="versions">
         <li class="version is-latest">
-          <a href="../../validator/index.html">default</a>
+          <a href="../../../overview/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../styleguide/index.html">Style guide</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../styleguide/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../lib-style/index.html">Style library</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../lib-style/index.html">default</a>
         </li>
       </ul>
     </li>
@@ -122,88 +150,59 @@
 <main class="article">
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
-  <a href="../index.html" class="home-link"></a>
+  <a href="../../../overview/index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
-    <li><a href="../index.html">IATI Workbench</a></li>
-    <li><a href="index.html">Spreadsheets2IATI</a></li>
+    <li><a href="../../index.html">Documentation system</a></li>
+    <li><a href="bash.html">Bash shell scripts</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/data4development/iati-workbench/edit/develop/docs/modules/spreadsheets2iati/pages/index.adoc" target="_blank">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/rolfkleef/rolfkleef.github.io/edit/main/docs/documentation_system/modules/use/pages/code-documentation/bash.adoc" target="_blank">Edit this Page</a></div>
   </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Spreadsheets2IATI</h1>
-<div id="preamble">
-<div class="sectionbody">
-<div class="paragraph">
-<p>Convertor.</p>
-</div>
-<div class="paragraph">
-<p>==</p>
-</div>
-</div>
-</div>
+<h1 class="page">Bash shell scripts</h1>
 <div class="sect1">
-<h2 id="_setup_notes"><a class="anchor" href="#_setup_notes"></a>Setup notes</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_organisation"><a class="anchor" href="#_organisation"></a>Organisation</h3>
-<div class="paragraph">
-<p>Create a directory for the organisation if it does not exist.</p>
-</div>
-<div class="paragraph">
-<p>Create or copy a file <code>organisation.xml</code> with the information about the organisation and the workspace (next step).</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_workspace"><a class="anchor" href="#_workspace"></a>Workspace</h3>
-<div class="paragraph">
-<p>Create a directory for the workspace if it does not exist.</p>
-</div>
-<div class="paragraph">
-<p>Initialise the workspace, for instance with <code>iati-workbench init</code></p>
-</div>
-<div class="paragraph">
-<p>Create or copy a <code>build.xml</code> to have local build capabilities: for instance to get files from a folder synchronised with Google Drive.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_spreadsheets2iati"><a class="anchor" href="#_spreadsheets2iati"></a>Spreadsheets2IATI</h2>
+<h2 id="_multiline_comments"><a class="anchor" href="#_multiline_comments"></a>Multiline comments</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The conversion process initiated by local <code>ant</code> in workspace.</p>
+<p>Bash-like shells (including zsh) allow multiline comments in the form:</p>
 </div>
-<div class="paragraph">
-<p>The local <code>build.xml</code> includes a workspace library build via a hardcoded link.</p>
-</div>
-<div class="imageblock kroki">
+<div class="listingblock">
 <div class="content">
-<img src="_images/diag-33929b96bc869c7ae44e51f4c4d38f2304b43368.svg" alt="Sequence for `s2i-run` target">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">: ' <i class="conum" data-value="1"></i><b>(1)</b>
+comments
+comments
+' <i class="conum" data-value="2"></i><b>(2)</b></code></pre>
 </div>
-<div class="title">Figure 1. Sequence for <code>s2i-run</code> target</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Start of multiline comment. This can include content on the same line.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>End of multiline comment.
+The quote needs to be at the start of the line.
+Additional comments can be added on the same line.</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_iati_summary"><a class="anchor" href="#_iati_summary"></a>IATI Summary</h2>
+<h2 id="_example"><a class="anchor" href="#_example"></a>Example</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Creates spreadsheets with summary information based on XML fils in the <code>output</code> folder.</p>
-</div>
-<div class="paragraph">
-<p>To create those XML files in the output folder, we need to run a validation and then filter activities.</p>
+<p><a href="../index.html" class="page">See the overview page for an example.</a></p>
 </div>
 </div>
 </div>
-<nav class="pagination">
-  <span class="prev"><a href="../index.html">IATI Workbench</a></span>
-</nav>
 </article>
   </div>
 </main>
@@ -317,11 +316,11 @@
     </symbol>
   </defs>
 </svg>
-<script src="../../_/js/site.js"></script>
-<script async src="../../_/js/vendor/highlight.js"></script>
-<script src="../../_/js/vendor/lunr.js"></script>
-<script src="../../_/js/vendor/search.js" id="search-script" data-base-path="../.." data-page-path="/iati-workbench/spreadsheets2iati/index.html"></script>
-<script async src="../../_/../search-index.js"></script>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script src="../../../_/js/vendor/lunr.js"></script>
+<script src="../../../_/js/vendor/search.js" id="search-script" data-base-path="../../.." data-page-path="/documentation_system/use/code-documentation/bash.html"></script>
+<script async src="../../../_/../search-index.js"></script>
 <script type="application/json" class="js-hypothesis-config">
 {
   "showHighlights": "whenSidebarOpen"
