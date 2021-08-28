@@ -9,4 +9,5 @@ NODE_PATH="$(npm bin)"
 # the ability to register additional functionality in the generator is future work
 cp antora/hacks/generate-site.js node_modules/@antora/site-generator-default/lib/generate-site.js
 
-DOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lunr $NODE_PATH/antora --stacktrace ${1:-antora/playbooks/docs.yml}
+DOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lunr $NODE_PATH/antora --stacktrace antora/playbooks/docs.yml
+DOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lunr $NODE_PATH/antora --stacktrace antora/playbooks/dataworkbench.yml
