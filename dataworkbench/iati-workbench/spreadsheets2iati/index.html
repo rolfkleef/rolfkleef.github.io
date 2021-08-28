@@ -129,7 +129,7 @@
     <li><a href="index.html">Spreadsheets2IATI</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/data4development/iati-workbench/edit/develop/docs/modules/spreadsheets2iati/pages/index.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/data4development/iati-workbench/edit/develop/docs/modules/spreadsheets2iati/pages/index.adoc" target="_blank">Edit this Page</a></div>
   </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
@@ -143,9 +143,7 @@
 <p>Convertor.</p>
 </div>
 <div class="paragraph">
-<p>The DataWorkbench started out in 2016 as a single "engine": a Docker container that contains all the components needed to perform all the tasks.
-In 2017, we began to split the code into separate engines, each focusing on a different part of the workflow.
-This makes it easier to release engines as open source, and reduces the size individual container images.</p>
+<p>==</p>
 </div>
 </div>
 </div>
@@ -167,7 +165,7 @@ This makes it easier to release engines as open source, and reduces the size ind
 <p>Create a directory for the workspace if it does not exist.</p>
 </div>
 <div class="paragraph">
-<p>Initialise the workspace, for instance with <code>iati-engine init</code></p>
+<p>Initialise the workspace, for instance with <code>iati-workbench init</code></p>
 </div>
 <div class="paragraph">
 <p>Create or copy a <code>build.xml</code> to have local build capabilities: for instance to get files from a folder synchronised with Google Drive.</p>
@@ -184,11 +182,132 @@ This makes it easier to release engines as open source, and reduces the size ind
 <div class="paragraph">
 <p>The local <code>build.xml</code> includes a workspace library build via a hardcoded link.</p>
 </div>
-<div class="imageblock kroki">
+<div class="literalblock kroki-error">
+<div class="title">Sequence for <code>s2i-run</code> target</div>
 <div class="content">
-<img src="_images/diag-33929b96bc869c7ae44e51f4c4d38f2304b43368.svg" alt="Sequence for `s2i-run` target">
+<pre>@startuml
+|Workspace|
+start
+$important_color:config/iati-workbench.properties]
+:get inputs;
+note
+  Uses rclone and local auth
+  //Flat// (default) or //deep// (recursive)
+end note
+
+$node_1_main_color:inputs/*.*]
+:postprocess inputs;
+note
+  Rename files, remove
+  empty files, etc.
+  override via local ""build.xml""
+end note
+$node_1_main_color:updates inputs/*]
+
+|Workspace|
+#orange:prepare new inputs;
+
+|IATI Workbench|
+partition spreadsheet-map {
+  partition sheets-csvxml {
+    fork
+      $node_1_main_color:input/*.xsl{x} ]
+      :excel-csv;
+      $node_1_main_color:tmp/*.csv]
+    fork again
+      $node_1_main_color:input/*.csv]
+      :csv-csv;
+      $node_1_main_color:tmp/*.csv]
+    end fork
+
+    :csv-csvxml;
+    note: using basex
+    $node_1_main_color:tmp/*.csv.xml]
+  }
+
+  :create map;
+  $node_1_main_color:output/csvmap-csv]
+
+}
+
+|Workspace|
+:prepare new inputs:
+store changes;
+note
+  Commit changes to git
+  Open diff in browser
+end note
+
+#orange:spreadsheets-iati;
+
+|IATI Workbench|
+:generate-iati-partials;
+note: extension point
+fork
+  partition sheets-iati {
+    :sheets-csvxml;
+    note
+      already done in step
+      ""spreadsheet-map"" above
+    end note
+    $node_1_main_color:tmp/*.csv.xml]
+
+    $important_color:config/csvxml-iati.xslt]
+    note
+      Can include or override
+      default templates
+    end note
+    :sheets-iati;
+  }
+fork again
+  partition iatixml-iati {
+    $node_1_main_color:input/*.iati.xml]
+    :iatixml-iati;
+  }
+fork again
+  partition akvo {
+    $important_color::Optional Akvo target in
+    config/build.iati-workbench.xml;
+    $node_1_main_color:input/*.akvo.xml]
+    $important_color:config/akvo-s2i.xslt]
+    :akvo-s2i;
+  }
+end fork
+
+$node_1_main_color:tmp/*.generated.xml]
+
+:merge-iati;
+$node_1_main_color:src/iati-{activities, organisation}.xml]
+:validate-iati;
+
+$node_1_main_color:via dest/*
+reports/*]
+
+:filter-activities;
+
+$node_1_main_color:src/iati-{activities,organisation}.xml
+output/iati-activities{,.invalid}.xml
+reports/*]
+
+|Workspace|
+:postprocess iati;
+note
+  Fix known data errors,
+  anonymisation, etc
+  override via local ""build.xml""
+end note
+
+|Workspace|
+:open reports;
+note
+  Open all feedback files
+  in a browser
+end note
+
+|Workspace|
+stop
+@enduml</pre>
 </div>
-<div class="title">Figure 1. Sequence for <code>s2i-run</code> target</div>
 </div>
 </div>
 </div>
