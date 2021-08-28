@@ -17,6 +17,7 @@ content:
     start_paths:
     - docs/overview
     - docs/documentation_system
+    - styleguide/lib/antora
 
   - url: https://gitlab.com/rolfkleef/drostan-styleguide.git
     branches: main

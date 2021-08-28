@@ -1,6 +1,6 @@
 = {page-component-title}
 
-image::slide-haidagwaii.png[]
+image::lib-style::slide-haidagwaii.png[]
 
 == README
 
