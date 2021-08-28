@@ -215,6 +215,7 @@ There has been discussion about adding an abstraction layer to let the applicati
 * The https://www.npmjs.com/package/asciidoctor-kroki[Asciidoctor Kroki extension^] enables text-based diagrams conversion with https://kroki.io[a Kroki service^].
 * The https://marketplace.eclipse.org/content/asciidoctor-editor[Eclipse Asciidoc plugin^] helps writing in Eclipse.
 
+[bibliography]
 == Background references
 
 ++++
