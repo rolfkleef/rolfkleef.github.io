@@ -5,7 +5,7 @@
   "repository": "rolfkleef/rolfkleef.github.io",
   "scripts": {
     "prelocal": "docker-compose -p antora up -d",
-    "local": "npm run docs",
+    "local": "PLAYBOOK=antora/localhost/playbooks/docs.yml npm run docs",
     "predocs": "cp antora/hacks/generate-site.js node_modules/@antora/site-generator-default/lib/generate-site.js",
     "docs": "DOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lunr antora --stacktrace ${PLAYBOOK:-antora/playbooks/docs.yml}"
   },
