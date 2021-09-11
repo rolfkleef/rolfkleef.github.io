@@ -1,13 +1,6 @@
-#!/bin/bash
-
-NODE_PATH="$(npm bin)"
-
-# hack: copy our version of generate-site.js into node_modules to include lunr index building
+# hack: we copy our version of generate-site.js into node_modules to include lunr index building
 # changes copied from https://github.com/Mogztter/antora-site-generator-lunr (for Antora 2.3.4)
 # into Antora 3 version.
 # according to https://gitlab.com/antora/antora/-/blob/master/packages/site-generator-default/devdocs/architecture-guidebook.adoc
 # the ability to register additional functionality in the generator is future work
 cp antora/hacks/generate-site.js node_modules/@antora/site-generator-default/lib/generate-site.js
-
-DOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lunr $NODE_PATH/antora --stacktrace antora/playbooks/docs.yml
-DOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lunr $NODE_PATH/antora --stacktrace antora/playbooks/dataworkbench.yml
