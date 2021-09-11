@@ -23,11 +23,15 @@ jobs:
           submodules: 'recursive'
 
       - name: Setup Antora
-        run: npm i
+        run: npm ci
 
-      - run: ./generate-site
+      - name: Generate main docs site
+        run: npm run docs
 
-      - name: Deploy site
+      - name: Generate dataworkbench docs
+        run: PLAYBOOK=antora/playbooks/dataworkbench.yml npm run docs
+
+      - name: Deploy sites
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
