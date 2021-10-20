@@ -1,0 +1,57 @@
+= Conventional Commits
+
+Using the https://www.conventionalcommits.org/[Conventional Commits specification^]
+
+build:: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
+ci:: Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
+chore:: Other changes that don't modify src or test files
+docs:: Documentation only changes
+feat:: A new feature
+fix:: A bug fix
+perf:: A code change that improves performance
+refactor:: A code change that neither fixes a bug nor adds a feature
+revert::   Reverts a previous commit
+style:: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+test:: Adding missing tests or correcting existing tests
+
+== Components
+
+Tools used as part of this approach.
+
+=== Commitlint
+
+https://commitlint.js.org[Commitlint^] is a tool to check commit messages for "conventional commit" formattting.
+
+=== Standard-version
+
+https://github.com/conventional-changelog/standard-version[Standard-version^] is a utility to generate a release on a branch.
+
+It will create/update a CHANGELOG.md file, and list notable commits from the git history.
+
+[NOTE]
+====
+The utility only runs on the local repository, so nothing is pushed, no PRs are created or merged.
+
+To further automate, release-please or semantic-release may be next steps.
+====
+
+  $ standard-version
+  
+  $ standard-version  --release-as 2..1.0
+
+  $ standard-version  --prerelease
+  
+  $ standard-version  --prerelease alpha
+
+Links to commit hashes on Github will be generated for the remote named `origin`.
+
+== Local configuration
+
+* Added command `git-commitlint` and `git-standard-version` in `~/bin` with default behaviour, also available as git subcommands.
+
+* Added aliases `git cl` and `git rel`.
+
+* Added a pre-push script under `~/.config/git/hooks`.
+Set the hooksPath for a local repository to use these standard scripts.
+
+  $ git config core.hooksPath /home/rolf/.config/git/hooks
