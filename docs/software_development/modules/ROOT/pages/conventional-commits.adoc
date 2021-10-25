@@ -2,6 +2,22 @@
 
 Using the https://www.conventionalcommits.org/[Conventional Commits specification^]
 
+== Format of the commit message
+
+[source]
+....
+<type>(optional scope): description
+
+optional body
+
+optional footer(s)
+....
+
+Add either a `!` before the `:` or a footer `BREAKING CHANGE:` to trigger a major version bump.
+
+=== Types
+
+[horizontal]
 build:: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
 ci:: Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
 chore:: Other changes that don't modify src or test files
