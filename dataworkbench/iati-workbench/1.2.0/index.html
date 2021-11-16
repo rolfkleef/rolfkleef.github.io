@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Spreadsheets2IATI engine :: Dataworkbench</title>
+    <title>IATI Workbench :: Dataworkbench</title>
     <link rel="next" href="ant-results.html">
     <meta name="generator" content="Antora 3.0.0-alpha.9">
     <link rel="stylesheet" href="../../_/css/site.css" rel="stylesheet">
@@ -44,14 +44,14 @@
       </div>
       <div class="navbar-section navbar-end">
           <div class="navbar-item">
-            <input id="search-input" type="text" placeholder="Search this section">
+            <input id="search-input" type="text" placeholder="Search (press &quot;/&quot; to focus)">
           </div>
       </div>
     </div>
   </nav>
 </header>
 <div class="body">
-<div class="nav-container" data-component="iati-workbench" data-version="aida">
+<div class="nav-container" data-component="iati-workbench" data-version="1.2.0">
   <aside class="nav">
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
@@ -63,12 +63,21 @@
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="ant-results.html">Ant results</a>
   </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="workspace.html">Workspace location</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="spreadsheets2iati/index.html">Spreadsheets2IATI</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="spreadsheets2iati/date-formats.html">Date formats</a>
+  </li>
+</ul>
   </li>
 </ul>
   </li>
@@ -78,7 +87,7 @@
 <div class="nav-panel-explore" data-panel="explore">
   <div class="context">
     <span class="title">IATI Workbench</span>
-    <span class="version">aida-dev</span>
+    <span class="version">1.2.0</span>
   </div>
   <ul class="components">
     <li class="component">
@@ -106,16 +115,16 @@
       </ul>
     </li>
     <li class="component is-current">
-      <a class="title" href="../index.html">IATI Workbench</a>
+      <a class="title" href="index.html">IATI Workbench</a>
       <ul class="versions">
-        <li class="version is-current">
-          <a href="index.html">aida-dev</a>
-        </li>
-        <li class="version is-latest">
-          <a href="../index.html">default</a>
-        </li>
         <li class="version">
           <a href="../develop/index.html">develop</a>
+        </li>
+        <li class="version is-current is-latest">
+          <a href="index.html">1.2.0</a>
+        </li>
+        <li class="version">
+          <a href="../1.2.0-aida/index.html">1.2.0-aida</a>
         </li>
       </ul>
     </li>
@@ -135,135 +144,116 @@
 <main class="article">
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
-  <a href="../index.html" class="home-link"></a>
+  <a href="index.html" class="home-link is-current"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="index.html">IATI Workbench</a></li>
-    <li><a href="index.html">Spreadsheets2IATI engine</a></li>
   </ul>
 </nav>
 <div class="page-versions">
-  <button class="version-menu-toggle" title="Show other versions of page">aida-dev</button>
+  <button class="version-menu-toggle" title="Show other versions of page">1.2.0</button>
   <div class="version-menu">
-    <a class="version is-current" href="index.html">aida-dev</a>
-    <a class="version" href="../index.html">default</a>
     <a class="version" href="../develop/index.html">develop</a>
+    <a class="version is-current" href="index.html">1.2.0</a>
+    <a class="version" href="../1.2.0-aida/index.html">1.2.0-aida</a>
   </div>
 </div>
-  <div class="edit-this-page"><a href="https://github.com/data4development/iati-workbench/edit/aida/docs/modules/ROOT/pages/index.adoc" target="_blank">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/data4development/iati-workbench/edit/main/docs/modules/ROOT/pages/index.adoc" target="_blank">Edit this Page</a></div>
   </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Spreadsheets2IATI engine</h1>
+<h1 class="page">IATI Workbench</h1>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p><em>Scripts to transform a set of input files (spreadsheets, IATI) into a combined IATI file.</em></p>
+<p><em>Scripts and tools to investigate IATI data, provide feedback on data quality, etc.</em></p>
+</div>
+<div class="paragraph">
+<p>The <a href="https://iatistandard.org" target="_blank" rel="noopener">IATI Standard</a> offers an XML-based standard format to exchange information on activities in international development cooperation and humanitarian aid.</p>
+</div>
+<div class="paragraph">
+<p>IATI data is published by a variety of actors in this field.
+The official list of publishers and available IATI data sets is held in the <a href="https://iatiregistry.org" target="_blank" rel="noopener">IATI Registry</a>.</p>
+</div>
+<div class="paragraph">
+<p>Working with IATI files poses a couple of challenges:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Multiple versions of the IATI Standard.</p>
+</li>
+<li>
+<p>Various levels of coverage of the many possible elements.</p>
+</li>
+<li>
+<p>Plenty of errors and inconsistencies in the data.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>There are several tools and platforms that ingest IATI data and make it available in formats other than XML.
+There are few tools that will help in processing IATI data in its original XML format.</p>
+</div>
+<div class="paragraph">
+<p>This repository intends to collect scripts and applications to work with IATI files.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_build_the_container"><a class="anchor" href="#_build_the_container"></a>Build the container</h2>
+<h2 id="_iati_workbench"><a class="anchor" href="#_iati_workbench"></a>IATI workbench</h2>
 <div class="sectionbody">
-<div class="admonitionblock caution">
+<div class="paragraph">
+<p>All tools for the IATI Workbench are packaged in a container that you can run as a command.</p>
+</div>
+<div class="sect2">
+<h3 id="_using_a_local_workspace_directory"><a class="anchor" href="#_using_a_local_workspace_directory"></a>Using a local workspace directory</h3>
+<div class="paragraph">
+<p>The iati-workbench uses the directory <code>/workspace</code> as working area for files.</p>
+</div>
+<div class="paragraph">
+<p>It is possible to "bind mount" a local directory to this location, and have access to the files.</p>
+</div>
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
+<i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Work in progress: a local workspace (directory on host machine) is still required to run.
-This will become optional.</p>
-</div>
-<div class="paragraph">
-<p>The local workspace directory has to be mounted under /workspace.</p>
+<p>In the current version, a lot of output files are still only available in the workspace folder,
+so mounting a local directory to the /workspace folder is basically required.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-<div class="sect2">
-<h3 id="_option_1_localised_build"><a class="anchor" href="#_option_1_localised_build"></a>Option 1: localised build</h3>
 <div class="paragraph">
-<p>In this case, the container will run as the user building the image.
-You need to make sure it has proper permissions for the local workspace directory.</p>
+<p>For the "bind mount" to work well in practice, the user and group id in the host system and the container should be the same.</p>
+</div>
+<div class="paragraph">
+<p>By default, the container runs as user and group with id 1000.
+If this matches the user and group id of the host system, it is possible to simply mount a local folder.</p>
+</div>
+<div class="paragraph">
+<p>For user ids other than 1000, it is advised to build a local Docker container image tailored to the current user.</p>
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>$ docker build --build-arg UID=$(id -u) --build-arg GID=$(id -g) -t aida-s2i .</pre>
+<pre>$ docker build --build-arg UID=$(id -u) --build-arg GID=$(id -g) -t iati-workbench:local .</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>You should be able to run it and get a list of available targets:</p>
+<p>By also using the Docker image tag <code>local</code>, it is possible to run the specific version on the local machine.</p>
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>$ docker run --rm aida-s2i</pre>
+<pre>$ iati-workbench -t local ...</pre>
 </div>
-</div>
-<div class="paragraph">
-<p>Next, you can put the <code>aida-s2i</code> script in your path, for instance as a symlink:</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>$ ln -s ${PWD}/aida-s2i ~/bin/aida-s2i</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Then, verify everything is running:</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>$ aida-s2i</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>This will show the list of available "targets" in the workbench.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_workspaces"><a class="anchor" href="#_workspaces"></a>Workspaces</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>You run the engine in a folder that will function as the 'workspace'.
-You specify the task you want performed, and the engine will take all steps needed to transform the source data into the desired output formats.</p>
-</div>
-<div class="paragraph">
-<p>The <code>aida-s2i</code> script will mount the current directory as the workspace.</p>
-</div>
-<div class="paragraph">
-<p>Once you run any of the tasks, it will create the necessary folders for the source of your data, the intermediary files, and the output files generated.</p>
-</div>
-<div class="paragraph">
-<p>You can run <code>aida-s2i init</code> to create those folders yourself.</p>
-</div>
-<div class="sect2">
-<h3 id="_sample_data"><a class="anchor" href="#_sample_data"></a>Sample data</h3>
-<div class="paragraph">
-<p>The <a href="https://github.com/data4development/demo-workspace">demo-workspace repository</a> contains example data files.</p>
-</div>
-<div class="paragraph">
-<p>Clone the repository, and inside the directory, run</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>$ aida-s2i spreadsheet-iati</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>This should process the input files and produce a raw IATI file in <code>src/</code>.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_acknowledgements"><a class="anchor" href="#_acknowledgements"></a>Acknowledgements</h3>
-<div class="paragraph">
-<p>First inspiration came from <a href="https://github.com/KitWallace/AIDVIEW-DB">Kit Wallace&#8217;s Aidview DB (working with eXist)</a></p>
 </div>
 </div>
 </div>
@@ -387,7 +377,7 @@ You specify the task you want performed, and the engine will take all steps need
 <script src="../../_/js/site.js"></script>
 <script async src="../../_/js/vendor/highlight.js"></script>
 <script src="../../_/js/vendor/lunr.js"></script>
-<script src="../../_/js/vendor/search.js" id="search-script" data-base-path="../.." data-page-path="/iati-workbench/aida/index.html"></script>
+<script src="../../_/js/vendor/search.js" id="search-script" data-base-path="../.." data-page-path="/iati-workbench/1.2.0/index.html"></script>
 <script async src="../../_/../search-index.js"></script>
 <script type="application/json" class="js-hypothesis-config">
 {

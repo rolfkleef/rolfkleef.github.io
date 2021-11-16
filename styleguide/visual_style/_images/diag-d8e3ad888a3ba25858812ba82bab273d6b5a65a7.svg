@@ -13,7 +13,7 @@ reverse link ws to run--><path d="M663.82,214.58 C601.7,238.14 507.53,273.86 450
 link user to ws--><path d="M524.09,75.22 C573.07,102.83 646.47,144.18 689.96,168.69 " fill="none" id="user-to-ws" style="stroke:#E91E63;stroke-width:1.0;"/><polygon fill="#E91E63" points="694.34,171.16,688.4655,163.2549,689.9848,168.7039,684.5358,170.2233,694.34,171.16" style="stroke:#E91E63;stroke-width:1.0;"/><!--MD5=[77026867c21809e07268ca963f9303c1]
 link appman to api--><path d="M227.65,231.55 C231.9,278.86 238.77,355.3 242.09,392.21 " fill="none" id="appman-to-api" style="stroke:#E91E63;stroke-width:1.0;"/><polygon fill="#E91E63" points="242.55,397.36,245.7357,388.0406,242.1064,392.3797,237.7672,388.7504,242.55,397.36" style="stroke:#E91E63;stroke-width:1.0;"/><text fill="#E91E63" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="40" x="240" y="320">access</text><!--MD5=[6ac1ac8daa35d2561828483c99888509]
 link developer to run--><path d="M380.99,231.79 C385.95,250.21 391.66,271.42 396.02,287.61 " fill="none" id="developer-to-run" style="stroke:#E91E63;stroke-width:1.0;"/><polygon fill="#E91E63" points="397.33,292.46,398.8527,282.7296,396.0301,287.6319,391.1278,284.8094,397.33,292.46" style="stroke:#E91E63;stroke-width:1.0;"/><!--MD5=[4f2c84fc7b7b6621b910b18925f741d8]
-link dwb to ws--><path d="M555.15,190 C578.41,190 606.81,190 633.73,190 " fill="none" id="dwb-to-ws" style="stroke:#E91E63;stroke-width:1.0;"/><polygon fill="#E91E63" points="638.74,190,629.74,186,633.74,190,629.74,194,638.74,190" style="stroke:#E91E63;stroke-width:1.0;"/><text fill="#E91E63" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="43" x="575.5" y="182">operate</text><!--MD5=[d45a56641630665dec125bb5e7be3dc4]
+link dwb to ws--><path d="M555.15,190 C578.41,190 606.81,190 633.73,190 " fill="none" id="dwb-to-ws" style="stroke:#E91E63;stroke-width:1.0;"/><polygon fill="#E91E63" points="638.74,190,629.74,186,633.74,190,629.74,194,638.74,190" style="stroke:#E91E63;stroke-width:1.0;"/><text fill="#E91E63" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="43" x="575.5" y="182">operate</text><!--MD5=[ae6a136c32a7b0ab2a043723628b9c4b]
 @startuml
 ' Styling settings for PlantUML diagrams
 ' See http://plantuml.sourceforge.net for documentation
@@ -815,7 +815,7 @@ developer -down-> (run)
 dwb -> (ws): "operate"
 @enduml
 
-PlantUML version 1.2021.8(Sat Jun 26 08:20:59 GMT 2021)
+PlantUML version 1.2021.10(Mon Aug 30 13:43:48 GMT 2021)
 (GPL source distribution)
 Java Runtime: OpenJDK Runtime Environment
 JVM: OpenJDK 64-Bit Server VM

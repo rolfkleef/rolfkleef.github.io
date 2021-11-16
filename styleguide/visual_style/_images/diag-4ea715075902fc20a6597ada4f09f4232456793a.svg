@@ -11,7 +11,7 @@ link container1 to cdb--><path d="M430.24,110.5 C474.89,110.5 532.5,110.5 578.61
 link cqueue to container1--><path d="M204.44,110.5 C228.71,110.5 255.39,110.5 279.65,110.5 " fill="none" id="cqueue-container1" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="287.77,110.5,279.77,107.5,279.77,113.5,287.77,110.5" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="196.16,110.5,204.16,113.5,204.16,107.5,196.16,110.5" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="30" x="227" y="88.5001">BiRel</text><text fill="#666666" font-family="Roboto" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="51" x="216.5" y="102.9002">[Optional]</text><!--MD5=[8b83821a80385cd5cc6c2e15d3988b61]
 link container2 to cdb2--><path d="M430.1,330.5 C474.56,330.5 531.94,330.5 578.14,330.5 " fill="none" id="container2-to-cdb2" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="586.33,330.5,578.33,327.5,578.33,333.5,586.33,330.5" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="35" x="490.75" y="308.5001">Rel_R</text><text fill="#666666" font-family="Roboto" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="116" x="450.25" y="322.9002">[Optional Technology]</text><!--MD5=[03f4a67e639fd0f596e6d6750370bc50]
 link cqueue2 to container2--><path d="M204.83,330.5 C229.47,330.5 255.76,330.5 279.51,330.5 " fill="none" id="cqueue2-container2" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="287.81,330.5,279.81,327.5,279.81,333.5,287.81,330.5" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="196.74,330.5,204.74,333.5,204.74,327.5,196.74,330.5" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="30" x="227.25" y="308.5001">BiRel</text><text fill="#666666" font-family="Roboto" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="51" x="216.75" y="322.9002">[Optional]</text><!--MD5=[55672075f5f70506ede04515cf8b643d]
-link container1 to container2--><path d="M359,154.57 C359,189.99 359,240.28 359,277.85 " fill="none" id="container1-to-container2" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="359,286.15,362,278.15,356,278.15,359,286.15" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="19" x="362" y="206.0001">Rel</text><rect fill="#FFFFFF" height="163.5995" rx="5" ry="5" style="stroke:#FFFFFF;stroke-width:1.0;" width="138" x="594" y="408"/><text fill="#000000" font-family="Roboto" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="52" x="604" y="432.9999">Legend</text><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacing" textLength="0" x="660" y="432.9999"/><rect fill="#08427B" height="20.7999" style="stroke:none;stroke-width:1.0;" width="122" x="602" y="437.7999"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacing" textLength="42" x="608" y="453.7999">person</text><rect fill="#1168BD" height="20.7999" style="stroke:none;stroke-width:1.0;" width="122" x="602" y="458.5999"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacing" textLength="43" x="608" y="474.5998">system</text><rect fill="#438DD5" height="20.7999" style="stroke:none;stroke-width:1.0;" width="122" x="602" y="479.3998"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacing" textLength="57" x="608" y="495.3997">container</text><rect fill="#686868" height="20.7999" style="stroke:none;stroke-width:1.0;" width="122" x="602" y="500.1997"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacing" textLength="95" x="608" y="516.1996">external person</text><rect fill="#999999" height="20.7999" style="stroke:none;stroke-width:1.0;" width="122" x="602" y="520.9996"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacing" textLength="96" x="608" y="536.9996">external system</text><rect fill="#B3B3B3" height="20.7999" style="stroke:none;stroke-width:1.0;" width="122" x="602" y="541.7996"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacing" textLength="110" x="608" y="557.7995">external container</text><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="602" x2="724" y1="417" y2="417"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="602" x2="724" y1="437.7999" y2="437.7999"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="602" x2="724" y1="458.5999" y2="458.5999"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="602" x2="724" y1="479.3998" y2="479.3998"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="602" x2="724" y1="500.1997" y2="500.1997"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="602" x2="724" y1="520.9996" y2="520.9996"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="602" x2="724" y1="541.7996" y2="541.7996"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="602" x2="724" y1="562.5995" y2="562.5995"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="602" x2="602" y1="417" y2="562.5995"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="724" x2="724" y1="417" y2="562.5995"/><!--MD5=[45041346b6f28efecc66c37583f80c36]
+link container1 to container2--><path d="M359,154.57 C359,189.99 359,240.28 359,277.85 " fill="none" id="container1-to-container2" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="359,286.15,362,278.15,356,278.15,359,286.15" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="19" x="362" y="206.0001">Rel</text><rect fill="#FFFFFF" height="163.5995" rx="5" ry="5" style="stroke:#FFFFFF;stroke-width:1.0;" width="138" x="594" y="408"/><text fill="#000000" font-family="Roboto" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="52" x="604" y="432.9999">Legend</text><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacing" textLength="0" x="660" y="432.9999"/><rect fill="#08427B" height="20.7999" style="stroke:none;stroke-width:1.0;" width="122" x="602" y="437.7999"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacing" textLength="42" x="608" y="453.7999">person</text><rect fill="#1168BD" height="20.7999" style="stroke:none;stroke-width:1.0;" width="122" x="602" y="458.5999"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacing" textLength="43" x="608" y="474.5998">system</text><rect fill="#438DD5" height="20.7999" style="stroke:none;stroke-width:1.0;" width="122" x="602" y="479.3998"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacing" textLength="57" x="608" y="495.3997">container</text><rect fill="#686868" height="20.7999" style="stroke:none;stroke-width:1.0;" width="122" x="602" y="500.1997"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacing" textLength="95" x="608" y="516.1996">external person</text><rect fill="#999999" height="20.7999" style="stroke:none;stroke-width:1.0;" width="122" x="602" y="520.9996"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacing" textLength="96" x="608" y="536.9996">external system</text><rect fill="#B3B3B3" height="20.7999" style="stroke:none;stroke-width:1.0;" width="122" x="602" y="541.7996"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacing" textLength="110" x="608" y="557.7995">external container</text><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="602" x2="724" y1="417" y2="417"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="602" x2="724" y1="437.7999" y2="437.7999"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="602" x2="724" y1="458.5999" y2="458.5999"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="602" x2="724" y1="479.3998" y2="479.3998"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="602" x2="724" y1="500.1997" y2="500.1997"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="602" x2="724" y1="520.9996" y2="520.9996"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="602" x2="724" y1="541.7996" y2="541.7996"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="602" x2="724" y1="562.5995" y2="562.5995"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="602" x2="602" y1="417" y2="562.5995"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="724" x2="724" y1="417" y2="562.5995"/><!--MD5=[1d1c2c273fe5712f3a197b019cd3c661]
 @startuml
 ' Styling settings for PlantUML diagrams
 ' See http://plantuml.sourceforge.net for documentation
@@ -787,6 +787,9 @@ skinparam State {
 
 
 
+
+
+
 skinparam defaultTextAlignment center
 
 skinparam wrapWidth 200
@@ -795,6 +798,12 @@ skinparam maxMessageSize 150
 skinparam LegendBorderColor transparent
 skinparam LegendBackgroundColor transparent
 skinparam LegendFontColor #FFFFFF
+
+skinparam shadowing<<legendArea>> false
+skinparam rectangle<<legendArea>> {
+    backgroundcolor #00000000
+    bordercolor #00000000
+}
 
 skinparam rectangle {
     StereotypeFontSize 12
@@ -811,28 +820,62 @@ skinparam queue {
     shadowing false
 }
 
-skinparam Arrow {
+skinparam arrow {
     Color #666666
     FontColor #666666
     FontSize 12
 }
 
+skinparam actor {
+    StereotypeFontSize 12
+    shadowing false
+    style awesome
+}
+
+skinparam person {
+    StereotypeFontSize 12
+    shadowing false
+}
+
 skinparam package {
     StereotypeFontSize 6
-    StereotypeFontColor #FFFFFF
+    StereotypeFontColor transparent
     FontStyle plain
-    BackgroundColor #FFFFFF
+    BackgroundColor transparent
 }
 
 skinparam rectangle<<boundary>> {
     Shadowing false
     StereotypeFontSize 6
-    StereotypeFontColor #FFFFFF
+    StereotypeFontColor transparent
     FontColor #444444
     BorderColor #444444
-    BackgroundColor #FFFFFF
+    BackgroundColor transparent
     BorderStyle dashed
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -918,6 +961,19 @@ skinparam queue<<person>> {
     BackgroundColor #08427B
     BorderColor #073B6F
 }
+skinparam actor<<person>> {
+    StereotypeFontColor #08427B
+    FontColor #08427B
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam person<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
 
 skinparam rectangle<<external_person>> {
     StereotypeFontColor #FFFFFF
@@ -937,6 +993,19 @@ skinparam queue<<external_person>> {
     BackgroundColor #686868
     BorderColor #8A8A8A
 }
+skinparam actor<<external_person>> {
+    StereotypeFontColor #686868
+    FontColor #686868
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam person<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
 
 skinparam rectangle<<system>> {
     StereotypeFontColor #FFFFFF
@@ -956,6 +1025,19 @@ skinparam queue<<system>> {
     BackgroundColor #1168BD
     BorderColor #3C7FC0
 }
+skinparam actor<<system>> {
+    StereotypeFontColor #1168BD
+    FontColor #1168BD
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam person<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
 
 skinparam rectangle<<external_system>> {
     StereotypeFontColor #FFFFFF
@@ -975,6 +1057,19 @@ skinparam queue<<external_system>> {
     BackgroundColor #999999
     BorderColor #8A8A8A
 }
+skinparam actor<<external_system>> {
+    StereotypeFontColor #999999
+    FontColor #999999
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam person<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
 
 
 
@@ -1104,6 +1199,8 @@ sprite $person2 [48x48/16] {
 
 
 
+
+
 skinparam rectangle<<container>> {
     StereotypeFontColor #FFFFFF
     FontColor #FFFFFF
@@ -1122,6 +1219,19 @@ skinparam queue<<container>> {
     BackgroundColor #438DD5
     BorderColor #3C7FC0
 }
+skinparam actor<<container>> {
+    StereotypeFontColor #438DD5
+    FontColor #438DD5
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam person<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
 
 skinparam rectangle<<external_container>> {
     StereotypeFontColor #FFFFFF
@@ -1141,6 +1251,19 @@ skinparam queue<<external_container>> {
     BackgroundColor #B3B3B3
     BorderColor #A6A6A6
 }
+skinparam actor<<external_container>> {
+    StereotypeFontColor #B3B3B3
+    FontColor #B3B3B3
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam person<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+
 
 
 
@@ -1188,7 +1311,7 @@ rectangle "==System_Boundary\n<size:12>[System]</size>" <<Boundary type>><<bound
 container1 - ->> container2 : **Rel**
 @enduml
 
-PlantUML version 1.2021.8(Sat Jun 26 08:20:59 GMT 2021)
+PlantUML version 1.2021.10(Mon Aug 30 13:43:48 GMT 2021)
 (GPL source distribution)
 Java Runtime: OpenJDK Runtime Environment
 JVM: OpenJDK 64-Bit Server VM
