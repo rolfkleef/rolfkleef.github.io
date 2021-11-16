@@ -6,3 +6,4 @@ nav:
 - modules/asciidoc/nav.adoc
 - modules/antora/nav.adoc
 - modules/zotero/nav.adoc
+- modules/tools/nav.adoc

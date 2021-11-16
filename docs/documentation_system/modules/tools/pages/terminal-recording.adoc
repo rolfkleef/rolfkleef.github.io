@@ -1,0 +1,27 @@
+= Terminal recording
+
+Create SVG images to show interaction with a command line terminal.
+
+This is based on two tools.
+
+== asciinema
+
+https://asciinema.org[asciinema^] lets you record interaction in a terminal.
+
+The recorded session can be saved as local JSON file, and replayed in the terminal.
+
+  $ asciinema rec my-recording.json
+  
+  $ asciinema play my-recording.json
+
+The file can be uploaded to the asciinema server for sharing and embedding.
+
+== svg-term-cli
+
+https://github.com/marionebl/svg-term-cli[svg-term-cli^] can translate an asciinema file into an SVG image.
+
+This can be an uploaded recording, or a local file.
+
+  $ svg-term --in my-recording.json --out my-recording.svg
+
+The SVG file can be included in the documentation.
