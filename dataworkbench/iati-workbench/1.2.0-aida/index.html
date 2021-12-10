@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Spreadsheets2IATI engine :: Dataworkbench</title>
     <link rel="next" href="ant-results.html">
-    <meta name="generator" content="Antora 3.0.0-alpha.9">
+    <meta name="generator" content="Antora 3.0.0-rc.2">
     <link rel="stylesheet" href="../../_/css/site.css" rel="stylesheet">
     <script>var uiRootPath = '../../_'</script>
   </head>
@@ -115,13 +115,13 @@
       </ul>
     </li>
     <li class="component is-current">
-      <a class="title" href="../1.2.0/index.html">IATI Workbench</a>
+      <a class="title" href="../1.3.0/index.html">IATI Workbench</a>
       <ul class="versions">
         <li class="version">
           <a href="../develop/index.html">develop</a>
         </li>
         <li class="version is-latest">
-          <a href="../1.2.0/index.html">1.2.0</a>
+          <a href="../1.3.0/index.html">1.3.0</a>
         </li>
         <li class="version is-current">
           <a href="index.html">1.2.0-aida</a>
@@ -144,7 +144,7 @@
 <main class="article">
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
-  <a href="../1.2.0/index.html" class="home-link"></a>
+  <a href="../1.3.0/index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="index.html">IATI Workbench</a></li>
@@ -155,7 +155,7 @@
   <button class="version-menu-toggle" title="Show other versions of page">1.2.0-aida</button>
   <div class="version-menu">
     <a class="version" href="../develop/index.html">develop</a>
-    <a class="version" href="../1.2.0/index.html">1.2.0</a>
+    <a class="version" href="../1.3.0/index.html">1.3.0</a>
     <a class="version is-current" href="index.html">1.2.0-aida</a>
   </div>
 </div>
@@ -175,8 +175,38 @@
 </div>
 </div>
 <div class="sect1">
+<h2 id="_add_the_aidi_s2i_wrapper_to_your_path"><a class="anchor" href="#_add_the_aidi_s2i_wrapper_to_your_path"></a>Add the <code>aidi-s2i</code> wrapper to your path</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can put the <code>aida-s2i</code> script in your path, for instance as a symlink:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ ln -s ${PWD}/aida-s2i ~/bin/aida-s2i</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This script can help build and run the container.
+To see its options:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ aida-s2i -h</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="_build_the_container"><a class="anchor" href="#_build_the_container"></a>Build the container</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>Before building the container, make sure to check out the git submodules.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ git submodule update --recursive</pre>
+</div>
+</div>
 <div class="admonitionblock caution">
 <table>
 <tr>
@@ -195,12 +225,31 @@ This will become optional.</p>
 </tr>
 </table>
 </div>
-<div class="sect2">
-<h3 id="_option_1_localised_build"><a class="anchor" href="#_option_1_localised_build"></a>Option 1: localised build</h3>
 <div class="paragraph">
 <p>In this case, the container will run as the user building the image.
 You need to make sure it has proper permissions for the local workspace directory.</p>
 </div>
+<div class="sect2">
+<h3 id="_with_aida_s2i"><a class="anchor" href="#_with_aida_s2i"></a>With <code>aida-s2i</code></h3>
+<div class="literalblock">
+<div class="content">
+<pre>$ aida-s2i -d build</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Then, verify everything is running:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ aida-s2i</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This will show the list of available "targets" in the workbench.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_manually"><a class="anchor" href="#_manually"></a>Manually</h3>
 <div class="literalblock">
 <div class="content">
 <pre>$ docker build --build-arg UID=$(id -u) --build-arg GID=$(id -g) -t aida-s2i .</pre>
@@ -212,22 +261,6 @@ You need to make sure it has proper permissions for the local workspace director
 <div class="literalblock">
 <div class="content">
 <pre>$ docker run --rm aida-s2i</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Next, you can put the <code>aida-s2i</code> script in your path, for instance as a symlink:</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>$ ln -s ${PWD}/aida-s2i ~/bin/aida-s2i</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Then, verify everything is running:</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>$ aida-s2i</pre>
 </div>
 </div>
 <div class="paragraph">
