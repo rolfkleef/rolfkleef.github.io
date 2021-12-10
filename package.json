@@ -6,14 +6,13 @@
   "scripts": {
     "prelocal": "docker-compose -p antora up -d",
     "local": "PLAYBOOK=antora/localhost/playbooks/docs.yml npm run docs",
-    "predocs": "cp antora/hacks/generate-site.js node_modules/@antora/site-generator-default/lib/generate-site.js",
     "docs": "DOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lunr antora --stacktrace ${PLAYBOOK:-antora/playbooks/docs.yml}"
   },
   "devDependencies": {
-    "@antora/cli": "^3.0.0-alpha.9",
-    "@antora/site-generator-default": "^3.0.0-alpha.9",
+    "@antora/cli": "^3.0.0-rc.2",
+    "@antora/site-generator-default": "^3.0.0-rc.2",
+    "@antora/lunr-extension": "gitlab:antora/antora-lunr-extension#main",
     "@asciidoctor/core": "^2.2.4",
-    "antora-lunr": "^0.8.0",
     "asciidoctor-kroki": "^0.12.0"
   },
   "private": true
