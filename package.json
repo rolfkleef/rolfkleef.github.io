@@ -8,7 +8,7 @@
     "local": "PLAYBOOK=antora/localhost/playbooks/docs.yml npm run docs",
     "docs": "DOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lunr antora --stacktrace ${PLAYBOOK:-antora/playbooks/docs.yml}"
   },
-  "devDependencies": {
+  "dependencies": {
     "@antora/cli": "^3.0.0-rc.2",
     "@antora/site-generator-default": "^3.0.0-rc.2",
     "@antora/lunr-extension": "gitlab:antora/antora-lunr-extension#main",
