@@ -30,7 +30,11 @@ ui:
     url: https://gitlab.com/rolfkleef/drostan-antora-ui/-/jobs/artifacts/drostan/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true
   supplemental_files: antora/supplemental-ui
-  
+
+antora:
+  extensions:
+    - require: '@antora/lunr-extension'
+
 # tag::asciidoc[]
 asciidoc:
   extensions:

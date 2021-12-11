@@ -7,7 +7,7 @@ on:
 jobs:
   antora:
     runs-on: ubuntu-latest
-    container: node:14-buster
+    container: node:16-buster
     
     services:
       kroki:
@@ -18,12 +18,13 @@ jobs:
         image: yuzutech/kroki-mermaid
 
     steps:
+      - name: Get the sources
       - uses: actions/checkout@v2
         with:
           submodules: 'recursive'
 
       - name: Setup Antora
-        run: npm ci
+        run: npm ci --production
 
       - name: Generate main docs site
         run: npm run docs
@@ -31,7 +32,7 @@ jobs:
       - name: Generate dataworkbench docs
         run: PLAYBOOK=antora/playbooks/dataworkbench.yml npm run docs
 
-      - name: Deploy sites
+      - name: Deploy site
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
