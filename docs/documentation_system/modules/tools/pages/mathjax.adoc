@@ -1,0 +1,114 @@
+= MathJax
+
+Create inline SVG images for STEM content.
+
+== Background
+
+Asciidoc has macros to include STEM (Science, Technology, Engineering and Math) equations and formulas.
+When STEM is "activated" on a page, it will include MathJax for client-side rendering of this content.
+
+However, Antora does not include MathJax on STEM-enabled pages.
+
+One way to solve this, is to add a slightly customised solution:
+
+* Add a page attribute like `page-stem` instead of `stem`.
+* Adapt the UI to include MathJax for pages with this attribute.
+
+We have chosen a different way:
+
+* Include the https://www.npmjs.com/package/@djencks/asciidoctor-mathjax[@djencks/asciidoctor-mathjax^] package.
+* Add it as extension to generate inline SVG rendering when producing the site.
+
+The benefit is that this is preserves the Asciidoc STEM macro behaviour.
+It also keeps the published pages a little lighter.
+
+[WARNING]
+====
+The downside is that it is not possible to copy an equation or formula from the page.
+Neither the source nor the image itself is selectable.  
+
+Client-side rendering works better for accessibility.
+====
+
+Using standard Asciidoc has priority now.
+footnote:[A third way is to consider Katex instead of MathJax, 
+but this would also stray away from standard Asciidoc for now.]
+We expect that either Antora or the extension will be updated at some point.
+
+Asciidoc seems to favour http://asciimath.org/[Asciimath^] 
+over TeX and LaTeX as default format.
+It is possible to mix both on a page.
+It appears that TeX/LaTeX is more widely used in science.
+
+== Using STEM (summary)
+
+Optionally activate STEM as attribute in the page header.
+
+NOTE::The extension does not require this attribute but will always process STEM blocks.
+
+[source, asciidoc]
+....
+= Page title
+:stem: # <1>
+....
+<1> Default value is `asciimath`, can also be `latexmath`.
+
+Then add either inline or block elements.
+
+[source, asciidoc]
+....
+This is inline stem:[sqrt(4) = 2].
+It can be with explicit format choice: 
+latexmath:[C = \alpha + \beta Y^{\gamma} + \epsilon].
+
+It can also be put in a block, which will be centered:
+
+[stem]
+++++
+[[a,b],[c,d]]((n),(k))
+sqrt(4) = 2
+sqrt(9) = 3
+++++
+....
+
+====
+This is inline stem:[sqrt(4) = 2].
+It can be with explicit format choice: 
+latexmath:[C = \alpha + \beta Y^{\gamma} + \epsilon].
+
+It can also be put in a block, which will be centered:
+
+[stem]
+++++
+[[a,b],[c,d]]((n),(k))
+sqrt(4) = 2
+sqrt(9) = 3
+++++
+====
+
+[CAUTION]
+====
+Not all `latexmath` blocks seem to work yet:
+
+[source, asciidoc]
+....
+[latexmath]
+++++
+\begin{align*}
+1 + 2 &= 3\\
+1 &= 3 - 2
+\end{align*}
+++++
+....
+
+is rendered as
+
+[latexmath]
+++++
+\begin{align*}
+1 + 2 &= 3\\
+1 &= 3 - 2
+\end{align*}
+++++
+
+====

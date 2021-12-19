@@ -10,9 +10,10 @@
   },
   "dependencies": {
     "@antora/cli": "^3.0.0-rc.2",
-    "@antora/site-generator-default": "^3.0.0-rc.2",
     "@antora/lunr-extension": "gitlab:antora/antora-lunr-extension#main",
+    "@antora/site-generator-default": "^3.0.0-rc.2",
     "@asciidoctor/core": "^2.2.4",
+    "@djencks/asciidoctor-mathjax": "^0.0.7",
     "asciidoctor-kroki": "^0.12.0"
   },
   "private": true
