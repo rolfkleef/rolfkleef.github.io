@@ -26,11 +26,13 @@ content:
 runtime:
   fetch: true
 
+# tag::ui[]
 ui:
   bundle:
     url: https://gitlab.com/rolfkleef/drostan-antora-ui/-/jobs/artifacts/drostan/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true
   supplemental_files: antora/supplemental-ui
+# end::ui[]
   
 # tag::asciidoc[]
 asciidoc:
