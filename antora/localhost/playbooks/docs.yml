@@ -6,7 +6,7 @@ site:
 
 # Run `git worktree add build/site site` to check out the Github Pages branch here:
 output:
-  dir: build/site
+  dir: build/local
 
 content:
   sources:
@@ -25,11 +25,13 @@ content:
 runtime:
   fetch: true
 
+# tag::ui[]
 ui:
   bundle:
     url: https://gitlab.com/rolfkleef/drostan-antora-ui/-/jobs/artifacts/drostan/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true
   supplemental_files: antora/supplemental-ui
+# end::ui[]
 
 antora:
   extensions:
@@ -39,21 +41,24 @@ antora:
 asciidoc:
   extensions:
   - asciidoctor-kroki # <1>
+  - '@djencks/asciidoctor-mathjax' # <2>
+
   attributes:
     page-pagination: true
-    hide-uri-scheme@: true # <2>
-    kroki-fetch-diagram: true # <3>
+    hide-uri-scheme@: true # <3>
+    kroki-fetch-diagram: true # <4>
     allow-uri-read: true
     experimental: true
     kroki-default-format@: svg
-    kroki-server-url: http://localhost:8000 # <4>
-    kroki-plantuml-include: styleguide/plantuml/styling.cfg # <5>
+    kroki-server-url: http://localhost:8000 # <5>
+    kroki-plantuml-include: styleguide/plantuml/styling.cfg # <6>
 # end::asciidoc[]
     _yamldoc: >
       tag::asciidoc-notes[]
       <1> Use kroki to generate diagram images
-      <2> Don't show https:// etc on bare links
-      <3> For kroki: store the image. This requires `allow-uri-read`, as well as `experimental` (to override kroki security)
-      <4> Uses a local kroki server via docker compose
-      <5> Include a local PlantUML styling configuration at the start of each diagram
+      <2> Use MathJax to generate inline SVGs for STEM content
+      <3> Don't show https:// etc on bare links
+      <4> For kroki: store the image. This requires `allow-uri-read`, as well as `experimental` (to override kroki security)
+      <5> Uses a local kroki server via docker compose
+      <6> Include a local PlantUML styling configuration at the start of each diagram
       end::asciidoc-notes[]

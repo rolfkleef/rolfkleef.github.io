@@ -5,13 +5,13 @@
   "repository": "rolfkleef/rolfkleef.github.io",
   "scripts": {
     "prelocal": "docker-compose -p antora up -d",
-    "local": "PLAYBOOK=antora/localhost/playbooks/docs.yml npm run docs",
-    "docs": "DOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lunr antora --stacktrace ${PLAYBOOK:-antora/playbooks/docs.yml}"
+    "local": "PLAYBOOK=${PLAYBOOK:-antora/localhost/playbooks/docs.yml} npm run docs",
+    "docs": "antora --stacktrace ${PLAYBOOK:-antora/playbooks/docs.yml}"
   },
   "dependencies": {
     "@antora/cli": "^3.0.0-rc.2",
     "@antora/lunr-extension": "gitlab:antora/antora-lunr-extension#main",
-    "@antora/site-generator-default": "^3.0.0-rc.2",
+    "@antora/site-generator": "^3.0.0-rc.2",
     "@asciidoctor/core": "^2.2.4",
     "@djencks/asciidoctor-mathjax": "^0.0.7",
     "asciidoctor-kroki": "^0.12.0"

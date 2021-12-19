@@ -33,6 +33,10 @@ ui:
     snapshot: true
   supplemental_files: antora/supplemental-ui
 # end::ui[]
+
+antora:
+  extensions:
+    - require: '@antora/lunr-extension'
   
 # tag::asciidoc[]
 asciidoc:
