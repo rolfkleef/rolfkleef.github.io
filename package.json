@@ -16,5 +16,8 @@
     "@djencks/asciidoctor-mathjax": "^0.0.7",
     "asciidoctor-kroki": "^0.12.0"
   },
+  "engines": {
+    "node": ">=16"
+  },
   "private": true
 }
