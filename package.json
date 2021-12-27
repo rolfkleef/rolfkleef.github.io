@@ -9,11 +9,9 @@
     "docs": "antora --stacktrace ${PLAYBOOK:-antora/playbooks/docs.yml}"
   },
   "dependencies": {
-    "@antora/cli": "^3.0.0-rc.2",
-    "@antora/lunr-extension": "gitlab:antora/antora-lunr-extension#main",
-    "@antora/site-generator": "^3.0.0-rc.2",
-    "@asciidoctor/core": "^2.2.4",
+    "@antora/lunr-extension": "^1.0.0-alpha.1",
     "@djencks/asciidoctor-mathjax": "^0.0.7",
+    "antora": "^3.0.0",
     "asciidoctor-kroki": "^0.12.0"
   },
   "engines": {
