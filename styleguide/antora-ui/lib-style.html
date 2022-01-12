@@ -6,8 +6,8 @@
     <title>Style library :: My documentation</title>
     <link rel="canonical" href="https://docs.drostan.org/styleguide/antora-ui/lib-style.html">
     <link rel="prev" href="index.html">
-    <meta name="generator" content="Antora 3.0.0-rc.2">
-    <link rel="stylesheet" href="../../_/css/site.css" rel="stylesheet">
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
     <script>var uiRootPath = '../../_'</script>
   </head>
   <body class="article">
@@ -42,9 +42,11 @@
 </div>
       </div>
       <div class="navbar-section navbar-end">
-          <div class="navbar-item">
-            <input id="search-input" type="text" placeholder="Search (press &quot;/&quot; to focus)">
+        <div class="navbar-item search hide-for-print">
+          <div id="search-field" class="field">
+            <input id="search-input" type="text" placeholder="Search (press &quot;/&quot; to focus">
           </div>
+        </div>
       </div>
     </div>
   </nav>
@@ -75,7 +77,7 @@
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../visual_style/plantuml/index.html">PlantUML diagrams styling</a>
+    <a class="nav-link" href="../visual_style/plantuml/index.html">PlantUML diagrams</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../visual_style/plantuml/usecase.html">Use case diagram</a>
@@ -221,7 +223,7 @@ images, snippets, examples, and so on.</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Adding the styleguide as submodule will also make other style elements available:</p>
+<p>Adding the styleguide as submodule will make other style elements available:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -241,7 +243,7 @@ images, snippets, examples, and so on.</p>
 </table>
 </div>
 <div class="paragraph">
-<p>In the playbook, add the library component as start path like below:</p>
+<p>In the playbook, add the library component repository like below:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -423,10 +425,10 @@ I am an example library item taken from the style guide.
   </defs>
 </svg>
 <script src="../../_/js/site.js"></script>
-<script async src="../../_/js/vendor/highlight.js"></script>
 <script src="../../_/js/vendor/lunr.js"></script>
-<script src="../../_/js/vendor/search.js" id="search-script" data-base-path="../.." data-page-path="/styleguide/antora-ui/lib-style.html"></script>
-<script async src="../../_/../search-index.js"></script>
+<script src="../../_/js/vendor/search.js" id="search-script" data-base-path="../.." data-stylesheet="../../_/css/search.css"></script>
+<script async src="../../search-index.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
 <script type="application/json" class="js-hypothesis-config">
 {
   "showHighlights": "whenSidebarOpen"

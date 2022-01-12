@@ -7,8 +7,8 @@
     <link rel="canonical" href="https://docs.drostan.org/documentation_system/setup/index.html">
     <link rel="prev" href="../technology_choices/plantuml-kroki.html">
     <link rel="next" href="multiple-sites.html">
-    <meta name="generator" content="Antora 3.0.0-rc.2">
-    <link rel="stylesheet" href="../../_/css/site.css" rel="stylesheet">
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../_/css/site.css">
     <script>var uiRootPath = '../../_'</script>
   </head>
   <body class="article">
@@ -43,9 +43,11 @@
 </div>
       </div>
       <div class="navbar-section navbar-end">
-          <div class="navbar-item">
-            <input id="search-input" type="text" placeholder="Search (press &quot;/&quot; to focus)">
+        <div class="navbar-item search hide-for-print">
+          <div id="search-field" class="field">
+            <input id="search-input" type="text" placeholder="Search (press &quot;/&quot; to focus">
           </div>
+        </div>
       </div>
     </div>
   </nav>
@@ -107,6 +109,9 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../tools/terminal-recording.html">Terminal recording</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../tools/mathjax.html">MathJax</a>
   </li>
 </ul>
   </li>
@@ -205,7 +210,7 @@ This repository can also contain content sources that are not tied to specific s
 <h3 id="specify"><a class="anchor" href="#specify"></a>Components to specify the site</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="../_images/diag-c27525b6f05ee8956a0490ccdb2dc0c564ed44c7.svg" alt="Diagram">
+<img src="../_images/diag-3016f1a238b0c087bf441aa1d7464eff5b30eab5.svg" alt="Diagram">
 </div>
 </div>
 <div class="ulist">
@@ -243,7 +248,7 @@ This repository can also contain content sources that are not tied to specific s
 <h3 id="generate"><a class="anchor" href="#generate"></a>Components to generate and deploy the site</h3>
 <div class="imageblock kroki">
 <div class="content">
-<img src="../_images/diag-2c1d6f5411190f0b6e42823a9499061ff1ab64f7.svg" alt="Diagram">
+<img src="../_images/diag-5949894a72fe0f4e38f31bcc935dcdf39d52c3ea.svg" alt="Diagram">
 </div>
 </div>
 <div class="ulist">
@@ -386,10 +391,10 @@ and deploy the resulting site to Github Pages.</p>
   </defs>
 </svg>
 <script src="../../_/js/site.js"></script>
-<script async src="../../_/js/vendor/highlight.js"></script>
 <script src="../../_/js/vendor/lunr.js"></script>
-<script src="../../_/js/vendor/search.js" id="search-script" data-base-path="../.." data-page-path="/documentation_system/setup/index.html"></script>
-<script async src="../../_/../search-index.js"></script>
+<script src="../../_/js/vendor/search.js" id="search-script" data-base-path="../.." data-stylesheet="../../_/css/search.css"></script>
+<script async src="../../search-index.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
 <script type="application/json" class="js-hypothesis-config">
 {
   "showHighlights": "whenSidebarOpen"

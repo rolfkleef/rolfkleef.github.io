@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Spreadsheets2IATI :: Dataworkbench</title>
-    <link rel="prev" href="../workspace.html">
+    <link rel="prev" href="../xspec-tests.html">
     <link rel="next" href="date-formats.html">
-    <meta name="generator" content="Antora 3.0.0-rc.2">
-    <link rel="stylesheet" href="../../../_/css/site.css" rel="stylesheet">
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
   </head>
   <body class="article">
@@ -44,9 +44,6 @@
 </div>
       </div>
       <div class="navbar-section navbar-end">
-          <div class="navbar-item">
-            <input id="search-input" type="text" placeholder="Search (press &quot;/&quot; to focus)">
-          </div>
       </div>
     </div>
   </nav>
@@ -66,6 +63,9 @@
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../workspace.html">Workspace location</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../xspec-tests.html">Xspec tests</a>
   </li>
 </ul>
   </li>
@@ -116,16 +116,16 @@
       </ul>
     </li>
     <li class="component is-current">
-      <a class="title" href="../../1.3.0/index.html">IATI Workbench</a>
+      <a class="title" href="../../1.4.0/index.html">IATI Workbench</a>
       <ul class="versions">
         <li class="version is-current">
           <a href="../index.html">develop</a>
         </li>
         <li class="version is-latest">
-          <a href="../../1.3.0/index.html">1.3.0</a>
+          <a href="../../1.4.0/index.html">1.4.0</a>
         </li>
         <li class="version">
-          <a href="../../1.2.0-aida/index.html">1.2.0-aida</a>
+          <a href="../../1.4.0-aida/index.html">1.4.0-aida</a>
         </li>
       </ul>
     </li>
@@ -145,7 +145,7 @@
 <main class="article">
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
-  <a href="../../1.3.0/index.html" class="home-link"></a>
+  <a href="../../1.4.0/index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../index.html">IATI Workbench</a></li>
@@ -156,8 +156,8 @@
   <button class="version-menu-toggle" title="Show other versions of page">develop</button>
   <div class="version-menu">
     <a class="version is-current" href="index.html">develop</a>
-    <a class="version" href="../../1.3.0/spreadsheets2iati/index.html">1.3.0</a>
-    <a class="version" href="../../1.2.0-aida/spreadsheets2iati/index.html">1.2.0-aida</a>
+    <a class="version" href="../../1.4.0/spreadsheets2iati/index.html">1.4.0</a>
+    <a class="version" href="../../1.4.0-aida/spreadsheets2iati/index.html">1.4.0-aida</a>
   </div>
 </div>
   <div class="edit-this-page"><a href="https://github.com/data4development/iati-workbench/edit/develop/docs/modules/spreadsheets2iati/pages/index.adoc" target="_blank">Edit this Page</a></div>
@@ -196,16 +196,138 @@
 <h2 id="_spreadsheets2iati"><a class="anchor" href="#_spreadsheets2iati"></a>Spreadsheets2IATI</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The conversion process initiated by local <code>ant</code> in workspace.</p>
+<p>The conversion process is initiated by a local call of <code>ant</code> in the workspace.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ ant s2i-run</pre>
+</div>
 </div>
 <div class="paragraph">
-<p>The local <code>build.xml</code> includes a workspace library build via a hardcoded link.</p>
+<p>The process breaks down in a couple of components.</p>
 </div>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-33929b96bc869c7ae44e51f4c4d38f2304b43368.svg" alt="Sequence for `s2i-run` target">
+<img src="_images/diag-0d22f86bebcb5e14abc0d60d52a97bced38b7700.svg" alt="Sequence for `s2i-run`">
 </div>
-<div class="title">Figure 1. Sequence for <code>s2i-run</code> target</div>
+<div class="title">Figure 1. Sequence for <code>s2i-run</code></div>
+</div>
+<div class="paragraph">
+<p>The local <code>build.xml</code> in the workspace includes a library build file from the workbench.
+This makes it possible to extend or override the process in a particular workspace.</p>
+</div>
+<div class="sect2">
+<h3 id="_get_inputs"><a class="anchor" href="#_get_inputs"></a>Get inputs</h3>
+<div class="paragraph">
+<p>This step copies input files for the conversion</p>
+</div>
+<div class="imageblock kroki">
+<div class="content">
+<img src="_images/diag-4c579b7dc8973c7dbce84a818d73769ce81ede29.svg" alt="Diagram">
+</div>
+</div>
+<div class="imageblock kroki">
+<div class="content">
+<img src="_images/diag-b0189675d4366655fb5113d2d32bb3a49255c46e.svg" alt="Diagram">
+</div>
+</div>
+<div class="imageblock kroki">
+<div class="content">
+<img src="_images/diag-61f92405eeca23b0da5f2b2311fed1a0cb14c29d.svg" alt="Diagram">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_gather_input_files"><a class="anchor" href="#_gather_input_files"></a>Gather input files</h3>
+<div class="paragraph">
+<p>This step takes files from the input folder,
+and prepares them for processing, in a flat folder.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Excel files are converted into CSV.</p>
+</li>
+<li>
+<p>Excel and CSV are then converted into an XML format.</p>
+</li>
+<li>
+<p>Akvo and IATI XML files are copied.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock kroki">
+<div class="content">
+<img src="_images/diag-7f76b1b9d34d5a8082b82686ac56055e31f0f88a.svg" alt="Diagram">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_generate_iati_partials"><a class="anchor" href="#_generate_iati_partials"></a>Generate IATI partials</h3>
+<div class="paragraph">
+<p>This step transforms prepared input files into "partial IATI" files.
+These intermediary files are not valid IATI yet,
+but contain the IATI representation for the particular input file.</p>
+</div>
+<div class="imageblock kroki">
+<div class="content">
+<img src="_images/diag-7f748a274590d14848755704d0a222f899515f80.svg" alt="Diagram">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_create_iati_output"><a class="anchor" href="#_create_iati_output"></a>Create IATI output</h3>
+<div class="paragraph">
+<p>This step combines all "partial IATI files" into one IATI activities and one IATI organisations file.
+These files can contain activities that are not IATI schema-compliant.</p>
+</div>
+<div class="paragraph">
+<p>With a paid Saxon license, it is possible to validate the file
+and then split it at the activity level.
+This will create one valid IATI file,
+and one file with activities that contain validation errors.</p>
+</div>
+<div class="imageblock kroki">
+<div class="content">
+<img src="_images/diag-6bfc12235db89cfcbc57800c3adf159466fa94dd.svg" alt="Diagram">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_postprocess_iati_file"><a class="anchor" href="#_postprocess_iati_file"></a>Postprocess IATI file</h3>
+<div class="paragraph">
+<p>This step in the Dataworkbench applies known fixes to an IATI file.
+This can be anonymisation (replacing an organisation name),
+or known issues (like an identifier NL-KvK-&#8230;&#8203; with lowercase "v").</p>
+</div>
+<div class="imageblock kroki">
+<div class="content">
+<img src="_images/diag-3ea977993ae13eecd8b64bb56bf41154966f0b2e.svg" alt="Diagram">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_s2i_publish"><a class="anchor" href="#_s2i_publish"></a>S2I publish</h3>
+<div class="paragraph">
+<p>This step commits the produced IATI file to version control,
+and publishes it online on the dataworkbench.io website.</p>
+</div>
+<div class="imageblock kroki">
+<div class="content">
+<img src="_images/diag-35d0a57b80151151027e9671b01459e2d255c6fc.svg" alt="Diagram">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ant_targets_in_the_iati_workbench"><a class="anchor" href="#_ant_targets_in_the_iati_workbench"></a>Ant targets in the IATI Workbench</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="_images/ant-spreadsheet-iati.svg" alt="image$ant spreadsheet iati">
+</div>
+<div class="title">Figure 2. The dependencies of Ant targets involved in <code>spreadsheet-iati</code></div>
 </div>
 </div>
 </div>
@@ -213,15 +335,16 @@
 <h2 id="_iati_summary"><a class="anchor" href="#_iati_summary"></a>IATI Summary</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Creates spreadsheets with summary information based on XML fils in the <code>output</code> folder.</p>
+<p>Creates spreadsheets with summary information based on XML files in the <code>output</code> folder.</p>
 </div>
 <div class="paragraph">
-<p>To create those XML files in the output folder, we need to run a validation and then filter activities.</p>
+<p>To create those XML files in the output folder,
+we need to run a validation and then filter activities.</p>
 </div>
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="../workspace.html">Workspace location</a></span>
+  <span class="prev"><a href="../xspec-tests.html">Xspec tests</a></span>
   <span class="next"><a href="date-formats.html">Date formats</a></span>
 </nav>
 </article>
@@ -339,9 +462,6 @@
 </svg>
 <script src="../../../_/js/site.js"></script>
 <script async src="../../../_/js/vendor/highlight.js"></script>
-<script src="../../../_/js/vendor/lunr.js"></script>
-<script src="../../../_/js/vendor/search.js" id="search-script" data-base-path="../../.." data-page-path="/iati-workbench/develop/spreadsheets2iati/index.html"></script>
-<script async src="../../../_/../search-index.js"></script>
 <script type="application/json" class="js-hypothesis-config">
 {
   "showHighlights": "whenSidebarOpen"
