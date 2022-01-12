@@ -61,6 +61,13 @@ To further automate, release-please or semantic-release may be next steps.
 
 Links to commit hashes on Github will be generated for the remote named `origin`.
 
+[CAUTION]
+====
+When running `standard-release -f` for a first release, it will not do version
+bumping. Update for instance the version in `docs/antora.yml` 
+and stage it in git index before releasing.
+====
+
 == Local configuration
 
 * Added command `git-commitlint` and `git-standard-version` in `~/bin` with default behaviour, also available as git subcommands.
