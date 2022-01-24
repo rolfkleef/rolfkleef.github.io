@@ -44,19 +44,19 @@ It appears that TeX/LaTeX is more widely used in science.
 
 Optionally activate STEM as attribute in the page header.
 
-NOTE::The extension does not require this attribute but will always process STEM blocks.
+NOTE: The extension does not require this attribute but will always process STEM blocks.
 
 [source, asciidoc]
-....
+----
 = Page title
 :stem: # <1>
-....
+----
 <1> Default value is `asciimath`, can also be `latexmath`.
 
 Then add either inline or block elements.
 
 [source, asciidoc]
-....
+----
 This is inline stem:[sqrt(4) = 2].
 It can be with explicit format choice: 
 latexmath:[C = \alpha + \beta Y^{\gamma} + \epsilon].
@@ -69,7 +69,7 @@ It can also be put in a block, which will be centered:
 sqrt(4) = 2
 sqrt(9) = 3
 ++++
-....
+----
 
 ====
 This is inline stem:[sqrt(4) = 2].
@@ -91,7 +91,7 @@ sqrt(9) = 3
 Not all `latexmath` blocks seem to work yet:
 
 [source, asciidoc]
-....
+----
 [latexmath]
 ++++
 \begin{align*}
@@ -99,7 +99,7 @@ Not all `latexmath` blocks seem to work yet:
 1 &= 3 - 2
 \end{align*}
 ++++
-....
+----
 
 is rendered as
 
