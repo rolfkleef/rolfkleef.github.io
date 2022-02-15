@@ -21,6 +21,9 @@ content:
   - url: https://github.com/data4development/iati-kitchen.git
     branches: develop
     start_path: docs
+  - url: https://github.com/data4development/etl-iati.git
+    branches: develop
+    start_path: docs
 #  - url: https://github.com/data4development/IATI-Rulesets.git
 #    branches: develop
 #    start_path: docs
@@ -28,7 +31,6 @@ content:
     branches:
     - main
     - develop
-    - aida
     start_path: docs
   - url: https://github.com/data4development/IATI-data-validator.git
     branches: develop
