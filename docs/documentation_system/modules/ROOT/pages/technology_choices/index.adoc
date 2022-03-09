@@ -27,7 +27,7 @@ so they can follow the same _docs as code_ workflows.
 
 == Elements of the documentation system
 
-To expand on the xref:../index#documentation-system-overview[documentation system overview]:
+To expand on the xref:../index.adoc#documentation-system-overview[documentation system overview]:
 
 .Documentation system subsystems.
 [plantuml]
