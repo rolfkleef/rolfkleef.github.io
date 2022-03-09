@@ -16,8 +16,7 @@ There is no way to cross reference or link between the text and a specific refer
 
 .Zotero subsystem overview
 [plantuml]
-....
-@startuml
+----
 !include <C4/C4_Container>
 
 Person(editor, "Editor", "Writes and reviews documentation content.")
@@ -28,7 +27,7 @@ System_Boundary(doc_sys, "Documentation system") {
     Container(content_helper, "Zotero content helper", "get-zoteros", "Generates reference lists for specified Zotero references.")
     Rel_R(content_helper, source_repo, "gets Zotero lookup details and stores partials in Antora modules")
   }
-  
+
   System_Boundary(sitegen, "Website generator") {
     Container(antora, "Site generator", "antora, asciidoctor", "Gathers sources, produces a static website, and deploys it.")
   }
@@ -43,9 +42,7 @@ Rel(editor, zotero, "1) organises references in")
 Rel_L(content_helper, zotero, "retrieves HTML-formatted references from")
 
 Rel(editor, content_helper, "3) runs")
-
-@enduml
-....
+----
 
 == Activities
 
@@ -69,7 +66,7 @@ This decouples the exact hierarchy and organisation of collections in Zotero fro
 
 .Current organisation of collections in Zotero
 [plantuml]
-....
+----
 @startmindmap
 include::lib-style::partial$plantuml-wbsmm-style.iuml[]
 * Library
@@ -86,7 +83,7 @@ include::lib-style::partial$plantuml-wbsmm-style.iuml[]
   * (other publications)
    *_ ...
 @endmindmap
-....
+----
 
 [#step2]
 === Add Zotero lookup details to the content
@@ -96,14 +93,14 @@ This file contains a list of reference lists to generate.
 
 .A `zotero` file with two lists
 [source, text]
-....
+----
 collections/NAN7TETL/ ROOT background-refs # <1>
 collections/JBHC442F/ module1 further-reading mytag # <2>
-....
+----
 <1> Get all references in the collection, and add them as `background-refs.html` to the `partials` folder of the `ROOT` module.
 <2> Get references in the collection with tag `mytag`, and add them as `further-reading.html` to the `partials` folder of the `module1` module.
 
-TIP: The collection id can be found in the web address https://www.zotero.org/rolfkleef/collections/NAN7TETL[when visiting the collection online^]. 
+TIP: The collection id can be found in the web address https://www.zotero.org/rolfkleef/collections/NAN7TETL[when visiting the collection online^].
 
 [#step3]
 === Run the content helper
@@ -127,22 +124,20 @@ The reference list can be added to a page with a simple Asciidoc `include` state
 
 .Add the references to an Asciidoc page
 [source, asciidoc]
-....
+----
 ++++
 \include::partials$background-refs.html[]
 ++++
-....
+----
 
 == Content helper script
 
 .The `get-zoteros` script
 [source, bash]
-....
+----
 include::../examples/get-zoteros.sh[]
-....
+----
 <1> Replace `12345` with the appropriate user id. The user id can be found https://www.zotero.org/settings/keys[on Zotero's Feeds/API settings page^].
 <2> Replace the URL of the CSL file with the desired style definition.
 
 The https://www.zotero.org/support/dev/web_api/v3/basics[Zotero API documentation^] can help to change the API call to your liking.
-
-

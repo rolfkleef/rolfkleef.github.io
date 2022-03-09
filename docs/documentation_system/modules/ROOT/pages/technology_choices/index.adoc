@@ -31,8 +31,7 @@ To expand on the xref:../index.adoc#documentation-system-overview[documentation 
 
 .Documentation system subsystems.
 [plantuml]
-....
-@startuml
+----
 !include <C4/C4_Container>
 
 Person(editor, "Editor", "Writes and reviews documentation content.")
@@ -44,7 +43,7 @@ System_Boundary(doc_sys, "Documentation system") {
     Container(content_helpers, "Content helpers", "bash, ...", "Generate content from additional sources.")
     Rel_U(content_helpers, source_repos, "contribute content to")
   }
-  
+
   System_Boundary(sitegen, "Website generator") {
     Container(antora, "Site generator", "antora, asciidoctor", "Gathers sources, produces a static website, and deploys it.")
 
@@ -65,5 +64,4 @@ Rel(publisher, sitegen, "configures and runs")
 Rel(antora, site, "publishes site content to")
 
 Lay_R(editor, publisher)
-@enduml
-....
+----

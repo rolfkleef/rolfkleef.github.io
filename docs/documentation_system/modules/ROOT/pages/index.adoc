@@ -11,8 +11,7 @@ The documentation covers the following users and systems.
 
 .Documentation system overview
 [plantuml]
-....
-@startuml
+----
 !include <C4/C4_Container>
 
 Person(editor, "Editor", "Writes and reviews documentation content.")
@@ -33,15 +32,14 @@ Rel(publisher, sitegen, "configures and runs")
 Rel(sitegen, site, "publishes")
 
 Lay_L(publisher, tools)
-@enduml
-....
+----
 
 == Key roles and subsystems
 
 Editor::
 An editor can also be a developer, and contributes content sources (text, diagrams).
 The choice of tools to edit and manage content should be flexible.
-  
+
 Content sources::
 Implementation-specific, detailed documentation should live close to, or even inside source code or configuration files.
 Higher-level decisions and architectures can live in separate documentation sections.
