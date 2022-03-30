@@ -64,6 +64,8 @@ footnote:[Zotero references can be part of multiple collections.]
 It is possible to move collections around in Zotero without changing their identifier.
 This decouples the exact hierarchy and organisation of collections in Zotero from the documentation pages.
 
+Collections can be part of a personal library or a group library.
+
 .Current organisation of collections in Zotero
 [plantuml]
 ----
@@ -100,7 +102,14 @@ collections/JBHC442F/ module1 further-reading mytag # <2>
 <1> Get all references in the collection, and add them as `background-refs.html` to the `partials` folder of the `ROOT` module.
 <2> Get references in the collection with tag `mytag`, and add them as `further-reading.html` to the `partials` folder of the `module1` module.
 
-TIP: The collection id can be found in the web address https://www.zotero.org/rolfkleef/collections/NAN7TETL[when visiting the collection online^].
+[TIP]
+====
+The collection id can be found in the web address https://www.zotero.org/rolfkleef/collections/NAN7TETL[when visiting the collection online^].
+
+Also, the https://github.com/wshanks/Zutilo/[Zutilo addon^] offers a way to create links to a collection
+in either the Zotero application or the Zotero website for your library.
+This is an alternative option to find the collection id.
+====
 
 [#step3]
 === Run the content helper
@@ -137,7 +146,10 @@ The reference list can be added to a page with a simple Asciidoc `include` state
 ----
 include::../examples/get-zoteros.sh[]
 ----
-<1> Replace `12345` with the appropriate user id. The user id can be found https://www.zotero.org/settings/keys[on Zotero's Feeds/API settings page^].
-<2> Replace the URL of the CSL file with the desired style definition.
+<1> Choose between 'users' and 'groups', and replace `12345` with the appropriate user or group id.
+The user id can be found https://www.zotero.org/settings/keys[on Zotero's Feeds/API settings page^].
+<2> When using a group library, add an API key to get access.
+<3> Replace the URL of the CSL file with the desired style definition.
+<4> Print an Asciidoc snippet for a collection, that can be included in a page.
 
 The https://www.zotero.org/support/dev/web_api/v3/basics[Zotero API documentation^] can help to change the API call to your liking.
