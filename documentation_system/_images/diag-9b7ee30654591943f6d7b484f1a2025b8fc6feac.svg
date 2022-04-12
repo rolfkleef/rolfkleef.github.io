@@ -1,0 +1,1436 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1064px" preserveAspectRatio="none" style="width:1351px;height:1064px;background:#FFFFFF;" version="1.1" viewBox="0 0 1351 1064" width="1351px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="1062.4002" style="stroke:#FFFFFF;stroke-width:1.0;" width="1349" x="0" y="0"/><!--MD5=[65497070a14b2a36d1f18d22c56923ec]
+cluster doc_sys--><g id="cluster_doc_sys"><rect height="877" rx="2.5" ry="2.5" style="stroke:#444444;stroke-width:1.0;fill:none;stroke-dasharray:7.0,7.0;" width="1338" x="7" y="7"/><text fill="#444444" font-family="Roboto" font-size="13" font-style="italic" lengthAdjust="spacing" textLength="64" x="644" y="24">«boundary»</text><text fill="#444444" font-family="Roboto" font-size="15" font-weight="bold" lengthAdjust="spacing" textLength="163" x="594.5" y="45.6001">Documentation system</text><text fill="#444444" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="52" x="650" y="60.6002">[System]</text></g><!--MD5=[82f0574ca935a4409687812a512a178b]
+cluster sources--><g id="cluster_sources"><rect height="214" rx="2.5" ry="2.5" style="stroke:#444444;stroke-width:1.0;fill:none;stroke-dasharray:7.0,7.0;" width="242" x="31" y="211.5"/><text fill="#444444" font-family="Roboto" font-size="13" font-style="italic" lengthAdjust="spacing" textLength="64" x="120" y="228.5">«boundary»</text><text fill="#444444" font-family="Roboto" font-size="15" font-weight="bold" lengthAdjust="spacing" textLength="118" x="93" y="250.1001">Content sources</text><text fill="#444444" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="52" x="126" y="265.1002">[System]</text></g><!--MD5=[f8d3169e412ecc25442a958b35dad92e]
+cluster sitegen--><g id="cluster_sitegen"><rect height="770" rx="2.5" ry="2.5" style="stroke:#444444;stroke-width:1.0;fill:none;stroke-dasharray:7.0,7.0;" width="1024" x="297" y="90"/><text fill="#444444" font-family="Roboto" font-size="13" font-style="italic" lengthAdjust="spacing" textLength="64" x="777" y="107">«boundary»</text><text fill="#444444" font-family="Roboto" font-size="15" font-weight="bold" lengthAdjust="spacing" textLength="132" x="743" y="128.6001">Website generator</text><text fill="#444444" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="52" x="783" y="143.6002">[System]</text></g><!--MD5=[cf3328b9e8e69f5cf77eb31f7b55571b]
+cluster antora--><g id="cluster_antora"><rect height="647" rx="2.5" ry="2.5" style="stroke:#444444;stroke-width:1.0;fill:none;stroke-dasharray:7.0,7.0;" width="506" x="557" y="181"/><text fill="#444444" font-family="Roboto" font-size="13" font-style="italic" lengthAdjust="spacing" textLength="117" x="751.5" y="198">«antora, asciidoctor»</text><text fill="#444444" font-family="Roboto" font-size="13" font-style="italic" lengthAdjust="spacing" textLength="64" x="778" y="213.6">«boundary»</text><text fill="#444444" font-family="Roboto" font-size="15" font-weight="bold" lengthAdjust="spacing" textLength="128" x="746" y="235.2001">Antora generation</text><text fill="#444444" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="64" x="778" y="250.2002">[Container]</text></g><!--MD5=[0e67d413a3473a905772012a4de6890f]
+entity source_repos--><g id="elem_source_repos"><rect fill="#438DD5" height="122.8003" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;" width="210" x="47" y="286.5"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" font-style="italic" lengthAdjust="spacing" textLength="64" x="120" y="311.5">«container»</text><text fill="#FFFFFF" font-family="Roboto" font-size="15" font-weight="bold" lengthAdjust="spacing" textLength="141" x="81.5" y="333.1001">Source repositories</text><text fill="#FFFFFF" font-family="Roboto" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="70" x="117" y="348.1002">[git, asciidoc]</text><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="4" x="150.5" y="363.5003"> </text><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="180" x="62" y="379.1003">Manage documentation content</text><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="26" x="139" y="394.7003">files.</text></g><!--MD5=[bf1b4add2ee2e1b53e65912b20fb7ef4]
+entity ui--><g id="elem_ui"><rect fill="#438DD5" height="122.8003" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;" width="219" x="313.5" y="286.5"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" font-style="italic" lengthAdjust="spacing" textLength="64" x="391" y="311.5">«container»</text><text fill="#FFFFFF" font-family="Roboto" font-size="15" font-weight="bold" lengthAdjust="spacing" textLength="172" x="337" y="333.1001">User interface definition</text><text fill="#FFFFFF" font-family="Roboto" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="155" x="345.5" y="348.1002">[antora, html/css, handlebars]</text><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="4" x="421.5" y="363.5003"> </text><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="189" x="328.5" y="379.1003">Provides templates and styling for</text><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="37" x="404.5" y="394.7003">the UI.</text></g><!--MD5=[9b2a20bc078e35fc951c806153e3ddc1]
+entity kroki--><g id="elem_kroki"><rect fill="#438DD5" height="107.2003" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;" width="217" x="1087.5" y="505"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" font-style="italic" lengthAdjust="spacing" textLength="64" x="1164" y="530">«container»</text><text fill="#FFFFFF" font-family="Roboto" font-size="15" font-weight="bold" lengthAdjust="spacing" textLength="189" x="1101.5" y="551.6001">Diagram rendering service</text><text fill="#FFFFFF" font-family="Roboto" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="83" x="1154.5" y="566.6002">[kroki, plantuml]</text><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="4" x="1194.5" y="582.0003"> </text><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="190" x="1102.5" y="597.6003">Converts diagram texts to images.</text></g><!--MD5=[74760cc80e14f2f8e8be9d46ac419033]
+entity packagejson--><g id="elem_packagejson"><rect fill="#85BBF0" height="138.4003" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="201" x="581.5" y="279"/><text fill="#000000" font-family="Roboto" font-size="13" font-style="italic" lengthAdjust="spacing" textLength="75" x="644.5" y="304">«component»</text><text fill="#000000" font-family="Roboto" font-size="15" font-weight="bold" lengthAdjust="spacing" textLength="93" x="635.5" y="325.6001">package.json</text><text fill="#000000" font-family="Roboto" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="29" x="667.5" y="340.6002">[npm]</text><text fill="#000000" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="4" x="680.5" y="356.0003"> </text><text fill="#000000" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="171" x="596.5" y="371.6003">Specifies the Antora and other</text><text fill="#000000" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="152" x="604.5" y="387.2003">software components to be</text><text fill="#000000" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="94" x="635" y="402.8003">installed by npm.</text></g><!--MD5=[11fd4419cedb6765a3ffa132013e9f70]
+entity dockercompose--><g id="elem_dockercompose"><rect fill="#85BBF0" height="122.8003" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="202" x="818" y="286.5"/><text fill="#000000" font-family="Roboto" font-size="13" font-style="italic" lengthAdjust="spacing" textLength="75" x="881.5" y="311.5">«component»</text><text fill="#000000" font-family="Roboto" font-size="15" font-weight="bold" lengthAdjust="spacing" textLength="148" x="845" y="333.1001">docker-compose.yml</text><text fill="#000000" font-family="Roboto" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="897.5" y="348.1002">[docker]</text><text fill="#000000" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="4" x="917.5" y="363.5003"> </text><text fill="#000000" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="172" x="833" y="379.1003">Specifies the diagram services</text><text fill="#000000" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="149" x="844.5" y="394.7003">used in local development.</text></g><!--MD5=[608d1cc913e673ee5f798ece544755a2]
+entity github--><g id="elem_github"><rect fill="#85BBF0" height="122.8003" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="200" x="581" y="681"/><text fill="#000000" font-family="Roboto" font-size="13" font-style="italic" lengthAdjust="spacing" textLength="75" x="643.5" y="706">«component»</text><text fill="#000000" font-family="Roboto" font-size="15" font-weight="bold" lengthAdjust="spacing" textLength="97" x="632.5" y="727.6001">Github Action</text><text fill="#000000" font-family="Roboto" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="38" x="662" y="742.6002">[github]</text><text fill="#000000" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="4" x="679.5" y="758.0003"> </text><text fill="#000000" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="170" x="596" y="773.6003">Specifies how to generate and</text><text fill="#000000" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="144" x="609" y="789.2003">deploy the site via Github.</text></g><!--MD5=[6175df549c38f077274cc22120bef61f]
+entity generator--><g id="elem_generator"><rect fill="#85BBF0" height="122.8003" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="174" x="594" y="497"/><text fill="#000000" font-family="Roboto" font-size="13" font-style="italic" lengthAdjust="spacing" textLength="75" x="643.5" y="522">«component»</text><text fill="#000000" font-family="Roboto" font-size="15" font-weight="bold" lengthAdjust="spacing" textLength="70" x="646" y="543.6001">generator</text><text fill="#000000" font-family="Roboto" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="32" x="665" y="558.6002">[bash]</text><text fill="#000000" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="4" x="679.5" y="574.0003"> </text><text fill="#000000" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="144" x="609" y="589.6003">Sets the environment and</text><text fill="#000000" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="103" x="629.5" y="605.2003">generates the site.</text></g><!--MD5=[e24c6d6bbe04aad7e54fd927083aea63]
+entity site--><g id="elem_site"><rect fill="#999999" height="108.4002" rx="2.5" ry="2.5" style="stroke:#8A8A8A;stroke-width:0.5;" width="210" x="576" y="950"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" font-style="italic" lengthAdjust="spacing" textLength="104" x="629" y="975">«external_system»</text><text fill="#FFFFFF" font-family="Roboto" font-size="15" font-weight="bold" lengthAdjust="spacing" textLength="156" x="603" y="996.6001">Github Pages website</text><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="4" x="679.5" y="1012.6002"> </text><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="180" x="591" y="1028.2002">Provides generation and hosting</text><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="162" x="600" y="1043.8002">for a documentation website.</text></g><!--MD5=[d283e9fdc2ed5188fc6015f59375fa64]
+link packagejson to generator--><g id="link_packagejson_generator"><path d="M681.22,417.01 C681.13,427.06 681.05,437.3 681,447 C680.93,460.55 680.9,475.04 680.89,488.91 " fill="none" id="packagejson-to-generator" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="680.89,497,683.9043,489.0054,677.9043,488.9947,680.89,497" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="141" x="684" y="462.0001">provides executables for</text></g><!--MD5=[572fdb58b71f9fbc6be8d33b4e6f6a76]
+link generator to github--><!--MD5=[1194b2759933231e08c45cd6256ed885]
+reverse link ui to generator--><g id="link_ui_generator"><path d="M481.12,415.49 C498,433.14 517.02,451.57 536,467 C553.85,481.51 574.18,495.52 593.85,508.02 " fill="none" id="ui-backto-generator" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="475.48,409.54,478.7982,417.4133,483.157,413.2901,475.48,409.54" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="130" x="539" y="462.0001">gets the ui bundle from</text></g><!--MD5=[7782d6c9610f0555631729fadf336879]
+link dockercompose to kroki--><g id="link_dockercompose_kroki"><path d="M938.25,409.67 C947.12,429.98 959.44,451.4 976,467 C984.79,475.28 1031.49,494.9 1079.62,513.75 " fill="none" id="dockercompose-to-kroki" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1087.35,516.77,1080.9908,511.0638,1078.8068,516.6522,1087.35,516.77" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="135" x="979" y="462.0001">starts local services for</text></g><!--MD5=[2a3a807afe44cb0552db8dc0a45b8c75]
+link generator to kroki--><g id="link_generator_kroki"><path d="M768.07,558.5 C853.63,558.5 984.75,558.5 1079.3,558.5 " fill="none" id="generator-to-kroki" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1087.48,558.5,1079.48,555.5,1079.48,561.5,1087.48,558.5" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="103" x="874.75" y="536.5001">processes textual</text><text fill="#666666" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="73" x="891.25" y="550.9002">diagrams via</text></g><!--MD5=[1c05d59598a08e63564226a43cfe0ad1]
+link kroki to antora--><!--MD5=[34b649da5c3dbb5bb977ef92d2572e1a]
+reverse link source_repos to generator--><g id="link_source_repos_generator"><path d="M160.91,417.57 C166.49,435.96 175.5,454.26 190,467 C248.85,518.7 469.37,542.51 593.92,552.04 " fill="none" id="source_repos-backto-generator" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="158.73,409.69,157.9806,418.2011,163.7617,416.5952,158.73,409.69" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="101" x="193" y="462.0001">gets content from</text></g><!--MD5=[84149bcebe2ecacbfaea834b6cf61f79]
+link github to site--><g id="link_github_site"><path d="M681,804.01 C681,845.43 681,900.17 681,941.74 " fill="none" id="github-to-site" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="681,949.88,684,941.88,678,941.88,681,949.88" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="Roboto" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="139" x="684" y="915.0001">publishes site content to</text></g><!--MD5=[878f35488ac2ef18160b7370d66eb370]
+@startuml
+' Styling settings for PlantUML diagrams
+' See http://plantuml.sourceforge.net for documentation
+' To get a list of possible skinparam settings, run: plantuml -language
+
+' COLORS
+' ========================================
+
+' general colors from own stylesheet
+!$diagram_background_color = "#fff"
+!$diagram_border_color = "#fff"
+!$diagram_color = "#808080"
+!$arrow_color = "#e91e63"
+!$link_color = "#3498DB"
+
+' make admonition colors available for elements
+!$caution_color = "#a0439c"
+!$caution_on_color = "#fff"
+!$important_color = "#d32f2f"
+!$important_on_color = "#fff"
+!$note_color = "#217ee7"
+!$note_on_color = "#fff"
+!$tip_color = "#41af46"
+!$tip_on_color = "#fff"
+!$warning_color = "#e18114"
+!$warning_on_color = "#fff"
+
+' node_1, node_2 and note taken from C4 styling
+!$node_1_main_color = "#08427b"
+!$node_2_main_color = "#1168bd"
+!$node_2_aux2_color = "#3498DB"
+!$note_main_color = "#999"
+
+' use admonition colors for other elements
+!$logic_main_color = $warning_color
+!$group_main_color = $caution_color
+!$divider_main_color = $tip_color
+
+!procedure $logic_style($var=1)
+  $styling($var, $logic_main_color, $logic_main_color, $warning_on_color) 
+!endprocedure
+
+!procedure $group_style($var=4)
+  $styling($var, $group_main_color, $group_main_color, $caution_on_color, "#FFFCFF") 
+!endprocedure
+
+!procedure $divider_style($var=1)
+  $styling($var, $divider_main_color, $divider_main_color, $tip_on_color) 
+!endprocedure
+
+!procedure $node_1_style($var=1)
+  $styling($var, $node_1_main_color, "#fff", "fff") 
+!endprocedure
+
+!procedure $node_2_style($var=1)
+  $styling($var, $node_2_main_color, "#fff", "fff", $node_2_aux2_color) 
+!endprocedure
+
+!procedure $note_1_style($var=1)
+  $styling($var, $note_main_color, "#fff", "fff") 
+!endprocedure
+
+' STYLE HELPERS
+' ========================================
+
+' get variation with color palette:
+' $main: primary fill color, typically background
+' $aux1, $aux2: add'l fill colors, typically border, alternative background
+' $on1, $on2: text colors, typically main text, supplementary
+' variations:
+' 1) regular (default)
+' 2) name reversed (label outside)
+' 3) reverse background
+' 4) light background
+' 5) border box (loop, alt)
+' 6) ...
+
+!procedure $styling($var=1, $main, $aux1, $on1, $aux2="#ccc", $on2="#666")
+  !if ($var=="2")
+    BackgroundColor $main
+    BorderColor $aux1
+    FontColor $main
+    StereotypeFontColor $main
+  !elseif ($var=="3")
+    BackgroundColor $aux1
+    BorderColor $main
+    FontColor $main
+    StereotypeFontColor $main
+  !elseif ($var==4)
+    BackgroundColor $aux2
+    BorderColor $aux1
+    FontColor $main
+  !elseif ($var=="5")
+    BackgroundColor $main
+    BorderColor $aux1
+    FontColor $main
+    HeaderFontColor $on1
+  !elseif ($var=="6")
+    BackgroundColor $on1
+    BorderColor $aux1
+    FontColor $main
+    HeaderFontColor $on1
+    HeaderBackgroundColor $aux1
+  !elseif ($var==7)
+    BackgroundColor $aux2
+    BorderColor $main
+    FontColor $main
+  !else
+    BackgroundColor $main
+    BorderColor $aux1
+    FontColor $on1
+    StereotypeFontColor $on1
+    HeaderBackgroundColor $on1
+  !endif
+  FontSize 13
+!endprocedure
+
+' GENERAL SETTINGS
+' ========================================
+
+!$body_font_family = "Roboto"
+' each element can get its own FontName, FontSize, FontStyle; not added now
+
+skinparam BackgroundColor $diagram_background_color
+skinparam DiagramBorderColor $diagram_border_color
+skinparam HyperlinkColor $link_color
+
+'skinparam monochrome true
+skinparam shadowing false
+skinparam Handwritten false
+skinparam Padding 2
+'skinparam Roundcorner 5
+
+' Setting a minimum width can make sequence diagram participants look more balanced
+skinparam minClassWidth 100
+
+skinparam Default {
+  FontColor $doc_font_color
+  FontName $body_font_family
+  FontStyle normal
+  TextAlignment center
+}
+
+skinparam Arrow {
+  Color $arrow_color
+  FontColor $arrow_color
+}
+
+skinparam Note {
+  $note_1_style()
+}
+
+' USE CASE
+' ========================================
+
+skinparam Actor {
+  $node_1_style(2)
+  ' Make actors look like in C4
+  Style awesome
+}
+
+skinparam Usecase {
+  $node_2_style()
+}
+
+skinparam Package {
+  $group_style()
+}
+
+' ACTIVITY
+' ========================================
+
+skinparam Activity {
+  $node_2_style()
+
+  StartColor $node_1_main_color
+  EndColor $node_1_main_color
+  BarColor $logic_main_color
+}
+
+skinparam ActivityDiamond {
+  $logic_style()
+}
+
+skinparam Partition {
+  $group_style()
+}
+
+skinparam Swimlane {
+  $divider_style()
+}
+
+skinparam SwimlaneTitle {
+  $divider_style(6)
+}
+
+' SEQUENCE
+' ========================================
+
+'Actor: see Use Case diagram above
+
+skinparam Participant {
+  $node_1_style()
+'  Padding 40
+}
+
+skinparam Boundary {
+  $node_1_style(3)
+}
+
+skinparam Control {
+  $node_1_style(3)
+}
+
+skinparam Entity {
+  $node_1_style(3)
+}
+
+skinparam Database {
+  $node_1_style(2)
+}
+
+skinparam Collections {
+  $node_1_style()
+}
+
+skinparam Queue {
+  $node_1_style()
+}
+
+skinparam SequenceLifeline {
+  $node_2_style(7)
+}
+
+skinparam SequenceDelay {
+  $divider_style(2)
+}
+
+skinparam SequenceDivider {
+  $divider_style()
+}
+
+skinparam SequenceGroup {
+  $logic_style(5)
+}
+
+skinparam SequenceReference {
+  $group_style(6)
+  BorderThickness 1
+}
+
+skinparam SequenceBox {
+  $group_style(4)
+'  Padding 13
+}
+
+' ========================================
+' ========================================
+
+
+' DEPLOYMENT
+' ========================================
+
+' Actor: see Use case diagram
+' Use case: see Use case diagram
+' Package: see Use case diagram (fix?)
+' Boundary: see Sequence diagram
+' Control: see Sequence diagram
+' Entity: see Sequence diagram
+' Queue: see Sequence diagram
+
+' Database: see Sequence diagram (fix?)
+' Collections: see Sequence diagram (fix?)
+
+skinparam Agent {
+  $node_2_style()
+}
+
+skinparam Person {
+  $node_1_style()
+}
+
+skinparam Artifact {
+  $node_2_style()
+}
+
+skinparam Component {
+  $node_2_style()
+}
+
+skinparam File {
+  $node_2_style()
+}
+
+skinparam Card {
+  $node_2_style()
+}
+
+skinparam Storage {
+  $node_2_style()
+}
+
+skinparam Cloud {
+  $group_style(4)
+}
+
+skinparam Frame {
+  $group_style()
+}
+
+skinparam Node {
+  $group_style()
+}
+
+' check lighter background
+skinparam Stack {
+  $node_2_style()
+}
+
+' artefact or group?
+skinparam Folder {
+  $group_style()
+}
+
+skinparam Hexagon {
+  $logic_style()
+}
+
+skinparam Interface {
+  $logic_style(3)
+}
+
+skinparam Object {
+  $node_2_style()
+'  AttributeFontColor $arrow_color
+'  EndColor $arrow_color
+'  StartColor $arrow_color
+}
+
+skinparam Rectangle {
+  $logic_style()
+}
+
+' Used in C4 models:
+skinparam Rectangle<<boundary>> {
+  $logic_style(6)
+}
+
+skinparam State {
+  $node_2_style()
+'  AttributeFontColor $arrow_color
+'  EndColor $arrow_color
+'  StartColor $arrow_color
+}
+
+!include <C4/C4_Component>
+
+System_Boundary(doc_sys, "Documentation system") {
+  System_Boundary(sources, "Content sources") {
+    Container(source_repos, "Source repositories", "git, asciidoc", "Manage documentation content files.")
+  }
+
+  System_Boundary(sitegen, "Website generator") {
+    Container_Boundary(antora, "Antora generation", "antora, asciidoctor") {
+      Component(packagejson, "package.json", "npm", "Specifies the Antora and other software components to be installed by npm.")
+      Component(dockercompose, "docker-compose.yml", "docker", "Specifies the diagram services used in local development.")
+      Component(github, "Github Action", "github", "Specifies how to generate and deploy the site via Github.")
+
+      Component(generator, "generator", "bash", "Sets the environment and generates the site.")
+      Rel_D(packagejson, generator, "provides executables for")
+      Lay_D(generator, github)
+    }
+
+    Container(ui, "User interface definition", "antora, html/css, handlebars", "Provides templates and styling for the UI.")
+    Rel_U(generator, ui, "gets the ui bundle from")
+
+    Container(kroki, "Diagram rendering service", "kroki, plantuml", "Converts diagram texts to images.")
+    Rel(dockercompose, kroki, "starts local services for")
+    Rel(generator, kroki, "processes textual diagrams via")
+    Lay_R(kroki, antora)
+  }
+  Rel_U(generator, source_repos, "gets content from")
+}
+
+System_Ext(site, "Github Pages website", "Provides generation and hosting for a documentation website.")
+Rel(github, site, "publishes site content to")
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam BackgroundColor #fff
+skinparam DiagramBorderColor #fff
+skinparam HyperlinkColor #3498DB
+
+skinparam shadowing false
+skinparam Handwritten false
+skinparam Padding 2
+
+skinparam minClassWidth 100
+
+skinparam Default {
+  FontColor $doc_font_color
+  FontName Roboto
+  FontStyle normal
+  TextAlignment center
+}
+
+skinparam Arrow {
+  Color #e91e63
+  FontColor #e91e63
+}
+
+skinparam Note {
+      BackgroundColor #999
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+
+skinparam Actor {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor #08427b
+    StereotypeFontColor #08427b
+  FontSize 13 
+  Style awesome
+}
+
+skinparam Usecase {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Package {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+
+skinparam Activity {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+
+  StartColor #08427b
+  EndColor #08427b
+  BarColor #e18114
+}
+
+skinparam ActivityDiamond {
+      BackgroundColor #e18114
+    BorderColor #e18114
+    FontColor #fff
+    StereotypeFontColor #fff
+    HeaderBackgroundColor #fff
+  FontSize 13 
+}
+
+skinparam Partition {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+skinparam Swimlane {
+      BackgroundColor #41af46
+    BorderColor #41af46
+    FontColor #fff
+    StereotypeFontColor #fff
+    HeaderBackgroundColor #fff
+  FontSize 13 
+}
+
+skinparam SwimlaneTitle {
+      BackgroundColor #fff
+    BorderColor #41af46
+    FontColor #41af46
+    HeaderFontColor #fff
+    HeaderBackgroundColor #41af46
+  FontSize 13 
+}
+
+
+
+skinparam Participant {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Boundary {
+      BackgroundColor #fff
+    BorderColor #08427b
+    FontColor #08427b
+    StereotypeFontColor #08427b
+  FontSize 13 
+}
+
+skinparam Control {
+      BackgroundColor #fff
+    BorderColor #08427b
+    FontColor #08427b
+    StereotypeFontColor #08427b
+  FontSize 13 
+}
+
+skinparam Entity {
+      BackgroundColor #fff
+    BorderColor #08427b
+    FontColor #08427b
+    StereotypeFontColor #08427b
+  FontSize 13 
+}
+
+skinparam Database {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor #08427b
+    StereotypeFontColor #08427b
+  FontSize 13 
+}
+
+skinparam Collections {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Queue {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam SequenceLifeline {
+      BackgroundColor #3498DB
+    BorderColor #1168bd
+    FontColor #1168bd
+  FontSize 13 
+}
+
+skinparam SequenceDelay {
+      BackgroundColor #41af46
+    BorderColor #41af46
+    FontColor #41af46
+    StereotypeFontColor #41af46
+  FontSize 13 
+}
+
+skinparam SequenceDivider {
+      BackgroundColor #41af46
+    BorderColor #41af46
+    FontColor #fff
+    StereotypeFontColor #fff
+    HeaderBackgroundColor #fff
+  FontSize 13 
+}
+
+skinparam SequenceGroup {
+      BackgroundColor #e18114
+    BorderColor #e18114
+    FontColor #e18114
+    HeaderFontColor #fff
+  FontSize 13 
+}
+
+skinparam SequenceReference {
+      BackgroundColor #fff
+    BorderColor #a0439c
+    FontColor #a0439c
+    HeaderFontColor #fff
+    HeaderBackgroundColor #a0439c
+  FontSize 13 
+  BorderThickness 1
+}
+
+skinparam SequenceBox {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+
+
+
+
+
+skinparam Agent {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Person {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Artifact {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Component {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam File {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Card {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Storage {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Cloud {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+skinparam Frame {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+skinparam Node {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+skinparam Stack {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Folder {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+skinparam Hexagon {
+      BackgroundColor #e18114
+    BorderColor #e18114
+    FontColor #fff
+    StereotypeFontColor #fff
+    HeaderBackgroundColor #fff
+  FontSize 13 
+}
+
+skinparam Interface {
+      BackgroundColor #e18114
+    BorderColor #e18114
+    FontColor #e18114
+    StereotypeFontColor #e18114
+  FontSize 13 
+}
+
+skinparam Object {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Rectangle {
+      BackgroundColor #e18114
+    BorderColor #e18114
+    FontColor #fff
+    StereotypeFontColor #fff
+    HeaderBackgroundColor #fff
+  FontSize 13 
+}
+
+skinparam Rectangle<<boundary>> {
+      BackgroundColor #fff
+    BorderColor #e18114
+    FontColor #e18114
+    HeaderFontColor #fff
+    HeaderBackgroundColor #e18114
+  FontSize 13 
+}
+
+skinparam State {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam LegendBorderColor transparent
+skinparam LegendBackgroundColor transparent
+skinparam LegendFontColor #FFFFFF
+
+skinparam shadowing<<legendArea>> false
+skinparam rectangle<<legendArea>> {
+    backgroundcolor #00000000
+    bordercolor #00000000
+}
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam queue {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam actor {
+    StereotypeFontSize 12
+    shadowing false
+    style awesome
+}
+
+skinparam person {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam package {
+    StereotypeFontSize 6
+    StereotypeFontColor transparent
+    FontStyle plain
+    BackgroundColor transparent
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 6
+    StereotypeFontColor transparent
+    FontColor #444444
+    BorderColor #444444
+    BackgroundColor transparent
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam database<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam queue<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam actor<<person>> {
+    StereotypeFontColor #08427B
+    FontColor #08427B
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam person<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam database<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam actor<<external_person>> {
+    StereotypeFontColor #686868
+    FontColor #686868
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam person<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam database<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam queue<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam actor<<system>> {
+    StereotypeFontColor #1168BD
+    FontColor #1168BD
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam person<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam database<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam actor<<external_system>> {
+    StereotypeFontColor #999999
+    FontColor #999999
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam person<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+
+
+
+
+sprite $person [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000025788300000000005886410000000000000
+000000000007DFFFFFFD9643347BFFFFFFFB400000000000
+0000000004EFFFFFFFFFFFFFFFFFFFFFFFFFFB1000000000
+000000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFD200000000
+00000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE10000000
+0000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB0000000
+000000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5000000
+000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD000000
+000009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF200000
+00000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF600000
+00000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF800000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00000EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF700000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+0000008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD3000000
+000000014555555555555555555555555555555300000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+sprite $person2 [48x48/16] {
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000002578888300000000005888864100000000000
+0000000007DFFFFFFFFD9643347BFFFFFFFFFB4000000000
+00000004EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB10000000
+0000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD2000000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+00003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+0000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF50000
+0003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD0000
+0009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+0009FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFF2000
+0003FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFD0000
+0000BFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFF50000
+00003FFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFB00000
+000006FFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFE100000
+0000007FFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFD2000000
+00000004EFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFB10000000
+0000000007DF8FFFFFFFFFFFFFFFFFFFFFF8FB4000000000
+000000000002578888888888888888888864100000000000
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam database<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam queue<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam actor<<container>> {
+    StereotypeFontColor #438DD5
+    FontColor #438DD5
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam person<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+
+skinparam rectangle<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam database<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam queue<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam actor<<external_container>> {
+    StereotypeFontColor #B3B3B3
+    FontColor #B3B3B3
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam person<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+skinparam database<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+skinparam queue<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+skinparam actor<<component>> {
+    StereotypeFontColor #85BBF0
+    FontColor #85BBF0
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+skinparam person<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+
+
+skinparam rectangle<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+skinparam database<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+skinparam queue<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+skinparam actor<<external_component>> {
+    StereotypeFontColor #CCCCCC
+    FontColor #CCCCCC
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+skinparam person<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+rectangle "==Documentation system\n<size:12>[System]</size>" <<boundary>> as doc_sys  {
+rectangle "==Content sources\n<size:12>[System]</size>" <<boundary>> as sources  {
+    rectangle "==Source repositories\n//<size:12>[git, asciidoc]</size>//\n\n Manage documentation content files." <<container>> as source_repos 
+  }
+
+rectangle "==Website generator\n<size:12>[System]</size>" <<boundary>> as sitegen  {
+rectangle "==Antora generation\n<size:12>[Container]</size>" <<antora, asciidoctor>><<boundary>> as antora  {
+      rectangle "==package.json\n//<size:12>[npm]</size>//\n\n Specifies the Antora and other software components to be installed by npm." <<component>> as packagejson 
+      rectangle "==docker-compose.yml\n//<size:12>[docker]</size>//\n\n Specifies the diagram services used in local development." <<component>> as dockercompose 
+      rectangle "==Github Action\n//<size:12>[github]</size>//\n\n Specifies how to generate and deploy the site via Github." <<component>> as github 
+
+      rectangle "==generator\n//<size:12>[bash]</size>//\n\n Sets the environment and generates the site." <<component>> as generator 
+      packagejson -DOWN->> generator : **provides executables for**
+      generator -[hidden]D- github
+    }
+
+    rectangle "==User interface definition\n//<size:12>[antora, html/css, handlebars]</size>//\n\n Provides templates and styling for the UI." <<container>> as ui 
+    generator -UP->> ui : **gets the ui bundle from**
+
+    rectangle "==Diagram rendering service\n//<size:12>[kroki, plantuml]</size>//\n\n Converts diagram texts to images." <<container>> as kroki 
+    dockercompose - ->> kroki : **starts local services for**
+    generator - ->> kroki : **processes textual diagrams via**
+    kroki -[hidden]R- antora
+  }
+  generator -UP->> source_repos : **gets content from**
+}
+
+rectangle "==Github Pages website\n\n Provides generation and hosting for a documentation website." <<external_system>> as site 
+github - ->> site : **publishes site content to**
+@enduml
+
+PlantUML version 1.2022.3(Tue Mar 29 16:10:57 GMT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

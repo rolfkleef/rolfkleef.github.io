@@ -211,7 +211,7 @@ There is no way to cross reference or link between the text and a specific refer
 </div>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-e4f590c86d49f5c4817775e2829cf48aba8c3580.svg" alt="Zotero subsystem overview">
+<img src="_images/diag-3da19cde97d2e7070829948c35f3e2aa97c6c1a1.svg" alt="Zotero subsystem overview">
 </div>
 <div class="title">Figure 1. Zotero subsystem overview</div>
 </div>
@@ -250,6 +250,9 @@ We use a <em>collection</em> for each page.
 <div class="paragraph">
 <p>It is possible to move collections around in Zotero without changing their identifier.
 This decouples the exact hierarchy and organisation of collections in Zotero from the documentation pages.</p>
+</div>
+<div class="paragraph">
+<p>Collections can be part of a personal library or a group library.</p>
 </div>
 <div class="imageblock kroki">
 <div class="content">
@@ -290,7 +293,14 @@ collections/JBHC442F/ module1 further-reading mytag <i class="conum" data-value=
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-The collection id can be found in the web address <a href="https://www.zotero.org/rolfkleef/collections/NAN7TETL" target="_blank" rel="noopener">when visiting the collection online</a>.
+<div class="paragraph">
+<p>The collection id can be found in the web address <a href="https://www.zotero.org/rolfkleef/collections/NAN7TETL" target="_blank" rel="noopener">when visiting the collection online</a>.</p>
+</div>
+<div class="paragraph">
+<p>Also, the <a href="https://github.com/wshanks/Zutilo/" target="_blank" rel="noopener">Zutilo addon</a> offers a way to create links to a collection
+in either the Zotero application or the Zotero website for your library.
+This is an alternative option to find the collection id.</p>
+</div>
 </td>
 </tr>
 </table>
@@ -346,7 +356,8 @@ include::partials$background-refs.html[]
 # load a series of zotero collections for an Antora documentation component
 ZAPI=https://api.zotero.org
 ZSRC=users/12345 <i class="conum" data-value="1"></i><b>(1)</b>
-CSL=https://www.drostan.org/drostan.csl <i class="conum" data-value="2"></i><b>(2)</b>
+ZKEY="Authorization: Bearer xyzxyz" <i class="conum" data-value="2"></i><b>(2)</b>
+CSL=https://www.drostan.org/drostan.csl <i class="conum" data-value="3"></i><b>(3)</b>
 
 if [[ -e antora.yml &amp;&amp; -e zotero ]]; then
   cat zotero | while read zget module partial tag; do
@@ -357,11 +368,19 @@ if [[ -e antora.yml &amp;&amp; -e zotero ]]; then
       with_tag=
       p_tag=
     fi
-    echo "Getting $zget/items$with_tag and putting into $module/partials/$partial.html"
-    mkdir -p "modules/$module/partials" 
-    curl -sS "$ZAPI/$ZSRC/${zget}items?format=bib&amp;linkwrap=1$p_tag&amp;itemType=-attachment&amp;style=$CSL" -o "modules/$module/partials/$partial.html"
+    echo "Getting ${zget}items$with_tag and putting into $module/partials/$partial.html"
+    mkdir -p "modules/$module/partials"
+    curl -sS -H "$ZKEY" "$ZAPI/$ZSRC/${zget}items?format=bib&amp;linkwrap=1$p_tag&amp;itemType=-attachment&amp;style=$CSL" -o "modules/$module/partials/$partial.html"
     echo "Appending COinS info"
-    curl -sS "$ZAPI/$ZSRC/${zget}items?format=coins$p_tag&amp;itemType=-attachment" &gt;&gt; "modules/$module/partials/$partial.html"
+    curl -sS -H "$ZKEY" "$ZAPI/$ZSRC/${zget}items?format=coins$p_tag&amp;itemType=-attachment" &gt;&gt; "modules/$module/partials/$partial.html"
+
+    echo "Include references with:" <i class="conum" data-value="4"></i><b>(4)</b>
+    echo -e "\n[bibliography]"
+    echo -e "== Background references\n"
+
+    echo "++++"
+    echo "include::partial\$$partial.html[]"
+    echo -e "++++\n"
   done
 fi</code></pre>
 </div>
@@ -370,11 +389,20 @@ fi</code></pre>
 <table>
 <tr>
 <td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>Replace <code>12345</code> with the appropriate user id. The user id can be found <a href="https://www.zotero.org/settings/keys" target="_blank" rel="noopener">on Zotero&#8217;s Feeds/API settings page</a>.</td>
+<td>Choose between 'users' and 'groups', and replace <code>12345</code> with the appropriate user or group id.
+The user id can be found <a href="https://www.zotero.org/settings/keys" target="_blank" rel="noopener">on Zotero&#8217;s Feeds/API settings page</a>.</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>When using a group library, add an API key to get access.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
 <td>Replace the URL of the CSL file with the desired style definition.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>Print an Asciidoc snippet for a collection, that can be included in a page.</td>
 </tr>
 </table>
 </div>

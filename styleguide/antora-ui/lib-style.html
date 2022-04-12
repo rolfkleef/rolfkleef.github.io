@@ -208,41 +208,6 @@ images, snippets, examples, and so on.</p>
 <h2 id="_adding_the_style_library_to_a_site"><a class="anchor" href="#_adding_the_style_library_to_a_site"></a>Adding the style library to a site</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The easiest way is to add the styleguide repository as git submodule to the repository containing the Antora playbook.</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>$ git submodule add https://gitlab.com/rolfkleef/drostan-styleguide.git styleguide</pre>
-</div>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Adding the styleguide as submodule will make other style elements available:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>A PlantUML configuration file that can be inserted in each diagram, to create consistent styling.</p>
-</li>
-<li>
-<p>Vale style libraries to check writing style.</p>
-</li>
-<li>
-<p>CSL definitions to use in Zotero bibliography exports.</p>
-</li>
-</ul>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
 <p>In the playbook, add the library component repository like below:</p>
 </div>
 <div class="listingblock">
@@ -256,7 +221,11 @@ content:
     start_paths:
     - docs/component1
     - docs/component2
-    - styleguide/lib/antora
+
+  - url: https://gitlab.com/rolfkleef/drostan-styleguide.git
+    branches: main
+    start_paths:
+    - lib/antora
 
 # ...</code></pre>
 </div>
@@ -305,6 +274,64 @@ I am an example library item taken from the style guide.
 </div>
 </div>
 </div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_adding_the_style_library_as_git_submodule"><a class="anchor" href="#_adding_the_style_library_as_git_submodule"></a>Adding the style library as git submodule</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can also add the styleguide repository as git submodule to the repository containing the Antora playbook.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ git submodule add https://gitlab.com/rolfkleef/drostan-styleguide.git styleguide</pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Adding the styleguide as submodule will make other style elements available:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A PlantUML configuration file that can be inserted in each diagram, to create consistent styling.</p>
+</li>
+<li>
+<p>Vale style libraries to check writing style.</p>
+</li>
+<li>
+<p>CSL definitions to use in Zotero bibliography exports.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>It appears that using a git submodule as start path in the playbook does not work.</p>
+</div>
+<div class="paragraph">
+<p>Also, using the submodule directory as git source does not work:
+the directory does not contain a regular git directory.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>

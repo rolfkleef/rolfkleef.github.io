@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Spreadsheets2IATI :: Dataworkbench</title>
     <link rel="prev" href="../xspec-tests.html">
-    <link rel="next" href="date-formats.html">
+    <link rel="next" href="reference/date-formats.html">
     <meta name="generator" content="Antora 3.0.0">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
@@ -77,7 +77,16 @@
     <a class="nav-link" href="index.html">Spreadsheets2IATI</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="date-formats.html">Date formats</a>
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Reference</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/date-formats.html">Date formats</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/client-configuration.html">Client configuration</a>
+  </li>
+</ul>
   </li>
 </ul>
   </li>
@@ -125,13 +134,13 @@
       </ul>
     </li>
     <li class="component is-current">
-      <a class="title" href="../../1.4.0-aida/index.html">IATI Workbench</a>
+      <a class="title" href="../../1.5.1/index.html">IATI Workbench</a>
       <ul class="versions">
         <li class="version is-current">
           <a href="../index.html">next</a>
         </li>
         <li class="version is-latest">
-          <a href="../../1.4.0-aida/index.html">1.4.0-aida</a>
+          <a href="../../1.5.1/index.html">1.5.1</a>
         </li>
       </ul>
     </li>
@@ -151,7 +160,7 @@
 <main class="article">
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
-  <a href="../../1.4.0-aida/index.html" class="home-link"></a>
+  <a href="../../1.5.1/index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../index.html">IATI Workbench</a></li>
@@ -162,7 +171,7 @@
   <button class="version-menu-toggle" title="Show other versions of page">next</button>
   <div class="version-menu">
     <a class="version is-current" href="index.html">next</a>
-    <a class="version" href="../../1.4.0-aida/spreadsheets2iati/index.html">1.4.0-aida</a>
+    <a class="version" href="../../1.5.1/spreadsheets2iati/index.html">1.5.1</a>
   </div>
 </div>
   <div class="edit-this-page"><a href="https://github.com/data4development/iati-workbench/edit/develop/docs/modules/spreadsheets2iati/pages/index.adoc" target="_blank">Edit this Page</a></div>
@@ -214,7 +223,7 @@ for IATI activities and IATI organisations.</p>
 </div>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-0d22f86bebcb5e14abc0d60d52a97bced38b7700.svg" alt="Sequence for `s2i-run`">
+<img src="_images/diag-d3f91754896a94f5e04a6221c8f43e0dbd571335.svg" alt="Sequence for `s2i-run`">
 </div>
 <div class="title">Figure 1. Sequence for <code>s2i-run</code></div>
 </div>
@@ -229,17 +238,17 @@ This makes it possible to extend or override the process in a particular workspa
 </div>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-6bf1e62a7deff2fb3f509d48fca56eb4a6149718.svg" alt="Diagram">
+<img src="_images/diag-400372e9b3ff6ec0a246b5573b9bb8bfb46c7a30.svg" alt="Diagram">
 </div>
 </div>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-b0189675d4366655fb5113d2d32bb3a49255c46e.svg" alt="Diagram">
+<img src="_images/diag-a34ac9033761d99a9fefecfe29f53166cec16d8e.svg" alt="Diagram">
 </div>
 </div>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-61f92405eeca23b0da5f2b2311fed1a0cb14c29d.svg" alt="Diagram">
+<img src="_images/diag-befccf92ea75f6dbaa31ac68591d9aab39bb15d0.svg" alt="Diagram">
 </div>
 </div>
 </div>
@@ -264,7 +273,7 @@ and prepares them for processing, in a flat folder.</p>
 </div>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-7f76b1b9d34d5a8082b82686ac56055e31f0f88a.svg" alt="Diagram">
+<img src="_images/diag-239a0b208ec2b519b8463f471a600d322a3fcadb.svg" alt="Diagram">
 </div>
 </div>
 </div>
@@ -277,7 +286,7 @@ but contain the IATI representation for the particular input file.</p>
 </div>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-a50403b5d4366a8693cdeef4007f06cc7b72622c.svg" alt="Diagram">
+<img src="_images/diag-fde3dab15c7ffd785ec33ae05b8a3783565af8c7.svg" alt="Diagram">
 </div>
 </div>
 </div>
@@ -295,7 +304,7 @@ and one file with activities that contain validation errors.</p>
 </div>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-ff57e0134be025ef629126b745ec86baad24b48f.svg" alt="Diagram">
+<img src="_images/diag-1b557832c9e0ae75ce24c3866ec49d3dbf277ff2.svg" alt="Diagram">
 </div>
 </div>
 </div>
@@ -308,7 +317,7 @@ or known issues (like an identifier NL-KvK-&#8230;&#8203; with lowercase "v").</
 </div>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-1e5082ee90d6afbc45b79217da715cca4f374c1a.svg" alt="Diagram">
+<img src="_images/diag-b472abbfe3c08099a5df7088ca84a81edfbea02c.svg" alt="Diagram">
 </div>
 </div>
 </div>
@@ -320,7 +329,7 @@ and publishes it online on the dataworkbench.io website.</p>
 </div>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-35d0a57b80151151027e9671b01459e2d255c6fc.svg" alt="Diagram">
+<img src="_images/diag-38f1fddd162ba74acf3e037e4049ce9ca84758da.svg" alt="Diagram">
 </div>
 </div>
 </div>
@@ -351,7 +360,7 @@ we need to run a validation and then filter activities.</p>
 </div>
 <nav class="pagination">
   <span class="prev"><a href="../xspec-tests.html">Xspec tests</a></span>
-  <span class="next"><a href="date-formats.html">Date formats</a></span>
+  <span class="next"><a href="reference/date-formats.html">Date formats</a></span>
 </nav>
 </article>
   </div>

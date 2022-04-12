@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="656px" preserveAspectRatio="none" style="width:543px;height:656px;background:#FFFFFF;" version="1.1" viewBox="0 0 543 656" width="543px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="654" style="stroke:#FFFFFF;stroke-width:1.0;" width="541.75" x="0" y="0"/><rect fill="#FFFFFF" height="30.7999" style="stroke:#00000000;stroke-width:1.0;" width="233" x="153.875" y="15"/><text fill="#41AF46" font-family="Roboto" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="219" x="160.875" y="35.9999">In the IATI Workbench container</text><ellipse cx="272.25" cy="61.7999" fill="#F1F1F1" rx="10" ry="10" style="stroke:#181818;stroke-width:0.5;"/><path d="M272.2656,58.0812 Q271.2656,58.0812 270.8906,58.6281 Q270.5313,59.1593 270.5,60.0656 L269.3594,60.0656 Q269.4219,57.0812 272.25,57.0812 Q273.5625,57.0812 274.3125,57.7687 Q275.0625,58.4406 275.0625,59.6124 Q275.0625,61.0187 273.7656,61.5343 Q274.5938,61.8156 274.9531,62.3312 Q275.3281,62.8468 275.3281,63.7218 Q275.3281,65.0343 274.4688,65.8156 Q273.625,66.5968 272.2031,66.5968 Q269.375,66.5968 269.1719,63.6281 L270.3125,63.6281 Q270.375,64.6281 270.8438,65.1124 Q271.3125,65.5812 272.25,65.5812 Q273.1406,65.5812 273.6406,65.0968 Q274.1563,64.6124 274.1563,63.7374 Q274.1563,62.0656 272.25,62.0656 L271.7656,62.0812 L271.625,62.0812 L271.625,61.0968 Q272.8594,61.0812 273.375,60.7999 Q273.8906,60.5031 273.8906,59.6593 Q273.8906,58.9249 273.4531,58.5031 Q273.0156,58.0812 272.2656,58.0812 Z " fill="#FFFFFF"/><rect fill="#A0439C" height="39.6" rx="12.5" ry="12.5" style="stroke:#FFFFFF;stroke-width:0.5;" width="119" x="212.75" y="91.7999"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="95" x="224.75" y="116.7999">gather-input-files</text><rect fill="#E18114" height="6" rx="2.5" ry="2.5" style="stroke:#E18114;stroke-width:1.0;" width="521.75" x="11" y="151.3999"/><rect fill="#FFFCFF" height="411.6001" style="stroke:#A0439C;stroke-width:1.5;" width="291.5" x="23" y="167.3999"/><path d="M117,167.3999 L117,180 L107,190 L23,190 " fill="none" style="stroke:#A0439C;stroke-width:1.5;"/><text fill="#A0439C" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="80" x="28" y="183.4">sheets-csvxml</text><rect fill="#E18114" height="6" rx="2.5" ry="2.5" style="stroke:#E18114;stroke-width:1.0;" width="235" x="69.5" y="207"/><rect fill="#08427B" height="39.6" style="stroke:#FFFFFF;stroke-width:0.5;" width="96" x="83.5" y="233"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="69" x="95.5" y="258">input/*.xsl{x}</text><rect fill="#1168BD" height="39.6" rx="12.5" ry="12.5" style="stroke:#FFFFFF;stroke-width:0.5;" width="77" x="93" y="307.6"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="53" x="105" y="332.6">excel-csv</text><rect fill="#08427B" height="39.6" style="stroke:#FFFFFF;stroke-width:0.5;" width="77" x="93" y="367.2"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="53" x="105" y="392.2">tmp/*.csv</text><rect fill="#08427B" height="39.6" style="stroke:#FFFFFF;stroke-width:0.5;" width="83" x="207.5" y="233"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="59" x="219.5" y="258">input/*.csv</text><rect fill="#1168BD" height="39.6" rx="12.5" ry="12.5" style="stroke:#FFFFFF;stroke-width:0.5;" width="66" x="216" y="307.6"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="42" x="228" y="332.6">csv-csv</text><rect fill="#08427B" height="39.6" style="stroke:#FFFFFF;stroke-width:0.5;" width="77" x="210.5" y="367.2"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="53" x="222.5" y="392.2">tmp/*.csv</text><rect fill="#E18114" height="6" rx="2.5" ry="2.5" style="stroke:#E18114;stroke-width:1.0;" width="235" x="69.5" y="426.8"/><path d="M33,472.8 L33,502.4 A0,0 0 0 0 33,502.4 L124,502.4 A0,0 0 0 0 124,502.4 L124,491.6 L144,487.6 L124,483.6 L124,482.8 L114,472.8 L33,472.8 A0,0 0 0 0 33,472.8 " fill="#999999" style="stroke:#181818;stroke-width:0.5;"/><path d="M114,472.8 L114,482.8 L124,482.8 L114,472.8 " fill="#999999" style="stroke:#181818;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="66" x="41" y="492.8">using basex</text><rect fill="#1168BD" height="39.6" rx="12.5" ry="12.5" style="stroke:#FFFFFF;stroke-width:0.5;" width="86" x="144" y="467.8"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="62" x="156" y="492.8">csv-csvxml</text><rect fill="#08427B" height="39.6" style="stroke:#FFFFFF;stroke-width:0.5;" width="100" x="137" y="527.4"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="76" x="149" y="552.4">tmp/*.csv.xml</text><rect fill="#FFFCFF" height="233.4001" style="stroke:#A0439C;stroke-width:1.5;" width="179" x="341.75" y="268"/><path d="M441.75,268 L441.75,280.6 L431.75,290.6 L341.75,290.6 " fill="none" style="stroke:#A0439C;stroke-width:1.5;"/><text fill="#A0439C" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="86" x="346.75" y="284">collect-iati-files</text><rect fill="#08427B" height="39.6" style="stroke:#FFFFFF;stroke-width:0.5;" width="159" x="351.75" y="307.6"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="132" x="363.75" y="332.6">input/**/*.{iati|akvo}.xml</text><rect fill="#1168BD" height="39.6" rx="12.5" ry="12.5" style="stroke:#FFFFFF;stroke-width:0.5;" width="51" x="405.75" y="367.2"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="27" x="417.75" y="392.2">copy</text><rect fill="#08427B" height="39.6" style="stroke:#FFFFFF;stroke-width:0.5;" width="139" x="361.75" y="441.8"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="112" x="373.75" y="466.8">tmp/*.{iati|akvo}.xml</text><rect fill="#E18114" height="6" rx="2.5" ry="2.5" style="stroke:#E18114;stroke-width:1.0;" width="521.75" x="11" y="599"/><ellipse cx="272.25" cy="635" fill="#F1F1F1" rx="10" ry="10" style="stroke:#181818;stroke-width:0.5;"/><path d="M272.5,637.2969 L268.6094,637.2969 L268.6094,636.0781 L272.7969,630.2813 L273.6406,630.2813 L273.6406,636.2656 L275.0156,636.2656 L275.0156,637.2969 L273.6406,637.2969 L273.6406,639.5 L272.5,639.5 L272.5,637.2969 Z M272.5,636.2656 L272.5,632.2344 L269.6094,636.2656 L272.5,636.2656 Z " fill="#FFFFFF"/><line style="stroke:#E91E63;stroke-width:1.0;" x1="272.25" x2="272.25" y1="71.7999" y2="91.7999"/><polygon fill="#E91E63" points="268.25,81.7999,272.25,91.7999,276.25,81.7999,272.25,85.7999" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.0;" x1="131.5" x2="131.5" y1="272.6" y2="307.6"/><polygon fill="#E91E63" points="127.5,297.6,131.5,307.6,135.5,297.6,131.5,301.6" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.0;" x1="131.5" x2="131.5" y1="347.2" y2="367.2"/><polygon fill="#E91E63" points="127.5,357.2,131.5,367.2,135.5,357.2,131.5,361.2" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.0;" x1="249" x2="249" y1="272.6" y2="307.6"/><polygon fill="#E91E63" points="245,297.6,249,307.6,253,297.6,249,301.6" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.0;" x1="249" x2="249" y1="347.2" y2="367.2"/><polygon fill="#E91E63" points="245,357.2,249,367.2,253,357.2,249,361.2" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.0;" x1="131.5" x2="131.5" y1="213" y2="233"/><polygon fill="#E91E63" points="127.5,223,131.5,233,135.5,223,131.5,227" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.0;" x1="249" x2="249" y1="213" y2="233"/><polygon fill="#E91E63" points="245,223,249,233,253,223,249,227" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.0;" x1="131.5" x2="131.5" y1="406.8" y2="426.8"/><polygon fill="#E91E63" points="127.5,416.8,131.5,426.8,135.5,416.8,131.5,420.8" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.0;" x1="249" x2="249" y1="406.8" y2="426.8"/><polygon fill="#E91E63" points="245,416.8,249,426.8,253,416.8,249,420.8" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.0;" x1="187" x2="187" y1="432.8" y2="467.8"/><polygon fill="#E91E63" points="183,457.8,187,467.8,191,457.8,187,461.8" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.0;" x1="187" x2="187" y1="507.4" y2="527.4"/><polygon fill="#E91E63" points="183,517.4,187,527.4,191,517.4,187,521.4" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.0;" x1="431.25" x2="431.25" y1="347.2" y2="367.2"/><polygon fill="#E91E63" points="427.25,357.2,431.25,367.2,435.25,357.2,431.25,361.2" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.0;" x1="431.25" x2="431.25" y1="406.8" y2="441.8"/><polygon fill="#E91E63" points="427.25,431.8,431.25,441.8,435.25,431.8,431.25,435.8" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="187" x2="187" y1="157.3999" y2="207"/><polygon fill="#FFFFFF" points="183,197,187,207,191,197,187,201" style="stroke:#FFFFFF;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.0;" x1="431.25" x2="431.25" y1="157.3999" y2="307.6"/><polygon fill="#E91E63" points="427.25,297.6,431.25,307.6,435.25,297.6,431.25,301.6" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.0;" x1="187" x2="187" y1="567" y2="599"/><polygon fill="#E91E63" points="183,589,187,599,191,589,187,593" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.0;" x1="431.25" x2="431.25" y1="481.4" y2="599"/><polygon fill="#E91E63" points="427.25,589,431.25,599,435.25,589,431.25,593" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.0;" x1="272.25" x2="272.25" y1="131.3999" y2="151.3999"/><polygon fill="#E91E63" points="268.25,141.3999,272.25,151.3999,276.25,141.3999,272.25,145.3999" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.0;" x1="272.25" x2="272.25" y1="605" y2="625"/><polygon fill="#E91E63" points="268.25,615,272.25,625,276.25,615,272.25,619" style="stroke:#E91E63;stroke-width:1.0;"/><!--MD5=[d866cc56f5a1a830b3f99771155fbec0]
+@startuml
+' Styling settings for PlantUML diagrams
+' See http://plantuml.sourceforge.net for documentation
+' To get a list of possible skinparam settings, run: plantuml -language
+
+' COLORS
+' ========================================
+
+' general colors from own stylesheet
+!$diagram_background_color = "#fff"
+!$diagram_border_color = "#fff"
+!$diagram_color = "#808080"
+!$arrow_color = "#e91e63"
+!$link_color = "#3498DB"
+
+' make admonition colors available for elements
+!$caution_color = "#a0439c"
+!$caution_on_color = "#fff"
+!$important_color = "#d32f2f"
+!$important_on_color = "#fff"
+!$note_color = "#217ee7"
+!$note_on_color = "#fff"
+!$tip_color = "#41af46"
+!$tip_on_color = "#fff"
+!$warning_color = "#e18114"
+!$warning_on_color = "#fff"
+
+' node_1, node_2 and note taken from C4 styling
+!$node_1_main_color = "#08427b"
+!$node_2_main_color = "#1168bd"
+!$node_2_aux2_color = "#3498DB"
+!$note_main_color = "#999"
+
+' use admonition colors for other elements
+!$logic_main_color = $warning_color
+!$group_main_color = $caution_color
+!$divider_main_color = $tip_color
+
+!procedure $logic_style($var=1)
+  $styling($var, $logic_main_color, $logic_main_color, $warning_on_color) 
+!endprocedure
+
+!procedure $group_style($var=4)
+  $styling($var, $group_main_color, $group_main_color, $caution_on_color, "#FFFCFF") 
+!endprocedure
+
+!procedure $divider_style($var=1)
+  $styling($var, $divider_main_color, $divider_main_color, $tip_on_color) 
+!endprocedure
+
+!procedure $node_1_style($var=1)
+  $styling($var, $node_1_main_color, "#fff", "fff") 
+!endprocedure
+
+!procedure $node_2_style($var=1)
+  $styling($var, $node_2_main_color, "#fff", "fff", $node_2_aux2_color) 
+!endprocedure
+
+!procedure $note_1_style($var=1)
+  $styling($var, $note_main_color, "#fff", "fff") 
+!endprocedure
+
+' STYLE HELPERS
+' ========================================
+
+' get variation with color palette:
+' $main: primary fill color, typically background
+' $aux1, $aux2: add'l fill colors, typically border, alternative background
+' $on1, $on2: text colors, typically main text, supplementary
+' variations:
+' 1) regular (default)
+' 2) name reversed (label outside)
+' 3) reverse background
+' 4) light background
+' 5) border box (loop, alt)
+' 6) ...
+
+!procedure $styling($var=1, $main, $aux1, $on1, $aux2="#ccc", $on2="#666")
+  !if ($var=="2")
+    BackgroundColor $main
+    BorderColor $aux1
+    FontColor $main
+    StereotypeFontColor $main
+  !elseif ($var=="3")
+    BackgroundColor $aux1
+    BorderColor $main
+    FontColor $main
+    StereotypeFontColor $main
+  !elseif ($var==4)
+    BackgroundColor $aux2
+    BorderColor $aux1
+    FontColor $main
+  !elseif ($var=="5")
+    BackgroundColor $main
+    BorderColor $aux1
+    FontColor $main
+    HeaderFontColor $on1
+  !elseif ($var=="6")
+    BackgroundColor $on1
+    BorderColor $aux1
+    FontColor $main
+    HeaderFontColor $on1
+    HeaderBackgroundColor $aux1
+  !elseif ($var==7)
+    BackgroundColor $aux2
+    BorderColor $main
+    FontColor $main
+  !else
+    BackgroundColor $main
+    BorderColor $aux1
+    FontColor $on1
+    StereotypeFontColor $on1
+    HeaderBackgroundColor $on1
+  !endif
+  FontSize 13
+!endprocedure
+
+' GENERAL SETTINGS
+' ========================================
+
+!$body_font_family = "Roboto"
+' each element can get its own FontName, FontSize, FontStyle; not added now
+
+skinparam BackgroundColor $diagram_background_color
+skinparam DiagramBorderColor $diagram_border_color
+skinparam HyperlinkColor $link_color
+
+'skinparam monochrome true
+skinparam shadowing false
+skinparam Handwritten false
+skinparam Padding 2
+'skinparam Roundcorner 5
+
+' Setting a minimum width can make sequence diagram participants look more balanced
+skinparam minClassWidth 100
+
+skinparam Default {
+  FontColor $doc_font_color
+  FontName $body_font_family
+  FontStyle normal
+  TextAlignment center
+}
+
+skinparam Arrow {
+  Color $arrow_color
+  FontColor $arrow_color
+}
+
+skinparam Note {
+  $note_1_style()
+}
+
+' USE CASE
+' ========================================
+
+skinparam Actor {
+  $node_1_style(2)
+  ' Make actors look like in C4
+  Style awesome
+}
+
+skinparam Usecase {
+  $node_2_style()
+}
+
+skinparam Package {
+  $group_style()
+}
+
+' ACTIVITY
+' ========================================
+
+skinparam Activity {
+  $node_2_style()
+
+  StartColor $node_1_main_color
+  EndColor $node_1_main_color
+  BarColor $logic_main_color
+}
+
+skinparam ActivityDiamond {
+  $logic_style()
+}
+
+skinparam Partition {
+  $group_style()
+}
+
+skinparam Swimlane {
+  $divider_style()
+}
+
+skinparam SwimlaneTitle {
+  $divider_style(6)
+}
+
+' SEQUENCE
+' ========================================
+
+'Actor: see Use Case diagram above
+
+skinparam Participant {
+  $node_1_style()
+'  Padding 40
+}
+
+skinparam Boundary {
+  $node_1_style(3)
+}
+
+skinparam Control {
+  $node_1_style(3)
+}
+
+skinparam Entity {
+  $node_1_style(3)
+}
+
+skinparam Database {
+  $node_1_style(2)
+}
+
+skinparam Collections {
+  $node_1_style()
+}
+
+skinparam Queue {
+  $node_1_style()
+}
+
+skinparam SequenceLifeline {
+  $node_2_style(7)
+}
+
+skinparam SequenceDelay {
+  $divider_style(2)
+}
+
+skinparam SequenceDivider {
+  $divider_style()
+}
+
+skinparam SequenceGroup {
+  $logic_style(5)
+}
+
+skinparam SequenceReference {
+  $group_style(6)
+  BorderThickness 1
+}
+
+skinparam SequenceBox {
+  $group_style(4)
+'  Padding 13
+}
+
+' ========================================
+' ========================================
+
+
+' DEPLOYMENT
+' ========================================
+
+' Actor: see Use case diagram
+' Use case: see Use case diagram
+' Package: see Use case diagram (fix?)
+' Boundary: see Sequence diagram
+' Control: see Sequence diagram
+' Entity: see Sequence diagram
+' Queue: see Sequence diagram
+
+' Database: see Sequence diagram (fix?)
+' Collections: see Sequence diagram (fix?)
+
+skinparam Agent {
+  $node_2_style()
+}
+
+skinparam Person {
+  $node_1_style()
+}
+
+skinparam Artifact {
+  $node_2_style()
+}
+
+skinparam Component {
+  $node_2_style()
+}
+
+skinparam File {
+  $node_2_style()
+}
+
+skinparam Card {
+  $node_2_style()
+}
+
+skinparam Storage {
+  $node_2_style()
+}
+
+skinparam Cloud {
+  $group_style(4)
+}
+
+skinparam Frame {
+  $group_style()
+}
+
+skinparam Node {
+  $group_style()
+}
+
+' check lighter background
+skinparam Stack {
+  $node_2_style()
+}
+
+' artefact or group?
+skinparam Folder {
+  $group_style()
+}
+
+skinparam Hexagon {
+  $logic_style()
+}
+
+skinparam Interface {
+  $logic_style(3)
+}
+
+skinparam Object {
+  $node_2_style()
+'  AttributeFontColor $arrow_color
+'  EndColor $arrow_color
+'  StartColor $arrow_color
+}
+
+skinparam Rectangle {
+  $logic_style()
+}
+
+' Used in C4 models:
+skinparam Rectangle<<boundary>> {
+  $logic_style(6)
+}
+
+skinparam State {
+  $node_2_style()
+'  AttributeFontColor $arrow_color
+'  EndColor $arrow_color
+'  StartColor $arrow_color
+}
+
+skinparam TitleFontColor $divider_main_color
+title In the IATI Workbench container
+(3)
+$group_main_color:gather-input-files;
+fork
+  partition sheets-csvxml {
+    fork
+      $node_1_main_color:input/*.xsl{x} ]
+      :excel-csv;
+      $node_1_main_color:tmp/*.csv]
+    fork again
+      $node_1_main_color:input/*.csv]
+      :csv-csv;
+      $node_1_main_color:tmp/*.csv]
+    end fork
+
+    :csv-csvxml;
+    note: using basex
+    $node_1_main_color:tmp/*.csv.xml]
+  }
+fork again
+  partition collect-iati-files {
+    $node_1_main_color:input/**/*.{iati|akvo}.xml ]
+    :copy;
+    $node_1_main_color:tmp/*.{iati|akvo}.xml ]
+  }
+end fork
+(4)
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam BackgroundColor #fff
+skinparam DiagramBorderColor #fff
+skinparam HyperlinkColor #3498DB
+
+skinparam shadowing false
+skinparam Handwritten false
+skinparam Padding 2
+
+skinparam minClassWidth 100
+
+skinparam Default {
+  FontColor $doc_font_color
+  FontName Roboto
+  FontStyle normal
+  TextAlignment center
+}
+
+skinparam Arrow {
+  Color #e91e63
+  FontColor #e91e63
+}
+
+skinparam Note {
+      BackgroundColor #999
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+
+skinparam Actor {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor #08427b
+    StereotypeFontColor #08427b
+  FontSize 13 
+  Style awesome
+}
+
+skinparam Usecase {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Package {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+
+skinparam Activity {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+
+  StartColor #08427b
+  EndColor #08427b
+  BarColor #e18114
+}
+
+skinparam ActivityDiamond {
+      BackgroundColor #e18114
+    BorderColor #e18114
+    FontColor #fff
+    StereotypeFontColor #fff
+    HeaderBackgroundColor #fff
+  FontSize 13 
+}
+
+skinparam Partition {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+skinparam Swimlane {
+      BackgroundColor #41af46
+    BorderColor #41af46
+    FontColor #fff
+    StereotypeFontColor #fff
+    HeaderBackgroundColor #fff
+  FontSize 13 
+}
+
+skinparam SwimlaneTitle {
+      BackgroundColor #fff
+    BorderColor #41af46
+    FontColor #41af46
+    HeaderFontColor #fff
+    HeaderBackgroundColor #41af46
+  FontSize 13 
+}
+
+
+
+skinparam Participant {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Boundary {
+      BackgroundColor #fff
+    BorderColor #08427b
+    FontColor #08427b
+    StereotypeFontColor #08427b
+  FontSize 13 
+}
+
+skinparam Control {
+      BackgroundColor #fff
+    BorderColor #08427b
+    FontColor #08427b
+    StereotypeFontColor #08427b
+  FontSize 13 
+}
+
+skinparam Entity {
+      BackgroundColor #fff
+    BorderColor #08427b
+    FontColor #08427b
+    StereotypeFontColor #08427b
+  FontSize 13 
+}
+
+skinparam Database {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor #08427b
+    StereotypeFontColor #08427b
+  FontSize 13 
+}
+
+skinparam Collections {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Queue {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam SequenceLifeline {
+      BackgroundColor #3498DB
+    BorderColor #1168bd
+    FontColor #1168bd
+  FontSize 13 
+}
+
+skinparam SequenceDelay {
+      BackgroundColor #41af46
+    BorderColor #41af46
+    FontColor #41af46
+    StereotypeFontColor #41af46
+  FontSize 13 
+}
+
+skinparam SequenceDivider {
+      BackgroundColor #41af46
+    BorderColor #41af46
+    FontColor #fff
+    StereotypeFontColor #fff
+    HeaderBackgroundColor #fff
+  FontSize 13 
+}
+
+skinparam SequenceGroup {
+      BackgroundColor #e18114
+    BorderColor #e18114
+    FontColor #e18114
+    HeaderFontColor #fff
+  FontSize 13 
+}
+
+skinparam SequenceReference {
+      BackgroundColor #fff
+    BorderColor #a0439c
+    FontColor #a0439c
+    HeaderFontColor #fff
+    HeaderBackgroundColor #a0439c
+  FontSize 13 
+  BorderThickness 1
+}
+
+skinparam SequenceBox {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+
+
+
+
+
+skinparam Agent {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Person {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Artifact {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Component {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam File {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Card {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Storage {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Cloud {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+skinparam Frame {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+skinparam Node {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+skinparam Stack {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Folder {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+skinparam Hexagon {
+      BackgroundColor #e18114
+    BorderColor #e18114
+    FontColor #fff
+    StereotypeFontColor #fff
+    HeaderBackgroundColor #fff
+  FontSize 13 
+}
+
+skinparam Interface {
+      BackgroundColor #e18114
+    BorderColor #e18114
+    FontColor #e18114
+    StereotypeFontColor #e18114
+  FontSize 13 
+}
+
+skinparam Object {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Rectangle {
+      BackgroundColor #e18114
+    BorderColor #e18114
+    FontColor #fff
+    StereotypeFontColor #fff
+    HeaderBackgroundColor #fff
+  FontSize 13 
+}
+
+skinparam Rectangle<<boundary>> {
+      BackgroundColor #fff
+    BorderColor #e18114
+    FontColor #e18114
+    HeaderFontColor #fff
+    HeaderBackgroundColor #e18114
+  FontSize 13 
+}
+
+skinparam State {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam TitleFontColor #41af46
+title In the IATI Workbench container
+(3)
+#a0439c:gather-input-files;
+fork
+  partition sheets-csvxml {
+    fork
+      #08427b:input/*.xsl{x} ]
+      :excel-csv;
+      #08427b:tmp/*.csv]
+    fork again
+      #08427b:input/*.csv]
+      :csv-csv;
+      #08427b:tmp/*.csv]
+    end fork
+
+    :csv-csvxml;
+    note: using basex
+    #08427b:tmp/*.csv.xml]
+  }
+fork again
+  partition collect-iati-files {
+    #08427b:input/**/*.{iati|akvo}.xml ]
+    :copy;
+    #08427b:tmp/*.{iati|akvo}.xml ]
+  }
+end fork
+(4)
+@enduml
+
+PlantUML version 1.2022.3(Tue Mar 29 16:10:57 GMT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

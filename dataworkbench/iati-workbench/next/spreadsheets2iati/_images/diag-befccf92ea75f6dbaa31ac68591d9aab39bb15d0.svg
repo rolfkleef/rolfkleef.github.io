@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="197px" preserveAspectRatio="none" style="width:326px;height:197px;background:#FFFFFF;" version="1.1" viewBox="0 0 326 197" width="326px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="196" style="stroke:#FFFFFF;stroke-width:1.0;" width="324" x="0" y="0"/><rect fill="#FFFFFF" height="30.7999" style="stroke:#00000000;stroke-width:1.0;" width="130" x="96.5" y="15"/><text fill="#41AF46" font-family="Roboto" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="116" x="103.5" y="35.9999">In the workspace</text><ellipse cx="248.5" cy="61.7999" fill="#F1F1F1" rx="10" ry="10" style="stroke:#181818;stroke-width:0.5;"/><path d="M246.1563,60.0343 Q246.2344,56.8312 249.1875,56.8312 Q250.5,56.8312 251.3125,57.5968 Q252.1406,58.3468 252.1406,59.5343 Q252.1406,61.2531 250.1875,62.3156 L248.8906,63.0187 Q248.0469,63.4718 247.6719,63.9093 Q247.3125,64.3312 247.2344,64.9249 L252.0781,64.9249 L252.0781,66.0499 L245.9375,66.0499 Q246.0156,64.5343 246.5469,63.7062 Q247.0938,62.8781 248.5313,62.0656 L249.7188,61.3781 Q250.9688,60.6749 250.9688,59.5656 Q250.9688,58.8156 250.4531,58.3312 Q249.9375,57.8312 249.1563,57.8312 Q247.4219,57.8312 247.2969,60.0343 L246.1563,60.0343 Z " fill="#FFFFFF"/><path d="M10,96.7999 L10,142 A0,0 0 0 0 10,142 L162,142 A0,0 0 0 0 162,142 L162,123.3999 L182,119.3999 L162,115.3999 L162,106.7999 L152,96.7999 L10,96.7999 A0,0 0 0 0 10,96.7999 " fill="#999999" style="stroke:#181818;stroke-width:0.5;"/><path d="M152,96.7999 L152,106.7999 L162,106.7999 L152,96.7999 " fill="#999999" style="stroke:#181818;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="127" x="18" y="116.7999">Commit changes to git</text><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="112" x="25.5" y="132.4">Open diff in browser</text><rect fill="#1168BD" height="55.2" rx="12.5" ry="12.5" style="stroke:#FFFFFF;stroke-width:0.5;" width="133" x="182" y="91.7999"/><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="109" x="194" y="116.7999">prepare new inputs:</text><text fill="#FFFFFF" font-family="Roboto" font-size="13" lengthAdjust="spacing" textLength="79" x="209" y="132.4">store changes</text><ellipse cx="248.5" cy="177" fill="#F1F1F1" rx="10" ry="10" style="stroke:#181818;stroke-width:0.5;"/><path d="M248.5156,173.2812 Q247.5156,173.2812 247.1406,173.8281 Q246.7813,174.3593 246.75,175.2656 L245.6094,175.2656 Q245.6719,172.2812 248.5,172.2812 Q249.8125,172.2812 250.5625,172.9687 Q251.3125,173.6406 251.3125,174.8125 Q251.3125,176.2187 250.0156,176.7343 Q250.8438,177.0156 251.2031,177.5312 Q251.5781,178.0468 251.5781,178.9218 Q251.5781,180.2343 250.7188,181.0156 Q249.875,181.7968 248.4531,181.7968 Q245.625,181.7968 245.4219,178.8281 L246.5625,178.8281 Q246.625,179.8281 247.0938,180.3125 Q247.5625,180.7812 248.5,180.7812 Q249.3906,180.7812 249.8906,180.2968 Q250.4063,179.8125 250.4063,178.9375 Q250.4063,177.2656 248.5,177.2656 L248.0156,177.2812 L247.875,177.2812 L247.875,176.2968 Q249.1094,176.2812 249.625,176 Q250.1406,175.7031 250.1406,174.8593 Q250.1406,174.125 249.7031,173.7031 Q249.2656,173.2812 248.5156,173.2812 Z " fill="#FFFFFF"/><line style="stroke:#E91E63;stroke-width:1.0;" x1="248.5" x2="248.5" y1="71.7999" y2="91.7999"/><polygon fill="#E91E63" points="244.5,81.7999,248.5,91.7999,252.5,81.7999,248.5,85.7999" style="stroke:#E91E63;stroke-width:1.0;"/><line style="stroke:#E91E63;stroke-width:1.0;" x1="248.5" x2="248.5" y1="147" y2="167"/><polygon fill="#E91E63" points="244.5,157,248.5,167,252.5,157,248.5,161" style="stroke:#E91E63;stroke-width:1.0;"/><!--MD5=[617544ab7434af8c8053d5dcd35f2594]
+@startuml
+' Styling settings for PlantUML diagrams
+' See http://plantuml.sourceforge.net for documentation
+' To get a list of possible skinparam settings, run: plantuml -language
+
+' COLORS
+' ========================================
+
+' general colors from own stylesheet
+!$diagram_background_color = "#fff"
+!$diagram_border_color = "#fff"
+!$diagram_color = "#808080"
+!$arrow_color = "#e91e63"
+!$link_color = "#3498DB"
+
+' make admonition colors available for elements
+!$caution_color = "#a0439c"
+!$caution_on_color = "#fff"
+!$important_color = "#d32f2f"
+!$important_on_color = "#fff"
+!$note_color = "#217ee7"
+!$note_on_color = "#fff"
+!$tip_color = "#41af46"
+!$tip_on_color = "#fff"
+!$warning_color = "#e18114"
+!$warning_on_color = "#fff"
+
+' node_1, node_2 and note taken from C4 styling
+!$node_1_main_color = "#08427b"
+!$node_2_main_color = "#1168bd"
+!$node_2_aux2_color = "#3498DB"
+!$note_main_color = "#999"
+
+' use admonition colors for other elements
+!$logic_main_color = $warning_color
+!$group_main_color = $caution_color
+!$divider_main_color = $tip_color
+
+!procedure $logic_style($var=1)
+  $styling($var, $logic_main_color, $logic_main_color, $warning_on_color) 
+!endprocedure
+
+!procedure $group_style($var=4)
+  $styling($var, $group_main_color, $group_main_color, $caution_on_color, "#FFFCFF") 
+!endprocedure
+
+!procedure $divider_style($var=1)
+  $styling($var, $divider_main_color, $divider_main_color, $tip_on_color) 
+!endprocedure
+
+!procedure $node_1_style($var=1)
+  $styling($var, $node_1_main_color, "#fff", "fff") 
+!endprocedure
+
+!procedure $node_2_style($var=1)
+  $styling($var, $node_2_main_color, "#fff", "fff", $node_2_aux2_color) 
+!endprocedure
+
+!procedure $note_1_style($var=1)
+  $styling($var, $note_main_color, "#fff", "fff") 
+!endprocedure
+
+' STYLE HELPERS
+' ========================================
+
+' get variation with color palette:
+' $main: primary fill color, typically background
+' $aux1, $aux2: add'l fill colors, typically border, alternative background
+' $on1, $on2: text colors, typically main text, supplementary
+' variations:
+' 1) regular (default)
+' 2) name reversed (label outside)
+' 3) reverse background
+' 4) light background
+' 5) border box (loop, alt)
+' 6) ...
+
+!procedure $styling($var=1, $main, $aux1, $on1, $aux2="#ccc", $on2="#666")
+  !if ($var=="2")
+    BackgroundColor $main
+    BorderColor $aux1
+    FontColor $main
+    StereotypeFontColor $main
+  !elseif ($var=="3")
+    BackgroundColor $aux1
+    BorderColor $main
+    FontColor $main
+    StereotypeFontColor $main
+  !elseif ($var==4)
+    BackgroundColor $aux2
+    BorderColor $aux1
+    FontColor $main
+  !elseif ($var=="5")
+    BackgroundColor $main
+    BorderColor $aux1
+    FontColor $main
+    HeaderFontColor $on1
+  !elseif ($var=="6")
+    BackgroundColor $on1
+    BorderColor $aux1
+    FontColor $main
+    HeaderFontColor $on1
+    HeaderBackgroundColor $aux1
+  !elseif ($var==7)
+    BackgroundColor $aux2
+    BorderColor $main
+    FontColor $main
+  !else
+    BackgroundColor $main
+    BorderColor $aux1
+    FontColor $on1
+    StereotypeFontColor $on1
+    HeaderBackgroundColor $on1
+  !endif
+  FontSize 13
+!endprocedure
+
+' GENERAL SETTINGS
+' ========================================
+
+!$body_font_family = "Roboto"
+' each element can get its own FontName, FontSize, FontStyle; not added now
+
+skinparam BackgroundColor $diagram_background_color
+skinparam DiagramBorderColor $diagram_border_color
+skinparam HyperlinkColor $link_color
+
+'skinparam monochrome true
+skinparam shadowing false
+skinparam Handwritten false
+skinparam Padding 2
+'skinparam Roundcorner 5
+
+' Setting a minimum width can make sequence diagram participants look more balanced
+skinparam minClassWidth 100
+
+skinparam Default {
+  FontColor $doc_font_color
+  FontName $body_font_family
+  FontStyle normal
+  TextAlignment center
+}
+
+skinparam Arrow {
+  Color $arrow_color
+  FontColor $arrow_color
+}
+
+skinparam Note {
+  $note_1_style()
+}
+
+' USE CASE
+' ========================================
+
+skinparam Actor {
+  $node_1_style(2)
+  ' Make actors look like in C4
+  Style awesome
+}
+
+skinparam Usecase {
+  $node_2_style()
+}
+
+skinparam Package {
+  $group_style()
+}
+
+' ACTIVITY
+' ========================================
+
+skinparam Activity {
+  $node_2_style()
+
+  StartColor $node_1_main_color
+  EndColor $node_1_main_color
+  BarColor $logic_main_color
+}
+
+skinparam ActivityDiamond {
+  $logic_style()
+}
+
+skinparam Partition {
+  $group_style()
+}
+
+skinparam Swimlane {
+  $divider_style()
+}
+
+skinparam SwimlaneTitle {
+  $divider_style(6)
+}
+
+' SEQUENCE
+' ========================================
+
+'Actor: see Use Case diagram above
+
+skinparam Participant {
+  $node_1_style()
+'  Padding 40
+}
+
+skinparam Boundary {
+  $node_1_style(3)
+}
+
+skinparam Control {
+  $node_1_style(3)
+}
+
+skinparam Entity {
+  $node_1_style(3)
+}
+
+skinparam Database {
+  $node_1_style(2)
+}
+
+skinparam Collections {
+  $node_1_style()
+}
+
+skinparam Queue {
+  $node_1_style()
+}
+
+skinparam SequenceLifeline {
+  $node_2_style(7)
+}
+
+skinparam SequenceDelay {
+  $divider_style(2)
+}
+
+skinparam SequenceDivider {
+  $divider_style()
+}
+
+skinparam SequenceGroup {
+  $logic_style(5)
+}
+
+skinparam SequenceReference {
+  $group_style(6)
+  BorderThickness 1
+}
+
+skinparam SequenceBox {
+  $group_style(4)
+'  Padding 13
+}
+
+' ========================================
+' ========================================
+
+
+' DEPLOYMENT
+' ========================================
+
+' Actor: see Use case diagram
+' Use case: see Use case diagram
+' Package: see Use case diagram (fix?)
+' Boundary: see Sequence diagram
+' Control: see Sequence diagram
+' Entity: see Sequence diagram
+' Queue: see Sequence diagram
+
+' Database: see Sequence diagram (fix?)
+' Collections: see Sequence diagram (fix?)
+
+skinparam Agent {
+  $node_2_style()
+}
+
+skinparam Person {
+  $node_1_style()
+}
+
+skinparam Artifact {
+  $node_2_style()
+}
+
+skinparam Component {
+  $node_2_style()
+}
+
+skinparam File {
+  $node_2_style()
+}
+
+skinparam Card {
+  $node_2_style()
+}
+
+skinparam Storage {
+  $node_2_style()
+}
+
+skinparam Cloud {
+  $group_style(4)
+}
+
+skinparam Frame {
+  $group_style()
+}
+
+skinparam Node {
+  $group_style()
+}
+
+' check lighter background
+skinparam Stack {
+  $node_2_style()
+}
+
+' artefact or group?
+skinparam Folder {
+  $group_style()
+}
+
+skinparam Hexagon {
+  $logic_style()
+}
+
+skinparam Interface {
+  $logic_style(3)
+}
+
+skinparam Object {
+  $node_2_style()
+'  AttributeFontColor $arrow_color
+'  EndColor $arrow_color
+'  StartColor $arrow_color
+}
+
+skinparam Rectangle {
+  $logic_style()
+}
+
+' Used in C4 models:
+skinparam Rectangle<<boundary>> {
+  $logic_style(6)
+}
+
+skinparam State {
+  $node_2_style()
+'  AttributeFontColor $arrow_color
+'  EndColor $arrow_color
+'  StartColor $arrow_color
+}
+
+skinparam TitleFontColor $divider_main_color
+title In the workspace
+(2)
+:prepare new inputs:
+store changes;
+note
+  Commit changes to git
+  Open diff in browser
+end note
+(3)
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam BackgroundColor #fff
+skinparam DiagramBorderColor #fff
+skinparam HyperlinkColor #3498DB
+
+skinparam shadowing false
+skinparam Handwritten false
+skinparam Padding 2
+
+skinparam minClassWidth 100
+
+skinparam Default {
+  FontColor $doc_font_color
+  FontName Roboto
+  FontStyle normal
+  TextAlignment center
+}
+
+skinparam Arrow {
+  Color #e91e63
+  FontColor #e91e63
+}
+
+skinparam Note {
+      BackgroundColor #999
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+
+skinparam Actor {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor #08427b
+    StereotypeFontColor #08427b
+  FontSize 13 
+  Style awesome
+}
+
+skinparam Usecase {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Package {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+
+skinparam Activity {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+
+  StartColor #08427b
+  EndColor #08427b
+  BarColor #e18114
+}
+
+skinparam ActivityDiamond {
+      BackgroundColor #e18114
+    BorderColor #e18114
+    FontColor #fff
+    StereotypeFontColor #fff
+    HeaderBackgroundColor #fff
+  FontSize 13 
+}
+
+skinparam Partition {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+skinparam Swimlane {
+      BackgroundColor #41af46
+    BorderColor #41af46
+    FontColor #fff
+    StereotypeFontColor #fff
+    HeaderBackgroundColor #fff
+  FontSize 13 
+}
+
+skinparam SwimlaneTitle {
+      BackgroundColor #fff
+    BorderColor #41af46
+    FontColor #41af46
+    HeaderFontColor #fff
+    HeaderBackgroundColor #41af46
+  FontSize 13 
+}
+
+
+
+skinparam Participant {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Boundary {
+      BackgroundColor #fff
+    BorderColor #08427b
+    FontColor #08427b
+    StereotypeFontColor #08427b
+  FontSize 13 
+}
+
+skinparam Control {
+      BackgroundColor #fff
+    BorderColor #08427b
+    FontColor #08427b
+    StereotypeFontColor #08427b
+  FontSize 13 
+}
+
+skinparam Entity {
+      BackgroundColor #fff
+    BorderColor #08427b
+    FontColor #08427b
+    StereotypeFontColor #08427b
+  FontSize 13 
+}
+
+skinparam Database {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor #08427b
+    StereotypeFontColor #08427b
+  FontSize 13 
+}
+
+skinparam Collections {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Queue {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam SequenceLifeline {
+      BackgroundColor #3498DB
+    BorderColor #1168bd
+    FontColor #1168bd
+  FontSize 13 
+}
+
+skinparam SequenceDelay {
+      BackgroundColor #41af46
+    BorderColor #41af46
+    FontColor #41af46
+    StereotypeFontColor #41af46
+  FontSize 13 
+}
+
+skinparam SequenceDivider {
+      BackgroundColor #41af46
+    BorderColor #41af46
+    FontColor #fff
+    StereotypeFontColor #fff
+    HeaderBackgroundColor #fff
+  FontSize 13 
+}
+
+skinparam SequenceGroup {
+      BackgroundColor #e18114
+    BorderColor #e18114
+    FontColor #e18114
+    HeaderFontColor #fff
+  FontSize 13 
+}
+
+skinparam SequenceReference {
+      BackgroundColor #fff
+    BorderColor #a0439c
+    FontColor #a0439c
+    HeaderFontColor #fff
+    HeaderBackgroundColor #a0439c
+  FontSize 13 
+  BorderThickness 1
+}
+
+skinparam SequenceBox {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+
+
+
+
+
+skinparam Agent {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Person {
+      BackgroundColor #08427b
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Artifact {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Component {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam File {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Card {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Storage {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Cloud {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+skinparam Frame {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+skinparam Node {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+skinparam Stack {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Folder {
+      BackgroundColor #FFFCFF
+    BorderColor #a0439c
+    FontColor #a0439c
+  FontSize 13 
+}
+
+skinparam Hexagon {
+      BackgroundColor #e18114
+    BorderColor #e18114
+    FontColor #fff
+    StereotypeFontColor #fff
+    HeaderBackgroundColor #fff
+  FontSize 13 
+}
+
+skinparam Interface {
+      BackgroundColor #e18114
+    BorderColor #e18114
+    FontColor #e18114
+    StereotypeFontColor #e18114
+  FontSize 13 
+}
+
+skinparam Object {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam Rectangle {
+      BackgroundColor #e18114
+    BorderColor #e18114
+    FontColor #fff
+    StereotypeFontColor #fff
+    HeaderBackgroundColor #fff
+  FontSize 13 
+}
+
+skinparam Rectangle<<boundary>> {
+      BackgroundColor #fff
+    BorderColor #e18114
+    FontColor #e18114
+    HeaderFontColor #fff
+    HeaderBackgroundColor #e18114
+  FontSize 13 
+}
+
+skinparam State {
+      BackgroundColor #1168bd
+    BorderColor #fff
+    FontColor fff
+    StereotypeFontColor fff
+    HeaderBackgroundColor fff
+  FontSize 13 
+}
+
+skinparam TitleFontColor #41af46
+title In the workspace
+(2)
+:prepare new inputs:
+store changes;
+note
+  Commit changes to git
+  Open diff in browser
+end note
+(3)
+@enduml
+
+PlantUML version 1.2022.3(Tue Mar 29 16:10:57 GMT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
