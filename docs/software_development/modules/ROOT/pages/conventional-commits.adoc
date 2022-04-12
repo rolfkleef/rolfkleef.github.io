@@ -52,19 +52,25 @@ To further automate, release-please or semantic-release may be next steps.
 ====
 
   $ standard-version
-  
+
   $ standard-version  --release-as 2..1.0
 
   $ standard-version  --prerelease
-  
+
   $ standard-version  --prerelease alpha
 
 Links to commit hashes on Github will be generated for the remote named `origin`.
 
+[NOTE]
+====
+Link generation only works in the main checked out folder for a repository.
+It does not work in a checked out worktree folder.
+====
+
 [CAUTION]
 ====
 When running `standard-release -f` for a first release, it will not do version
-bumping. Update for instance the version in `docs/antora.yml` 
+bumping. Update for instance the version in `docs/antora.yml`
 and stage it in git index before releasing.
 ====
 

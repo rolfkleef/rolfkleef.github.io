@@ -18,15 +18,14 @@ The sources for this section about the selection and setup of software component
 === Components to specify the site
 
 [plantuml]
-....
-@startuml
+----
 !include <C4/C4_Component>
 
 System_Boundary(doc_sys, "Documentation system") {
   System_Boundary(sources, "Content sources") {
     Container(source_repos, "Source repositories", "git, asciidoc", "Manage documentation content files.")
   }
-  
+
   System_Boundary(sitegen, "Website generator") {
     Container_Boundary(antora, "Antora configuration", "antora, asciidoctor") {
       Component(supplementalui, "supplemental ui", "html/css, handlebars, files", "Provides customisations to the user interface.")
@@ -46,30 +45,28 @@ System_Boundary(doc_sys, "Documentation system") {
   }
   Rel(source_repos, playbook, "are specified in")
 }
-@enduml
-....
+----
 
 * The _supplemental ui_ provides files to be added to the _user interface definition_ files.
 ** They can override existing files, for instance to adapt templates used to generate pages.
-** They can also add files, for instance a CNAME instruction for Github Pages. 
+** They can also add files, for instance a CNAME instruction for Github Pages.
 
 * The _styleguide_ provides additional files for other parts of the generation process.
 ** The PlantUML config file is added in calls to the _diagram rendering service_ to specify PlantUML styling.
-** A CSL file can be used to let Zotero generate bibliographies in the desired layout.  
+** A CSL file can be used to let Zotero generate bibliographies in the desired layout.
 
 [#generate]
 === Components to generate and deploy the site
 
 [plantuml]
-....
-@startuml
+----
 !include <C4/C4_Component>
 
 System_Boundary(doc_sys, "Documentation system") {
   System_Boundary(sources, "Content sources") {
     Container(source_repos, "Source repositories", "git, asciidoc", "Manage documentation content files.")
   }
-  
+
   System_Boundary(sitegen, "Website generator") {
     Container_Boundary(antora, "Antora generation", "antora, asciidoctor") {
       Component(packagejson, "package.json", "npm", "Specifies the Antora and other software components to be installed by npm.")
@@ -94,14 +91,12 @@ System_Boundary(doc_sys, "Documentation system") {
 
 System_Ext(site, "Github Pages website", "Provides generation and hosting for a documentation website.")
 Rel(github, site, "publishes site content to")
-
-@enduml
-....
+----
 
 * The _package.json_ file (and associated lock file) are used to specify the versions of software components used.
 * The _docker-compose.yml_ file lets you start local docker containers for the _diagram rendering service_.
 * The _generator_ script specifies additional environment variables and selects the playbook to be used.
-* The _Github Action_ provides a recipe to set up the _diagram rendering service_, 
+* The _Github Action_ provides a recipe to set up the _diagram rendering service_,
 install the required software components,
 run the generator script,
 and deploy the resulting site to Github Pages.
