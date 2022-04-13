@@ -4,6 +4,10 @@ site:
   title: Dataworkbench
   start_page: iati-workbench::index.adoc
 
+urls:
+  latest_version_segment: current
+  latest_prerelease_version_segment: next
+
 output:
   dir: build/site/dataworkbench
 
@@ -41,7 +45,7 @@ ui:
     url: https://gitlab.com/rolfkleef/drostan-antora-ui/-/jobs/artifacts/drostan/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true
   supplemental_files: antora/supplemental-ui
-  
+
 runtime:
   fetch: true
 
