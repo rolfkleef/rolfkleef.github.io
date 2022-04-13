@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>ETL for IATI :: Dataworkbench</title>
-    <link rel="next" href="how-to/setup/hop.html">
-    <meta name="generator" content="Antora 3.0.0">
+    <title>Spreadsheets2IATI engine :: Dataworkbench</title>
+    <link rel="next" href="ant-results.html">
+    <meta name="generator" content="Antora 3.0.1">
     <link rel="stylesheet" href="../../_/css/site.css">
     <script>var uiRootPath = '../../_'</script>
   </head>
@@ -33,12 +33,12 @@
 <a class="navbar-item" href="/dataworkbench">Docs dataworkbench.io</a>  </div>
 </div>
         <div class="navbar-item has-dropdown is-hoverable">
-    <a class="navbar-link">ETL for IATI</a>
+    <a class="navbar-link">IATI Workbench</a>
   <div class="navbar-dropdown">
         <a class="navbar-item" href="../../api/index.html">API</a>
         <a class="navbar-item" href="../../dwb-cluster/index.html">Cluster</a>
+        <a class="navbar-item" href="../../etl-iati/current/index.html">ETL for IATI</a>
         <a class="navbar-item" href="../../frontend/index.html">Frontend</a>
-        <a class="navbar-item" href="../../iati-workbench/1.5.1/index.html">IATI Workbench</a>
         <a class="navbar-item" href="../../validator/index.html">Validator</a>
   </div>
 </div>
@@ -49,61 +49,43 @@
   </nav>
 </header>
 <div class="body">
-<div class="nav-container" data-component="etl-iati" data-version="next">
+<div class="nav-container" data-component="iati-workbench" data-version="1.5.1">
   <aside class="nav">
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
   <nav class="nav-menu">
-    <h3 class="title"><a href="index.html">ETL for IATI</a></h3>
+    <h3 class="title"><a href="index.html">IATI Workbench</a></h3>
 <ul class="nav-list">
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ant-results.html">Ant results</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="workspace.html">Workspace location</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="xspec-tests.html">Xspec tests</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <span class="nav-text">How to</span>
+    <a class="nav-link" href="spreadsheets2iati/index.html">Spreadsheets2IATI</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">Set up</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="how-to/setup/hop.html">Hop</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="how-to/setup/azure.html">Azure</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="how-to/setup/database.html">database</a>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-<ul class="nav-list">
-  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Reference</span>
 <ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="reference/project-layout.html">Project layout</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="reference/datamodel/index.html">Data model</a>
-<ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="reference/datamodel/finances.html">Finances</a>
+    <a class="nav-link" href="spreadsheets2iati/reference/date-formats.html">Date formats</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="reference/datamodel/results.html">Results</a>
+    <a class="nav-link" href="spreadsheets2iati/reference/client-configuration.html">Client configuration</a>
   </li>
 </ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="reference/etl/index.html">ETL process</a>
   </li>
 </ul>
   </li>
@@ -114,8 +96,8 @@
 </div>
 <div class="nav-panel-explore" data-panel="explore">
   <div class="context">
-    <span class="title">ETL for IATI</span>
-    <span class="version">next</span>
+    <span class="title">IATI Workbench</span>
+    <span class="version">1.5.1</span>
   </div>
   <ul class="components">
     <li class="component">
@@ -134,11 +116,11 @@
         </li>
       </ul>
     </li>
-    <li class="component is-current">
-      <a class="title" href="index.html">ETL for IATI</a>
+    <li class="component">
+      <a class="title" href="../../etl-iati/current/index.html">ETL for IATI</a>
       <ul class="versions">
-        <li class="version is-current is-latest">
-          <a href="index.html">next</a>
+        <li class="version is-latest">
+          <a href="../../etl-iati/current/index.html">next</a>
         </li>
       </ul>
     </li>
@@ -150,14 +132,14 @@
         </li>
       </ul>
     </li>
-    <li class="component">
-      <a class="title" href="../../iati-workbench/1.5.1/index.html">IATI Workbench</a>
+    <li class="component is-current">
+      <a class="title" href="index.html">IATI Workbench</a>
       <ul class="versions">
         <li class="version">
-          <a href="../../iati-workbench/next/index.html">next</a>
+          <a href="../next/index.html">next</a>
         </li>
-        <li class="version is-latest">
-          <a href="../../iati-workbench/1.5.1/index.html">1.5.1</a>
+        <li class="version is-current is-latest">
+          <a href="index.html">1.5.1</a>
         </li>
       </ul>
     </li>
@@ -177,116 +159,173 @@
 <main class="article">
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
-  <a href="../../iati-workbench/1.5.1/index.html" class="home-link"></a>
+  <a href="index.html" class="home-link is-current"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
-    <li><a href="index.html">ETL for IATI</a></li>
+    <li><a href="index.html">IATI Workbench</a></li>
+    <li><a href="index.html">Spreadsheets2IATI engine</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/data4development/etl-iati/edit/develop/docs/modules/ROOT/pages/index.adoc" target="_blank">Edit this Page</a></div>
+<div class="page-versions">
+  <button class="version-menu-toggle" title="Show other versions of page">1.5.1</button>
+  <div class="version-menu">
+    <a class="version" href="../next/index.html">next</a>
+    <a class="version is-current" href="index.html">1.5.1</a>
+  </div>
+</div>
+  <div class="edit-this-page"><a href="https://github.com/data4development/iati-workbench/edit/main/docs/modules/ROOT/pages/index.adoc" target="_blank">Edit this Page</a></div>
   </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">ETL for IATI</h1>
+<h1 class="page">Spreadsheets2IATI engine</h1>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Using <a href="https://hop.apache.org" target="_blank" rel="noopener">Apache Hop</a> to process IATI data.</p>
-</div>
-<div class="paragraph">
-<p>The code processes IATI XML data to produce content in a Postgres or Azure SQL database.
-The data is put into a dimensional model
-to allow different analytics platforms
-to present the data in dashboards and reports.</p>
-</div>
-<div class="paragraph">
-<p>The code uses a spreadsheet with "seed activities" as a starting point.
-It currently assumes a two-tier approach,
-with <em>programme</em> activities on the top level,
-and <em>project</em> activities on the bottom level.</p>
-</div>
-<div class="paragraph">
-<p>The same spreadsheet is also used to define IATI result indicators to show.
-In addition, it contains a mapping table for disaggregated data.
-These tables help standardise the presentation of data.</p>
+<p><em>Scripts to transform a set of input files (spreadsheets, IATI) into a combined IATI file.</em></p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_additions_to_iati_data"><a class="anchor" href="#_additions_to_iati_data"></a>Additions to IATI data</h2>
+<h2 id="_add_the_aidi_s2i_wrapper_to_your_path"><a class="anchor" href="#_add_the_aidi_s2i_wrapper_to_your_path"></a>Add the <code>aidi-s2i</code> wrapper to your path</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>In addition to IATI data, the following data is used:</p>
+<p>You can put the <code>aida-s2i</code> script in your path, for instance as a symlink:</p>
 </div>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Programme name</dt>
-<dd>
-<p>A programme (or partnership, joint response) consists of a group of organisations
-that each publish one or more activities, and that should be presented together.</p>
-<div class="paragraph">
-<p>The programme has a name,
-and typically a tree structure with a single top-level activity,
-with links via parent-child relations and financial transactions.</p>
+<div class="literalblock">
+<div class="content">
+<pre>$ ln -s ${PWD}/aida-s2i ~/bin/aida-s2i</pre>
+</div>
 </div>
 <div class="paragraph">
-<p>With sufficient data quality, only the top-level activity identifier needs to be specified.
-If needed, more activities can be explicitly added to the list.</p>
+<p>This script can help build and run the container.
+To see its options:</p>
 </div>
-</dd>
-<dt class="hdlist1">Results framework</dt>
-<dd>
-<p>The programme has a result framework it wants to use in its dashboards and reports.</p>
-<div class="paragraph">
-<p>IATI results are presented based on a set of indicator reference codes.</p>
+<div class="literalblock">
+<div class="content">
+<pre>$ aida-s2i -h</pre>
 </div>
-<div class="paragraph">
-<p>Results are further grouped in "themes",
-each with one or more results and underlying indicators.</p>
-</div>
-<div class="paragraph">
-<p>Results and indicators have "official titles" in dashboards and reports,
-independent of the actual texts published by each organisation.</p>
-</div>
-<div class="paragraph">
-<p>Dimensions are processed based on a set of standard dimension names and values.
-Since these are text strings, common variations are translated into an "official text".</p>
-</div>
-</dd>
-</dl>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_history"><a class="anchor" href="#_history"></a>History</h2>
+<h2 id="_build_the_container"><a class="anchor" href="#_build_the_container"></a>Build the container</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This project started as a project based on Pentaho Data Integration (PDI).</p>
+<p>Before building the container, make sure to check out the git submodules.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ git submodule update --init --recursive</pre>
+</div>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Work in progress: a local workspace (directory on host machine) is still required to run.
+This will become optional.</p>
 </div>
 <div class="paragraph">
-<p>In 2005, Kettle started as open source ETL tool, with a visual programming interface.
-It turned into Pentaho Data Integration.</p>
+<p>The local workspace directory has to be mounted under /workspace.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
-<p>In 2019, the original authors created a fork to allow experimentation to develop it further.
-The project was brought under the stewardship of the Apache Foundation, and named Hop.</p>
+<p>In this case, the container will run as the user building the image.
+You need to make sure it has proper permissions for the local workspace directory.</p>
+</div>
+<div class="sect2">
+<h3 id="_with_aida_s2i"><a class="anchor" href="#_with_aida_s2i"></a>With <code>aida-s2i</code></h3>
+<div class="literalblock">
+<div class="content">
+<pre>$ aida-s2i -d build</pre>
+</div>
 </div>
 <div class="paragraph">
-<p>To benefit from the more rigourous licensing,
-as well as the huge upgrade in software setup,
-we migrated our PDI code to Hop.</p>
+<p>Then, verify everything is running:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ aida-s2i</pre>
+</div>
 </div>
 <div class="paragraph">
-<p>Apache Hop code can be run on a local machine,
-and also be deployed to cloud services via Apache Beam.</p>
+<p>This will show the list of available "targets" in the workbench.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_manually"><a class="anchor" href="#_manually"></a>Manually</h3>
+<div class="literalblock">
+<div class="content">
+<pre>$ docker build --build-arg UID=$(id -u) --build-arg GID=$(id -g) -t aida-s2i .</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You should be able to run it and get a list of available targets:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ docker run --rm aida-s2i</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This will show the list of available "targets" in the workbench.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_workspaces"><a class="anchor" href="#_workspaces"></a>Workspaces</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You run the engine in a folder that will function as the 'workspace'.
+You specify the task you want performed, and the engine will take all steps needed to transform the source data into the desired output formats.</p>
+</div>
+<div class="paragraph">
+<p>The <code>aida-s2i</code> script will mount the current directory as the workspace.</p>
+</div>
+<div class="paragraph">
+<p>Once you run any of the tasks, it will create the necessary folders for the source of your data, the intermediary files, and the output files generated.</p>
+</div>
+<div class="paragraph">
+<p>You can run <code>aida-s2i init</code> to create those folders yourself.</p>
+</div>
+<div class="sect2">
+<h3 id="_sample_data"><a class="anchor" href="#_sample_data"></a>Sample data</h3>
+<div class="paragraph">
+<p>The <a href="https://github.com/data4development/demo-workspace">demo-workspace repository</a> contains example data files.</p>
+</div>
+<div class="paragraph">
+<p>Clone the repository, and inside the directory, run</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ aida-s2i spreadsheet-iati</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This should process the input files and produce a raw IATI file in <code>src/</code>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_acknowledgements"><a class="anchor" href="#_acknowledgements"></a>Acknowledgements</h3>
+<div class="paragraph">
+<p>First inspiration came from <a href="https://github.com/KitWallace/AIDVIEW-DB">Kit Wallace&#8217;s Aidview DB (working with eXist)</a></p>
+</div>
 </div>
 </div>
 </div>
 <nav class="pagination">
-  <span class="next"><a href="how-to/setup/hop.html">Hop</a></span>
+  <span class="next"><a href="ant-results.html">Ant results</a></span>
 </nav>
 </article>
   </div>

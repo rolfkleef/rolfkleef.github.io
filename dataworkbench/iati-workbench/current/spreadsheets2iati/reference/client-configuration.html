@@ -3,10 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Set up Hop :: Dataworkbench</title>
-    <link rel="prev" href="../../index.html">
-    <link rel="next" href="azure.html">
-    <meta name="generator" content="Antora 3.0.0">
+    <title>Client configuration :: Dataworkbench</title>
+    <link rel="prev" href="date-formats.html">
+    <meta name="generator" content="Antora 3.0.1">
     <link rel="stylesheet" href="../../../../_/css/site.css">
     <script>var uiRootPath = '../../../../_'</script>
   </head>
@@ -34,12 +33,12 @@
 <a class="navbar-item" href="/dataworkbench">Docs dataworkbench.io</a>  </div>
 </div>
         <div class="navbar-item has-dropdown is-hoverable">
-    <a class="navbar-link">ETL for IATI</a>
+    <a class="navbar-link">IATI Workbench</a>
   <div class="navbar-dropdown">
         <a class="navbar-item" href="../../../../api/index.html">API</a>
         <a class="navbar-item" href="../../../../dwb-cluster/index.html">Cluster</a>
+        <a class="navbar-item" href="../../../../etl-iati/current/index.html">ETL for IATI</a>
         <a class="navbar-item" href="../../../../frontend/index.html">Frontend</a>
-        <a class="navbar-item" href="../../../../iati-workbench/1.5.1/index.html">IATI Workbench</a>
         <a class="navbar-item" href="../../../../validator/index.html">Validator</a>
   </div>
 </div>
@@ -50,61 +49,43 @@
   </nav>
 </header>
 <div class="body">
-<div class="nav-container" data-component="etl-iati" data-version="next">
+<div class="nav-container" data-component="iati-workbench" data-version="1.5.1">
   <aside class="nav">
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
   <nav class="nav-menu">
-    <h3 class="title"><a href="../../index.html">ETL for IATI</a></h3>
+    <h3 class="title"><a href="../../index.html">IATI Workbench</a></h3>
 <ul class="nav-list">
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../ant-results.html">Ant results</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../workspace.html">Workspace location</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../xspec-tests.html">Xspec tests</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <span class="nav-text">How to</span>
+    <a class="nav-link" href="../index.html">Spreadsheets2IATI</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">Set up</span>
-<ul class="nav-list">
-  <li class="nav-item is-current-page" data-depth="3">
-    <a class="nav-link" href="hop.html">Hop</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="azure.html">Azure</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="database.html">database</a>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-<ul class="nav-list">
-  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Reference</span>
 <ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../reference/project-layout.html">Project layout</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../../reference/datamodel/index.html">Data model</a>
-<ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../reference/datamodel/finances.html">Finances</a>
+    <a class="nav-link" href="date-formats.html">Date formats</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../reference/datamodel/results.html">Results</a>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="client-configuration.html">Client configuration</a>
   </li>
 </ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../reference/etl/index.html">ETL process</a>
   </li>
 </ul>
   </li>
@@ -115,8 +96,8 @@
 </div>
 <div class="nav-panel-explore" data-panel="explore">
   <div class="context">
-    <span class="title">ETL for IATI</span>
-    <span class="version">next</span>
+    <span class="title">IATI Workbench</span>
+    <span class="version">1.5.1</span>
   </div>
   <ul class="components">
     <li class="component">
@@ -135,11 +116,11 @@
         </li>
       </ul>
     </li>
-    <li class="component is-current">
-      <a class="title" href="../../index.html">ETL for IATI</a>
+    <li class="component">
+      <a class="title" href="../../../../etl-iati/current/index.html">ETL for IATI</a>
       <ul class="versions">
-        <li class="version is-current is-latest">
-          <a href="../../index.html">next</a>
+        <li class="version is-latest">
+          <a href="../../../../etl-iati/current/index.html">next</a>
         </li>
       </ul>
     </li>
@@ -151,14 +132,14 @@
         </li>
       </ul>
     </li>
-    <li class="component">
-      <a class="title" href="../../../../iati-workbench/1.5.1/index.html">IATI Workbench</a>
+    <li class="component is-current">
+      <a class="title" href="../../index.html">IATI Workbench</a>
       <ul class="versions">
         <li class="version">
-          <a href="../../../../iati-workbench/next/index.html">next</a>
+          <a href="../../../next/index.html">next</a>
         </li>
-        <li class="version is-latest">
-          <a href="../../../../iati-workbench/1.5.1/index.html">1.5.1</a>
+        <li class="version is-current is-latest">
+          <a href="../../index.html">1.5.1</a>
         </li>
       </ul>
     </li>
@@ -178,28 +159,87 @@
 <main class="article">
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
-  <a href="../../../../iati-workbench/1.5.1/index.html" class="home-link"></a>
+  <a href="../../index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
-    <li><a href="../../index.html">ETL for IATI</a></li>
-    <li>How to</li>
-    <li>Set up</li>
-    <li><a href="hop.html">Hop</a></li>
+    <li><a href="../../index.html">IATI Workbench</a></li>
+    <li><a href="../index.html">Spreadsheets2IATI</a></li>
+    <li>Reference</li>
+    <li><a href="client-configuration.html">Client configuration</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/data4development/etl-iati/edit/develop/docs/modules/how-to/pages/setup/hop.adoc" target="_blank">Edit this Page</a></div>
+<div class="page-versions">
+  <button class="version-menu-toggle" title="Show other versions of page">1.5.1</button>
+  <div class="version-menu">
+    <a class="version" href="../../../next/spreadsheets2iati/reference/client-configuration.html">next</a>
+    <a class="version is-current" href="client-configuration.html">1.5.1</a>
+  </div>
+</div>
+  <div class="edit-this-page"><a href="https://github.com/data4development/iati-workbench/edit/main/docs/modules/spreadsheets2iati/pages/reference/client-configuration.adoc" target="_blank">Edit this Page</a></div>
   </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Set up Hop</h1>
-<div class="sect1">
-<h2 id="_download_and_install_hop"><a class="anchor" href="#_download_and_install_hop"></a>Download and install Hop</h2>
-<div class="sectionbody">
+<h1 class="page">Client configuration</h1>
 <div class="paragraph">
-<p>Download Hop <a href="https://hop.apache.org/download/" target="_blank" rel="noopener">from the Hop website</a>.</p>
+<p>The client configuration consists of variables for their organisation name,
+identifier, and so on.
+These are stored in <code>config/csvxml-iati.xslt</code> in their workspace directory.</p>
+</div>
+<div class="paragraph">
+<p>The location of the workspace is variable.
+However, in XSLT it is not possible to import or include another file using a variable filename.</p>
+</div>
+<div class="paragraph">
+<p>Therefore, we have to add a bit of complexity.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The Ant build target first copies a generic template <code>sheets-iati.xslt</code>
+into the <code>config</code> directory.</p>
+</li>
+<li>
+<p>Next, this stylesheet includes the generic stylesheets using a hard-coded path,
+and the client variables using a relative path that does need a variable.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Possible future development:
+change this to reading the variables from a JSON file in the workspace.
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock kroki">
+<div class="content">
+<img src="../_images/diag-cf35ccab5830e9bb36ddc8e5b5f92287a408f153.svg" alt="Diagram">
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Contains organisation identifier, name, and so on.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Can include a file with client-specific templates, and override generic csv processing.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Contains generic template functions, and default configuration variables.</td>
+</tr>
+</table>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -209,56 +249,19 @@
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Currently, the easiest approach is to set up the software on the local machine.</p>
+<p>In XSLT, an <code>xsl:include</code> simply puts the contents of the included file into the including file.
+Included templates, variables, and so on, will have the same precedence as those in the including file.</p>
 </div>
 <div class="paragraph">
-<p>There is a Docker version with a web server,
-where the whole application is served in the browser.
-However, setting this up with a project in a repository is not tested,
-nor documented at this moment.</p>
+<p>An <code>xsl:import</code> creates a <em>precedence tree</em>:
+the importing file can override a template, variable, and so on.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_choose_a_config_and_audit_folder"><a class="anchor" href="#_choose_a_config_and_audit_folder"></a>Choose a config and audit folder</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Hop stores information about your local setup in two folders:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>The config folder has information about your local configuration,
-projects and environments.</p>
-</li>
-<li>
-<p>The audit folder has logging and history information.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>By default, Hop uses folders within the installed application folder.
-This makes it more tricky to replace that with a newer version.</p>
-</div>
-<div class="paragraph">
-<p>Use environment variables to specify different locations.</p>
-</div>
-<div class="listingblock">
-<div class="title">Example alternative locations</div>
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-sh hljs" data-lang="sh">HOP_CONFIG_FOLDER=$HOME/hop/config
-HOP_AUDIT_FOLDER=$HOME/hop/audit</code></pre>
-</div>
-</div>
-</div>
-</div>
 <nav class="pagination">
-  <span class="prev"><a href="../../index.html">ETL for IATI</a></span>
-  <span class="next"><a href="azure.html">Azure</a></span>
+  <span class="prev"><a href="date-formats.html">Date formats</a></span>
 </nav>
 </article>
   </div>

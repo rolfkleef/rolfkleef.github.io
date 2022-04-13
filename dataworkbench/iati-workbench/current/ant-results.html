@@ -3,17 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>ETL process :: Dataworkbench</title>
-    <link rel="prev" href="../datamodel/results.html">
-    <meta name="generator" content="Antora 3.0.0">
-    <link rel="stylesheet" href="../../../../_/css/site.css">
-    <script>var uiRootPath = '../../../../_'</script>
+    <title>Ant results :: Dataworkbench</title>
+    <link rel="prev" href="index.html">
+    <link rel="next" href="workspace.html">
+    <meta name="generator" content="Antora 3.0.1">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
   </head>
   <body class="article">
 <header class="header">
   <nav class="navbar">
     <div class="navbar-brand">
-      <img class="navbar-item" src="../../../../_/img/rolfkleef_80x80.png">
+      <img class="navbar-item" src="../../_/img/rolfkleef_80x80.png">
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
@@ -33,13 +34,13 @@
 <a class="navbar-item" href="/dataworkbench">Docs dataworkbench.io</a>  </div>
 </div>
         <div class="navbar-item has-dropdown is-hoverable">
-    <a class="navbar-link">ETL for IATI</a>
+    <a class="navbar-link">IATI Workbench</a>
   <div class="navbar-dropdown">
-        <a class="navbar-item" href="../../../../api/index.html">API</a>
-        <a class="navbar-item" href="../../../../dwb-cluster/index.html">Cluster</a>
-        <a class="navbar-item" href="../../../../frontend/index.html">Frontend</a>
-        <a class="navbar-item" href="../../../../iati-workbench/1.5.1/index.html">IATI Workbench</a>
-        <a class="navbar-item" href="../../../../validator/index.html">Validator</a>
+        <a class="navbar-item" href="../../api/index.html">API</a>
+        <a class="navbar-item" href="../../dwb-cluster/index.html">Cluster</a>
+        <a class="navbar-item" href="../../etl-iati/current/index.html">ETL for IATI</a>
+        <a class="navbar-item" href="../../frontend/index.html">Frontend</a>
+        <a class="navbar-item" href="../../validator/index.html">Validator</a>
   </div>
 </div>
       </div>
@@ -49,61 +50,43 @@
   </nav>
 </header>
 <div class="body">
-<div class="nav-container" data-component="etl-iati" data-version="next">
+<div class="nav-container" data-component="iati-workbench" data-version="1.5.1">
   <aside class="nav">
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
   <nav class="nav-menu">
-    <h3 class="title"><a href="../../index.html">ETL for IATI</a></h3>
+    <h3 class="title"><a href="index.html">IATI Workbench</a></h3>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="ant-results.html">Ant results</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="workspace.html">Workspace location</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="xspec-tests.html">Xspec tests</a>
+  </li>
+</ul>
+  </li>
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <span class="nav-text">How to</span>
+    <a class="nav-link" href="spreadsheets2iati/index.html">Spreadsheets2IATI</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <span class="nav-text">Set up</span>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../how-to/setup/hop.html">Hop</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../how-to/setup/azure.html">Azure</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../how-to/setup/database.html">database</a>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-<ul class="nav-list">
-  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Reference</span>
 <ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../project-layout.html">Project layout</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../datamodel/index.html">Data model</a>
-<ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../datamodel/finances.html">Finances</a>
+    <a class="nav-link" href="spreadsheets2iati/reference/date-formats.html">Date formats</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../datamodel/results.html">Results</a>
+    <a class="nav-link" href="spreadsheets2iati/reference/client-configuration.html">Client configuration</a>
   </li>
 </ul>
-  </li>
-  <li class="nav-item is-current-page" data-depth="2">
-    <a class="nav-link" href="index.html">ETL process</a>
   </li>
 </ul>
   </li>
@@ -114,58 +97,58 @@
 </div>
 <div class="nav-panel-explore" data-panel="explore">
   <div class="context">
-    <span class="title">ETL for IATI</span>
-    <span class="version">next</span>
+    <span class="title">IATI Workbench</span>
+    <span class="version">1.5.1</span>
   </div>
   <ul class="components">
     <li class="component">
-      <a class="title" href="../../../../api/index.html">API</a>
+      <a class="title" href="../../api/index.html">API</a>
       <ul class="versions">
         <li class="version is-latest">
-          <a href="../../../../api/index.html">default</a>
+          <a href="../../api/index.html">default</a>
         </li>
       </ul>
     </li>
     <li class="component">
-      <a class="title" href="../../../../dwb-cluster/index.html">Cluster</a>
+      <a class="title" href="../../dwb-cluster/index.html">Cluster</a>
       <ul class="versions">
         <li class="version is-latest">
-          <a href="../../../../dwb-cluster/index.html">default</a>
+          <a href="../../dwb-cluster/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../etl-iati/current/index.html">ETL for IATI</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../etl-iati/current/index.html">next</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../frontend/index.html">Frontend</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../frontend/index.html">default</a>
         </li>
       </ul>
     </li>
     <li class="component is-current">
-      <a class="title" href="../../index.html">ETL for IATI</a>
-      <ul class="versions">
-        <li class="version is-current is-latest">
-          <a href="../../index.html">next</a>
-        </li>
-      </ul>
-    </li>
-    <li class="component">
-      <a class="title" href="../../../../frontend/index.html">Frontend</a>
-      <ul class="versions">
-        <li class="version is-latest">
-          <a href="../../../../frontend/index.html">default</a>
-        </li>
-      </ul>
-    </li>
-    <li class="component">
-      <a class="title" href="../../../../iati-workbench/1.5.1/index.html">IATI Workbench</a>
+      <a class="title" href="index.html">IATI Workbench</a>
       <ul class="versions">
         <li class="version">
-          <a href="../../../../iati-workbench/next/index.html">next</a>
+          <a href="../next/index.html">next</a>
         </li>
-        <li class="version is-latest">
-          <a href="../../../../iati-workbench/1.5.1/index.html">1.5.1</a>
+        <li class="version is-current is-latest">
+          <a href="index.html">1.5.1</a>
         </li>
       </ul>
     </li>
     <li class="component">
-      <a class="title" href="../../../../validator/index.html">Validator</a>
+      <a class="title" href="../../validator/index.html">Validator</a>
       <ul class="versions">
         <li class="version is-latest">
-          <a href="../../../../validator/index.html">default</a>
+          <a href="../../validator/index.html">default</a>
         </li>
       </ul>
     </li>
@@ -177,84 +160,150 @@
 <main class="article">
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
-  <a href="../../../../iati-workbench/1.5.1/index.html" class="home-link"></a>
+  <a href="index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
-    <li><a href="../../index.html">ETL for IATI</a></li>
-    <li>Reference</li>
-    <li><a href="index.html">ETL process</a></li>
+    <li><a href="index.html">IATI Workbench</a></li>
+    <li><a href="ant-results.html">Ant results</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/data4development/etl-iati/edit/develop/docs/modules/reference/pages/etl/index.adoc" target="_blank">Edit this Page</a></div>
+<div class="page-versions">
+  <button class="version-menu-toggle" title="Show other versions of page">1.5.1</button>
+  <div class="version-menu">
+    <a class="version" href="../next/ant-results.html">next</a>
+    <a class="version is-current" href="ant-results.html">1.5.1</a>
+  </div>
+</div>
+  <div class="edit-this-page"><a href="https://github.com/data4development/iati-workbench/edit/main/docs/modules/ROOT/pages/ant-results.adoc" target="_blank">Edit this Page</a></div>
   </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">ETL process</h1>
-<div class="sect1">
-<h2 id="_overview"><a class="anchor" href="#_overview"></a>Overview</h2>
+<h1 class="page">Ant results</h1>
+<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>The data processing process:</p>
+<p>The Ant process creates a log of messages.
+By default, these are shown on the terminal.</p>
 </div>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Gather source files</dt>
-<dd>
-<p>Gather the IATI source data files of the organisations in a programme.</p>
-</dd>
-<dt class="hdlist1">Gather programme information</dt>
-<dd>
-<p>The spreadsheet <code>partnership-info</code> contains information about the required content.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Sheet <em>joint reponses</em>: list of programmes to include
-(programme name, top-level activity identifier).</p>
-</li>
-<li>
-<p>Sheet <em>results</em>: result and indicator reference codes to include in the dashboard
-(results subtheme, official result and indicator title)</p>
-</li>
-<li>
-<p>Sheet <em>dimensions</em>: translation table from published dimension names and values
-to "official" names and values.</p>
-</li>
-</ul>
 </div>
-</dd>
-<dt class="hdlist1">Find downstream activities</dt>
-<dd>
-<p>XSLT script that uses the sheet of <em>joint responses</em> as starting point,
-and looks for linked activities.</p>
+</div>
+<div class="sect1">
+<h2 id="_xmllogger"><a class="anchor" href="#_xmllogger"></a>XmlLogger</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>The result is a list of all activities to be included in the ETL process,
-as well as a single IATI XML file with all activities.</p>
+<p>To capture the Ant process log as XML data, call Ant with additional parameters:</p>
 </div>
-</dd>
-<dt class="hdlist1">Run the ETL process</dt>
-<dd>
-<p>This uses Apache Hop to process the raw data file.
-It creates the dimension tables, and the fact tables for budgets, transactions,
-and results.</p>
 <div class="paragraph">
-<p>The data is stored in a Postgres or Azure SQL database.</p>
+<p>When running within the container:</p>
 </div>
-</dd>
-<dt class="hdlist1">Update the PowerBI dashboard</dt>
-<dd>
-<p>The PowerBI service can automatically refresh the data from an Azure SQL database.
-When working with a (local or cloud-based) Postgres database,
-the dashboard needs to be refreshed manually from within the PowerBI desktop application.</p>
-</dd>
-</dl>
+<div class="literalblock">
+<div class="content">
+<pre>$ ant -logger org.apache.tools.ant.XmlLogger -logfile /workspace/output/ant-log.xml &lt;target&gt;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When using the container image with the calling script:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ aida-s2i -xml &lt;target&gt;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The Ant logfile will be stored in the workspace&#8217;s <code>output</code> directory.</p>
+</div>
+<div class="paragraph">
+<p>It can be transformed into a JSON representation using the XSLT file in <code>lib/ant-log-json.xslt</code>.
+This can be done via Ant as well.</p>
+</div>
+<div class="paragraph">
+<p>Within the container:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ ant ant-log-json</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Or via the calling script:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ aida-s2i ant-log-json</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The JSON data will look like this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "time": "5 seconds", <i class="conum" data-value="1"></i><b>(1)</b>
+  "success": true, <i class="conum" data-value="2"></i><b>(2)</b>
+  "steps": [ <i class="conum" data-value="3"></i><b>(3)</b>
+    {
+      "name": "excel-csv",
+      "time": "1 second",
+      "tasks": [ <i class="conum" data-value="4"></i><b>(4)</b>
+        {
+          "name": "echo",
+          "time": "0 seconds",
+          "messages": [ <i class="conum" data-value="5"></i><b>(5)</b>
+            "Convert spreadsheets to CSV files for further processing."
+          ]
+        },
+        {
+          "name": "apply",
+          "time": "1 second",
+          "messages": [
+            "convert /workspace/input/Optional/Humanitarian_Template (optional).xlsx -&gt; /workspace/tmp/Humanitarian_Template (optional).csv using filter : Text - txt - csv (StarCalc):44,34,76,1",
+            "Overwriting: /workspace/tmp/Humanitarian_Template (optional).csv",
+            "convert /workspace/input/Optional/Location_template (optional).xlsx -&gt; /workspace/tmp/Location_template (optional).csv using filter : Text - txt - csv (StarCalc):44,34,76,1",
+            "Overwriting: /workspace/tmp/Location_template (optional).csv",
+            "convert /workspace/input/Optional/Related activities_Template (optional).xlsx -&gt; /workspace/tmp/Related activities_Template (optional).csv using filter : Text - txt - csv (StarCalc):44,34,76,1",
+            "Overwriting: /workspace/tmp/Related activities_Template (optional).csv"
+          ]
+        }
+      ]
+    },
+
+    {"...etcetera..."}
+  ]
+}</code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Total time of Ant process</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Whether the Ant process ended without an error.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Array of steps taken (Ant targets)</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>Array of tasks within each step</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>Array of messages generated by the Ant process.</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="../datamodel/results.html">Results</a></span>
+  <span class="prev"><a href="index.html">IATI Workbench</a></span>
+  <span class="next"><a href="workspace.html">Workspace location</a></span>
 </nav>
 </article>
   </div>
@@ -369,8 +418,8 @@ the dashboard needs to be refreshed manually from within the PowerBI desktop app
     </symbol>
   </defs>
 </svg>
-<script src="../../../../_/js/site.js"></script>
-<script async src="../../../../_/js/vendor/highlight.js"></script>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
 <script type="application/json" class="js-hypothesis-config">
 {
   "showHighlights": "whenSidebarOpen"

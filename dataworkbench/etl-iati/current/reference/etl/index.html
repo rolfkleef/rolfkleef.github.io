@@ -3,10 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Dimensional model: finances :: Dataworkbench</title>
-    <link rel="prev" href="index.html">
-    <link rel="next" href="results.html">
-    <meta name="generator" content="Antora 3.0.0">
+    <title>ETL process :: Dataworkbench</title>
+    <link rel="prev" href="../datamodel/results.html">
+    <meta name="generator" content="Antora 3.0.1">
     <link rel="stylesheet" href="../../../../_/css/site.css">
     <script>var uiRootPath = '../../../../_'</script>
   </head>
@@ -39,7 +38,7 @@
         <a class="navbar-item" href="../../../../api/index.html">API</a>
         <a class="navbar-item" href="../../../../dwb-cluster/index.html">Cluster</a>
         <a class="navbar-item" href="../../../../frontend/index.html">Frontend</a>
-        <a class="navbar-item" href="../../../../iati-workbench/1.5.1/index.html">IATI Workbench</a>
+        <a class="navbar-item" href="../../../../iati-workbench/current/index.html">IATI Workbench</a>
         <a class="navbar-item" href="../../../../validator/index.html">Validator</a>
   </div>
 </div>
@@ -93,18 +92,18 @@
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="index.html">Data model</a>
+    <a class="nav-link" href="../datamodel/index.html">Data model</a>
 <ul class="nav-list">
-  <li class="nav-item is-current-page" data-depth="3">
-    <a class="nav-link" href="finances.html">Finances</a>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../datamodel/finances.html">Finances</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="results.html">Results</a>
+    <a class="nav-link" href="../datamodel/results.html">Results</a>
   </li>
 </ul>
   </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../etl/index.html">ETL process</a>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="index.html">ETL process</a>
   </li>
 </ul>
   </li>
@@ -152,13 +151,13 @@
       </ul>
     </li>
     <li class="component">
-      <a class="title" href="../../../../iati-workbench/1.5.1/index.html">IATI Workbench</a>
+      <a class="title" href="../../../../iati-workbench/current/index.html">IATI Workbench</a>
       <ul class="versions">
         <li class="version">
           <a href="../../../../iati-workbench/next/index.html">next</a>
         </li>
         <li class="version is-latest">
-          <a href="../../../../iati-workbench/1.5.1/index.html">1.5.1</a>
+          <a href="../../../../iati-workbench/current/index.html">1.5.1</a>
         </li>
       </ul>
     </li>
@@ -178,67 +177,84 @@
 <main class="article">
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
-  <a href="../../../../iati-workbench/1.5.1/index.html" class="home-link"></a>
+  <a href="../../../../iati-workbench/current/index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../../index.html">ETL for IATI</a></li>
     <li>Reference</li>
-    <li><a href="index.html">Data model</a></li>
-    <li><a href="finances.html">Finances</a></li>
+    <li><a href="index.html">ETL process</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/data4development/etl-iati/edit/develop/docs/modules/reference/pages/datamodel/finances.adoc" target="_blank">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/data4development/etl-iati/edit/develop/docs/modules/reference/pages/etl/index.adoc" target="_blank">Edit this Page</a></div>
   </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Dimensional model: finances</h1>
+<h1 class="page">ETL process</h1>
 <div class="sect1">
-<h2 id="_processing"><a class="anchor" href="#_processing"></a>Processing</h2>
+<h2 id="_overview"><a class="anchor" href="#_overview"></a>Overview</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_facts_table_fct_budgets"><a class="anchor" href="#_facts_table_fct_budgets"></a>Facts table <em>fct_budgets</em></h3>
+<div class="paragraph">
+<p>The data processing process:</p>
+</div>
 <div class="dlist">
 <dl>
-<dt class="hdlist1">Budgets are split per year</dt>
+<dt class="hdlist1">Gather source files</dt>
 <dd>
-<p>If a budget period spans multiple calendar years, it is divided in portions per calendar year.
-The ratio is determined by the number of days in each year:
-an activity from 1-1-2020 to 30-6-2021 will have two-thirds of the budget in 2020
-and one-third in year 2021.</p>
+<p>Gather the IATI source data files of the organisations in a programme.</p>
 </dd>
-<dt class="hdlist1">Budgets are also split per country and region</dt>
+<dt class="hdlist1">Gather programme information</dt>
 <dd>
-<p>The budget-per-year is also split per country or region, based on the percentage is the data.</p>
+<p>The spreadsheet <code>partnership-info</code> contains information about the required content.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Sheet <em>joint reponses</em>: list of programmes to include
+(programme name, top-level activity identifier).</p>
+</li>
+<li>
+<p>Sheet <em>results</em>: result and indicator reference codes to include in the dashboard
+(results subtheme, official result and indicator title)</p>
+</li>
+<li>
+<p>Sheet <em>dimensions</em>: translation table from published dimension names and values
+to "official" names and values.</p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Find downstream activities</dt>
+<dd>
+<p>XSLT script that uses the sheet of <em>joint responses</em> as starting point,
+and looks for linked activities.</p>
+<div class="paragraph">
+<p>The result is a list of all activities to be included in the ETL process,
+as well as a single IATI XML file with all activities.</p>
+</div>
+</dd>
+<dt class="hdlist1">Run the ETL process</dt>
+<dd>
+<p>This uses Apache Hop to process the raw data file.
+It creates the dimension tables, and the fact tables for budgets, transactions,
+and results.</p>
+<div class="paragraph">
+<p>The data is stored in a Postgres or Azure SQL database.</p>
+</div>
+</dd>
+<dt class="hdlist1">Update the PowerBI dashboard</dt>
+<dd>
+<p>The PowerBI service can automatically refresh the data from an Azure SQL database.
+When working with a (local or cloud-based) Postgres database,
+the dashboard needs to be refreshed manually from within the PowerBI desktop application.</p>
 </dd>
 </dl>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_facts_table_fct_transactions"><a class="anchor" href="#_facts_table_fct_transactions"></a>Facts table <em>fct_transactions</em></h3>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Transaction values per type</dt>
-<dd>
-<p>The transaction values are stored in separate fields depending on the transaction type.
-Not all transaction types are included yet.</p>
-</dd>
-</dl>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/financial.png" alt="financial">
-</div>
-<div class="title">Figure 1. Financial facts and dimensions</div>
-</div>
 </div>
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="index.html">Data model</a></span>
-  <span class="next"><a href="results.html">Results</a></span>
+  <span class="prev"><a href="../datamodel/results.html">Results</a></span>
 </nav>
 </article>
   </div>

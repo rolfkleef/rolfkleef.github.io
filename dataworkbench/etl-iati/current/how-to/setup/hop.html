@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Data model :: Dataworkbench</title>
-    <link rel="prev" href="../project-layout.html">
-    <link rel="next" href="finances.html">
-    <meta name="generator" content="Antora 3.0.0">
+    <title>Set up Hop :: Dataworkbench</title>
+    <link rel="prev" href="../../index.html">
+    <link rel="next" href="azure.html">
+    <meta name="generator" content="Antora 3.0.1">
     <link rel="stylesheet" href="../../../../_/css/site.css">
     <script>var uiRootPath = '../../../../_'</script>
   </head>
@@ -39,7 +39,7 @@
         <a class="navbar-item" href="../../../../api/index.html">API</a>
         <a class="navbar-item" href="../../../../dwb-cluster/index.html">Cluster</a>
         <a class="navbar-item" href="../../../../frontend/index.html">Frontend</a>
-        <a class="navbar-item" href="../../../../iati-workbench/1.5.1/index.html">IATI Workbench</a>
+        <a class="navbar-item" href="../../../../iati-workbench/current/index.html">IATI Workbench</a>
         <a class="navbar-item" href="../../../../validator/index.html">Validator</a>
   </div>
 </div>
@@ -67,14 +67,14 @@
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Set up</span>
 <ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../how-to/setup/hop.html">Hop</a>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="hop.html">Hop</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../how-to/setup/azure.html">Azure</a>
+    <a class="nav-link" href="azure.html">Azure</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../how-to/setup/database.html">database</a>
+    <a class="nav-link" href="database.html">database</a>
   </li>
 </ul>
   </li>
@@ -89,22 +89,22 @@
     <span class="nav-text">Reference</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../project-layout.html">Project layout</a>
+    <a class="nav-link" href="../../reference/project-layout.html">Project layout</a>
   </li>
-  <li class="nav-item is-current-page" data-depth="2">
+  <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="index.html">Data model</a>
+    <a class="nav-link" href="../../reference/datamodel/index.html">Data model</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="finances.html">Finances</a>
+    <a class="nav-link" href="../../reference/datamodel/finances.html">Finances</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="results.html">Results</a>
+    <a class="nav-link" href="../../reference/datamodel/results.html">Results</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../etl/index.html">ETL process</a>
+    <a class="nav-link" href="../../reference/etl/index.html">ETL process</a>
   </li>
 </ul>
   </li>
@@ -152,13 +152,13 @@
       </ul>
     </li>
     <li class="component">
-      <a class="title" href="../../../../iati-workbench/1.5.1/index.html">IATI Workbench</a>
+      <a class="title" href="../../../../iati-workbench/current/index.html">IATI Workbench</a>
       <ul class="versions">
         <li class="version">
           <a href="../../../../iati-workbench/next/index.html">next</a>
         </li>
         <li class="version is-latest">
-          <a href="../../../../iati-workbench/1.5.1/index.html">1.5.1</a>
+          <a href="../../../../iati-workbench/current/index.html">1.5.1</a>
         </li>
       </ul>
     </li>
@@ -178,38 +178,28 @@
 <main class="article">
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
-  <a href="../../../../iati-workbench/1.5.1/index.html" class="home-link"></a>
+  <a href="../../../../iati-workbench/current/index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../../index.html">ETL for IATI</a></li>
-    <li>Reference</li>
-    <li><a href="index.html">Data model</a></li>
+    <li>How to</li>
+    <li>Set up</li>
+    <li><a href="hop.html">Hop</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/data4development/etl-iati/edit/develop/docs/modules/reference/pages/datamodel/index.adoc" target="_blank">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/data4development/etl-iati/edit/develop/docs/modules/how-to/pages/setup/hop.adoc" target="_blank">Edit this Page</a></div>
   </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Data model</h1>
+<h1 class="page">Set up Hop</h1>
 <div class="sect1">
-<h2 id="_dimensional_model_general_dimensions"><a class="anchor" href="#_dimensional_model_general_dimensions"></a>Dimensional model: general dimensions</h2>
+<h2 id="_download_and_install_hop"><a class="anchor" href="#_download_and_install_hop"></a>Download and install Hop</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>These dimensions are commonly used.</p>
-</div>
-<div class="sect2">
-<h3 id="_dim_date"><a class="anchor" href="#_dim_date"></a><em>dim_date</em></h3>
-<div class="paragraph">
-<p>This is a generic table with fields to make aggregation and presentation easier.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_dim_organisations"><a class="anchor" href="#_dim_organisations"></a><em>dim_organisations</em></h3>
-<div class="paragraph">
-<p>Organisation identifier and name.</p>
+<p>Download Hop <a href="https://hop.apache.org/download/" target="_blank" rel="noopener">from the Hop website</a>.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -219,63 +209,56 @@
 </td>
 <td class="content">
 <div class="paragraph">
-<p>The table is set up as <em>historical dimension table</em>
-with fields for the version and period that version is valid.
-We don&#8217;t use the historical aspect.</p>
+<p>Currently, the easiest approach is to set up the software on the local machine.</p>
+</div>
+<div class="paragraph">
+<p>There is a Docker version with a web server,
+where the whole application is served in the browser.
+However, setting this up with a project in a repository is not tested,
+nor documented at this moment.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_dim_activities"><a class="anchor" href="#_dim_activities"></a><em>dim_activities</em></h3>
+</div>
+<div class="sect1">
+<h2 id="_choose_a_config_and_audit_folder"><a class="anchor" href="#_choose_a_config_and_audit_folder"></a>Choose a config and audit folder</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>Activity information,
-hierarchical level and parent in a programme (or partnership),
-partnership title and identifier.</p>
+<p>Hop stores information about your local setup in two folders:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The config folder has information about your local configuration,
+projects and environments.</p>
+</li>
+<li>
+<p>The audit folder has logging and history information.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p>This allows grouping per programme.</p>
+<p>By default, Hop uses folders within the installed application folder.
+This makes it more tricky to replace that with a newer version.</p>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-This is also seet up as <em>historical dimension</em>.
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_dim_countries"><a class="anchor" href="#_dim_countries"></a><em>dim_countries</em></h3>
 <div class="paragraph">
-<p>Country code, country name according to IATI, country name according to MinBuza,
-region name according to IATI and to MinBuza,
-information about income class, fragility and LDC status.</p>
+<p>Use environment variables to specify different locations.</p>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-This is also seet up as <em>historical dimension</em>.
-</td>
-</tr>
-</table>
+<div class="listingblock">
+<div class="title">Example alternative locations</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-sh hljs" data-lang="sh">HOP_CONFIG_FOLDER=$HOME/hop/config
+HOP_AUDIT_FOLDER=$HOME/hop/audit</code></pre>
 </div>
 </div>
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="../project-layout.html">Project layout</a></span>
-  <span class="next"><a href="finances.html">Finances</a></span>
+  <span class="prev"><a href="../../index.html">ETL for IATI</a></span>
+  <span class="next"><a href="azure.html">Azure</a></span>
 </nav>
 </article>
   </div>
