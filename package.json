@@ -9,11 +9,11 @@
     "docs": "antora --stacktrace ${PLAYBOOK:-antora/playbooks/docs.yml}"
   },
   "dependencies": {
-    "@antora/lunr-extension": "^1.0.0-alpha.3",
-    "@djencks/asciidoctor-mathjax": "^0.0.7",
+    "@antora/lunr-extension": "^1.0.0-alpha.6",
+    "@djencks/asciidoctor-mathjax": "^0.0.8",
     "@mvik/asciidoctor-hill-chart": "^0.1.2",
-    "antora": "^3.0.0",
-    "asciidoctor-kroki": "^0.12.0"
+    "antora": "^3.0.1",
+    "asciidoctor-kroki": "^0.15.4"
   },
   "engines": {
     "node": ">=16"
