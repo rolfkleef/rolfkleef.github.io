@@ -9,7 +9,7 @@
     "docs": "antora --stacktrace ${PLAYBOOK:-antora/playbooks/docs.yml}"
   },
   "dependencies": {
-    "@antora/lunr-extension": "^1.0.0-alpha.6",
+    "@antora/lunr-extension": "^1.0.0-alpha.8",
     "@djencks/asciidoctor-mathjax": "^0.0.8",
     "@mvik/asciidoctor-hill-chart": "^0.1.2",
     "antora": "^3.0.1",
