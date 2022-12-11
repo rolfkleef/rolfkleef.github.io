@@ -4,7 +4,7 @@
   "homepage": "https://docs.drostan.org",
   "repository": "rolfkleef/rolfkleef.github.io",
   "scripts": {
-    "prelocal": "docker-compose -p antora up -d",
+    "prelocal": "docker compose -p antora up -d",
     "local": "PLAYBOOK=${PLAYBOOK:-antora/localhost/playbooks/notes.yml} npm run notes",
     "notes": "antora --stacktrace ${PLAYBOOK:-antora/playbooks/notes.yml}"
   },
