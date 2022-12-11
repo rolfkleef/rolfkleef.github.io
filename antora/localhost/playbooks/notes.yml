@@ -16,7 +16,7 @@ content:
     - docs/overview
     - docs/documentation_system
 
-  - url: https://gitlab.com/rolfkleef/drostan-styleguide.git
+  - url: ~/dev/drostan/styleguide
     branches: main
     start_paths:
     - docs
@@ -28,7 +28,7 @@ runtime:
 # tag::ui[]
 ui:
   bundle:
-    url: https://gitlab.com/rolfkleef/drostan-antora-ui/-/jobs/artifacts/drostan/raw/build/ui-bundle.zip?job=bundle-stable
+    url: ~/dev/drostan/antora-ui/build/ui-bundle.zip
     snapshot: true
 # end::ui[]
 
