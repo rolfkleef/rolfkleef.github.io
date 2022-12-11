@@ -1,7 +1,7 @@
 # Antora playbook for local development
 
 site:
-  title: My documentation
+  title: Local Notes
   start_page: overview::index.adoc
 
 # Run `git worktree add build/site site` to check out the Github Pages branch here:
@@ -30,7 +30,6 @@ ui:
   bundle:
     url: https://gitlab.com/rolfkleef/drostan-antora-ui/-/jobs/artifacts/drostan/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true
-  supplemental_files: antora/supplemental-ui
 # end::ui[]
 
 antora:

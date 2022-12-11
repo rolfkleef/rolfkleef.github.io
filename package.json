@@ -5,8 +5,8 @@
   "repository": "rolfkleef/rolfkleef.github.io",
   "scripts": {
     "prelocal": "docker-compose -p antora up -d",
-    "local": "PLAYBOOK=${PLAYBOOK:-antora/localhost/playbooks/docs.yml} npm run docs",
-    "docs": "antora --stacktrace ${PLAYBOOK:-antora/playbooks/docs.yml}"
+    "local": "PLAYBOOK=${PLAYBOOK:-antora/localhost/playbooks/notes.yml} npm run notes",
+    "notes": "antora --stacktrace ${PLAYBOOK:-antora/playbooks/notes.yml}"
   },
   "dependencies": {
     "@antora/lunr-extension": "^1.0.0-alpha.8",
