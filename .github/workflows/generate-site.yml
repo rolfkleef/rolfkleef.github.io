@@ -26,8 +26,8 @@ jobs:
       - name: Setup Antora
         run: npm ci --production
 
-      - name: Generate main docs site
-        run: npm run docs
+      - name: Generate main notes site
+        run: npm run notes
 
       - name: Deploy site
         uses: peaceiris/actions-gh-pages@v3
