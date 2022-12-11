@@ -29,9 +29,6 @@ jobs:
       - name: Generate main docs site
         run: npm run docs
 
-      - name: Generate dataworkbench docs
-        run: PLAYBOOK=antora/playbooks/dataworkbench.yml npm run docs
-
       - name: Deploy site
         uses: peaceiris/actions-gh-pages@v3
         with:
