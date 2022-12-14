@@ -1,5 +1,4 @@
 # Antora playbook for local development
-
 site:
   title: Local Notes
   start_page: overview::index.adoc
@@ -10,13 +9,13 @@ output:
 
 content:
   sources:
-  - url: ./../../..
+  - url: ./../..
     branches: HEAD
     start_paths:
     - docs/overview
     - docs/documentation_system
 
-  - url: ~/dev/drostan/styleguide
+  - url: https://gitlab.com/rolfkleef/drostan-styleguide.git
     branches: main
     start_paths:
     - docs
