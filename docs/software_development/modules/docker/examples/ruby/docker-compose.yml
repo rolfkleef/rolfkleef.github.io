@@ -1,0 +1,63 @@
+version: '3.9'
+
+services:
+  db:
+    image: postgres:13.4
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "${POSTGRES_PORT}:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+  redis:
+    image: redis
+    ports:
+      - "${REDIS_PORT}:6379"
+
+  app:
+    build: 
+      context: .
+      secrets:
+        - github_user
+        - github_token
+    environment:
+      DATABASE_URL: postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db/${POSTGRES_DB}
+      SELENIUM_HUB_URL: http://chrome:4444/wd/hub
+      TEST_APP_HOST: app
+      TEST_APP_PORT: 3001
+    ports:
+      - "${APP_PORT}:3000"
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+      - redis
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
+    ports:
+      - "${PGADMIN_PORT}:80"
+    depends_on:
+      - db
+
+  chrome:
+    image: selenium/standalone-chrome
+    environment:
+      HUB_HOST: hub
+    ports:
+      - "4444:4444"
+
+volumes:
+  postgres-data:
+
+secrets:
+  github_user:
+    environment: "GITHUB_USER"
+  github_token:
+    environment: "GITHUB_TOKEN"

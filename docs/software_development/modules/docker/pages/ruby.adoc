@@ -1,0 +1,84 @@
+= Ruby and Rails
+
+== Setup
+
+My current Ruby setup runs:
+
+* An application server,
+with a local source directory added as _bind mount_.
+* A Postgres server,
+with its database stored on a Docker volume.
+* A Redis server.
+* A PgAdmin server,
+to manage the Postgres database(s).
+* A Chrome server to run headless Selenium tests.
+
+[plantuml]
+----
+skinparam DatabaseFontColor #fff
+
+cloud project {
+  component app
+  component pgadmin
+  component chrome
+  database redis
+  database db
+  storage pgdata as "docker\nvolume"
+  app -- db
+  app -- redis
+  app -- chrome
+  pgadmin -- db
+  pgdata - db
+}
+folder local as "local directory"
+app <- local: bind mount
+----
+
+Configuration remarks:
+
+[CAUTION]
+====
+The local directory is added via a bind mount,
+but nothing has been done yet to test
+how files uploaded to the server are handled.
+====
+
+* The app server will be built within the container.
+My local machine has no Ruby or Yarn installed.
+* This creates a problem with providing an updated
+`Gemfile.lock` or `yarn.lock`,
+or having up to date `node_modules`.
+My workaround is to run a bash shell in the container,
+with a bind of my local directory,
+to install new a Gem or NPM package.
+* Some of the Gems come from private GitHub repositories.
+It is therefore necessary to pass an access token,
+using Docker secrets,
+and to supply them to `bundle` as environment variable.
++
+[source,dockerfile]
+....
+RUN --mount=type=secret,id=github_user \
+  --mount=type=secret,id=github_token \
+  BUNDLE_GITHUB__COM=$(cat /run/secrets/github_user):$(cat /run/secrets/github_token) bundle install
+....
+
+== Example files
+
+..env
+[source,bash]
+....
+include::example$ruby/env[]
+....
+
+.docker-compose.yml
+[source,yaml]
+....
+include::example$ruby/docker-compose.yml[]
+....
+
+.Dockerfile
+[source,dockerfile]
+....
+include::example$ruby/Dockerfile[]
+....
