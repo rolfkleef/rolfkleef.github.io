@@ -1,0 +1,55 @@
+= Antora
+
+== Setup
+
+My current Antora setup runs:
+
+* A Kroki main server to generate images from PlantUML sources.
+* A Mermaid server in support of Kroki.
+
+[plantuml]
+----
+cloud project {
+  component kroki
+  component mermaid
+  kroki -> mermaid
+}
+----
+
+Configuration remarks:
+
+* The Kroki servers also run in a GitHub action.
+There, they can be reached using the domain name `kroki`.
+To make the same playbook work locally,
+I added this name to my `/etc/hosts` file too:
++
+[source]
+....
+127.0.0.1	kroki
+....
+* In an Antora playbook,
+I add the following lines to use Kroki:
++
+[source,yaml]
+....
+asciidoc:
+  extensions:
+  - asciidoctor-kroki # <.>
+  attributes:
+    kroki-fetch-diagram: true # <.>
+    allow-uri-read: true
+    experimental: true
+    kroki-default-format@: svg
+    kroki-server-url: http://kroki:8000 # <.>
+....
+<.> Use kroki to generate diagram images
+<.> For kroki: store the image. This requires `allow-uri-read`, as well as `experimental` (to override kroki security)
+<.> Uses a local kroki server via docker compose
+
+== Example files
+
+.docker-compose.yml
+[source,yaml]
+....
+include::example$antora/docker-compose.yml[]
+....

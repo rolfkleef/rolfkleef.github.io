@@ -1,0 +1,38 @@
+# Environment variables for Docker
+# Add as `.env` in the project root directory
+
+# Optional: by default Docker generates a project name based on the base directory of docker-compose.yml
+# COMPOSE_PROJECT_NAME=myproject
+
+# Numerical user and group id for the current user (find them with the command `id`)
+# This will run Apache as the current user, and makes installing and updating from the front-end possible
+UID=1001
+GID=1001
+
+# Ports for the web interfaces of Wordpress and PHPMyAdmin: localhost:<PORT>
+# When running multiple environments at the same time, assign unique port numbers
+WORDPRESS_PORT=8001
+PMA_PORT=8002
+
+# Hardcode the Wordpress URLs so that settings in the database are ignored
+# (Makes it easier to work with a copy of the live database.)
+WORDPRESS_HOME=http://localhost:${WORDPRESS_PORT}
+WORDPRESS_SITEURL=http://localhost:${WORDPRESS_PORT}
+
+# Local directory where Wordpress sources reside
+# This will be mounted into the Wordpress container
+WORDPRESS_SOURCES=./htdocs/
+
+# Extra instructions to evaluate in wp-config.php
+# Can be given as PHP instructions, or read from a file
+WORDPRESS_CONFIG_EXTRA=
+WORDPRESS_CONFIG_EXTRA_FILE=wp-config-extra-dev.php
+
+# Database info.
+# MySQL is run as local service 'db' and can therefore be reached as host 'db'
+WORDPRESS_DB_HOST=db
+WORDPRESS_DB_USER=root
+WORDPRESS_DB_PASSWORD=local
+WORDPRESS_DB_ROOT_PASSWORD=local
+
+WORDPRESS_DB_NAME=mydatabase

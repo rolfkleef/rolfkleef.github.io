@@ -1,0 +1,58 @@
+= Wordpress
+
+== Setup
+
+My current Wordpress setup runs:
+
+* An Apache server,
+with a local source directory added as _bind mount_.
+* A MySQL server,
+with its database stored on a Docker volume.
+* A PhpMyAdmin server,
+to manage the database(s).
+
+[plantuml]
+----
+skinparam DatabaseFontColor #fff
+
+cloud project {
+  component site
+  component pma
+  database db
+  storage wpdb as "docker\nvolume"
+  site -- db
+  pma -- db
+  db - wpdb
+}
+folder local as "local directory"
+site <- local: bind mount
+----
+
+Configuration remarks:
+
+* You need to set your own local user and group id in `.env`.
+* Also, the `.env` file has hard-coded values
+for WORDPRESS_HOME and WORDPRESS_SITEURL,
+using `http://localhost` as the server.
+* For this to work, the application server
+in `docker-compose.yml` has the setting:
++
+[source,yaml]
+....
+    extra_hosts:
+      - localhost:host-gateway
+....
+
+== Example files
+
+..env
+[source,bash]
+....
+include::example$wordpress/env[]
+....
+
+.docker-compose.yml
+[source,yaml]
+....
+include::example$wordpress/docker-compose.yml[]
+....
