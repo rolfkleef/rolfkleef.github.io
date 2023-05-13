@@ -7,6 +7,9 @@
 <loc>https://notes.drostan.org/sitemap-overview.xml</loc>
 </sitemap>
 <sitemap>
+<loc>https://notes.drostan.org/sitemap-software_development.xml</loc>
+</sitemap>
+<sitemap>
 <loc>https://notes.drostan.org/sitemap-styleguide.xml</loc>
 </sitemap>
 </sitemapindex>
