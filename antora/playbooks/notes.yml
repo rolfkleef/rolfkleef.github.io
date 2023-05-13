@@ -16,6 +16,7 @@ content:
     start_paths:
     - docs/overview
     - docs/documentation_system
+    - docs/software_development
 
   - url: https://gitlab.com/rolfkleef/drostan-styleguide.git
     branches: main
