@@ -9,7 +9,7 @@
 
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
-<title>Zotero :: Notes</title>
+<title>Deployment diagram :: Notes</title>
 <!--<meta name="description" content="Internet trailblazer. Weaving the web to help humanity." class="yoast-seo-meta-tag">-->
 <!--<meta property="og:locale" content="en_US" class="yoast-seo-meta-tag">-->
 <!--<meta property="og:type" content="website" class="yoast-seo-meta-tag">-->
@@ -20,30 +20,30 @@
 <!--<meta property="og:site_name" content="Rolf Kleef, drostan.org" class="yoast-seo-meta-tag">-->
 <!--<meta name="twitter:card" content="summary_large_image" class="yoast-seo-meta-tag">-->
 
-  <link rel="canonical" href="https://notes.drostan.org/documentation_system/zotero/index.html">
-    <link rel="prev" href="../antora/setup.html">
-    <link rel="next" href="../tools/terminal-recording.html">
+  <link rel="canonical" href="https://notes.drostan.org/styleguide/visual_style/plantuml/deployment.html">
+    <link rel="prev" href="sequence.html">
+    <link rel="next" href="c4.html">
   <meta name="generator" content="Antora 3.1.3">
 
 <link rel="dns-prefetch" href="http://fonts.googleapis.com/">
 
-<link rel="stylesheet" href="../../_/css/site.css">
-<link rel="stylesheet" id="material-css-variables" href="../../_/css/vendor/material-css-variables.css">
-<link rel="stylesheet" id="global-styles-inline-css" href="../../_/css/vendor/global-styles-inline.css">
-<link rel="stylesheet" id="material-google-fonts-cdn-css" href="../../_/css/vendor/fonts.css" type="text/css" media="all">
-<link rel="stylesheet" id="material-design-google-style-css" href="../../_/css/vendor/google-wordpress-style.css" type="text/css" media="all">
-<link rel="stylesheet" id="material-design-google-front-end-css-css" href="../../_/css/vendor/front-end-compiled.min.css" type="text/css" media="all">
-<link rel="stylesheet" id="material-front-end-css-css" href="../../_/css/vendor/front-end-compiled.css" type="text/css" media="all">
+<link rel="stylesheet" href="../../../_/css/site.css">
+<link rel="stylesheet" id="material-css-variables" href="../../../_/css/vendor/material-css-variables.css">
+<link rel="stylesheet" id="global-styles-inline-css" href="../../../_/css/vendor/global-styles-inline.css">
+<link rel="stylesheet" id="material-google-fonts-cdn-css" href="../../../_/css/vendor/fonts.css" type="text/css" media="all">
+<link rel="stylesheet" id="material-design-google-style-css" href="../../../_/css/vendor/google-wordpress-style.css" type="text/css" media="all">
+<link rel="stylesheet" id="material-design-google-front-end-css-css" href="../../../_/css/vendor/front-end-compiled.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="material-front-end-css-css" href="../../../_/css/vendor/front-end-compiled.css" type="text/css" media="all">
 
-<script type="text/javascript" src="../../_/js/vendor/jquery.js" id="jquery-core-js"></script>
-<script type="text/javascript" src="../../_/js/vendor/jquery-migrate.js" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="../../../_/js/vendor/jquery.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="../../../_/js/vendor/jquery-migrate.js" id="jquery-migrate-js"></script>
 
-<link rel="icon" href="../../_/img/rolfkleef_512x512-32x32.png" sizes="32x32">
-<link rel="icon" href="../../_/img/rolfkleef_512x512-192x192.png" sizes="192x192">
-<link rel="apple-touch-icon" href="../../_/img/rolfkleef_512x512-180x180.png">
-<meta name="msapplication-TileImage" content="../../_/img/rolfkleef_512x512-270x270.png">
+<link rel="icon" href="../../../_/img/rolfkleef_512x512-32x32.png" sizes="32x32">
+<link rel="icon" href="../../../_/img/rolfkleef_512x512-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="../../../_/img/rolfkleef_512x512-180x180.png">
+<meta name="msapplication-TileImage" content="../../../_/img/rolfkleef_512x512-270x270.png">
 
-<script>var uiRootPath = '../../_'</script>
+<script>var uiRootPath = '../../../_'</script>
 </head>
 
 <body class="home wp-custom-logo mdc-typography hfeed no-sidebar customize-support article">
@@ -53,9 +53,9 @@
   <div class="mdc-drawer__header">
     <div class="logo">
       <a href="https://drostan.org" class="custom-logo-link" rel="home" aria-current="page"><img
-        src="../../_/img/rolfkleef_512x512.png" class="custom-logo"
+        src="../../../_/img/rolfkleef_512x512.png" class="custom-logo"
         alt="Rolf Kleef, drostan.org" decoding="async"
-        srcset="../../_/img/rolfkleef_512x512.png 512w, ../../_/img/rolfkleef_512x512-300x300.png 300w, ../../_/img/rolfkleef_512x512-150x150.png 150w, ../../_/img/rolfkleef_512x512-50x50.png 50w"
+        srcset="../../../_/img/rolfkleef_512x512.png 512w, ../../../_/img/rolfkleef_512x512-300x300.png 300w, ../../../_/img/rolfkleef_512x512-150x150.png 150w, ../../../_/img/rolfkleef_512x512-50x50.png 50w"
         sizes="(max-width: 512px) 100vw, 512px" width="512" height="512"></a></div>
 
     <div class="mdc-drawer__title">
@@ -94,17 +94,17 @@
       <a href="https://notes.drostan.org" class="mdc-list-item" tabindex="-1"><span
         class="mdc-list-item__text">Notes</span></a>
       <ul class="sub-menu">
-              <a href="../index.html" class="mdc-list-item mdc-list-item--activated" aria-selected="true"
-                 tabindex="-1">
+              <a href="../../../documentation_system/index.html" class="mdc-list-item" tabindex="-1">
                 <span class="mdc-list-item__text">Documentation system</span>
               </a>
-              <a href="../../overview/index.html" class="mdc-list-item" tabindex="-1">
+              <a href="../../../overview/index.html" class="mdc-list-item" tabindex="-1">
                 <span class="mdc-list-item__text">Overview</span>
               </a>
-              <a href="../../software_development/index.html" class="mdc-list-item" tabindex="-1">
+              <a href="../../../software_development/index.html" class="mdc-list-item" tabindex="-1">
                 <span class="mdc-list-item__text">Software development</span>
               </a>
-              <a href="../../styleguide/index.html" class="mdc-list-item" tabindex="-1">
+              <a href="../../index.html" class="mdc-list-item mdc-list-item--activated" aria-selected="true"
+                 tabindex="-1">
                 <span class="mdc-list-item__text">Style guide</span>
               </a>
       </ul>
@@ -130,9 +130,9 @@
 
         <div class="logo">
           <a href="https://drostan.org" class="custom-logo-link" rel="home" aria-current="page"><img
-            src="../../_/img/rolfkleef_512x512.png" class="custom-logo"
+            src="../../../_/img/rolfkleef_512x512.png" class="custom-logo"
             alt="Rolf Kleef, drostan.org" decoding="async"
-            srcset="../../_/img/rolfkleef_512x512.png 512w, ../../_/img/rolfkleef_512x512-300x300.png 300w, ../../_/img/rolfkleef_512x512-150x150.png 150w, ../../_/img/rolfkleef_512x512-50x50.png 50w"
+            srcset="../../../_/img/rolfkleef_512x512.png 512w, ../../../_/img/rolfkleef_512x512-300x300.png 300w, ../../../_/img/rolfkleef_512x512-150x150.png 150w, ../../../_/img/rolfkleef_512x512-50x50.png 50w"
             sizes="(max-width: 512px) 100vw, 512px" width="512" height="512"></a></div>
         <span class="mdc-top-app-bar__title top-app-bar__title">
 					<div class="site-title__wrapper">
@@ -235,26 +235,26 @@
   </div>
 </div>
 <div id="content" class="body site-content">
-<div class="nav-container" data-component="documentation_system" data-version="">
+<div class="nav-container" data-component="styleguide" data-version="">
   <nav class="nav-menu nav">
 
     <details class="components-versions">
       <summary>
-          <h3 class="title"><a href="../index.html">Documentation system</a></h3>
+          <h3 class="title"><a href="../../index.html">Style guide</a></h3>
         <i class="material-icons mdc-button__icon">expand_more</i>
       </summary>
       <ul class="components">
+            <li class="component">
+              <a class="title" href="../../../documentation_system/index.html">Documentation system</a>
+            </li>
+            <li class="component">
+              <a class="title" href="../../../overview/index.html">Overview</a>
+            </li>
+            <li class="component">
+              <a class="title" href="../../../software_development/index.html">Software development</a>
+            </li>
             <li class="component is-current">
-              <a class="title" href="../index.html">Documentation system</a>
-            </li>
-            <li class="component">
-              <a class="title" href="../../overview/index.html">Overview</a>
-            </li>
-            <li class="component">
-              <a class="title" href="../../software_development/index.html">Software development</a>
-            </li>
-            <li class="component">
-              <a class="title" href="../../styleguide/index.html">Style guide</a>
+              <a class="title" href="../../index.html">Style guide</a>
             </li>
       </ul>
     </details>
@@ -263,23 +263,45 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../technology_choices/index.html">Technology choices</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../technology_choices/asciidoc-antora.html">Asciidoc and Antora</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../technology_choices/plantuml-kroki.html">PlantUML and Kroki</a>
+    <a class="nav-link" href="../../admonition-issue-use.html">Admonition and issue use</a>
   </li>
 </ul>
   </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../setup/index.html">Setup of Antora</a>
+    <a class="nav-link" href="../index.html">Visual style</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../setup/multiple-sites.html">Combining multiple documentation sites</a>
+    <a class="nav-link" href="../antora-ui.html">Antora UI styling</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">PlantUML diagrams</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="usecase.html">Use case diagram</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="activity.html">Activity diagram</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="sequence.html">Sequence diagram</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="deployment.html">Deployment diagram</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="c4.html">C4 diagrams</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../mermaid.html">Mermaid diagrams</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../treeview.html">Treeview folder structure</a>
   </li>
 </ul>
   </li>
@@ -288,30 +310,10 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../antora/index.html">Antora</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../antora/setup.html">Antora setup</a>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-<ul class="nav-list">
-  <li class="nav-item is-current-page" data-depth="1">
-    <a class="nav-link" href="index.html">Zotero</a>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-<ul class="nav-list">
-  <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../tools/terminal-recording.html">Terminal recording</a>
+    <a class="nav-link" href="../../antora-ui/index.html">Antora UI</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../tools/mathjax.html">MathJax</a>
+    <a class="nav-link" href="../../antora-ui/lib-style.html">Style library</a>
   </li>
 </ul>
   </li>
@@ -325,40 +327,33 @@
   <header class="entry-header section-inner">
   <div class="entry-meta">
         <span class="posted-on">
-          <a class="date mdc-typography--overline" href="../index.html">
-            <time class="entry-date published" datetime="2020-02-20T11:58:59+01:00">Documentation system</time></a>
+          <a class="date mdc-typography--overline" href="../../index.html">
+            <time class="entry-date published" datetime="2020-02-20T11:58:59+01:00">Style guide</time></a>
         </span>
 <span class="posted-on">
+          <a class="date mdc-typography--overline" href="../index.html">
+            <time class="entry-date published" datetime="2020-02-20T11:58:59+01:00">Visual style</time></a>
+        </span><span class="posted-on">
           <a class="date mdc-typography--overline" href="index.html">
-            <time class="entry-date published" datetime="2020-02-20T11:58:59+01:00">Zotero</time></a>
+            <time class="entry-date published" datetime="2020-02-20T11:58:59+01:00">PlantUML diagrams</time></a>
+        </span><span class="posted-on">
+          <a class="date mdc-typography--overline" href="deployment.html">
+            <time class="entry-date published" datetime="2020-02-20T11:58:59+01:00">Deployment diagram</time></a>
         </span> </div>
-      <h1 class="entry-title mdc-typography mdc-typography--headline2">Zotero</h1>
+      <h1 class="entry-title mdc-typography mdc-typography--headline2">Deployment diagram</h1>
   </header>
-    <div id="preamble">
+    <div class="sect1">
+<h2 id="_elements"><a class="anchor" href="#_elements"></a>Elements</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p><a href="https://www.zotero.org" target="_blank" rel="noopener">Zotero</a> is a reference manager to keep track of the work of others.
-We use Zotero as a <strong>content helper</strong> to generate lists of background reading or additional information on documentation pages.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_system_overview"><a class="anchor" href="#_system_overview"></a>System overview</h2>
-<div class="sectionbody">
-<div class="admonitionblock caution">
+<div class="admonitionblock note">
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>This is a <em>works-for-me solution</em> that could eventually be replaced by an Asciidoc macro, an Antora pipeline component,
-and/or a bibtex-based approach, to be more in line with common practice.</p>
-</div>
-<div class="paragraph">
-<p>This version does not build a bibliography based on in-text references, it just creates a list as HTML file to be included.
-There is no way to cross reference or link between the text and a specific reference.</p>
+<p>This is a gallery of most elements from the documentation.</p>
 </div>
 </td>
 </tr>
@@ -366,226 +361,89 @@ There is no way to cross reference or link between the text and a specific refer
 </div>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-bb8e282a9dd7315b9458ef1bdb43e78eeea9029d.svg" alt="Zotero subsystem overview">
+<img src="../_images/diag-7ad778b08b2228bc9ec14536497b382efca37d40.svg" alt="Core elements of a sequence diagram">
 </div>
-<div class="title">Figure 1. Zotero subsystem overview</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_activities"><a class="anchor" href="#_activities"></a>Activities</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>The <strong>editor</strong> performs a few tasks.</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p><a href="#step1">Organise references in Zotero</a></p>
-</li>
-<li>
-<p><a href="#step2">Add Zotero lookup details to the content</a></p>
-</li>
-<li>
-<p><a href="#step3">Run the content helper</a></p>
-</li>
-<li>
-<p><a href="#step4">Include the reference list in a page</a></p>
-</li>
-</ol>
-</div>
-<div class="sect2">
-<h3 id="step1"><a class="anchor" href="#step1"></a>Organise references in Zotero</h3>
-<div class="paragraph">
-<p>Zotero lets you organise references in <em>collections</em> and label them with <em>tags</em>.
-Both can be used to later retrieve a set of references from Zotero.
-We use a <em>collection</em> for each page.
-<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p>
-</div>
-<div class="paragraph">
-<p>It is possible to move collections around in Zotero without changing their identifier.
-This decouples the exact hierarchy and organisation of collections in Zotero from the documentation pages.</p>
-</div>
-<div class="paragraph">
-<p>Collections can be part of a personal library or a group library.</p>
-</div>
-<div class="imageblock kroki">
-<div class="content">
-<img src="_images/diag-dd31e0f379d28025a237978fe18055e9b4cc870f.svg" alt="Current organisation of collections in Zotero">
-</div>
-<div class="title">Figure 2. Current organisation of collections in Zotero</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="step2"><a class="anchor" href="#step2"></a>Add Zotero lookup details to the content</h3>
-<div class="paragraph">
-<p>Each content component can have a file called <code>zotero</code> in the same folder as the <code>antora.yml</code> file.
-This file contains a list of reference lists to generate.</p>
+<div class="title">Figure 1. Core elements of a sequence diagram</div>
 </div>
 <div class="listingblock">
-<div class="title">A <code>zotero</code> file with two lists</div>
+<div class="title">PlantUML source</div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-text hljs" data-lang="text">collections/NAN7TETL/ ROOT background-refs <i class="conum" data-value="1"></i><b>(1)</b>
-collections/JBHC442F/ module1 further-reading mytag <i class="conum" data-value="2"></i><b>(2)</b></code></pre>
-</div>
-</div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>Get all references in the collection, and add them as <code>background-refs.html</code> to the <code>partials</code> folder of the <code>ROOT</code> module.</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>Get references in the collection with tag <code>mytag</code>, and add them as <code>further-reading.html</code> to the <code>partials</code> folder of the <code>module1</code> module.</td>
-</tr>
-</table>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>The collection id can be found in the web address <a href="https://www.zotero.org/rolfkleef/collections/NAN7TETL" target="_blank" rel="noopener">when visiting the collection online</a>.</p>
-</div>
-<div class="paragraph">
-<p>Also, the <a href="https://github.com/wshanks/Zutilo/" target="_blank" rel="noopener">Zutilo addon</a> offers a way to create links to a collection
-in either the Zotero application or the Zotero website for your library.
-This is an alternative option to find the collection id.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect2">
-<h3 id="step3"><a class="anchor" href="#step3"></a>Run the content helper</h3>
-<div class="paragraph">
-<p>The content helper <code>get-zoteros</code> is a script that can be run in a component folder.
-See below for the script itself.
-It will process the <code>zoteros</code> file and use the Zotero API to do two retrievals:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Get an HTML-formatted list of references using a specified CSL file.
-<sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup></p>
-</li>
-<li>
-<p>Add the same list formatted as COinS, to let readers quickly add the references to their own reference manager.
-<sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup></p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>The resulting HTML file is stored in the <code>partials</code> folder of a module.
-This partial file is also included in version control, so the helper only needs to be run when references have changed.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="step4"><a class="anchor" href="#step4"></a>Include the reference list in a page</h3>
-<div class="paragraph">
-<p>The reference list can be added to a page with a simple Asciidoc <code>include</code> statement in a pass-through block.</p>
-</div>
-<div class="listingblock">
-<div class="title">Add the references to an Asciidoc page</div>
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">++++
-include::partials$background-refs.html[]
-++++</code></pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_content_helper_script"><a class="anchor" href="#_content_helper_script"></a>Content helper script</h2>
-<div class="sectionbody">
-<div class="listingblock">
-<div class="title">The <code>get-zoteros</code> script</div>
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">#!/bin/bash
-# load a series of zotero collections for an Antora documentation component
-ZAPI=https://api.zotero.org
-ZSRC=users/12345 <i class="conum" data-value="1"></i><b>(1)</b>
-ZKEY="Authorization: Bearer xyzxyz" <i class="conum" data-value="2"></i><b>(2)</b>
-CSL=https://www.drostan.org/drostan.csl <i class="conum" data-value="3"></i><b>(3)</b>
+<pre class="highlightjs highlight"><code class="language-plantuml hljs" data-lang="plantuml">@startuml
+actor actor
+usecase usecase
+actor - usecase
 
-if [[ -e antora.yml &amp;&amp; -e zotero ]]; then
-  cat zotero | while read zget module partial tag; do
-    if [[ -n "$tag" ]]; then
-      with_tag=" with tag $tag"
-      p_tag="&amp;tag=$tag"
-    else
-      with_tag=
-      p_tag=
-    fi
-    echo "Getting ${zget}items$with_tag and putting into $module/partials/$partial.html"
-    mkdir -p "modules/$module/partials"
-    curl -sS -H "$ZKEY" "$ZAPI/$ZSRC/${zget}items?format=bib&amp;linkwrap=1$p_tag&amp;itemType=-attachment&amp;style=$CSL" -o "modules/$module/partials/$partial.html"
-    echo "Appending COinS info"
-    curl -sS -H "$ZKEY" "$ZAPI/$ZSRC/${zget}items?format=coins$p_tag&amp;itemType=-attachment" &gt;&gt; "modules/$module/partials/$partial.html"
+cloud cloud {
+    agent agent
+    boundary boundary
+    card card
+    collections collections
+    control control
+    database database
+    entity entity
+    label label
+    node node {
+        port p1
+        port p2
+        component component
+        interface interface
+        component - interface
+    }
+    queue queue
+    stack stack
+    storage storage
 
-    echo "Include references with:" <i class="conum" data-value="4"></i><b>(4)</b>
-    echo -e "\n[bibliography]"
-    echo -e "== Background references\n"
+    stack -- boundary
+    stack -- control
+    stack -- entity
 
-    echo "++++"
-    echo "include::partial\$$partial.html[]"
-    echo -e "++++\n"
-  done
-fi</code></pre>
+    component -- database
+    database --* storage
+    component -- queue
+    queue --o stack
+    component -- collections
+    collections 0)-- card
+}
+
+actor --(0)-&gt; agent
+actor ---&gt;&gt; agent
+actor -- p1
+actor -- p2
+agent -- interface
+
+folder folder {
+    package package
+    artifact artifact
+    file file
+    package -- artifact
+    artifact -- file
+}
+
+card --- package
+
+frame frame {
+    circle circle
+    hexagon hexagon
+    rectangle rectangle
+    hexagon 0==@ rectangle
+    circle ..# hexagon
+}
+
+card --- frame
+
+@enduml</code></pre>
 </div>
 </div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>Choose between 'users' and 'groups', and replace <code>12345</code> with the appropriate user or group id.
-The user id can be found <a href="https://www.zotero.org/settings/keys" target="_blank" rel="noopener">on Zotero&#8217;s Feeds/API settings page</a>.</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>When using a group library, add an API key to get access.</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="3"></i><b>3</b></td>
-<td>Replace the URL of the CSL file with the desired style definition.</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="4"></i><b>4</b></td>
-<td>Print an Asciidoc snippet for a collection, that can be included in a page.</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>The <a href="https://www.zotero.org/support/dev/web_api/v3/basics" target="_blank" rel="noopener">Zotero API documentation</a> can help to change the API call to your liking.</p>
-</div>
-</div>
-</div>
-<div id="footnotes">
-<hr>
-<div class="footnote" id="_footnotedef_1">
-<a href="#_footnoteref_1">1</a>. Zotero references can be part of multiple collections.
-</div>
-<div class="footnote" id="_footnotedef_2">
-<a href="#_footnoteref_2">2</a>. <a href="https://citationstyles.org/" target="_blank" rel="noopener">See the Citation Style Language website for available styles</a>
-</div>
-<div class="footnote" id="_footnotedef_3">
-<a href="#_footnoteref_3">3</a>. <a href="https://en.wikipedia.org/wiki/COinS" target="_blank" rel="noopener">ContextObjects in Spans (COinS) embeds bibliographic metadata as HTML code.</a>
 </div>
 </div>
 </article>
           <div class="post-navigation section-inner">
           <div class="post-navigation__previous">
             <i class="material-icons mdc-button__icon">chevron_left</i>
-            <a href="../antora/setup.html" rel="prev">Antora setup</a>
+            <a href="sequence.html" rel="prev">Sequence diagram</a>
           </div>
           <div class="post-navigation__next">
-            <a href="../tools/terminal-recording.html" rel="next">Terminal recording</a>
+            <a href="c4.html" rel="next">C4 diagrams</a>
             <i class="material-icons mdc-button__icon">chevron_right</i>
           </div>
   </div>
@@ -771,11 +629,11 @@ The user id can be found <a href="https://www.zotero.org/settings/keys" target="
     </symbol>
   </defs>
 </svg>
-<script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
-<script async src="../../_/js/vendor/highlight.js"></script>
-<script src="../../_/js/vendor/lunr.js"></script>
-<script src="../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../.." data-snippet-length="100" data-stylesheet="../../_/css/search.css"></script>
-<script async src="../../search-index.js"></script>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script src="../../../_/js/vendor/lunr.js"></script>
+<script src="../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="100" data-stylesheet="../../../_/css/search.css"></script>
+<script async src="../../../search-index.js"></script>
 <script type="application/json" class="js-hypothesis-config">
 {
   "showHighlights": "whenSidebarOpen"
@@ -783,9 +641,9 @@ The user id can be found <a href="https://www.zotero.org/settings/keys" target="
 </script>
 <script async src="https://hypothes.is/embed.js"></script>
 <script type="text/javascript"
-        src="../../_/js/vendor/hoverintent-js.js"
+        src="../../../_/js/vendor/hoverintent-js.js"
         id="hoverintent-js-js"></script>
-<script type="text/javascript" src="../../_/js/vendor/front-end.js"
+<script type="text/javascript" src="../../../_/js/vendor/front-end.js"
         id="material-design-google-js-js"></script>
 </body>
 
