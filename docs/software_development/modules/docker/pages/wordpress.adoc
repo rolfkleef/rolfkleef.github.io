@@ -13,8 +13,6 @@ to manage the database(s).
 
 [plantuml]
 ----
-skinparam DatabaseFontColor #fff
-
 cloud project {
   component site
   component pma
