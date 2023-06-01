@@ -1,4 +1,4 @@
-= Ruby and Rails
+= Ruby on Rails
 
 == Setup
 
@@ -17,7 +17,9 @@ redis:: A Redis server.
 
 pgadmin:: A PgAdmin server,
 to manage the Postgres database(s).
-* A Chrome server to run headless Selenium tests.
+
+mailcatcher:: A mail host to inspect emails
+that are sent in the current session.
 
 chrome:: A Chrome server to run headless Selenium tests.
 
@@ -37,7 +39,7 @@ frame docker-compose {
   storage pgdata as "docker\nvolume"
 
   puma --> db
-  app -- redis
+  sidekiq --> mailcatcher
   puma --> redis
   redis <- sidekiq
   puma <--- chrome

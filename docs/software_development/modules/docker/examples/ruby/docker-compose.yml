@@ -18,7 +18,7 @@ services:
       - "${REDIS_PORT}:6379"
 
   app:
-    build: 
+    build:
       context: .
       secrets:
         - github_user
@@ -52,6 +52,11 @@ services:
       HUB_HOST: hub
     ports:
       - "4444:4444"
+
+  mailcatcher:
+    image: dockage/mailcatcher
+    ports:
+      - "31080:1080"
 
 volumes:
   postgres-data:
