@@ -361,7 +361,7 @@
 </div>
 <div class="imageblock kroki">
 <div class="content">
-<img src="../_images/diag-7ad778b08b2228bc9ec14536497b382efca37d40.svg" alt="Core elements of a sequence diagram">
+<img src="../_images/diag-73e901df2745ed11cdfb67bff4995c893bc981e4.svg" alt="Core elements of a sequence diagram">
 </div>
 <div class="title">Figure 1. Core elements of a sequence diagram</div>
 </div>
@@ -383,8 +383,9 @@ cloud cloud {
     entity entity
     label label
     node node {
-        port p1
-        port p2
+        port port1
+        port port2
+
         component component
         interface interface
         component - interface
@@ -407,8 +408,8 @@ cloud cloud {
 
 actor --(0)-&gt; agent
 actor ---&gt;&gt; agent
-actor -- p1
-actor -- p2
+actor -- port1
+actor -- port2
 agent -- interface
 
 folder folder {

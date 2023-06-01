@@ -277,7 +277,7 @@
     <a class="nav-link" href="antora.html">Antora</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="ruby.html">Ruby and Rails</a>
+    <a class="nav-link" href="ruby.html">Ruby on Rails</a>
   </li>
   <li class="nav-item is-current-page" data-depth="2">
     <a class="nav-link" href="wordpress.html">Wordpress</a>
@@ -319,27 +319,30 @@
 <h2 id="_setup"><a class="anchor" href="#_setup"></a>Setup</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>My current Wordpress setup runs:</p>
+<p>My current Wordpress setup runs these services:</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">site</dt>
+<dd>
 <p>An Apache server,
 with a local source directory added as <em>bind mount</em>.</p>
-</li>
-<li>
+</dd>
+<dt class="hdlist1">db</dt>
+<dd>
 <p>A MySQL server,
 with its database stored on a Docker volume.</p>
-</li>
-<li>
+</dd>
+<dt class="hdlist1">pma</dt>
+<dd>
 <p>A PhpMyAdmin server,
 to manage the database(s).</p>
-</li>
-</ul>
+</dd>
+</dl>
 </div>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-415fa75f9e8975f6b9039ddd9eb00775827d047d.svg" alt="Diagram">
+<img src="_images/diag-f6dfd4642439c98eb69eb98258e39ae406335ad2.svg" alt="Diagram">
 </div>
 </div>
 <div class="paragraph">
@@ -472,7 +475,7 @@ volumes:
           <div class="post-navigation section-inner">
           <div class="post-navigation__previous">
             <i class="material-icons mdc-button__icon">chevron_left</i>
-            <a href="ruby.html" rel="prev">Ruby and Rails</a>
+            <a href="ruby.html" rel="prev">Ruby on Rails</a>
           </div>
           <div class="post-navigation__next">
             <a href="../github/index.html" rel="next">Github</a>

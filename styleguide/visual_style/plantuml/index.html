@@ -344,7 +344,7 @@
 <div class="sectionbody">
 <div class="imageblock kroki">
 <div class="content">
-<img src="../_images/diag-28e748bef1c649ed2a739a77fec492ef3e1bbf6e.svg" alt="PlantUML Diagrams">
+<img src="../_images/diag-600065988b28dd8b1457a9ae50b9df1d43554413.svg" alt="PlantUML Diagrams">
 </div>
 <div class="title">Figure 1. PlantUML Diagrams</div>
 </div>
@@ -373,28 +373,30 @@ This configuration file uses color variables across UML elements, divided in typ
 </div>
 <div class="imageblock kroki">
 <div class="content">
-<img src="../_images/diag-7bf99ad25cce6375c7eabf7a9c601bb2354d513c.svg" alt="Colour conventions for types of diagram elements">
+<img src="../_images/diag-9e1b01c6fbad4e2596f6c498debb991aa6d7bc75.svg" alt="Colour conventions for types of diagram elements">
 </div>
 <div class="title">Figure 2. Colour conventions for types of diagram elements</div>
 </div>
 <div class="paragraph">
-<p>The boxes above are coloured using stereotypes.
-It is also possible to use variables for individual elements.
-However, this does not include foreground and border colours.</p>
+<p>The boxes above are coloured using stereotypes.</p>
 </div>
 <div class="listingblock">
-<div class="title">Example: the primary node uses a stereotype, the others plain colours</div>
+<div class="title">Source for the example above</div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-plantuml hljs" data-lang="plantuml">skinparam participant&lt;&lt;node_1&gt;&gt; {
-  $node_1_style(1)
-}
-participant "Primary node" &lt;&lt;node 1&gt;&gt;
+<pre class="highlightjs highlight"><code class="language-plantuml hljs" data-lang="plantuml">@startuml
+hide footbox
+hide stereotype
+skinparam MinimumWidth 100
 
-participant "Secondary node" $node_2_main_color
-participant "Logic element" $logic_main_color
-participant "Grouping element" $group_main_color
-participant "Divider element" $divider_main_color
-participant "Note" $note_main_color</code></pre>
+participant "Primary node" &lt;&lt;node_1&gt;&gt;
+participant "Secondary node" &lt;&lt;node_2&gt;&gt;
+participant "Logic element" &lt;&lt;logic&gt;&gt;
+participant "Grouping element" &lt;&lt;grouping&gt;&gt;
+participant "Divider element" &lt;&lt;divider&gt;&gt;
+participant "Comment" &lt;&lt;comment&gt;&gt;
+
+"Primary node" -&gt; "Comment" : messages and flows
+@enduml</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -402,29 +404,32 @@ participant "Note" $note_main_color</code></pre>
 </div>
 <div class="imageblock kroki">
 <div class="content">
-<img src="../_images/diag-564b5664e35cf930c9e688ff2403fe75b3e5392c.svg" alt="Using admonition colors for elements">
+<img src="../_images/diag-066e928e2fafa7a90522edef4cf8e106fb38e0e3.svg" alt="Using admonition colors for elements">
 </div>
 <div class="title">Figure 3. Using admonition colors for elements</div>
 </div>
 <div class="listingblock">
 <div class="title">Source for the example above</div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-plantuml hljs" data-lang="plantuml">hide footbox
+<pre class="highlightjs highlight"><code class="language-plantuml hljs" data-lang="plantuml">@startuml
+hide footbox
+skinparam MinimumWidth 100
 
-participant tip &lt;&lt;(T,$tip_color)&gt;&gt;
-note over tip $tip_color: Tip
+participant tip &lt;&lt;(T,$adm_tip_color)&gt;&gt;
+/ note over tip &lt;&lt;adm_tip&gt;&gt;: Tip
 
-participant note &lt;&lt;(N,$note_color)&gt;&gt;
-/ note over note $note_color: Note
+participant note &lt;&lt;(N,$adm_note_color)&gt;&gt;
+/ note over note &lt;&lt;adm_note&gt;&gt;: Note
 
-participant warning &lt;&lt;(W,$warning_color)&gt;&gt;
-/ note over warning $warning_color: Warning
+participant warning &lt;&lt;(W,$adm_warning_color)&gt;&gt;
+/ note over warning &lt;&lt;adm_warning&gt;&gt;: Warning
 
-participant caution &lt;&lt;(C,$caution_color)&gt;&gt;
-/ note over caution $caution_color: Caution
+participant caution &lt;&lt;(C,$adm_caution_color)&gt;&gt;
+/ note over caution &lt;&lt;adm_caution&gt;&gt;: Caution
 
-participant important &lt;&lt;(I,$important_color)&gt;&gt;
-/ note over important $important_color: Important</code></pre>
+participant important &lt;&lt;(I,$adm_important_color)&gt;&gt;
+/ note over important &lt;&lt;adm_important&gt;&gt;: Important
+@enduml</code></pre>
 </div>
 </div>
 </div>

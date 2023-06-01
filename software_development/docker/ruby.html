@@ -9,7 +9,7 @@
 
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
-<title>Ruby and Rails :: Notes</title>
+<title>Ruby on Rails :: Notes</title>
 <!--<meta name="description" content="Internet trailblazer. Weaving the web to help humanity." class="yoast-seo-meta-tag">-->
 <!--<meta property="og:locale" content="en_US" class="yoast-seo-meta-tag">-->
 <!--<meta property="og:type" content="website" class="yoast-seo-meta-tag">-->
@@ -277,7 +277,7 @@
     <a class="nav-link" href="antora.html">Antora</a>
   </li>
   <li class="nav-item is-current-page" data-depth="2">
-    <a class="nav-link" href="ruby.html">Ruby and Rails</a>
+    <a class="nav-link" href="ruby.html">Ruby on Rails</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="wordpress.html">Wordpress</a>
@@ -311,41 +311,54 @@
             <time class="entry-date published" datetime="2020-02-20T11:58:59+01:00">Docker</time></a>
         </span><span class="posted-on">
           <a class="date mdc-typography--overline" href="ruby.html">
-            <time class="entry-date published" datetime="2020-02-20T11:58:59+01:00">Ruby and Rails</time></a>
+            <time class="entry-date published" datetime="2020-02-20T11:58:59+01:00">Ruby on Rails</time></a>
         </span> </div>
-      <h1 class="entry-title mdc-typography mdc-typography--headline2">Ruby and Rails</h1>
+      <h1 class="entry-title mdc-typography mdc-typography--headline2">Ruby on Rails</h1>
   </header>
     <div class="sect1">
 <h2 id="_setup"><a class="anchor" href="#_setup"></a>Setup</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>My current Ruby setup runs:</p>
+<p>My current Ruby setup runs these services:</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>An application server,
-with a local source directory added as <em>bind mount</em>.</p>
-</li>
-<li>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">app</dt>
+<dd>
+<p>A Ruby development server,
+with a local source directory added as <em>bind mount</em>.
+It runs a Puma web server,
+and a Sidekiq server for background jobs,
+such as sending emails.</p>
+</dd>
+<dt class="hdlist1">db</dt>
+<dd>
 <p>A Postgres server,
 with its database stored on a Docker volume.</p>
-</li>
-<li>
+</dd>
+<dt class="hdlist1">redis</dt>
+<dd>
 <p>A Redis server.</p>
-</li>
-<li>
+</dd>
+<dt class="hdlist1">pgadmin</dt>
+<dd>
 <p>A PgAdmin server,
 to manage the Postgres database(s).</p>
-</li>
-<li>
+</dd>
+<dt class="hdlist1">mailcatcher</dt>
+<dd>
+<p>A mail host to inspect emails
+that are sent in the current session.</p>
+</dd>
+<dt class="hdlist1">chrome</dt>
+<dd>
 <p>A Chrome server to run headless Selenium tests.</p>
-</li>
-</ul>
+</dd>
+</dl>
 </div>
 <div class="imageblock kroki">
 <div class="content">
-<img src="_images/diag-af17fffd7075f39e352a65babe96ea0f9fe346bc.svg" alt="Diagram">
+<img src="_images/diag-01fe2243dc4e334e2f1a2de02e22c94d3a3fe9c9.svg" alt="Diagram">
 </div>
 </div>
 <div class="paragraph">
