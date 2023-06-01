@@ -2,34 +2,51 @@
 
 == Setup
 
-My current Ruby setup runs:
+My current Ruby setup runs these services:
 
-* An application server,
+app:: A Ruby development server,
 with a local source directory added as _bind mount_.
-* A Postgres server,
+It runs a Puma web server,
+and a Sidekiq server for background jobs,
+such as sending emails.
+
+db:: A Postgres server,
 with its database stored on a Docker volume.
-* A Redis server.
-* A PgAdmin server,
+
+redis:: A Redis server.
+
+pgadmin:: A PgAdmin server,
 to manage the Postgres database(s).
 * A Chrome server to run headless Selenium tests.
 
+chrome:: A Chrome server to run headless Selenium tests.
+
 [plantuml]
 ----
-cloud project {
-  component app
+frame docker-compose {
+  frame app {
+    control puma
+    control sidekiq
+    puma .. sidekiq
+  }
+  component mailcatcher
   component pgadmin
   component chrome
   database redis
   database db
   storage pgdata as "docker\nvolume"
-  app -- db
+
+  puma --> db
   app -- redis
-  app -- chrome
-  pgadmin -- db
-  pgdata - db
+  puma --> redis
+  redis <- sidekiq
+  puma <--- chrome
+  pgadmin --> db
+  db --> pgdata
 }
+
 folder local as "local directory"
-app <- local: bind mount
+puma <- local: bind mount
 ----
 
 Configuration remarks:
@@ -55,28 +72,28 @@ using Docker secrets,
 and to supply them to `bundle` as environment variable.
 +
 [source,dockerfile]
-....
+----
 RUN --mount=type=secret,id=github_user \
   --mount=type=secret,id=github_token \
   BUNDLE_GITHUB__COM=$(cat /run/secrets/github_user):$(cat /run/secrets/github_token) bundle install
-....
+----
 
 == Example files
 
 ..env
 [source,bash]
-....
+----
 include::example$ruby/env[]
-....
+----
 
 .docker-compose.yml
 [source,yaml]
-....
+----
 include::example$ruby/docker-compose.yml[]
-....
+----
 
 .Dockerfile
 [source,dockerfile]
-....
+----
 include::example$ruby/Dockerfile[]
-....
+----

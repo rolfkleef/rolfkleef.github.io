@@ -2,26 +2,27 @@
 
 == Setup
 
-My current Wordpress setup runs:
+My current Wordpress setup runs these services:
 
-* An Apache server,
+site:: An Apache server,
 with a local source directory added as _bind mount_.
-* A MySQL server,
+db:: A MySQL server,
 with its database stored on a Docker volume.
-* A PhpMyAdmin server,
+pma:: A PhpMyAdmin server,
 to manage the database(s).
 
 [plantuml]
 ----
-cloud project {
+frame docker-compose {
   component site
   component pma
   database db
   storage wpdb as "docker\nvolume"
-  site -- db
-  pma -- db
-  db - wpdb
+  site --> db
+  pma --> db
+  db --> wpdb
 }
+
 folder local as "local directory"
 site <- local: bind mount
 ----
