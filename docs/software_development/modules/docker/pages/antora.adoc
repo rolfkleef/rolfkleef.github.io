@@ -2,14 +2,14 @@
 
 == Setup
 
-My current Antora setup runs:
+My current Antora setup runs these services:
 
-* A Kroki main server to generate images from PlantUML sources.
-* A Mermaid server in support of Kroki.
+kroki:: A Kroki main server to generate images from PlantUML sources.
+mermaid:: A Mermaid server in support of Kroki.
 
 [plantuml]
 ----
-cloud project {
+frame docker-compose {
   component kroki
   component mermaid
   kroki -> mermaid
