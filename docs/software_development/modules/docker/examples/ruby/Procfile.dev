@@ -1,0 +1,5 @@
+# Run the web app with the debugger enabled <.>
+web: RUBY_DEBUG_OPEN=true bin/rails s -p ${APP_PORT} -b 0.0.0.0
+# js: yarn build
+css: yarn build:css --watch
+worker: bundle exec sidekiq
