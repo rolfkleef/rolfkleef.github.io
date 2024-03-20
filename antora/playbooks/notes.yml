@@ -1,20 +1,21 @@
-# Antora playbook for public docs website
+# Antora playbook for my notes website
 
 site:
   title: Notes
   url: https://notes.drostan.org
-  start_page: overview::index.adoc
+  start_page: notes::index.adoc
 
 # Run `git worktree add build/site site` to check out the Github Pages branch here:
 output:
   dir: build/site
-
+  clean: true
+  
 content:
   sources:
   - url: ./../..
-    branches: main
+    branches: HEAD
     start_paths:
-    - docs/overview
+    - docs/notes
     - docs/documentation_system
     - docs/software_development
 
@@ -61,6 +62,6 @@ asciidoc:
       <2> Use MathJax to generate inline SVGs for STEM content
       <3> Don't show https:// etc on bare links
       <4> For kroki: store the image. This requires `allow-uri-read`, as well as `experimental` (to override kroki security)
-      <5> Uses a local kroki server via docker bridge network and service declaration in Github Actions
+      <5> Uses a local kroki server via docker compose or service declaration in Github Actions
       <6> Include a local PlantUML styling configuration at the start of each diagram
       end::asciidoc-notes[]
