@@ -2,7 +2,7 @@ version: "3"
 
 services:
   antora:
-    image: node:16-buster
+    image: ubuntu:24.04
     command: sleep infinity
     volumes:
       - ..:/drostan/notes
