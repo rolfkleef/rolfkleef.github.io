@@ -1,4 +1,4 @@
 [submodule "styleguide"]
 	path = styleguide
-	url = https://gitlab.com/rolfkleef/drostan-styleguide.git
+	url = https://github.com/rolfkleef/drostan-styleguide.git
 	branch = main
