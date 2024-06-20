@@ -18,12 +18,8 @@ content:
     - docs/notes
     - docs/documentation_system
     - docs/software_development
-
-  - url: https://github.com/rolfkleef/drostan-styleguide.git
-    branches: main
-    start_paths:
-    - docs
-    - lib/antora
+    - styleguide/docs
+    - styleguide/lib/antora
 
 runtime:
   fetch: true
