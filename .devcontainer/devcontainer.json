@@ -13,7 +13,8 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"asciidoctor.asciidoctor-vscode"
+				"asciidoctor.asciidoctor-vscode",
+				"github.vscode-github-actions"
 			]
 		}
 	}
