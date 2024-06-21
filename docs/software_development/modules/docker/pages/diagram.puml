@@ -1,0 +1,118 @@
+@startuml
+frame docker-compose {
+  component app
+  component mailcatcher
+  component pgadmin
+  component chrome
+  database redis
+  database db
+  storage pgdata as "docker\nvolume"
+
+  app -- db
+  app -- mailcatcher
+  app -- redis
+  app -- chrome
+  pgadmin -- db
+  db -- pgdata
+
+  3000 -- app
+  5432 -- pgadmin
+  6372 --- redis
+  1080 --- mailcatcher
+}
+
+folder local as "local directory"
+local -> app: bind mount
+
+@enduml
+
+@startuml
+skinparameters
+@enduml
+
+@startuml
+version
+@enduml
+
+@startmindmap
+* PlantUML
+ * UML diagrams
+  * Behaviour diagrams
+   * Use cases
+   * Activities
+   * States
+   * Interactions
+    * Sequences
+    * Communication
+  * Structure diagrams
+   * Classes
+   * Objects
+    *_ boxless
+    *_ boxless
+   * Packages
+   * Components
+   * Deployment
+ * Other diagrams
+  * Mindmaps
+  * Work Breakdown Structures (WBS)
+  * C4 diagrams
+ * abcx
+@endmindmap
+
+@startwbs
+* PlantUML
+ * UML diagrams
+  * Behaviour diagrams
+   *_ Use cases
+   *_ Activities
+@endwbs
+
+@startmindmap
+* PlantUML
+ * UML diagrams
+  * Behaviour diagrams
+   * Use cases
+   * Activities
+   * States
+   * Interactions
+    * Sequences
+    * Communication
+  * Structure diagrams
+   * Classes
+   * Objects
+   * Packages
+   * Components
+   * Deployment
+ * Other diagrams
+  * Mindmaps
+  * Work Breakdown Structures (WBS)
+  * C4 diagrams
+ * abc
+@endmindmap
+
+@startuml
+frame docker-compose {
+  frame app {
+    control puma
+    control sidekiq
+    puma .. sidekiq
+  }
+  component mailcatcher
+  component pgadmin
+  component chrome
+  database redis
+  database db
+  storage pgdata as "docker\nvolume"
+
+  puma --> db
+  sidekiq --> mailcatcher
+  puma --> redis
+  redis <- sidekiq
+  puma <--- chrome
+  pgadmin --> db
+  db --> pgdata
+}
+
+folder local as "local directory"
+puma <- local: bind mount
+@enduml

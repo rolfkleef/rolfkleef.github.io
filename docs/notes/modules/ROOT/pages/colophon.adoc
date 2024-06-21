@@ -19,8 +19,11 @@ mailto:rolf@drostan.org[please let me know via email].
 == Construction
 
 This site is built with https://antora.org/[Antora^] and written in https://projects.eclipse.org/projects/technology.asciidoc[AsciiDoc^].
-The interface is based on the default Antora UI.
-https://gitlab.com/rolfkleef/antora-ui-default[Source code and adaptations are available on Gitlab^] under the MPL-2.0 license.
+The interface is orginally based on the default Antora UI but heavily changed by now.
+https://github.com/rolfkleef/drostan-antora-ui[Source code and adaptations are available on Github^] under the MPL-2.0 license.
+
+The notes site is built and hosted on Github.
+https://github.com/rolfkleef/rolfkleef.github.io[Source content and scripts are available on Github.^]
 
 * Read more on the choice for Antora and technical setup in the xref:documentation_system::index.adoc[] section.
 * The xref:styleguide::index.adoc[] section describes visual and textual style choices.
