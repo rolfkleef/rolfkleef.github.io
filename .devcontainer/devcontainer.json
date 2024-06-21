@@ -1,0 +1,21 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
+{
+	"name": "drostan-notes",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "antora",
+	"workspaceFolder": "/drostan/notes",
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// (in addition to the default features included in VS Code's settings.json)
+	"features": {
+		"ghcr.io/devcontainers/features/node:1": {"version": "22.3.0"}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"asciidoctor.asciidoctor-vscode",
+				"github.vscode-github-actions"
+			]
+		}
+	}
+}

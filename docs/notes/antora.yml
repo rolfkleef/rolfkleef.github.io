@@ -1,5 +1,5 @@
-name: overview
-title: Overview
+name: notes
+title: Notes
 version: ~
 nav:
 - modules/ROOT/nav.adoc

@@ -12,7 +12,10 @@ APP_PORT=3000
 POSTGRES_PORT=35432
 PGADMIN_PORT=8080
 REDIS_PORT=36379
+MAILCATCHER_PORT=31080
 
 # Secrets to download private repositories from GitHub
 GITHUB_TOKEN=...personal access token...
 GITHUB_USER=username
+
+RUBY_DEBUG_PORT=1234

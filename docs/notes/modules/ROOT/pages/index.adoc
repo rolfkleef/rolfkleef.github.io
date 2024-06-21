@@ -1,0 +1,43 @@
+= {page-component-title}
+
+== Why a notes site?
+
+Over many years of working, I have collected a lot of notes on how I tried to solve particular challenges.
+
+I often benefited from the notes of others,
+especially when dealing with technical issues
+(often dealing with very specific version or variation of software or hardware).
+
+I have also developed my own way of working, with my own tools and processes.
+Again, inspired by and learning from methodologies, books, videos, and the wisdom of others.
+
+This notes section is my attempt to share more of my own experiences and insights.
+
+== How I organise my notes
+
+I have two main approaches to deal with a wide range of topics at different levels of detail:
+
+- _Components_ address an area of work.
+For instance, the _documentation system_ describes how I implemented this notes section,
+and my approach (technical) documentation in general.
+
+- Sections and pages answer just one main question or need:
+"Can you teach me ...?", "How do I ...?", "What is ...?", "Why ...?".
+More on that will be in the _documentation system_.
+
+== Areas of work
+
+xref:documentation_system::index.adoc[]::
+Working on (technical) documentation, including this notes section.
+
+xref:software_development::index.adoc[]::
+Working on software and internet products.
+
+xref:styleguide::index.adoc[]::
+My own visual and textual styling of documents and websites.
+
+(coming soon) Personal notes and knowledge management::
+Managing private notes, tasks, and work.
+
+(coming soon) Desktop and tools::
+My desktop environment and devices.

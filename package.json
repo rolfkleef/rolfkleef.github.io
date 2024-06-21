@@ -1,19 +1,17 @@
 {
-  "name": "drostan-docs",
-  "version": "1.0.0-alpha",
-  "homepage": "https://docs.drostan.org",
+  "name": "drostan-notes",
+  "version": "1.1.0-alpha",
+  "homepage": "https://notes.drostan.org",
   "repository": "rolfkleef/rolfkleef.github.io",
   "scripts": {
-    "prelocal": "docker compose -p antora up -d",
-    "local": "PLAYBOOK=${PLAYBOOK:-antora/playbooks/local-notes.yml} npm run notes",
-    "notes": "antora --stacktrace ${PLAYBOOK:-antora/playbooks/notes.yml}"
+    "notes": "antora --stacktrace antora/playbooks/notes.yml"
   },
   "dependencies": {
     "@antora/lunr-extension": "^1.0.0-alpha.8",
     "@djencks/asciidoctor-mathjax": "^0.0.8",
     "@mvik/asciidoctor-hill-chart": "^0.1.2",
-    "antora": "^3.0.1",
-    "asciidoctor-kroki": "^0.15.4"
+    "antora": "^3.1.7",
+    "asciidoctor-kroki": "^0.18.1"
   },
   "engines": {
     "node": ">=16"

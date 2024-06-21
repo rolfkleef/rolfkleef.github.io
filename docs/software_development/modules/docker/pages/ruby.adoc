@@ -51,7 +51,7 @@ folder local as "local directory"
 puma <- local: bind mount
 ----
 
-Configuration remarks:
+== Configuration remarks:
 
 [CAUTION]
 ====
@@ -72,13 +72,9 @@ to install new a Gem or NPM package.
 It is therefore necessary to pass an access token,
 using Docker secrets,
 and to supply them to `bundle` as environment variable.
-+
-[source,dockerfile]
-----
-RUN --mount=type=secret,id=github_user \
-  --mount=type=secret,id=github_token \
-  BUNDLE_GITHUB__COM=$(cat /run/secrets/github_user):$(cat /run/secrets/github_token) bundle install
-----
+* It appears that the Ruby server does not do a lookup of `localhost`,
+and so the setting `extra_hosts: localhost:host-gateway` in `docker-compose.yml` has no effect.
+Instead, we add `host: redis` to `config/redis.yml`.
 
 == Example files
 
@@ -87,6 +83,13 @@ RUN --mount=type=secret,id=github_user \
 ----
 include::example$ruby/env[]
 ----
+
+.Procfile.dev
+----
+include::example$ruby/Procfile.dev[]
+----
+<.> In VS Code, with the Dev Containers extension, it is possible to connect to the debugger.
+I have not found a way in RubyMine yet.
 
 .docker-compose.yml
 [source,yaml]

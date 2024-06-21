@@ -1,4 +1,4 @@
-name: Generate docs website
+name: Generate notes website
 on:
   push:
     branches:
@@ -8,7 +8,7 @@ on:
 jobs:
   antora:
     runs-on: ubuntu-latest
-    container: node:16-buster
+    container: node:22-bookworm
     
     services:
       kroki:
