@@ -27,7 +27,7 @@ runtime:
 # tag::ui[]
 ui:
   bundle:
-    url: https://github.com/rolfkleef/drostan-antora-ui/releases/download/drostan-antora-ui/ui-bundle.zip
+    url: https://github.com/rolfkleef/drostan-antora-ui/releases/latest/download/ui-bundle.zip
     snapshot: true
   supplemental_files: antora/supplemental-ui
 # end::ui[]
