@@ -1,2 +1,0 @@
-* xref:terminal-recording.adoc[]
-* xref:mathjax.adoc[]

@@ -2,8 +2,4 @@ name: documentation_system
 title: Documentation system
 version: ~
 nav:
-- modules/ROOT/nav.adoc
-- modules/asciidoc/nav.adoc
-- modules/antora/nav.adoc
-- modules/zotero/nav.adoc
-- modules/tools/nav.adoc
+- nav.adoc
