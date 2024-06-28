@@ -1,0 +1,27 @@
+* Overview
+** xref:technology_choices/index.adoc[]
+ *** xref:technology_choices/asciidoc-antora.adoc[]
+ *** xref:technology_choices/plantuml-kroki.adoc[]
+
+* Tools and setup
+
+** Antora
+*** xref:setup/index.adoc[]
+*** xref:setup/multiple-sites.adoc[]
+*** xref:antora:index.adoc[]
+*** xref:antora:setup.adoc[]
+
+** Content helpers
+*** xref:tools:terminal-recording.adoc[]
+*** xref:tools:mathjax.adoc[]
+
+// * xref:index.adoc[]
+// ** xref:code-documentation/index.adoc[]
+// *** xref:code-documentation/bash.adoc[]
+// *** xref:code-documentation/yaml.adoc[]
+
+* Reference
++
+--
+include::style_guide:partial$nav/reference.adoc[]
+--

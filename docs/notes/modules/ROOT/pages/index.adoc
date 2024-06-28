@@ -33,9 +33,6 @@ Working on (technical) documentation, including this notes section.
 xref:software_development::index.adoc[]::
 Working on software and internet products.
 
-xref:styleguide::index.adoc[]::
-My own visual and textual styling of documents and websites.
-
 (coming soon) Personal notes and knowledge management::
 Managing private notes, tasks, and work.
 

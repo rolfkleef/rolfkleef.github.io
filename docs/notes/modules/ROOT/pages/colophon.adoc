@@ -26,4 +26,4 @@ The notes site is built and hosted on Github.
 https://github.com/rolfkleef/rolfkleef.github.io[Source content and scripts are available on Github.^]
 
 * Read more on the choice for Antora and technical setup in the xref:documentation_system::index.adoc[] section.
-* The xref:styleguide::index.adoc[] section describes visual and textual style choices.
+* The xref:documentation_system:style_guide:index.adoc[] section describes visual and textual style choices.
