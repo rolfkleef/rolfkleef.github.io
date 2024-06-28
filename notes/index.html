@@ -95,9 +95,6 @@
               <a href="../software_development/index.html" class="mdc-list-item" tabindex="-1">
                 <span class="mdc-list-item__text">Software development</span>
               </a>
-              <a href="../styleguide/index.html" class="mdc-list-item" tabindex="-1">
-                <span class="mdc-list-item__text">Style guide</span>
-              </a>
       </ul>
     </nav>
   </div>
@@ -145,14 +142,6 @@
       </section>
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end top-app-bar__menu" role="toolbar">
         <button
-          class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button search__button mdc-ripple-upgraded--unbounded mdc-ripple-upgraded"
-          aria-label="Search"
-          style="--mdc-ripple-fg-size: 28px; --mdc-ripple-fg-scale: 1.7142857142857142; --mdc-ripple-left: 10px; --mdc-ripple-top: 10px;">
-          <span class="mdc-button__ripple"></span>
-          search
-        </button>
-
-        <button
           class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button dark-mode__button mdc-ripple-upgraded--unbounded mdc-ripple-upgraded"
           aria-label="Toggle Dark Mode"
           style="--mdc-ripple-fg-size: 0px; --mdc-ripple-fg-scale: NaN; --mdc-ripple-left: 0px; --mdc-ripple-top: 0px;">
@@ -160,27 +149,6 @@
           <span class="dark-mode__icon">dark_mode</span>
         </button>
       </section>
-    </div>
-
-    <div class="mdc-top-app-bar__row top-app-bar__search">
-
-      <form class="search-form" action="https://drostan.org" method="get" id="search-638766d011a7c" data-hs-cf-bound="true">
-      <div class="mdc-text-field mdc-text-field--fullwidth mdc-text-field--no-label mdc-ripple-upgraded">
-        <div class="mdc-text-field__ripple"></div>
-        <input class="mdc-text-field__input" id="search-input" placeholder="Search the site" aria-label="Search" type="search" name="s">
-      </div>
-      <button class="mdc-button mdc-button--unelevated button__search mdc-ripple-upgraded" type="submit">
-        <span class="mdc-button__ripple"></span>
-        <span class="mdc-button__label">Search</span>
-      </button>
-      <button
-        class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button mdc-button--unelevated button__back mdc-ripple-upgraded--unbounded mdc-ripple-upgraded"
-        type="button" aria-label="Exit search form"
-        style="--mdc-ripple-fg-size: 0px; --mdc-ripple-fg-scale: NaN; --mdc-ripple-left: 0px; --mdc-ripple-top: 0px;">
-        <span class="mdc-button__ripple"></span>
-        <i class="material-icons mdc-button__icon" aria-hidden="true">close</i>
-      </button>
-      </form>
     </div>
 
     <div class="tab-bar__wrap">
@@ -243,33 +211,38 @@
 </header>
 <div id="content" class="body site-content">
 <div class="nav-container" data-component="notes" data-version="">
+  <details class="components-versions">
+    <summary>
+      <i class="material-icons mdc-button__icon">library_books</i>&nbsp;
+        <h3 class="title"><a href="index.html">Notes</a></h3>
+      <i class="material-icons mdc-button__icon expand">expand_more</i>&nbsp;
+    </summary>
+    <ul class="components">
+          <li class="component">
+            <a class="title" href="../documentation_system/index.html">Documentation system</a>
+          </li>
+          <li class="component is-current">
+            <a class="title" href="index.html">Notes</a>
+          </li>
+          <li class="component">
+            <a class="title" href="../software_development/index.html">Software development</a>
+          </li>
+    </ul>
+  </details>
+
+
   <nav class="nav-menu nav">
-    <details class="components-versions">
-      <summary>
-        <i class="material-icons mdc-button__icon">library_books</i>&nbsp;
-          <h3 class="title"><a href="index.html">Notes</a></h3>
-        <i class="material-icons mdc-button__icon expand">expand_more</i>&nbsp;
-      </summary>
-      <ul class="components">
-            <li class="component">
-              <a class="title" href="../documentation_system/index.html">Documentation system</a>
-            </li>
-            <li class="component is-current">
-              <a class="title" href="index.html">Notes</a>
-            </li>
-            <li class="component">
-              <a class="title" href="../software_development/index.html">Software development</a>
-            </li>
-            <li class="component">
-              <a class="title" href="../styleguide/index.html">Style guide</a>
-            </li>
-      </ul>
-    </details>
-
-
-              <a class="nav-link" href="index.html">Notes</a>
-          <a class="nav-link" href="colophon.html">Colophon &amp; copyright</a>
-    </nav>
+          <div>
+            <div>  <a class="nav-link nav_active" 
+    href="index.html">Notes</a>
+</div>
+                      </div>
+          <div>
+            <div>  <a class="nav-link" 
+    href="colophon.html">Colophon &amp; copyright</a>
+</div>
+                      </div>
+  </nav>
 </div>
   <div>
     <div id="primary" class="content-area">
@@ -337,10 +310,6 @@ More on that will be in the <em>documentation system</em>.</p>
 <dt class="hdlist1"><a href="../software_development/index.html" class="xref page">Software development</a></dt>
 <dd>
 <p>Working on software and internet products.</p>
-</dd>
-<dt class="hdlist1"><a href="../styleguide/index.html" class="xref page">Style guide</a></dt>
-<dd>
-<p>My own visual and textual styling of documents and websites.</p>
 </dd>
 <dt class="hdlist1">(coming soon) Personal notes and knowledge management</dt>
 <dd>

@@ -94,9 +94,6 @@
               <a href="../../software_development/index.html" class="mdc-list-item" tabindex="-1">
                 <span class="mdc-list-item__text">Software development</span>
               </a>
-              <a href="../../styleguide/index.html" class="mdc-list-item" tabindex="-1">
-                <span class="mdc-list-item__text">Style guide</span>
-              </a>
       </ul>
     </nav>
   </div>
@@ -144,14 +141,6 @@
       </section>
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end top-app-bar__menu" role="toolbar">
         <button
-          class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button search__button mdc-ripple-upgraded--unbounded mdc-ripple-upgraded"
-          aria-label="Search"
-          style="--mdc-ripple-fg-size: 28px; --mdc-ripple-fg-scale: 1.7142857142857142; --mdc-ripple-left: 10px; --mdc-ripple-top: 10px;">
-          <span class="mdc-button__ripple"></span>
-          search
-        </button>
-
-        <button
           class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button dark-mode__button mdc-ripple-upgraded--unbounded mdc-ripple-upgraded"
           aria-label="Toggle Dark Mode"
           style="--mdc-ripple-fg-size: 0px; --mdc-ripple-fg-scale: NaN; --mdc-ripple-left: 0px; --mdc-ripple-top: 0px;">
@@ -159,27 +148,6 @@
           <span class="dark-mode__icon">dark_mode</span>
         </button>
       </section>
-    </div>
-
-    <div class="mdc-top-app-bar__row top-app-bar__search">
-
-      <form class="search-form" action="https://drostan.org" method="get" id="search-638766d011a7c" data-hs-cf-bound="true">
-      <div class="mdc-text-field mdc-text-field--fullwidth mdc-text-field--no-label mdc-ripple-upgraded">
-        <div class="mdc-text-field__ripple"></div>
-        <input class="mdc-text-field__input" id="search-input" placeholder="Search the site" aria-label="Search" type="search" name="s">
-      </div>
-      <button class="mdc-button mdc-button--unelevated button__search mdc-ripple-upgraded" type="submit">
-        <span class="mdc-button__ripple"></span>
-        <span class="mdc-button__label">Search</span>
-      </button>
-      <button
-        class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button mdc-button--unelevated button__back mdc-ripple-upgraded--unbounded mdc-ripple-upgraded"
-        type="button" aria-label="Exit search form"
-        style="--mdc-ripple-fg-size: 0px; --mdc-ripple-fg-scale: NaN; --mdc-ripple-left: 0px; --mdc-ripple-top: 0px;">
-        <span class="mdc-button__ripple"></span>
-        <i class="material-icons mdc-button__icon" aria-hidden="true">close</i>
-      </button>
-      </form>
     </div>
 
     <div class="tab-bar__wrap">
@@ -242,53 +210,125 @@
 </header>
 <div id="content" class="body site-content">
 <div class="nav-container" data-component="documentation_system" data-version="">
+  <details class="components-versions">
+    <summary>
+      <i class="material-icons mdc-button__icon">library_books</i>&nbsp;
+        <h3 class="title"><a href="../index.html">Documentation system</a></h3>
+      <i class="material-icons mdc-button__icon expand">expand_more</i>&nbsp;
+    </summary>
+    <ul class="components">
+          <li class="component is-current">
+            <a class="title" href="../index.html">Documentation system</a>
+          </li>
+          <li class="component">
+            <a class="title" href="../../notes/index.html">Notes</a>
+          </li>
+          <li class="component">
+            <a class="title" href="../../software_development/index.html">Software development</a>
+          </li>
+    </ul>
+  </details>
+
+
   <nav class="nav-menu nav">
-    <details class="components-versions">
+          <div>
+            <div>  <span class="">Overview</span>
+</div>
+                <details>
       <summary>
-        <i class="material-icons mdc-button__icon">library_books</i>&nbsp;
-          <h3 class="title"><a href="../index.html">Documentation system</a></h3>
-        <i class="material-icons mdc-button__icon expand">expand_more</i>&nbsp;
+          <a class="nav-link" 
+    href="../technology_choices/index.html">Technology choices</a>
       </summary>
-      <ul class="components">
-            <li class="component is-current">
-              <a class="title" href="../index.html">Documentation system</a>
-            </li>
-            <li class="component">
-              <a class="title" href="../../notes/index.html">Notes</a>
-            </li>
-            <li class="component">
-              <a class="title" href="../../software_development/index.html">Software development</a>
-            </li>
-            <li class="component">
-              <a class="title" href="../../styleguide/index.html">Style guide</a>
-            </li>
-      </ul>
-    </details>
-
-
-            <details open="true">
-        <summary>
-            <a class="nav-link" href="../technology_choices/index.html">Technology choices</a>
-        </summary>
-          <a class="nav-link" href="../technology_choices/asciidoc-antora.html">Asciidoc and Antora</a>
-          <a class="nav-link" href="../technology_choices/plantuml-kroki.html">PlantUML and Kroki</a>
+          <div>  <a class="nav-link" 
+    href="../technology_choices/asciidoc-antora.html">Asciidoc and Antora</a>
+</div>
+        <div>  <a class="nav-link" 
+    href="../technology_choices/plantuml-kroki.html">PlantUML and Kroki</a>
+</div>
         </details>
-      <details open="true">
-        <summary>
-            <a class="nav-link" href="../setup/index.html">Setup of Antora</a>
-        </summary>
-          <a class="nav-link" href="../setup/multiple-sites.html">Combining multiple documentation sites</a>
+          </div>
+          <div>
+            <div>  <span class="">Tools and setup</span>
+</div>
+                <details>
+      <summary>
+          <span class="">Antora</span>
+      </summary>
+          <div>  <a class="nav-link" 
+    href="../setup/index.html">Setup of Antora</a>
+</div>
+        <div>  <a class="nav-link" 
+    href="../setup/multiple-sites.html">Combining multiple documentation sites</a>
+</div>
+        <div>  <a class="nav-link" 
+    href="../antora/index.html">Antora</a>
+</div>
+        <div>  <a class="nav-link" 
+    href="../antora/setup.html">Antora setup</a>
+</div>
         </details>
-        <details open="true">
-        <summary>
-            <a class="nav-link" href="../antora/index.html">Antora</a>
-        </summary>
-          <a class="nav-link" href="../antora/setup.html">Antora setup</a>
+    <details>
+      <summary>
+          <span class="">Content helpers</span>
+      </summary>
+          <div>  <a class="nav-link" 
+    href="../tools/terminal-recording.html">Terminal recording</a>
+</div>
+        <div>  <a class="nav-link" 
+    href="../tools/mathjax.html">MathJax</a>
+</div>
         </details>
-          <a class="nav-link" href="../zotero/index.html">Zotero</a>
-            <a class="nav-link" href="../tools/terminal-recording.html">Terminal recording</a>
-          <a class="nav-link" href="../tools/mathjax.html">MathJax</a>
-    </nav>
+          </div>
+          <div>
+            <div>  <span class="">Reference</span>
+</div>
+                <details>
+      <summary>
+          <a class="nav-link" 
+    href="../style_guide/index.html">Visual style</a>
+      </summary>
+          <div>  <a class="nav-link" 
+    href="../style_guide/antora-ui.html">Antora UI styling</a>
+</div>
+        <details>
+      <summary>
+          <a class="nav-link" 
+    href="../style_guide/plantuml/index.html">PlantUML diagrams</a>
+      </summary>
+          <details>
+      <summary>
+          <a class="nav-link" 
+    href="../style_guide/plantuml/uml.html">UML (Unified Modeling Language)</a>
+      </summary>
+          <div>  <a class="nav-link" 
+    href="../style_guide/plantuml/usecase.html">Use case diagram</a>
+</div>
+        <div>  <a class="nav-link" 
+    href="../style_guide/plantuml/activity.html">Activity diagram</a>
+</div>
+        <div>  <a class="nav-link" 
+    href="../style_guide/plantuml/sequence.html">Sequence diagram</a>
+</div>
+        <div>  <a class="nav-link" 
+    href="../style_guide/plantuml/deployment.html">Deployment diagram</a>
+</div>
+        </details>
+    <div>  <a class="nav-link" 
+    href="../style_guide/plantuml/c4.html">C4 models</a>
+</div>
+        <div>  <a class="nav-link" 
+    href="../style_guide/plantuml/sdl.html">SDL (Specification and Description Language)</a>
+</div>
+        </details>
+    <div>  <a class="nav-link" 
+    href="../style_guide/mermaid.html">Mermaid diagrams</a>
+</div>
+        <div>  <a class="nav-link" 
+    href="../style_guide/treeview.html">Treeview folder structure</a>
+</div>
+        </details>
+          </div>
+  </nav>
 </div>
   <div>
     <div id="primary" class="content-area">

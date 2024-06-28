@@ -9,7 +9,7 @@
 
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
-<title>Visual style :: Notes</title>
+<title>Deployment diagram :: Notes</title>
 <!--<meta name="description" content="Internet trailblazer. Weaving the web to help humanity." class="yoast-seo-meta-tag">-->
 <!--<meta property="og:locale" content="en_US" class="yoast-seo-meta-tag">-->
 <!--<meta property="og:type" content="website" class="yoast-seo-meta-tag">-->
@@ -20,28 +20,28 @@
 <!--<meta property="og:site_name" content="Rolf Kleef, drostan.org" class="yoast-seo-meta-tag">-->
 <!--<meta name="twitter:card" content="summary_large_image" class="yoast-seo-meta-tag">-->
 
-  <link rel="canonical" href="https://notes.drostan.org/styleguide/visual_style/index.html">
-    <link rel="prev" href="../admonition-issue-use.html">
-    <link rel="next" href="antora-ui.html">
+  <link rel="canonical" href="https://notes.drostan.org/documentation_system/style_guide/plantuml/deployment.html">
+    <link rel="prev" href="sequence.html">
+    <link rel="next" href="c4.html">
   <meta name="generator" content="Antora 3.1.7">
 
 <link rel="dns-prefetch" href="http://fonts.googleapis.com/">
 
-<link rel="stylesheet" href="../../_/css/site.css">
-<link rel="stylesheet" id="material-css-variables" href="../../_/css/vendor/material-css-variables.css">
-<link rel="stylesheet" id="material-google-fonts-cdn-css" href="../../_/css/vendor/fonts.css" type="text/css" media="all">
-<link rel="stylesheet" id="material-design-google-style-css" href="../../_/css/vendor/google-wordpress-style.css" type="text/css" media="all">
-<link rel="stylesheet" id="material-design-google-front-end-css-css" href="../../_/css/vendor/front-end-compiled.min.css" type="text/css" media="all">
+<link rel="stylesheet" href="../../../_/css/site.css">
+<link rel="stylesheet" id="material-css-variables" href="../../../_/css/vendor/material-css-variables.css">
+<link rel="stylesheet" id="material-google-fonts-cdn-css" href="../../../_/css/vendor/fonts.css" type="text/css" media="all">
+<link rel="stylesheet" id="material-design-google-style-css" href="../../../_/css/vendor/google-wordpress-style.css" type="text/css" media="all">
+<link rel="stylesheet" id="material-design-google-front-end-css-css" href="../../../_/css/vendor/front-end-compiled.min.css" type="text/css" media="all">
 
-<script type="text/javascript" src="../../_/js/vendor/jquery.js" id="jquery-core-js"></script>
-<script type="text/javascript" src="../../_/js/vendor/jquery-migrate.js" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="../../../_/js/vendor/jquery.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="../../../_/js/vendor/jquery-migrate.js" id="jquery-migrate-js"></script>
 
-<link rel="icon" href="../../_/img/rolfkleef_512x512-32x32.png" sizes="32x32">
-<link rel="icon" href="../../_/img/rolfkleef_512x512-192x192.png" sizes="192x192">
-<link rel="apple-touch-icon" href="../../_/img/rolfkleef_512x512-180x180.png">
-<meta name="msapplication-TileImage" content="../../_/img/rolfkleef_512x512-270x270.png">
+<link rel="icon" href="../../../_/img/rolfkleef_512x512-32x32.png" sizes="32x32">
+<link rel="icon" href="../../../_/img/rolfkleef_512x512-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="../../../_/img/rolfkleef_512x512-180x180.png">
+<meta name="msapplication-TileImage" content="../../../_/img/rolfkleef_512x512-270x270.png">
 
-<script>var uiRootPath = '../../_'</script>
+<script>var uiRootPath = '../../../_'</script>
 </head>
 
 <body class="home wp-custom-logo mdc-typography hfeed no-sidebar customize-support article">
@@ -51,9 +51,9 @@
   <div class="mdc-drawer__header">
     <div class="logo">
       <a href="https://drostan.org" class="custom-logo-link" rel="home" aria-current="page"><img
-        src="../../_/img/rolfkleef_512x512.png" class="custom-logo"
+        src="../../../_/img/rolfkleef_512x512.png" class="custom-logo"
         alt="Rolf Kleef, drostan.org" decoding="async"
-        srcset="../../_/img/rolfkleef_512x512.png 512w, ../../_/img/rolfkleef_512x512-300x300.png 300w, ../../_/img/rolfkleef_512x512-150x150.png 150w, ../../_/img/rolfkleef_512x512-50x50.png 50w"
+        srcset="../../../_/img/rolfkleef_512x512.png 512w, ../../../_/img/rolfkleef_512x512-300x300.png 300w, ../../../_/img/rolfkleef_512x512-150x150.png 150w, ../../../_/img/rolfkleef_512x512-50x50.png 50w"
         sizes="(max-width: 512px) 100vw, 512px" width="512" height="512"></a></div>
 
     <div class="mdc-drawer__title">
@@ -86,18 +86,15 @@
       <a href="https://notes.drostan.org" class="mdc-list-item" tabindex="-1"><span
         class="mdc-list-item__text">Notes</span></a>
       <ul class="sub-menu">
-              <a href="../../documentation_system/index.html" class="mdc-list-item" tabindex="-1">
+              <a href="../../index.html" class="mdc-list-item mdc-list-item--activated" aria-selected="true"
+                 tabindex="-1">
                 <span class="mdc-list-item__text">Documentation system</span>
               </a>
-              <a href="../../notes/index.html" class="mdc-list-item" tabindex="-1">
+              <a href="../../../notes/index.html" class="mdc-list-item" tabindex="-1">
                 <span class="mdc-list-item__text">Notes</span>
               </a>
-              <a href="../../software_development/index.html" class="mdc-list-item" tabindex="-1">
+              <a href="../../../software_development/index.html" class="mdc-list-item" tabindex="-1">
                 <span class="mdc-list-item__text">Software development</span>
-              </a>
-              <a href="../index.html" class="mdc-list-item mdc-list-item--activated" aria-selected="true"
-                 tabindex="-1">
-                <span class="mdc-list-item__text">Style guide</span>
               </a>
       </ul>
     </nav>
@@ -122,9 +119,9 @@
 
         <div class="logo">
           <a href="https://drostan.org" class="custom-logo-link" rel="home" aria-current="page"><img
-            src="../../_/img/rolfkleef_512x512.png" class="custom-logo"
+            src="../../../_/img/rolfkleef_512x512.png" class="custom-logo"
             alt="Rolf Kleef, drostan.org" decoding="async"
-            srcset="../../_/img/rolfkleef_512x512.png 512w, ../../_/img/rolfkleef_512x512-300x300.png 300w, ../../_/img/rolfkleef_512x512-150x150.png 150w, ../../_/img/rolfkleef_512x512-50x50.png 50w"
+            srcset="../../../_/img/rolfkleef_512x512.png 512w, ../../../_/img/rolfkleef_512x512-300x300.png 300w, ../../../_/img/rolfkleef_512x512-150x150.png 150w, ../../../_/img/rolfkleef_512x512-50x50.png 50w"
             sizes="(max-width: 512px) 100vw, 512px" width="512" height="512"></a></div>
         <span class="mdc-top-app-bar__title top-app-bar__title">
 					<div class="site-title__wrapper">
@@ -146,14 +143,6 @@
       </section>
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end top-app-bar__menu" role="toolbar">
         <button
-          class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button search__button mdc-ripple-upgraded--unbounded mdc-ripple-upgraded"
-          aria-label="Search"
-          style="--mdc-ripple-fg-size: 28px; --mdc-ripple-fg-scale: 1.7142857142857142; --mdc-ripple-left: 10px; --mdc-ripple-top: 10px;">
-          <span class="mdc-button__ripple"></span>
-          search
-        </button>
-
-        <button
           class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button dark-mode__button mdc-ripple-upgraded--unbounded mdc-ripple-upgraded"
           aria-label="Toggle Dark Mode"
           style="--mdc-ripple-fg-size: 0px; --mdc-ripple-fg-scale: NaN; --mdc-ripple-left: 0px; --mdc-ripple-top: 0px;">
@@ -161,27 +150,6 @@
           <span class="dark-mode__icon">dark_mode</span>
         </button>
       </section>
-    </div>
-
-    <div class="mdc-top-app-bar__row top-app-bar__search">
-
-      <form class="search-form" action="https://drostan.org" method="get" id="search-638766d011a7c" data-hs-cf-bound="true">
-      <div class="mdc-text-field mdc-text-field--fullwidth mdc-text-field--no-label mdc-ripple-upgraded">
-        <div class="mdc-text-field__ripple"></div>
-        <input class="mdc-text-field__input" id="search-input" placeholder="Search the site" aria-label="Search" type="search" name="s">
-      </div>
-      <button class="mdc-button mdc-button--unelevated button__search mdc-ripple-upgraded" type="submit">
-        <span class="mdc-button__ripple"></span>
-        <span class="mdc-button__label">Search</span>
-      </button>
-      <button
-        class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button mdc-button--unelevated button__back mdc-ripple-upgraded--unbounded mdc-ripple-upgraded"
-        type="button" aria-label="Exit search form"
-        style="--mdc-ripple-fg-size: 0px; --mdc-ripple-fg-scale: NaN; --mdc-ripple-left: 0px; --mdc-ripple-top: 0px;">
-        <span class="mdc-button__ripple"></span>
-        <i class="material-icons mdc-button__icon" aria-hidden="true">close</i>
-      </button>
-      </form>
     </div>
 
     <div class="tab-bar__wrap">
@@ -243,59 +211,126 @@
   </div>
 </header>
 <div id="content" class="body site-content">
-<div class="nav-container" data-component="styleguide" data-version="">
+<div class="nav-container" data-component="documentation_system" data-version="">
+  <details class="components-versions">
+    <summary>
+      <i class="material-icons mdc-button__icon">library_books</i>&nbsp;
+        <h3 class="title"><a href="../../index.html">Documentation system</a></h3>
+      <i class="material-icons mdc-button__icon expand">expand_more</i>&nbsp;
+    </summary>
+    <ul class="components">
+          <li class="component is-current">
+            <a class="title" href="../../index.html">Documentation system</a>
+          </li>
+          <li class="component">
+            <a class="title" href="../../../notes/index.html">Notes</a>
+          </li>
+          <li class="component">
+            <a class="title" href="../../../software_development/index.html">Software development</a>
+          </li>
+    </ul>
+  </details>
+
+
   <nav class="nav-menu nav">
-    <details class="components-versions">
+          <div>
+            <div>  <span class="">Overview</span>
+</div>
+                <details>
       <summary>
-        <i class="material-icons mdc-button__icon">library_books</i>&nbsp;
-          <h3 class="title"><a href="../index.html">Style guide</a></h3>
-        <i class="material-icons mdc-button__icon expand">expand_more</i>&nbsp;
+          <a class="nav-link" 
+    href="../../technology_choices/index.html">Technology choices</a>
       </summary>
-      <ul class="components">
-            <li class="component">
-              <a class="title" href="../../documentation_system/index.html">Documentation system</a>
-            </li>
-            <li class="component">
-              <a class="title" href="../../notes/index.html">Notes</a>
-            </li>
-            <li class="component">
-              <a class="title" href="../../software_development/index.html">Software development</a>
-            </li>
-            <li class="component is-current">
-              <a class="title" href="../index.html">Style guide</a>
-            </li>
-      </ul>
-    </details>
-
-
-              <a class="nav-link" href="../admonition-issue-use.html">Admonition and issue use</a>
-          <details open="true">
-        <summary>
-            <a class="nav-link" href="index.html">Visual style</a>
-        </summary>
-          <a class="nav-link" href="antora-ui.html">Antora UI styling</a>
-        <details open="true">
-        <summary>
-            <a class="nav-link" href="plantuml/index.html">PlantUML diagrams</a>
-        </summary>
-        <details open="true">
-        <summary>
-            <a class="nav-link" href="plantuml/uml.html">UML (Unified Modeling Language)</a>
-        </summary>
-          <a class="nav-link" href="plantuml/usecase.html">Use case diagram</a>
-          <a class="nav-link" href="plantuml/activity.html">Activity diagram</a>
-          <a class="nav-link" href="plantuml/sequence.html">Sequence diagram</a>
-          <a class="nav-link" href="plantuml/deployment.html">Deployment diagram</a>
+          <div>  <a class="nav-link" 
+    href="../../technology_choices/asciidoc-antora.html">Asciidoc and Antora</a>
+</div>
+        <div>  <a class="nav-link" 
+    href="../../technology_choices/plantuml-kroki.html">PlantUML and Kroki</a>
+</div>
         </details>
-        <a class="nav-link" href="plantuml/c4.html">C4 models</a>
-          <a class="nav-link" href="plantuml/sdl.html">SDL (Specification and Description Language)</a>
+          </div>
+          <div>
+            <div>  <span class="">Tools and setup</span>
+</div>
+                <details>
+      <summary>
+          <span class="">Antora</span>
+      </summary>
+          <div>  <a class="nav-link" 
+    href="../../setup/index.html">Setup of Antora</a>
+</div>
+        <div>  <a class="nav-link" 
+    href="../../setup/multiple-sites.html">Combining multiple documentation sites</a>
+</div>
+        <div>  <a class="nav-link" 
+    href="../../antora/index.html">Antora</a>
+</div>
+        <div>  <a class="nav-link" 
+    href="../../antora/setup.html">Antora setup</a>
+</div>
         </details>
-        <a class="nav-link" href="mermaid.html">Mermaid diagrams</a>
-          <a class="nav-link" href="treeview.html">Treeview folder structure</a>
+    <details>
+      <summary>
+          <span class="">Content helpers</span>
+      </summary>
+          <div>  <a class="nav-link" 
+    href="../../tools/terminal-recording.html">Terminal recording</a>
+</div>
+        <div>  <a class="nav-link" 
+    href="../../tools/mathjax.html">MathJax</a>
+</div>
         </details>
-          <a class="nav-link" href="../antora-ui/index.html">Antora UI</a>
-          <a class="nav-link" href="../antora-ui/lib-style.html">Style library</a>
-    </nav>
+          </div>
+          <div>
+            <div>  <span class="">Reference</span>
+</div>
+                <details open="">
+      <summary>
+          <a class="nav-link" 
+    href="../index.html">Visual style</a>
+      </summary>
+          <div>  <a class="nav-link" 
+    href="../antora-ui.html">Antora UI styling</a>
+</div>
+        <details open="">
+      <summary>
+          <a class="nav-link" 
+    href="index.html">PlantUML diagrams</a>
+      </summary>
+          <details open="">
+      <summary>
+          <a class="nav-link" 
+    href="uml.html">UML (Unified Modeling Language)</a>
+      </summary>
+          <div>  <a class="nav-link" 
+    href="usecase.html">Use case diagram</a>
+</div>
+        <div>  <a class="nav-link" 
+    href="activity.html">Activity diagram</a>
+</div>
+        <div>  <a class="nav-link" 
+    href="sequence.html">Sequence diagram</a>
+</div>
+        <div>  <a class="nav-link nav_active" 
+    href="deployment.html">Deployment diagram</a>
+</div>
+        </details>
+    <div>  <a class="nav-link" 
+    href="c4.html">C4 models</a>
+</div>
+        <div>  <a class="nav-link" 
+    href="sdl.html">SDL (Specification and Description Language)</a>
+</div>
+        </details>
+    <div>  <a class="nav-link" 
+    href="../mermaid.html">Mermaid diagrams</a>
+</div>
+        <div>  <a class="nav-link" 
+    href="../treeview.html">Treeview folder structure</a>
+</div>
+        </details>
+          </div>
+  </nav>
 </div>
   <div>
     <div id="primary" class="content-area">
@@ -304,89 +339,130 @@
   <header class="entry-header section-inner">
   <div class="entry-meta">
         <span class="posted-on">
-          <a class="date mdc-typography--overline" href="../index.html">
-            <time class="entry-date published" datetime="2020-02-20T11:58:59+01:00">Style guide</time></a>
+          <a class="date mdc-typography--overline" href="../../index.html">
+            <time class="entry-date published" datetime="2020-02-20T11:58:59+01:00">Documentation system</time></a>
         </span>
 <span class="posted-on">
-          <a class="date mdc-typography--overline" href="index.html">
+          <a class="date mdc-typography--overline">
+            <time class="entry-date published" datetime="2020-02-20T11:58:59+01:00">Reference</time></a>
+        </span><span class="posted-on">
+          <a class="date mdc-typography--overline" href="../index.html">
             <time class="entry-date published" datetime="2020-02-20T11:58:59+01:00">Visual style</time></a>
+        </span><span class="posted-on">
+          <a class="date mdc-typography--overline" href="index.html">
+            <time class="entry-date published" datetime="2020-02-20T11:58:59+01:00">PlantUML diagrams</time></a>
+        </span><span class="posted-on">
+          <a class="date mdc-typography--overline" href="uml.html">
+            <time class="entry-date published" datetime="2020-02-20T11:58:59+01:00">UML (Unified Modeling Language)</time></a>
+        </span><span class="posted-on">
+          <a class="date mdc-typography--overline" href="deployment.html">
+            <time class="entry-date published" datetime="2020-02-20T11:58:59+01:00">Deployment diagram</time></a>
         </span> </div>
-      <h1 class="entry-title mdc-typography mdc-typography--headline2">Visual style</h1>
+      <h1 class="entry-title mdc-typography mdc-typography--headline2">Deployment diagram</h1>
   </header>
     <div class="sect1">
-<h2 id="_color_scheme"><a class="anchor" href="#_color_scheme"></a>Color scheme</h2>
+<h2 id="_elements"><a class="anchor" href="#_elements"></a>Elements</h2>
 <div class="sectionbody">
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 14.2857%;">
-<col style="width: 42.8571%;">
-<col style="width: 42.8572%;">
-</colgroup>
-<thead>
+<div class="admonitionblock note">
+<table>
 <tr>
-<th class="tableblock halign-left valign-top">Colour</th>
-<th class="tableblock halign-left valign-top">Code</th>
-<th class="tableblock halign-left valign-top">Type</th>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>This is a gallery of most elements from the documentation.</p>
+</div>
+</td>
 </tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="colorswatch cs-primary-color">-</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">#08427b</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">primary</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="colorswatch cs-secondary-color">-</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">#1168bd</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">secondary</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="colorswatch cs-heading-font-color">-</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">#e91e63</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">arrow</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="colorswatch cs-link-font-color">-</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">#3498DB</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">link</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="colorswatch cs-important-color">-</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">#d32f2f</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">important</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="colorswatch cs-warning-color">-</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">#e18114</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">warning</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="colorswatch cs-caution-color">-</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">#a0439c</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">caution</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="colorswatch cs-note-color">-</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">#217ee7</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">note</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="colorswatch cs-tip-color">-</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">#41af46</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">tip</p></td>
-</tr>
-</tbody>
 </table>
+</div>
+<div class="imageblock kroki">
+<div class="content">
+<img src="../_images/diag-b904c5070fba6b3ade39e5032eb39631cd844a19.svg" alt="Core elements of a sequence diagram">
+</div>
+<div class="title">Figure 1. Core elements of a sequence diagram</div>
+</div>
+<div class="listingblock">
+<div class="title">PlantUML source</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-plantuml hljs" data-lang="plantuml">@startuml
+actor actor
+usecase usecase
+actor - usecase
+
+cloud cloud {
+    agent agent
+    boundary boundary
+    card card
+    collections collections
+    control control
+    database database
+    entity entity
+    label label
+    node node {
+        port port1
+        port port2
+
+        component component
+        interface interface
+        component - interface
+    }
+    queue queue
+    stack stack
+    storage storage
+
+    stack -- boundary
+    stack -- control
+    stack -- entity
+
+    component -- database
+    database --* storage
+    component -- queue
+    queue --o stack
+    component -- collections
+    collections 0)-- card
+}
+
+actor --(0)-&gt; agent
+actor ---&gt;&gt; agent
+actor -- port1
+actor -- port2
+agent -- interface
+
+folder folder {
+    package package
+    artifact artifact
+    file file
+    package -- artifact
+    artifact -- file
+}
+
+card --- package
+
+frame frame {
+    circle circle
+    hexagon hexagon
+    rectangle rectangle
+    hexagon 0==@ rectangle
+    circle ..# hexagon
+}
+
+card --- frame
+
+@enduml</code></pre>
+</div>
+</div>
 </div>
 </div>
 </article>
           <div class="post-navigation section-inner">
           <div class="post-navigation__previous">
             <i class="material-icons mdc-button__icon">chevron_left</i>
-            <a href="../admonition-issue-use.html" rel="prev">Admonition and issue use</a>
+            <a href="sequence.html" rel="prev">Sequence diagram</a>
           </div>
           <div class="post-navigation__next">
-            <a href="antora-ui.html" rel="next">Antora UI styling</a>
+            <a href="c4.html" rel="next">C4 models</a>
             <i class="material-icons mdc-button__icon">chevron_right</i>
           </div>
   </div>
@@ -458,11 +534,11 @@
     </symbol>
   </defs>
 </svg>
-<script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
-<script async src="../../_/js/vendor/highlight.js"></script>
-<script src="../../_/js/vendor/lunr.js"></script>
-<script src="../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../.." data-snippet-length="100" data-stylesheet="../../_/css/search.css"></script>
-<script async src="../../search-index.js"></script>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script src="../../../_/js/vendor/lunr.js"></script>
+<script src="../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="100" data-stylesheet="../../../_/css/search.css"></script>
+<script async src="../../../search-index.js"></script>
 <script type="application/json" class="js-hypothesis-config">
 {
   "showHighlights": "whenSidebarOpen"
@@ -470,9 +546,9 @@
 </script>
 <script async src="https://hypothes.is/embed.js"></script>
 <script type="text/javascript"
-        src="../../_/js/vendor/hoverintent-js.js"
+        src="../../../_/js/vendor/hoverintent-js.js"
         id="hoverintent-js-js"></script>
-<script type="text/javascript" src="../../_/js/vendor/front-end.js"
+<script type="text/javascript" src="../../../_/js/vendor/front-end.js"
         id="material-design-google-js-js"></script>
 </body>
 
