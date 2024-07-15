@@ -9,7 +9,7 @@
 
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
-<title>Documentation system :: Notes</title>
+<title>Overview :: Notes</title>
 <!--<meta name="description" content="Internet trailblazer. Weaving the web to help humanity." class="yoast-seo-meta-tag">-->
 <!--<meta property="og:locale" content="en_US" class="yoast-seo-meta-tag">-->
 <!--<meta property="og:type" content="website" class="yoast-seo-meta-tag">-->
@@ -21,16 +21,15 @@
 <!--<meta name="twitter:card" content="summary_large_image" class="yoast-seo-meta-tag">-->
 
   <link rel="canonical" href="https://notes.drostan.org/documentation_system/index.html">
-    <link rel="next" href="technology_choices/index.html">
+    <link rel="next" href="system.html">
   <meta name="generator" content="Antora 3.1.7">
 
 <link rel="dns-prefetch" href="http://fonts.googleapis.com/">
 
-<link rel="stylesheet" href="../_/css/site.css">
-<link rel="stylesheet" id="material-css-variables" href="../_/css/vendor/material-css-variables.css">
-<link rel="stylesheet" id="material-google-fonts-cdn-css" href="../_/css/vendor/fonts.css" type="text/css" media="all">
+<link rel="stylesheet" href="../_/css/site.css" type="text/css" media="all">
 <link rel="stylesheet" id="material-design-google-style-css" href="../_/css/vendor/google-wordpress-style.css" type="text/css" media="all">
-<link rel="stylesheet" id="material-design-google-front-end-css-css" href="../_/css/vendor/front-end-compiled.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="material-design-google-front-end-css-css" href="../_/css/vendor/front-end.css" type="text/css" media="all">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <script type="text/javascript" src="../_/js/vendor/jquery.js" id="jquery-core-js"></script>
 <script type="text/javascript" src="../_/js/vendor/jquery-migrate.js" id="jquery-migrate-js"></script>
@@ -233,9 +232,13 @@
 
   <nav class="nav-menu nav">
           <div>
-            <div>  <span class="">Overview</span>
+            <div>  <a class="nav-link nav_active" 
+    href="index.html">Overview</a>
 </div>
-                <details>
+                <div>  <a class="nav-link" 
+    href="system.html">System view and use cases</a>
+</div>
+        <details>
       <summary>
           <a class="nav-link" 
     href="technology_choices/index.html">Technology choices</a>
@@ -337,67 +340,25 @@
         <article class="entry-content hentry">
   <header class="entry-header section-inner">
   <div class="entry-meta">
-<span class="posted-on">
+        <span class="posted-on">
           <a class="date mdc-typography--overline" href="index.html">
             <time class="entry-date published" datetime="2020-02-20T11:58:59+01:00">Documentation system</time></a>
+        </span>
+<span class="posted-on">
+          <a class="date mdc-typography--overline" href="index.html">
+            <time class="entry-date published" datetime="2020-02-20T11:58:59+01:00">Overview</time></a>
         </span> </div>
-      <h1 class="entry-title mdc-typography mdc-typography--headline2">Documentation system</h1>
+      <h1 class="entry-title mdc-typography mdc-typography--headline2">Overview</h1>
   </header>
     <div class="sect1">
 <h2 id="documentation-system-overview"><a class="anchor" href="#documentation-system-overview"></a>What the documentation system covers</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>This section describes the languages and tools chosen to produce this website,
-and how they are configured and operated.
-The starting point is to follow the <em>Docs as code</em> approach to keep source code and documentation close together, and to use standard developer tools to support document writing.</p>
+and how they are configured and operated.</p>
 </div>
 <div class="paragraph">
-<p>The documentation covers the following users and systems.</p>
-</div>
-<div class="imageblock kroki">
-<div class="content">
-<img src="_images/diag-6d1b571915839c7ec453dd3ddb3a17c133e0b588.svg" alt="Documentation system overview">
-</div>
-<div class="title">Figure 1. Documentation system overview</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_key_roles_and_subsystems"><a class="anchor" href="#_key_roles_and_subsystems"></a>Key roles and subsystems</h2>
-<div class="sectionbody">
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Editor</dt>
-<dd>
-<p>An editor can also be a developer, and contributes content sources (text, diagrams).
-The choice of tools to edit and manage content should be flexible.</p>
-</dd>
-<dt class="hdlist1">Content sources</dt>
-<dd>
-<p>Implementation-specific, detailed documentation should live close to, or even inside source code or configuration files.
-Higher-level decisions and architectures can live in separate documentation sections.</p>
-<div class="paragraph">
-<p>Sources are typically spread over multiple locations and repositories, and may cover multiple versions of a part of the documentation.</p>
-</div>
-</dd>
-<dt class="hdlist1">Publisher</dt>
-<dd>
-<p>The publisher triggers an update of the website by generating a new version and publishing this version.
-This may be part of an automated update system.</p>
-<div class="paragraph">
-<p>The publisher also manages the styling of the output via the website generator system.
-This way, the same content sources could be re-used for different documentation websites.</p>
-</div>
-</dd>
-<dt class="hdlist1">Website generator</dt>
-<dd>
-<p>The website generator combines sources from multiple repositories and versions into a single website.</p>
-<div class="paragraph">
-<p>The website can be published as a static website, to any suitable platform.
-Preferably, it&#8217;s also possible to generate other formats of documentation, such as PDF or EPUB.</p>
-</div>
-</dd>
-</dl>
+<p>The starting point is to follow the <em>Docs as code</em> approach to keep source code and documentation close together, and to use standard developer tools to support document writing.</p>
 </div>
 </div>
 </div>
@@ -406,7 +367,7 @@ Preferably, it&#8217;s also possible to generate other formats of documentation,
         <div class="post-navigation__previous">
         </div>
           <div class="post-navigation__next">
-            <a href="technology_choices/index.html" rel="next">Technology choices</a>
+            <a href="system.html" rel="next">System view and use cases</a>
             <i class="material-icons mdc-button__icon">chevron_right</i>
           </div>
   </div>

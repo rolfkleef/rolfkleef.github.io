@@ -27,11 +27,10 @@
 
 <link rel="dns-prefetch" href="http://fonts.googleapis.com/">
 
-<link rel="stylesheet" href="../../_/css/site.css">
-<link rel="stylesheet" id="material-css-variables" href="../../_/css/vendor/material-css-variables.css">
-<link rel="stylesheet" id="material-google-fonts-cdn-css" href="../../_/css/vendor/fonts.css" type="text/css" media="all">
+<link rel="stylesheet" href="../../_/css/site.css" type="text/css" media="all">
 <link rel="stylesheet" id="material-design-google-style-css" href="../../_/css/vendor/google-wordpress-style.css" type="text/css" media="all">
-<link rel="stylesheet" id="material-design-google-front-end-css-css" href="../../_/css/vendor/front-end-compiled.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="material-design-google-front-end-css-css" href="../../_/css/vendor/front-end.css" type="text/css" media="all">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <script type="text/javascript" src="../../_/js/vendor/jquery.js" id="jquery-core-js"></script>
 <script type="text/javascript" src="../../_/js/vendor/jquery-migrate.js" id="jquery-migrate-js"></script>
@@ -234,9 +233,13 @@
 
   <nav class="nav-menu nav">
           <div>
-            <div>  <span class="">Overview</span>
+            <div>  <a class="nav-link" 
+    href="../index.html">Overview</a>
 </div>
-                <details>
+                <div>  <a class="nav-link" 
+    href="../system.html">System view and use cases</a>
+</div>
+        <details>
       <summary>
           <a class="nav-link" 
     href="../technology_choices/index.html">Technology choices</a>
@@ -357,92 +360,116 @@
     <div class="sect1">
 <h2 id="colours"><a class="anchor" href="#colours"></a>1. Colours</h2>
 <div class="sectionbody">
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 40%;">
-<col style="width: 60%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Colours</th>
-<th class="tableblock halign-left valign-top">Application</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="colorswatch boxed cs-doc-font-color">-</span>
-<span class="colorswatch boxed cs-heading-font-color">-</span>
-<span class="colorswatch boxed cs-link-font-color">-</span>
-<span class="colorswatch boxed cs-link_hover-font-color">-</span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Document text: body, heading, link, hovered link</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="colorswatch boxed cs-doc-font-color">-</span>
-<span class="colorswatch boxed cs-heading-font-color">-</span>
-<span class="colorswatch boxed cs-link-font-color">-</span>
-<span class="colorswatch boxed cs-link_hover-font-color">-</span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Document text: body, heading, link, hovered link</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="colorswatch boxed cs-nav-heading-font-color">-</span>
-<span class="colorswatch boxed cs-nav-muted-color">-</span>
-<span class="colorswatch boxed cs-nav-background">-</span>
-<span class="colorswatch boxed cs-navbar-menu_hover-background">-</span>
-<span class="colorswatch boxed cs-nav-border-color">-</span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Content navigation: heading, muted, background, hover, border</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="colorswatch boxed cs-navbar-font-color">-</span>
-<span class="colorswatch boxed cs-navbar-background">-</span>
-<span class="colorswatch boxed cs-navbar_hover-background">-</span>
-<span class="colorswatch boxed cs-navbar-button-background">-</span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Navigation bar: text, background, hover, button</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="colorswatch boxed cs-navbar-menu-font-color">-</span>
-<span class="colorswatch boxed cs-navbar-menu-background">-</span>
-<span class="colorswatch boxed cs-navbar-menu_hover-background">-</span>
-<span class="colorswatch boxed cs-navbar-menu-border-color">-</span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Navigation menu: text, background, hover, border</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="colorswatch boxed cs-doc-background-color">-</span>
-<span class="colorswatch boxed cs-body-background)">-</span>
-<span class="colorswatch boxed cs-panel-background)">-</span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Backgrounds: document, page, panel</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="colorswatch boxed cs-footer-background">-</span>
-<span class="colorswatch boxed cs-footer-font-color">-</span>
-<span class="colorswatch boxed cs-footer-link-font-color">-</span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Footer: background, text, link</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="colorswatch boxed cs-important-color">Important</span>
-<span class="colorswatch boxed cs-warning-color">Warning</span>
-<span class="colorswatch boxed cs-caution-color">Caution</span>
-<span class="colorswatch boxed cs-note-color">Note</span>
-<span class="colorswatch boxed cs-tip-color">Tip</span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Admonitions: important, warning, caution, note, tip</p></td>
-</tr>
-</tbody>
-</table>
+<div class="sect2">
+<h3 id="interface"><a class="anchor" href="#interface"></a>1.1. Interface</h3>
+<style>
+  .styletable {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    border: 1px solid light-dark(var(--md-sys-color-outline-light), var(--md-sys-color-outline-dark))
+  }
+
+  .styletable div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .styletable div div {
+    padding: 0.5rem;
+  }
+
+  .styletable div :first-child {
+    flex: 5rem
+  }
+
+  /* Light/dark mode styles */
+  main:has(#toggle-theme) .styletable {
+    color-scheme: light;
+  }
+
+  main:has(#toggle-theme:checked) .styletable {
+    color-scheme: dark;
+  }
+
+  #toggle-theme {
+    display: none;
+  }
+
+  /* Style for the label that will serve as our icon */
+  label[for="toggle-theme"] {
+    cursor: pointer;
+  }
+
+  label[for="toggle-theme"]:before {
+    content: 'light_mode';
+  }
+
+  /* Change the icon when the checkbox is checked */
+  #toggle-theme:checked + label[for="toggle-theme"]:before {
+    content: 'dark_mode';
+  }
+</style>
+
+<form>
+  <input type="checkbox" id="toggle-theme" name="toggle-theme"/>
+  <label for="toggle-theme" class="material-icons"></label>
+</form>
+
+<div class="styletable background">
+  <div>
+    <div class="primary">primary</div>
+    <div class="primary-container">primary container</div>
+  </div>
+  <div>
+    <div class="secondary">secondary</div>
+    <div class="secondary-container">secondary container</div>
+  </div>
+  <div>
+    <div class="tertiary">tertiary</div>
+    <div class="tertiary-container">tertiary container</div>
+  </div>
+
+  <div>
+    <div class="surface">surface</div>
+    <div class="surface-variant">surface-variant</div>
+  </div>
+  <div>
+    <div class="outline">outline</div>
+    <div class="outline-variant">outline-variant</div>
+  </div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="admonitions"><a class="anchor" href="#admonitions"></a>1.2. Admonitions</h3>
+<div class="styletable background">
+  <div>
+    <div class="admonition-important">important</div>
+    <div class="admonition-important-container">important container</div>
+  </div>
+  <div>
+    <div class="admonition-tip">tip</div>
+    <div class="admonition-tip-container">tip container</div>
+  </div>
+  <div>
+    <div class="admonition-note">note</div>
+    <div class="admonition-note-container">note container</div>
+  </div>
+  <div>
+    <div class="admonition-error">error</div>
+    <div class="admonition-error-container">error container</div>
+  </div>
+  <div>
+    <div class="admonition-warning">warning</div>
+    <div class="admonition-warning-container">warning container</div>
+  </div>
+  <div>
+    <div class="admonition-caution">caution</div>
+    <div class="admonition-caution-container">caution container</div>
+  </div>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -790,7 +817,7 @@ Nunc sed
 <h2 id="blocks"><a class="anchor" href="#blocks"></a>4. Blocks</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="admonitions"><a class="anchor" href="#admonitions"></a>4.1. Admonitions</h3>
+<h3 id="admonitions-2"><a class="anchor" href="#admonitions-2"></a>4.1. Admonitions</h3>
 <div class="sect3">
 <h4 id="tip"><a class="anchor" href="#tip"></a>4.1.1. Tip</h4>
 <div class="admonitionblock tip">

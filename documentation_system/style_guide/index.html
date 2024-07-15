@@ -27,11 +27,10 @@
 
 <link rel="dns-prefetch" href="http://fonts.googleapis.com/">
 
-<link rel="stylesheet" href="../../_/css/site.css">
-<link rel="stylesheet" id="material-css-variables" href="../../_/css/vendor/material-css-variables.css">
-<link rel="stylesheet" id="material-google-fonts-cdn-css" href="../../_/css/vendor/fonts.css" type="text/css" media="all">
+<link rel="stylesheet" href="../../_/css/site.css" type="text/css" media="all">
 <link rel="stylesheet" id="material-design-google-style-css" href="../../_/css/vendor/google-wordpress-style.css" type="text/css" media="all">
-<link rel="stylesheet" id="material-design-google-front-end-css-css" href="../../_/css/vendor/front-end-compiled.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="material-design-google-front-end-css-css" href="../../_/css/vendor/front-end.css" type="text/css" media="all">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <script type="text/javascript" src="../../_/js/vendor/jquery.js" id="jquery-core-js"></script>
 <script type="text/javascript" src="../../_/js/vendor/jquery-migrate.js" id="jquery-migrate-js"></script>
@@ -234,9 +233,13 @@
 
   <nav class="nav-menu nav">
           <div>
-            <div>  <span class="">Overview</span>
+            <div>  <a class="nav-link" 
+    href="../index.html">Overview</a>
 </div>
-                <details>
+                <div>  <a class="nav-link" 
+    href="../system.html">System view and use cases</a>
+</div>
+        <details>
       <summary>
           <a class="nav-link" 
     href="../technology_choices/index.html">Technology choices</a>
@@ -351,71 +354,43 @@
         </span> </div>
       <h1 class="entry-title mdc-typography mdc-typography--headline2">Visual style</h1>
   </header>
-    <div class="sect1">
-<h2 id="_color_scheme"><a class="anchor" href="#_color_scheme"></a>Color scheme</h2>
-<div class="sectionbody">
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 14.2857%;">
-<col style="width: 42.8571%;">
-<col style="width: 42.8572%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Colour</th>
-<th class="tableblock halign-left valign-top">Code</th>
-<th class="tableblock halign-left valign-top">Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="colorswatch cs-primary-color">-</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">#08427b</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">primary</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="colorswatch cs-secondary-color">-</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">#1168bd</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">secondary</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="colorswatch cs-heading-font-color">-</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">#e91e63</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">arrow</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="colorswatch cs-link-font-color">-</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">#3498DB</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">link</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="colorswatch cs-important-color">-</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">#d32f2f</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">important</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="colorswatch cs-warning-color">-</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">#e18114</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">warning</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="colorswatch cs-caution-color">-</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">#a0439c</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">caution</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="colorswatch cs-note-color">-</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">#217ee7</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">note</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="colorswatch cs-tip-color">-</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">#41af46</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">tip</p></td>
-</tr>
-</tbody>
-</table>
+    <div class="paragraph">
+<p>The visual style of my notes site is a combination of a few elements:</p>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p>The main interface tries to integrate with the Material Design 3 theme I use for my Wordpress site.</p>
+</li>
+<li>
+<p>The navigation of components, versions, and pages, mixes Antora&#8217;s approach into this interface.</p>
+</li>
+<li>
+<p>The textual content of pages is built from Asciidoc with their approach to generating HTML.</p>
+</li>
+<li>
+<p>Diagrams can be included in various formats.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Diagrams made with PlantUML have their own style.</p>
+</li>
+<li>
+<p>Mermaid diagrams are not styled yet.</p>
+</li>
+<li>
+<p>Directory layouts are rendered with Treeview, with particular icons.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This reference section shows all of the visual elements.</p>
+</div>
+<div class="paragraph">
+<p>I also use this section to check style or interface updates I make.</p>
 </div>
 </article>
           <div class="post-navigation section-inner">
