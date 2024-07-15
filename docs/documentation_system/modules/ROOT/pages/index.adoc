@@ -1,60 +1,9 @@
-= {page-component-title}
+= Overview
 
 [[documentation-system-overview]]
 == What the documentation system covers
 
 This section describes the languages and tools chosen to produce this website,
 and how they are configured and operated.
+
 The starting point is to follow the _Docs as code_ approach to keep source code and documentation close together, and to use standard developer tools to support document writing.
-
-The documentation covers the following users and systems.
-
-.Documentation system overview
-[plantuml]
-----
-!include <C4/C4_Container>
-
-Person(editor, "Editor", "Writes and reviews documentation content.")
-Person(publisher, "Publisher", "Updates the documentation website and style.")
-
-Boundary(doc_sys, "Documentation system") {
-  System(sources, "Content sources", "Stores content material in components and modules.")
-  System(sitegen, "Website generator", "Combines sources to produce the documentation website.")
-  Rel_R(sources, sitegen, "are input for")
-}
-
-System_Ext(tools, "Editing tools", "Support planning and writing content.")
-System_Ext(site, "Documentation website", "Informs users and developers.")
-
-Rel(editor, tools, "works with")
-Rel(tools, sources, "contribute content material to")
-Rel(publisher, sitegen, "configures and runs")
-Rel(sitegen, site, "publishes")
-
-Lay_L(publisher, tools)
-----
-
-== Key roles and subsystems
-
-Editor::
-An editor can also be a developer, and contributes content sources (text, diagrams).
-The choice of tools to edit and manage content should be flexible.
-
-Content sources::
-Implementation-specific, detailed documentation should live close to, or even inside source code or configuration files.
-Higher-level decisions and architectures can live in separate documentation sections.
-+
-Sources are typically spread over multiple locations and repositories, and may cover multiple versions of a part of the documentation.
-
-Publisher::
-The publisher triggers an update of the website by generating a new version and publishing this version.
-This may be part of an automated update system.
-+
-The publisher also manages the styling of the output via the website generator system.
-This way, the same content sources could be re-used for different documentation websites.
-
-Website generator::
-The website generator combines sources from multiple repositories and versions into a single website.
-+
-The website can be published as a static website, to any suitable platform.
-Preferably, it's also possible to generate other formats of documentation, such as PDF or EPUB.

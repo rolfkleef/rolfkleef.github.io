@@ -1,0 +1,82 @@
+= System view and use cases
+
+The documentation system describes how content sources
+and an interface definition
+are combined to create a website that is published on the web.
+
+- The tools used by editors and interface developers are not specified here.
+- However, I do make technical choices that influence the choice for those tools.
+
+In a overview diagram, it looks like this:
+
+.Documentation system overview
+[plantuml]
+----
+!include <C4/C4_Container>
+HIDE_STEREOTYPE()
+
+Person(editor, "Editor", "Writes and reviews documentation content.")
+Person(designer, "Interface developer", "Manages the website interface and style.")
+Person(publisher, "Publisher", "Updates the website.")
+
+Boundary(doc_sys, "Documentation system") {
+  SystemDb(sources, "Content sources", "Store content in various repositories.")
+  SystemDb(style, "Interface template", "Defines the layout and styling.")
+  System(sitegen, "Website generator", "Produces a documentation website for multiple versions and components.")
+  Rel(sources, sitegen, "")
+  Rel(style, sitegen, "")
+  System(site, "Website", "Makes documentation available on the web.")
+}
+
+System_Ext(edittools, "Editing tools", "Support planning and writing content.")
+System_Ext(codetools, "Coding tools", "Support developing the web interface.")
+
+Rel(editor, edittools, "works with")
+Rel(edittools, sources, "to contribute")
+Rel(designer, codetools, "works with")
+Rel(codetools, style, "to define")
+Rel_R(publisher, sitegen, "configures and runs")
+Rel(sitegen, site, "")
+
+----
+
+== User roles
+
+Editor::
+An editor can also be a developer, and contributes documentation content sources (text, diagrams).
+The choice of tools to edit and manage content should be flexible,
+and it outside the scope of this documentation.
+
+Interface designer::
+A designer is responsible for the layout and styling of the website.
+Again, the choice of tools should be flexible, and is outside the scope of this documentation.
+
+Publisher::
+The publisher triggers an update of the website by generating a new version
+ and publishing this version.
+This is typically part of an automated process.
+
+[NOTE]
+====
+For my own notes website, I perform all three roles myself.
+It is also possible to split these roles between multiple people.
+====
+
+== Systems
+
+Content sources::
+Implementation-specific, detailed documentation should live close to, or even inside source code or configuration files.
+Higher-level decisions and architectures can live in separate documentation sections.
++
+Sources are typically spread over multiple locations and repositories,
+and may cover multiple versions of a part of the documentation.
+
+Interface template::
+The interface template defines the layout and styling of the website.
+
+Website generator::
+The website generator combines sources from multiple repositories and versions into a single website.
++
+The website can be published as a static website, to any suitable platform.
++
+Preferably, you can also generate other formats of documentation, such as PDF or EPUB.
