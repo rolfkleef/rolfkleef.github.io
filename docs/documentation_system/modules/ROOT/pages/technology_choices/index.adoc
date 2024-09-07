@@ -1,6 +1,6 @@
 = Technology choices
 
-== Main considerations for documentation
+== Main considerations
 
 For my own purpose, I have a couple of high-level requirements for the documentation technology stack.
 
@@ -9,14 +9,15 @@ This forces it to be a plain-text markup language, stored in files.
 It excludes Office tools, online document editors, and database-based content management systems.
 
 There should be simple tools for simple _WYSIWYG_ editing, to focus on writing rather than markup.::
+Obvious choices are Markdown and Asciidoc.
 Robust standards like DocBook and DITA are XML-based, and require particular editors.
 They also require a lot more learning to be able to use them well.
 
 It should be possible to generate a static website from the documentation.::
-I want to generate a single documentation site pulling sources from multiple repositories into a single site.
+I want to generate a single documentation site that pulls sources from multiple repositories.
 I also want to be able to offer documentation for different versions.
 
-== Specific technologies and tools
+== Tools and  technologies
 
 xref:technology_choices/asciidoc-antora.adoc[Asciidoc and Antora as basis]::
 The _content sources_ and _website generator_ are interlinked via their support of a common markup language, format and organisation of files.
@@ -33,6 +34,7 @@ To expand on the xref:../index.adoc#documentation-system-overview[documentation 
 [plantuml]
 ----
 !include <C4/C4_Container>
+HIDE_STEREOTYPE()
 
 Person(editor, "Editor", "Writes and reviews documentation content.")
 Person(publisher, "Publisher", "Updates the documentation website and style.")

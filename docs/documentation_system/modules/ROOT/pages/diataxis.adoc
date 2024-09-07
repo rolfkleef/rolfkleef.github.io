@@ -1,0 +1,57 @@
+= Diátaxis Framework
+
+== Overview
+
+https://diataxis.fr/[Diátaxis^] was developed by Daniele Procida
+and offers a framework to guide writing technical documentation.
+It focuses on the user needs to determine where a piece of text should go.
+
+Diátaxis uses two axes, to organise documentation into four main sections:
+
+Practical versus theoretical::
+Is it about performing a certain task, or about understanding the backgrounds?
+
+Study versus application::
+Is it about learning about a technology, or about using it for a purpose?
+
+== How I use it
+
+I use these to structure the high-level navigation across pages.
+
+Typically, the content menu for each cluster will look like this:
+
+Overview::
+A high-level introduction, describing the scope of this cluster.
+
+Explanations::
+The "why?" behind choices or approaches. Study-theoretical.
+
+Tutorials::
+Study-oriented guides to introduce working with a technology or methodology. Study-practical.
+
+How to::
+Practical guides to perform specific tasks. Application-practical.
+
+Reference::
+Detailed information about a technology or methodology. Application-theoretical.
+
+== Relation with content sources
+
+I try to use a similar structure in the content sources.
+
+A documentation cluster is implemented as an Antora component.
+
+Within that component,
+the ROOT module will contain the Overview and some general Explanations sections.
+
+Logically connected sections of the documentation are grouped into separate modules.
+These modules contain content for all of the Explanations, Tutorials, How to, and Reference menus.
+
+I use the Antora component navigation to place pages in the correct place in the menu.
+
+[bibliography]
+== Background references
+
+++++
+include::partial$diataxis-refs.html[]
+++++

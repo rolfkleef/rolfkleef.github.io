@@ -52,14 +52,12 @@ A designer is responsible for the layout and styling of the website.
 Again, the choice of tools should be flexible, and is outside the scope of this documentation.
 
 Publisher::
-The publisher triggers an update of the website by generating a new version
- and publishing this version.
+The publisher triggers an update of the website by generating a new version and publishing this version.
 This is typically part of an automated process.
 
 [NOTE]
 ====
 For my own notes website, I perform all three roles myself.
-It is also possible to split these roles between multiple people.
 ====
 
 == Systems

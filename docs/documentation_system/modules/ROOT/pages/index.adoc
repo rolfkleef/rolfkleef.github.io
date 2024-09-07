@@ -1,9 +1,39 @@
 = Overview
 
-[[documentation-system-overview]]
-== What the documentation system covers
+== About my documentation system
 
-This section describes the languages and tools chosen to produce this website,
-and how they are configured and operated.
+At a high level, there are a couple of choices to make when setting up a documentation system.
 
-The starting point is to follow the _Docs as code_ approach to keep source code and documentation close together, and to use standard developer tools to support document writing.
+=== What will be the content?
+
+I use my documentation system to write about knowledge management and software development.
+This includes conceptual approaches or methodologies,
+as well as tools and technical implementations.
+
+=== How will the content be structured?
+
+I am trying to create clusters around higher-level topics.
+This section about a "documentation system" is an example of such a cluster.
+
+Within a cluster, I am migrating towards separate sections for explanations, tutorials, how-to guides, and reference documentation.
+This is based on the xref:diataxis.adoc[], which is specifcally focused on technical documentation.
+
+=== How will the content be written and stored?
+
+Since a lot of my documentation is tied to software development,
+I want to use a "docs as code" approach:
+this means that the documentation is written in plain text files,
+and stored in various version control repositories.
+
+=== How will the content be published?
+
+With the "docs as code" approach, the easiest way to publish the documentation is to use a static site generator.
+The publication process can be automated as part of the version control workflow.
+
+[NOTE]
+====
+It is of course possible to make different choices for each of these questions.
+For example, you could use a wiki or a content management system for content storage and publication.
+
+This will also result in a different system view and technology choices.
+====

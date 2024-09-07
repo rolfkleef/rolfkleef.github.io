@@ -1,20 +1,24 @@
 * xref:index.adoc[]
+
+* Explanations
+** xref:diataxis.adoc[]
 ** xref:system.adoc[]
 ** xref:technology_choices/index.adoc[]
- *** xref:technology_choices/asciidoc-antora.adoc[]
- *** xref:technology_choices/plantuml-kroki.adoc[]
+*** xref:technology_choices/asciidoc-antora.adoc[]
+*** xref:technology_choices/plantuml-kroki.adoc[]
 
-* Tools and setup
+* How to
+** Tools and setup
 
-** Antora
-*** xref:setup/index.adoc[]
-*** xref:setup/multiple-sites.adoc[]
-*** xref:antora:index.adoc[]
-*** xref:antora:setup.adoc[]
+*** Antora
+**** xref:setup/index.adoc[]
+**** xref:setup/multiple-sites.adoc[]
+**** xref:antora:index.adoc[]
+**** xref:antora:setup.adoc[]
 
-** Content helpers
-*** xref:tools:terminal-recording.adoc[]
-*** xref:tools:mathjax.adoc[]
+*** Content helpers
+**** xref:tools:terminal-recording.adoc[]
+**** xref:tools:mathjax.adoc[]
 
 // * xref:index.adoc[]
 // ** xref:code-documentation/index.adoc[]
