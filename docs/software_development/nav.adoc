@@ -6,14 +6,14 @@
 
 * Reference
 
-** xref:index.adoc[]
+** xref:docker:index.adoc[]
 
-*** xref:antora.adoc[]
-*** xref:ruby.adoc[]
-*** xref:wordpress.adoc[]
+*** xref:docker:antora.adoc[]
+*** xref:docker:ruby.adoc[]
+*** xref:docker:wordpress.adoc[]
 
 
 ** Git and GitHub
 
 *** xref:github:index.adoc[]
-*** xref:conventional-commits.adoc[]
+*** xref:github:conventional-commits.adoc[]
