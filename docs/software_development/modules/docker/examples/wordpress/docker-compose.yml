@@ -1,26 +1,18 @@
-version: "3.1"
 services:
-  site:
-    image: wordpress:php8.1-apache
+  wordpress:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
     depends_on:
       - db
+    env_file: // <.>
+      - ../.env
     ports:
       - "${WORDPRESS_PORT}:80"
-    extra_hosts:
+    extra_hosts: // <.>
       - localhost:host-gateway
-    environment:
-      WORDPRESS_HOME: ${WORDPRESS_HOME}
-      WORDPRESS_SITEURL: ${WORDPRESS_SITEURL}
-      WORDPRESS_DB_HOST: ${WORDPRESS_DB_HOST}
-      WORDPRESS_DB_USER: ${WORDPRESS_DB_USER}
-      WORDPRESS_DB_PASSWORD: ${WORDPRESS_DB_PASSWORD}
-      WORDPRESS_DB_NAME: ${WORDPRESS_DB_NAME}
-      WORDPRESS_CONFIG_EXTRA_FILE: ${WORDPRESS_CONFIG_EXTRA_FILE}
-      WORDPRESS_CONFIG_EXTRA: ${WORDPRESS_CONFIG_EXTRA}
-      APACHE_RUN_USER: "#${UID}"
-      APACHE_RUN_GROUP: "#${GID}"
     volumes:
-      - ${WORDPRESS_SOURCES}:/var/www/html
+      - ..:/app
 
   db:
     image: mysql:8.0
@@ -28,7 +20,7 @@ services:
       MYSQL_DATABASE: ${WORDPRESS_DB_NAME}
       MYSQL_ROOT_PASSWORD: ${WORDPRESS_DB_ROOT_PASSWORD}
     volumes:
-      - wpdb:/var/lib/mysql
+      - mysql-data:/var/lib/mysql
 
   pma:
     image: phpmyadmin
@@ -43,4 +35,4 @@ services:
       MYSQL_ROOT_PASSWORD: ${WORDPRESS_DB_ROOT_PASSWORD}
 
 volumes:
-  wpdb:
+  mysql-data:

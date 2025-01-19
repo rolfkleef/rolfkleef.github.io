@@ -1,6 +1,6 @@
 * xref:index.adoc[]
 
-* Explanations
+* Backgrounds
 ** xref:diataxis.adoc[]
 ** xref:system.adoc[]
 ** xref:technology_choices/index.adoc[]

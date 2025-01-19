@@ -1,10 +1,12 @@
 = Wordpress
 
-== Setup
+== Overview
 
-My current Wordpress setup runs these services:
+I am using a devcontainer to work on a Wordpress site locally.
+My current setup runs these services:
 
-site:: An Apache server,
+wordpress:: An Apache server,
+as well as a devcontainer that inludes WP-CLI,
 with a local source directory added as _bind mount_.
 db:: A MySQL server,
 with its database stored on a Docker volume.
@@ -14,44 +16,74 @@ to manage the database(s).
 [plantuml]
 ----
 frame docker-compose {
-  component site
+  component wordpress as "wordpress:\n- /app/"
   component pma
   database db
   storage wpdb as "docker\nvolume"
-  site --> db
+  wordpress --> db
   pma --> db
   db --> wpdb
 }
 
-folder local as "local directory"
-site <- local: bind mount
+folder local as "local directory:\n- .devcontainer/\n- public_html/\n..."
+wordpress <- local: bind mount
 ----
 
-Configuration remarks:
+== Configuration
 
-* You need to set your own local user and group id in `.env`.
-* Also, the `.env` file has hard-coded values
-for WORDPRESS_HOME and WORDPRESS_SITEURL,
-using `http://localhost` as the server.
-* For this to work, the application server
-in `docker-compose.yml` has the setting:
-+
-[source,yaml]
-....
-    extra_hosts:
-      - localhost:host-gateway
-....
+=== Directory structure
 
-== Example files
+[source, treeview]
+----
+include::example$wordpress/tree[]
+----
+<.> The `.devcontainer` contains the configuration for Docker and VS Code.
+<.> The `public_html` directory contains the Wordpress site.
+<.> The `.env` file contains environment variables used in the Docker configuration for Wordpress.
 
-..env
-[source,bash]
-....
-include::example$wordpress/env[]
-....
+I keep my development environment and Wordpress deployment together.
+In the setup of the devcontainer, Apache is configured to serve the Wordpress site from the `public_html` directory.
+
+I like to also keep a checkout out git repository on my host.
+This allow me to update things through the Wordpress admin interface,
+and then commit the changes to git.
+
+[NOTE]
+====
+I have seen different hosting providers offer ways to deploy a git repository to a website.
+However, this typically "disconnects" the repository from the files themselves.
+
+I prefer a scenario where my hosted Wordpress site automatically installs security updates.
+With ssh access, I can then commit those changes to the repository.
+====
+
+=== Docker configuration
+
+Docker Desktop reads the `.env` file when starting up services.
+These variables can then be passed to a container.
 
 .docker-compose.yml
 [source,yaml]
-....
+----
 include::example$wordpress/docker-compose.yml[]
-....
+----
+<.> For the wordpress container, we want to pass almost all environment variables from the `.env` file.
+Therefore, the `.env` file is used to pass everything to the container.
+<.> The `extra_hosts` setting is used to let the Apache server in the container reach the host via `localhost`.
+
+[CAUTION]
+====
+When using Docker Desktop on Linux,
+directories and files mounted into a container are owned by user `root`.
+Docker Desktop maps between the local user on the host,
+and `root` in the container.
+
+However, the Apache server in the container runs as user `www-data`.
+It is therefore not possible to install or upgrade Wordpress or its plugins from the Wordpress admin interface.
+
+Therefore, VS Code accesses the devcontainer as `root` too.
+The `WP-CLI` utility makes it possible to do code maintenance on Wordpress and plugins.
+This requires the `--allow-root` option.
+
+  $ wp --allow-root plugin install hello-dolly
+====

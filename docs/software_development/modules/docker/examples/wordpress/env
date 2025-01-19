@@ -1,13 +1,8 @@
 # Environment variables for Docker
-# Add as `.env` in the project root directory
+# Rename to `.env` in the project root directory
 
 # Optional: by default Docker generates a project name based on the base directory of docker-compose.yml
-# COMPOSE_PROJECT_NAME=myproject
-
-# Numerical user and group id for the current user (find them with the command `id`)
-# This will run Apache as the current user, and makes installing and updating from the front-end possible
-UID=1001
-GID=1001
+# COMPOSE_PROJECT_NAME=yourproject
 
 # Ports for the web interfaces of Wordpress and PHPMyAdmin: localhost:<PORT>
 # When running multiple environments at the same time, assign unique port numbers
@@ -19,10 +14,6 @@ PMA_PORT=8002
 WORDPRESS_HOME=http://localhost:${WORDPRESS_PORT}
 WORDPRESS_SITEURL=http://localhost:${WORDPRESS_PORT}
 
-# Local directory where Wordpress sources reside
-# This will be mounted into the Wordpress container
-WORDPRESS_SOURCES=./htdocs/
-
 # Extra instructions to evaluate in wp-config.php
 # Can be given as PHP instructions, or read from a file
 WORDPRESS_CONFIG_EXTRA=
@@ -32,7 +23,17 @@ WORDPRESS_CONFIG_EXTRA_FILE=wp-config-extra-dev.php
 # MySQL is run as local service 'db' and can therefore be reached as host 'db'
 WORDPRESS_DB_HOST=db
 WORDPRESS_DB_USER=root
-WORDPRESS_DB_PASSWORD=local
-WORDPRESS_DB_ROOT_PASSWORD=local
+WORDPRESS_DB_PASSWORD=your_rootpassword
+WORDPRESS_DB_ROOT_PASSWORD=your_rootpassword
 
-WORDPRESS_DB_NAME=mydatabase
+WORDPRESS_DB_NAME=your_wordpress_database
+
+# Key salts for Wordpress, generate your own via https://api.wordpress.org/secret-key/1.1/salt/
+WORDPRESS_AUTH_KEY='4,0V~VOVm^+jd@n>O3xg;|EL0v7^>-&sP?7sz^?Y}V )/]f>nGa3*2jWx1&1>7om'
+WORDPRESS_SECURE_AUTH_KEY='()~wi*Oe rj-}l[-z3WN~,Fy^.nzAn3Y`n%@yJuZ+|tb2~rksKQ=Bmw;K{LcJcRW'
+WORDPRESS_LOGGED_IN_KEY='-|[oA]IImqeWW|uc9c56|UKA>I.J5#HM,wXyOiZUq|#V6xVS*vj!Y|+7ct:kMGqv'
+WORDPRESS_NONCE_KEY='3T$q+J.-u@/*J+}laz@w]b$4nuAI$YKHynKdq|I3!rkH>S(B[|j(}Pc2Ol E]Wfg'
+WORDPRESS_AUTH_SALT='qFuU0By3H$WL(P0dz2(%l3yYR%|y=iXEN9^72+!gBA$w9+0%>C^~CH/Jg^3.@0+n'
+WORDPRESS_SECURE_AUTH_SALT='+:G[+sWsv8oPuk72jvZ-Bu}HGt8BU(S.w`& rz3^XJ 9P8<*>(/<,a_^ZlEiCnCQ'
+WORDPRESS_LOGGED_IN_SALT='i;;+W18V5#iRhHUV^1?Nl-m)9&syFU2?WOUKRidj?6uS;@io7]nv3qO]^D(b(;5B'
+WORDPRESS_NONCE_SALT='e-Wd:o9n6ehsXqc+a59+Qk|FSk,,pD[L>}-ig1}=faUOJCRnL(EdijPmx7F--}Y]'

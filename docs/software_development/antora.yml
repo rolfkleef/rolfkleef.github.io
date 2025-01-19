@@ -2,6 +2,4 @@ name: software_development
 title: Software development
 version: ~
 nav:
-- modules/ROOT/nav.adoc
-- modules/docker/nav.adoc
-- modules/github/nav.adoc
+- nav.adoc

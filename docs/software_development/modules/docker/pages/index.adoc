@@ -1,4 +1,4 @@
-= Docker
+= Docker and devcontainers
 
 == Docker for local development
 
@@ -18,13 +18,13 @@ Everything is declared in source files.
 
 .Files relevant to specify the Docker environment
 [source,treeview]
-....
+----
 .
 |-- .env # <.>
 |-- .gitignore # <.>
 |-- Dockerfile # <.>
 `-- docker-compose.yml # <.>
-....
+----
 <.> Local environment variables to be added.
 These contain for instance local passwords or configuration.
 <.> The `.env` file should be in `.gitignore`,
@@ -59,7 +59,7 @@ To let for instance an application server also reach these service via `localhos
 add the following to its definition in `docker-compose.yml`:
 +
 [source,yaml]
-....
+----
     extra_hosts:
       - localhost:host-gateway
-....
+----

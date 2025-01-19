@@ -1,0 +1,10 @@
+.
+|-- .devcontainer // <.>
+|   |-- apache-vhost.conf
+|   |-- devcontainer.json
+|   |-- docker-compose.yml
+|   `-- Dockerfile
+|-- public_html // <.>
+|   `-- ...
+|-- .env // <.>
+`-- ...

@@ -1,0 +1,20 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
+{
+	"name": "drostan-wp",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "wordpress",
+	"workspaceFolder": "/app",
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// (in addition to the default features included in VS Code's settings.json)
+	"features": {
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ecmel.vscode-html-css",
+				"asciidoctor.asciidoctor-vscode"
+			]
+		}
+	}
+}

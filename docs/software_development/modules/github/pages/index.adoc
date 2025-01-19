@@ -1,6 +1,4 @@
-= Github
-
-== Issue labels
+= Github Issue labels
 
 We use a Github Action to add a default set of issue labels to a repository.
 These default labels are partly based on the Flow Framework, and partly on standard Github labels.
@@ -19,12 +17,12 @@ A typical approach would be:
 
 .File `.github/workflows/add-default-labels.yml`
 [source, yaml]
-....
+----
 include::./../examples/add-default-labels.yml[]
-....
+----
 
 .File `.github/labels.json`
 [source, json]
-....
+----
 include::./../examples/labels.json[]
-....
+----
